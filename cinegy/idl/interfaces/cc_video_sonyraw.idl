@@ -1,0 +1,29 @@
+typedef [v1_enum] enum CC_SONY_RAW_BITSTREAM_TYPE
+{
+	CC_SONY_BITSTREAM_TYPE_UNKNOWN     =    -1,
+	CC_SONY_F65RAW_BITSTREAM           =  0x00,
+	CC_SONY_F65RAW_BITSTREAM_HFR       =  0x01,
+	CC_SONY_F55RAW_BITSTREAM           =  0x10,
+	CC_SONY_F5RAW_BITSTREAM            =  0x20,
+	CC_SONY_FS700RAW_BITSTREAM         =  0x30,
+	CC_SONY_FS700RAW_BITSTREAM_2K      =  0x31 
+} 
+CC_SONY_RAW_BITSTREAM_TYPE;
+
+[object, uuid(ae5cdb5b-d9f0-4053-8c03-44a5a305ef03), pointer_default(unique), local]
+interface ICC_SonyRaw_VideoStreamInfo : ICC_VideoStreamInfo
+{
+	[propget] HRESULT BitstreamType([out, retval] CC_SONY_RAW_BITSTREAM_TYPE *ptype);
+};
+
+[object, uuid(5a17fce5-a435-4e0d-9083-1070960bde1b), pointer_default(unique), local]
+interface ICC_SonyRaw_VideoFrameInfo : ICC_VideoFrameInfo
+{
+};
+
+[object, uuid(f7a23e0b-1d09-458d-ba4f-623356ad9361), pointer_default(unique), local]
+interface ICC_SonyRaw_VideoDecoder : ICC_VideoDecoder
+{
+	[propget] HRESULT FrameRate([out, retval] CC_FRAME_RATE *p);
+	[propput] HRESULT FrameRate([in]          CC_FRAME_RATE  v);
+};

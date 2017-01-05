@@ -1,0 +1,18 @@
+[object, uuid(fe1c44c6-f691-4ee9-b640-70f48defb600), pointer_default(unique), local]
+// Represents the WAV-specific audio stream description.
+interface ICC_WavAudioStreamInfo : ICC_AudioStreamInfo
+{
+};
+
+[object, uuid(7fbfb34a-7005-479d-96b5-25a901496c26), pointer_default(unique), local]
+// The settings for CC_WavAudioEncoder initialization.
+interface ICC_WavAudioEncoderSettings : ICC_LPCM_AudioEncoderSettings
+{                        
+  
+};
+
+// The main interface to access the CC_WavAudioEncoder class.
+[object, uuid(92366695-3047-4744-aa87-8d939c6e8a69), pointer_default(unique), local]
+interface ICC_WavAudioEncoder : ICC_AudioEncoder
+{
+};

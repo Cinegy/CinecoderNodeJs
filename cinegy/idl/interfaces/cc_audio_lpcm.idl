@@ -1,0 +1,40 @@
+[object, uuid(fd104508-54d6-47cb-8f2b-5d4ac20874ab), pointer_default(unique), local]
+// Represents the LPCM-specific audio stream description.
+interface ICC_LPCM_AudioStreamInfo : ICC_AudioStreamInfo
+{
+};
+
+[object, uuid(6da5badf-910b-4c6a-ae8c-e185e88fbd01), pointer_default(unique), local]
+// The settings for CinecoderLpcmAudioEncoder initialization.
+interface ICC_LPCM_AudioEncoderSettings : ICC_AudioEncoderSettings
+{                        
+  // The number of audio channels.
+  [propget] HRESULT	 NumChannels     ([out,retval] CC_UINT       *p);
+  [propput] HRESULT	 NumChannels     ([in]         CC_UINT        v);
+
+  // The quantization of the audio data word. Possible values are 16, 20 or 24.
+  [propget] HRESULT  BitsPerSample   ([out,retval] CC_UINT       *p);
+  [propput] HRESULT  BitsPerSample   ([in]         CC_UINT        v);
+
+  // The audio sample rate.
+  [propget] HRESULT  SampleRate      ([out,retval] CC_UINT       *p);
+  [propput] HRESULT  SampleRate      ([in]         CC_UINT        v);
+};
+
+// The main interface to access the CC_LpcmAudioDecoder class.
+[object, uuid(45c1f3b6-4f4b-4007-a055-19fd1960347f), pointer_default(unique), local]
+interface ICC_LPCM_AudioDecoder : ICC_AudioDecoder
+{
+};
+
+// The main interface to access the CC_LpcmAudioEncoder class.
+[object, uuid(7f60463f-bb23-4334-8e95-c2a38f7492ea), pointer_default(unique), local]
+interface ICC_LPCM_AudioEncoder : ICC_AudioEncoder
+{
+};
+
+// The main interface to access the CC_LpcmAudioDecoder class.
+[object, uuid(69c5f8f2-a863-47d4-aaec-fb63ca987775), pointer_default(unique), local]
+interface ICC_BluRay_PCM_AudioDecoder : ICC_AudioDecoder
+{
+};

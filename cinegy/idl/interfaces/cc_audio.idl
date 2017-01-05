@@ -1,0 +1,399 @@
+typedef [v1_enum] enum CC_AUDIO_SAMPLE_TYPE
+{
+  CC_ASMPL_PCM16,
+  CC_ASMPL_PCM24,
+  CC_ASMPL_PCM32,
+
+  CC_ASMPL_FLOAT32,
+}
+CC_AUDIO_SAMPLE_TYPE;
+
+// The format of uncompressed audio data.
+typedef [v1_enum] enum CC_AUDIO_FMT
+{
+  CAF_UNKNOWN     = 0x00000000,     /// Unknown audio format.
+
+  CAF_PCM8        = 0x00020000,     ///  8-bit signed integer samples. Number of samples is stream-defined.
+  CAF_PCM16       = 0x00010000,     /// 16-bit signed integer samples. Number of samples is stream-defined.
+  CAF_PCM24       = 0x00030000,     /// 24-bit signed integer samples. Number of samples is stream-defined.
+  CAF_PCM32       = 0x00040000,     /// 32-bit signed integer samples. Number of samples is stream-defined.
+  CAF_PCM32_24    = 0x00070000,     /// 24-bit signed integer samples, sign-extended to 32-bit width. Number of samples is stream-defined.
+
+  CAF_FLOAT32     = 0x00100000,     /// 32-bit IEEE-754 floating point samples. Number of samples is stream-defined.
+
+  CAF_PCM8_1CH    = 0x00020001,     ///  8-bit signed samples, 1 channel (mono).
+  CAF_PCM8_2CH    = 0x00020002,     ///  8-bit signed samples, 2 channel (stereo), left channel first.
+
+  CAF_PCM16_1CH   = 0x00010001,     /// 16-bit signed samples, 1 channel (mono).
+  CAF_PCM16_2CH   = 0x00010002,     /// 16-bit signed samples, 2 channels (stereo), left channel first.
+  CAF_PCM16_6CH   = 0x00010006,     /// 16-bit signed samples, 6 channeld (5+1) LF, RF, LR, RR, Center, Bass 
+
+  CAF_PCM24_1CH   = 0x00030001,     /// 24-bit signed samples, 1 channel (mono).
+  CAF_PCM24_2CH   = 0x00030002,     /// 24-bit signed samples, 2 channels (stereo), left channel first.
+  CAF_PCM24_6CH   = 0x00030006,     /// 24-bit signed samples, 6 channeld (5+1) LF, RF, LR, RR, Center, Bass 
+
+  CAF_PCM32_1CH   = 0x00040001,     /// 32-bit signed samples, 1 channel (mono).
+  CAF_PCM32_2CH   = 0x00040002,     /// 32-bit signed samples, 2 channels (stereo), left channel first.
+  CAF_PCM32_6CH   = 0x00040006,     /// 32-bit signed samples, 6 channeld (5+1) LF, RF, LR, RR, Center, Bass 
+
+  CAF_PCM32_24_1CH= 0x00070001,     /// 24-in-32-bit signed samples, 1 channel (mono).
+  CAF_PCM32_24_2CH= 0x00070002,     /// 24-in-32-bit signed samples, 2 channels (stereo), left channel first.
+  CAF_PCM32_24_6CH= 0x00070006,     /// 24-in-32-bit signed samples, 6 channeld (5+1) LF, RF, LR, RR, Center, Bass 
+
+  CAF_FLOAT32_1CH = 0x00100001,     /// 32-bit float samples (0..1), 1 channel (mono).
+  CAF_FLOAT32_2CH = 0x00100002,     /// 32-bit float samples (0..1), 2 channels (stereo), left channel first.
+
+  CAF_FMT_MASK    = 0x00FF0000,
+  CAF_CNL_MASK    = 0x000000FF,
+}
+CC_AUDIO_FMT;
+
+// The channels' ID codes
+typedef enum CC_AUDIO_CHANNEL_ID
+{
+  CC_CH_NOT_SET               = 0,
+  CC_CH_FRONT_LEFT            = 1, 
+  CC_CH_FRONT_RIGHT           = 2, 
+  CC_CH_FRONT_CENTER          = 3, 
+  CC_CH_LOW_FREQUENCY         = 4, 
+  CC_CH_BACK_LEFT             = 5, 
+  CC_CH_BACK_RIGHT            = 6, 
+  CC_CH_FRONT_LEFT_OF_CENTER  = 7, 
+  CC_CH_FRONT_RIGHT_OF_CENTER = 8, 
+  CC_CH_BACK_CENTER           = 9, 
+  CC_CH_SIDE_LEFT             = 10,
+  CC_CH_SIDE_RIGHT            = 11,
+  CC_CH_TOP_CENTER            = 12,
+  CC_CH_TOP_FRONT_LEFT        = 13,
+  CC_CH_TOP_FRONT_CENTER      = 14,
+  CC_CH_TOP_FRONT_RIGHT       = 15,
+  CC_CH_TOP_BACK_LEFT         = 16,
+  CC_CH_TOP_BACK_CENTER       = 17,
+  CC_CH_TOP_BACK_RIGHT        = 18,
+}
+CC_AUDIO_CHANNEL_ID;
+
+// The bit mask of channel map
+typedef enum CC_AUDIO_CHANNEL_MASK
+{
+  CC_CH_FRONT_LEFT_MASK            = 1<<CC_CH_FRONT_LEFT           >>1,
+  CC_CH_FRONT_RIGHT_MASK           = 1<<CC_CH_FRONT_RIGHT          >>1,
+  CC_CH_FRONT_CENTER_MASK          = 1<<CC_CH_FRONT_CENTER         >>1,
+  CC_CH_LOW_FREQUENCY_MASK         = 1<<CC_CH_LOW_FREQUENCY        >>1,
+  CC_CH_BACK_LEFT_MASK             = 1<<CC_CH_BACK_LEFT            >>1,
+  CC_CH_BACK_RIGHT_MASK            = 1<<CC_CH_BACK_RIGHT           >>1,
+  CC_CH_FRONT_LEFT_OF_CENTER_MASK  = 1<<CC_CH_FRONT_LEFT_OF_CENTER >>1,
+  CC_CH_FRONT_RIGHT_OF_CENTER_MASK = 1<<CC_CH_FRONT_RIGHT_OF_CENTER>>1,
+  CC_CH_BACK_CENTER_MASK           = 1<<CC_CH_BACK_CENTER          >>1,
+  CC_CH_SIDE_LEFT_MASK             = 1<<CC_CH_SIDE_LEFT            >>1,
+  CC_CH_SIDE_RIGHT_MASK            = 1<<CC_CH_SIDE_RIGHT           >>1,
+  CC_CH_TOP_CENTER_MASK            = 1<<CC_CH_TOP_CENTER           >>1,
+  CC_CH_TOP_FRONT_LEFT_MASK        = 1<<CC_CH_TOP_FRONT_LEFT       >>1,
+  CC_CH_TOP_FRONT_CENTER_MASK      = 1<<CC_CH_TOP_FRONT_CENTER     >>1,
+  CC_CH_TOP_FRONT_RIGHT_MASK       = 1<<CC_CH_TOP_FRONT_RIGHT      >>1,
+  CC_CH_TOP_BACK_LEFT_MASK         = 1<<CC_CH_TOP_BACK_LEFT        >>1,
+  CC_CH_TOP_BACK_CENTER_MASK       = 1<<CC_CH_TOP_BACK_CENTER      >>1,
+  CC_CH_TOP_BACK_RIGHT_MASK        = 1<<CC_CH_TOP_BACK_RIGHT       >>1,
+
+  CC_CH_FRONT_PAIR_MASK            = (CC_CH_FRONT_LEFT_MASK | CC_CH_FRONT_RIGHT_MASK),
+  CC_CH_BACK_PAIR_MASK             = (CC_CH_BACK_LEFT_MASK  | CC_CH_BACK_RIGHT_MASK),
+  CC_CH_FRONT_OF_CENTER_PAIR_MASK  = (CC_CH_FRONT_LEFT_OF_CENTER_MASK | CC_CH_FRONT_RIGHT_OF_CENTER_MASK),
+}
+CC_AUDIO_CHANNEL_MASK;
+
+// The Audio channels' configuration
+typedef [v1_enum] enum CC_AUDIO_CHANNEL_CONFIG
+{
+  CC_ACFG_UNKNOWN      =  0x00,        /// Unknown audio mode.
+
+  CC_ACFG_MONO         =  CC_CH_FRONT_CENTER_MASK,                        /// 1 audio channel.
+  CC_ACFG_DUAL_MONO    =  CC_ACFG_MONO | CC_CH_BACK_CENTER_MASK,          /// 2 independent audio channels.
+
+  CC_ACFG_2F           =  CC_CH_FRONT_PAIR_MASK,                          /// 2 corellated audio channels (standard music).
+  CC_ACFG_STEREO       =  CC_ACFG_2F,                                     /// 2 corellated audio channels (standard music).
+  CC_ACFG_3F           =  CC_ACFG_2F   | CC_CH_FRONT_CENTER_MASK,         /// 3 front channels
+  CC_ACFG_2F1R         =  CC_ACFG_2F   | CC_CH_BACK_CENTER_MASK,          /// 2 front + 1 back surround channel
+  CC_ACFG_3F1R         =  CC_ACFG_3F   | CC_CH_BACK_CENTER_MASK,          /// 3 front + 1 back surround channel
+  CC_ACFG_2F2R         =  CC_ACFG_2F   | CC_CH_BACK_PAIR_MASK,            /// 2 front + 2 back surround channels
+  CC_ACFG_3F2R         =  CC_ACFG_3F   | CC_CH_BACK_PAIR_MASK,            /// 3 front + 2 back surround channels
+  CC_ACFG_5F2R         =  CC_ACFG_3F2R | CC_CH_FRONT_OF_CENTER_PAIR_MASK, /// 5 front + 2 back surround channels
+
+  CC_ACFG_2F_LFE       =  CC_ACFG_2F   | CC_CH_LOW_FREQUENCY_MASK,        /// 2 front + Low Freq Effects (LFE) channel (2.1 mode)
+  CC_ACFG_3F_LFE       =  CC_ACFG_3F   | CC_CH_LOW_FREQUENCY_MASK,        /// 3 front channels + LFE channel (3.1 mode)
+  CC_ACFG_2F1R_LFE     =  CC_ACFG_2F1R | CC_CH_LOW_FREQUENCY_MASK,        /// 2 front + 1 back surround channel + LFE channel (3.1 mode)
+  CC_ACFG_3F1R_LFE     =  CC_ACFG_3F1R | CC_CH_LOW_FREQUENCY_MASK,        /// 3 front + 1 back surround channel + LFE channel (4.1 mode)
+  CC_ACFG_2F2R_LFE     =  CC_ACFG_2F2R | CC_CH_LOW_FREQUENCY_MASK,        /// 2 front + 2 back surround channels + LFE channel (4.1 mode)
+  CC_ACFG_3F2R_LFE     =  CC_ACFG_3F2R | CC_CH_LOW_FREQUENCY_MASK,        /// 3 front + 2 back surround channels + LFE channel (5.1 mode)
+  CC_ACFG_5F2R_LFE     =  CC_ACFG_5F2R | CC_CH_LOW_FREQUENCY_MASK,        /// 5 front + 2 back surround channels + LFE channel (7.1 mode)
+
+  CC_ACFG_LFE_MASK     =  CC_CH_LOW_FREQUENCY_MASK,
+  CC_ACFG_MODE_MASK    = ~CC_CH_LOW_FREQUENCY_MASK,
+}
+CC_AUDIO_CHANNEL_CONFIG;
+
+[object, uuid(00003301-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Represents the generic audio stream description.
+interface ICC_AudioStreamInfo : ICC_ElementaryStreamInfo//ICC_Settings.
+{
+  //##// The bitrate of entire audio bitstream or corresponding audio frame
+  //##[propget] HRESULT  BitRate         ([out,retval] CC_BITRATE    *p);      
+  // The audio sampling frequency.
+  [propget] HRESULT  SampleRate      ([out,retval] CC_UINT       *p);
+  // The number of channels in the waveform-audio data.
+  [propget] HRESULT	 NumChannels     ([out,retval] CC_UINT       *p);
+  // The bit depth of one audio sample (of one channel).
+  [propget] HRESULT  BitsPerSample   ([out,retval] CC_UINT       *p);
+  // The mask of channels. See the CC_AUDIO_CHANNEL_MASK for details
+  [propget] HRESULT  ChannelMask     ([out,retval] CC_UINT       *p);
+//##  // The channel's configuration
+//##  [propget] HRESULT	 ChannelConfig   ([out,retval] CC_AUDIO_CHANNEL_CONFIG*p);
+};
+
+[object, uuid(a12bf062-fd75-44a1-9adf-ad6d1a353f74), pointer_default(unique), local]
+// The common settings for any audio encoder initialization.
+interface ICC_AudioEncoderSettings : ICC_Settings
+{
+#if 0
+  // The bitrate of entire audio bitstream or corresponding audio frame.
+  [propget] HRESULT  BitRate         ([out,retval] CC_BITRATE    *p);      
+  [propput] HRESULT  BitRate         ([in]         CC_BITRATE     v);      
+  // The audio sampling frequency.
+  [propget] HRESULT  SampleRate      ([out,retval] CC_UINT       *p);
+  [propput] HRESULT  SampleRate      ([in]         CC_UINT        v);
+  // The number of channels in the waveform-audio data.
+  [propget] HRESULT	 NumChannels     ([out,retval] CC_UINT       *p);
+  [propput] HRESULT	 NumChannels     ([in]         CC_UINT        v);
+  // The bit depth of one audio sample (of one channel).
+  [propget] HRESULT  BitsPerSample   ([out,retval] CC_UINT       *p);
+  [propput] HRESULT  BitsPerSample   ([in]         CC_UINT        v);
+  // The number of audio frames per second.
+  [propget] HRESULT  FrameRate       ([out,retval] CC_FRAME_RATE *p);      
+  [propput] HRESULT  FrameRate       ([in]         CC_FRAME_RATE  v);      
+#endif
+};
+
+[object, uuid(00003302-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Represents the generic audio stream description.
+interface ICC_AudioFrameInfo : ICC_ElementaryDataInfo
+{
+};
+
+[object, uuid(00003001-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Provides the methods specific for the generic waveform-audio producer.
+interface ICC_AudioProducer : IUnknown
+{
+  // Retrieves the uncompressed audio data from the audio producer.
+  // Remark: To obtain the size of the buffer to hold the resulted samples, put NULL instead of pbData.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   GetAudio(
+    [in] CC_AUDIO_FMT fmt,                  // The format of incoming waveform.
+    [out, size_is(cbSize)] BYTE *pbData,    // Buffer for incoming audio.
+    [in] DWORD cbSize,                      // Buffer size, in bytes.
+    [out,retval] DWORD *pcbRetSize          // Pointer to the variable that receives the number of got bytes.
+                                            // GetAudio sets this value to zero before doing any work.
+  );
+
+  HRESULT   GetSampleBytes(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval] DWORD *pNumBytes
+  );
+
+  HRESULT  IsFormatSupported(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval,defaultvalue(NULL)] CC_BOOL *pBool
+  );
+
+  // Get the description of the audio stream.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+
+  // Get the description of the current audio frame.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioFrameInfo([out,retval] ICC_AudioFrameInfo **pDescr);
+};
+
+[object, uuid(00003002-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Provides the methods specific for the generic audio data consumer.
+interface ICC_AudioConsumer : IUnknown
+{
+  // Method to process the uncompressed audio data.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   ProcessAudio(
+    [in] CC_AUDIO_FMT fmt,                    /// The format of incoming waveform.
+    [in, size_is(cbSize)] const BYTE*pbData,  /// The waveform's data.
+    [in] DWORD cbSize,                        /// Number of bytes in the buffer, must be multiple of BlockAlign of corresponding CC_AUDIO_FMT.
+    [out,retval,defaultvalue(NULL)] DWORD *pcbRetSize/// Number of bytes actually put.
+  );
+
+  // Get the description of audio stream which is being decoded.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+};
+
+/// The description of multi-channel waveform audio with channel mapping and sample format
+typedef struct CC_AUDIO_FMT_EXT
+{
+	CC_AUDIO_SAMPLE_TYPE sample_type;
+	CC_AMOUNT 			 num_channels;
+	[length_is(num_channels)]
+	CC_AUDIO_CHANNEL_ID	 channel_map[32];
+}
+CC_AUDIO_FMT_EXT;
+
+[object, uuid(f865713b-9ed0-42de-ae47-27ec4543d408), pointer_default(unique), local]
+// The audio producer with the methods to handle the multi-channel audio formats
+interface ICC_AudioProducerExt : ICC_AudioProducer
+{
+  HRESULT   GetAudioExt(
+    [in,ref] CC_AUDIO_FMT_EXT *fmt,         /// The format of incoming waveform.
+    [out, size_is(cbSize)] BYTE *pbData,    /// Buffer for incoming audio.
+    [in] DWORD cbSize,                      /// Buffer size, in bytes.
+    [out,retval] DWORD *pcbRetSize          /// Pointer to the variable that receives the number of got bytes.
+                                            /// GetAudio sets this value to zero before doing any work.
+  );
+
+  /// The default (codec-dependent) format of the audio data.
+  /// Useful to avoid re-mapping of channels inside the codec.
+  [propget]
+  HRESULT	DefaultAudioFormat(
+    [out,retval] CC_AUDIO_FMT_EXT *fmt				/// The default (codec-dependent) format of the audio data
+  );
+};
+
+[object, uuid(6ad320eb-7ec1-487d-ad90-1a68e70ff8db), pointer_default(unique), local]
+// The audio consumer with the methods to handle the multi-channel audio formats
+interface ICC_AudioConsumerExt : ICC_AudioConsumer
+{
+  // Method to process the uncompressed audio data.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   ProcessAudioExt(
+    [in,ref] CC_AUDIO_FMT_EXT *fmt,           /// The format of incoming waveform.
+    [in, size_is(cbSize)] const BYTE*pbData,  /// The waveform's data.
+    [in] DWORD cbSize,                        /// Number of bytes in the buffer, must be multiple of BlockAlign of corresponding CC_AUDIO_FMT.
+    [out,retval,defaultvalue(NULL)] DWORD *pcbRetSize/// Number of bytes actually put.
+  );
+
+  /// The default (codec-dependent) format of the audio data.
+  /// Useful to avoid re-mapping of channels inside the codec.
+  [propget]
+  HRESULT	DefaultAudioFormat(
+    [out,retval] CC_AUDIO_FMT_EXT *fmt				/// The default (codec-dependent) format of the audio data
+  );
+};
+
+//
+//################################## Decoders ###########################################
+//
+
+[object, uuid(00003700-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// The default and main interface to control the instance of CinecoderMpegAudioDecoder class.
+interface ICC_AudioDecoder : ICC_Decoder
+{
+  //<copy ICC_AudioProducer::GetAudio>
+  HRESULT   GetAudio(
+    [in] CC_AUDIO_FMT fmt,
+    [out, size_is(cbSize)] BYTE *pbData,
+    [in] DWORD cbSize,
+    [out,retval] DWORD *pcbRetSize
+  );
+
+  HRESULT   GetSampleBytes(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval] DWORD *pNumBytes
+  );
+
+  HRESULT  IsFormatSupported(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval,defaultvalue(NULL)] CC_BOOL *pBool
+  );
+
+  ///<copy ICC_AudioProducer::GetAudioStreamInfo>
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+
+  // Get the description of the current audio frame.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioFrameInfo([out,retval] ICC_AudioFrameInfo **pDescr);
+
+  // The number of ready audio samples at the output.
+  [propget] HRESULT	NumSamples([out,retval] DWORD*);
+};
+
+//
+//################################## Encoders ###########################################
+//
+
+//-----------------------------------------------------------------------------
+[object, uuid(00003400-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// The default and main interface to control the instance of CinecoderMpegAudioEncoder class.
+interface ICC_AudioEncoder : ICC_Encoder
+//-----------------------------------------------------------------------------
+{
+  // Puts another audio uncompressed data to the audio consumer.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   ProcessAudio(
+    [in] CC_AUDIO_FMT Format,               // The format of incoming audio data.
+    [in, size_is(cbSize)] const BYTE*pbData,// Buffer with the audio data.
+    [in] DWORD cbSize,                      // Number of bytes in the buffer, must be multiple of BlockAlign of corresponding CC_AUDIO_FMT.
+    [out,retval,defaultvalue(NULL)] DWORD *pcbRetSize/// Number of bytes actually put.
+  );
+
+  // Get the description of audio stream which is being decoded.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+
+  // Get the description of the current audio frame.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioFrameInfo([out,retval] ICC_AudioFrameInfo **pDescr);
+};
+
+//-----------------------------------------------------------------------------
+[object, uuid(eab5d8d8-c8f0-4ded-a2d3-31c5fd60a05a), pointer_default(unique), local]
+interface ICC_AudioSplitter : ICC_Splitter
+//-----------------------------------------------------------------------------
+{
+  ///<copy ICC_AudioDecoder::GetAudioStreamInfo>
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+  ///<copy ICC_AudioDecoder::GetAudioFrameInfo>
+  HRESULT   GetAudioFrameInfo([out,retval] ICC_AudioFrameInfo **pDescr);
+};
+
+//-----------------------------------------------------------------------------
+[object, uuid(403ac16e-9b0c-47e5-b3fa-d7ec1d3af093), pointer_default(unique), local]
+interface ICC_AudioFilter : ICC_StreamProcessor
+//-----------------------------------------------------------------------------
+{
+  // Method to process the uncompressed audio data.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   ProcessAudio(
+    [in] CC_AUDIO_FMT fmt,                    /// The format of incoming waveform.
+    [in, size_is(cbSize)] const BYTE*pbData,  /// The waveform's data.
+    [in] DWORD cbSize,                        /// Number of bytes in the buffer, must be multiple of BlockAlign of corresponding CC_AUDIO_FMT.
+    [out,retval,defaultvalue(NULL)] DWORD *pcbRetSize/// Number of bytes actually put.
+  );
+
+  // Retrieves the uncompressed audio data from the audio producer.
+  // Remark: To obtain the size of the buffer to hold the resulted samples, put NULL instead of pbData.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   GetAudio(
+    [in] CC_AUDIO_FMT fmt,                  // The format of incoming waveform.
+    [out, size_is(cbSize)] BYTE *pbData,    // Buffer for incoming audio.
+    [in] DWORD cbSize,                      // Buffer size, in bytes.
+    [out,retval] DWORD *pcbRetSize          // Pointer to the variable that receives the number of got bytes.
+                                            // GetAudio sets this value to zero before doing any work.
+  );
+
+  HRESULT   GetSampleBytes(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval] DWORD *pNumBytes
+  );
+
+  HRESULT  IsFormatSupported(
+    [in] CC_AUDIO_FMT fmt,
+    [out,retval,defaultvalue(NULL)] CC_BOOL *pBool
+  );
+
+  // Get the description of audio stream which is being decoded.
+  // Returns: Returns S_OK if data is ready, S_FALSE if not or an error value otherwise. 
+  HRESULT   GetAudioStreamInfo([out,retval] ICC_AudioStreamInfo **pDescr);
+}
+

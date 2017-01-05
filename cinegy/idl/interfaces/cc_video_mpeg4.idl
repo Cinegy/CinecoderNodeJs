@@ -1,0 +1,14 @@
+[object, uuid(63ebe1fe-888a-468e-9e07-c7c61da1e39b), pointer_default(unique), local]
+interface ICC_Mpeg4VideoStreamInfo : ICC_VideoStreamInfo
+{
+};
+
+[object, uuid(df8c0ede-b2ea-41d4-a447-83364a377e47), pointer_default(unique), local]
+interface ICC_Mpeg4VideoFrameInfo : ICC_VideoFrameInfo
+{
+};
+
+[object, uuid(31c651b2-bfa1-41e8-b7e6-fe1f99d280cd), pointer_default(unique), local]
+interface ICC_Mpeg4VideoDecoder : ICC_VideoDecoder
+{
+};

@@ -1,0 +1,20 @@
+[object, uuid(f6397d60-f204-4acc-8339-d94dba6fa4dd), pointer_default(unique), local]
+interface ICC_HLS_MultiplexerSettings : ICC_Settings
+{
+	// The duration of the chunk in seconds. Default is 10 s.
+	[propget] HRESULT ChunkDurationSec		([out,retval]CC_UINT*t);
+	[propput] HRESULT ChunkDurationSec      ([in]        CC_UINT t);
+	// The number of a first chunk. Default is 0.                                      
+	[propget] HRESULT FirstChunkNumber		([out,retval]CC_UINT*t);
+	[propput] HRESULT FirstChunkNumber		([in]        CC_UINT t);
+};
+
+// use ICC_Multiplexer to access the HLS muxer class
+//
+//[object, uuid(47b36c21-2d70-4a43-845d-bce06efe4351), pointer_default(unique), local]
+//interface ICC_HLS_Multiplexer : ICC_Multiplexer
+//{
+//	[propget] HRESULT ChunkDurationSec		([out,retval]CC_UINT*t);
+//	[propget] HRESULT CurrChunkNumber		([out,retval]CC_UINT*t);
+//};
+

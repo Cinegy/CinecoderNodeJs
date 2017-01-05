@@ -1,0 +1,59 @@
+typedef [v1_enum] enum CC_AVCI_MODE
+{
+  CC_AVCI_MODE_UNKNOWN   = 0x00,
+
+  CC_AVCI_50_720P_2398   = 0x100,
+  CC_AVCI_50_720P_25     = 0x101,
+  CC_AVCI_50_720P_2997   = 0x102,
+  CC_AVCI_50_720P_50     = 0x09,
+  CC_AVCI_50_720P_5994   = 0x08,
+
+  CC_AVCI_50_1080P_2398  = 0x104,
+  CC_AVCI_50_1080P_25    = 0x04,
+  CC_AVCI_50_1080P_2997  = 0x03,
+  CC_AVCI_50_1080I_50    = 0x02,
+  CC_AVCI_50_1080I_5994  = 0x01,
+
+  CC_AVCI_100_720P_2398  = 0x105,
+  CC_AVCI_100_720P_25    = 0x106,
+  CC_AVCI_100_720P_2997  = 0x107,
+  CC_AVCI_100_720P_50    = 0x29,
+  CC_AVCI_100_720P_5994  = 0x28,
+
+  CC_AVCI_100_1080P_2398 = 0x108,
+  CC_AVCI_100_1080P_25   = 0x24,
+  CC_AVCI_100_1080P_2997 = 0x23,
+  CC_AVCI_100_1080I_50   = 0x22,
+  CC_AVCI_100_1080I_5994 = 0x21,
+} 
+CC_AVCI_MODE;
+
+[object, uuid(54761d8c-4180-46c7-8364-144a64ed1e8e), pointer_default(unique), local]
+// The Settings for AVC-Intra Encoder initialization.
+interface ICC_AVCIntraEncoderSettings : ICC_Settings
+{
+  // The AVC Intra encoder mode.
+  [propget] HRESULT  Mode                     ([out,retval] CC_AVCI_MODE *x);
+  [propput] HRESULT  Mode                     ([in]         CC_AVCI_MODE  x);
+
+  // Number of single encoders to be used.
+  [propget] HRESULT  NumSingleEncoders        ([out,retval] CC_UINT      *x);
+  [propput] HRESULT  NumSingleEncoders        ([in]         CC_UINT       x);
+
+  // The Frequency of SPS/PPS generation, in frames. See CC_PERIOD_FLAGS for details.
+  // CC_ONCE(0) = only at the beginnig, FRQ_FOREVER(1) = at each frame.
+  // You can also specify the period in milliseconds by adding the FRQ_TIMEVAL_MS flag to the value.
+  // The default value is CC_ONCE.
+  [propget] HRESULT  SequenceHeaderPeriod     ([out,retval] CC_PERIOD    *x);
+  [propput] HRESULT  SequenceHeaderPeriod     ([in]         CC_PERIOD     x);
+};
+
+[object, uuid(0242b581-180a-430e-bb9c-1a78e60de3e5), pointer_default(unique), local]
+// Interface for AVC Intra video encoder is the same as for H264VideoEncoder.
+interface ICC_AVCIntraEncoder : ICC_H264VideoEncoder
+{
+  // Specifies the initial timecode for the first frame.
+  // Note: Should be used before first call to AddFrame.
+  [propput] HRESULT  InitialTimeCode          ([in]         CC_TIMECODE   x);
+};
+

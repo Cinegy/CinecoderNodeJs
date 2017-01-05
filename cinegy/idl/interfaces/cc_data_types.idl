@@ -1,0 +1,5 @@
+typedef [v1_enum] enum CC_DATA_TYPE
+{
+	CC_RAW_BYTE_DATA = 0,
+}
+CC_DATA_TYPE;

@@ -1,0 +1,36 @@
+typedef [v1_enum] enum CC_EXECUTIVE_DEVICE_TYPES
+{
+	CC_DEV_TYPE_ANY    = 0,
+	
+	CC_DEV_TYPE_CPU    = 1<<0,
+
+	CC_DEV_TYPE_CUDA_0 = 1<<1,
+	CC_DEV_TYPE_CUDA_1 = 1<<2,
+	CC_DEV_TYPE_CUDA_2 = 1<<3,
+	CC_DEV_TYPE_CUDA_3 = 1<<4,
+	CC_DEV_TYPE_CUDA_4 = 1<<5,
+	CC_DEV_TYPE_CUDA_5 = 1<<6,
+	CC_DEV_TYPE_CUDA_6 = 1<<7,
+	CC_DEV_TYPE_CUDA_7 = 1<<8,
+	CC_DEV_TYPE_CUDA   = CC_DEV_TYPE_CUDA_0 | CC_DEV_TYPE_CUDA_1 | CC_DEV_TYPE_CUDA_2 | CC_DEV_TYPE_CUDA_3 
+	                   | CC_DEV_TYPE_CUDA_4 | CC_DEV_TYPE_CUDA_5 | CC_DEV_TYPE_CUDA_6 | CC_DEV_TYPE_CUDA_7,
+
+	CC_DEV_TYPE_MSDK_0 = 1<<9,
+	CC_DEV_TYPE_MSDK_1 = 1<<10,
+	CC_DEV_TYPE_MSDK_2 = 1<<11,
+	CC_DEV_TYPE_MSDK_3 = 1<<12,
+	CC_DEV_TYPE_MSDK   = CC_DEV_TYPE_MSDK_0 | CC_DEV_TYPE_MSDK_1 | CC_DEV_TYPE_MSDK_2 | CC_DEV_TYPE_MSDK_3,
+}
+CC_EXECUTIVE_DEVICE_TYPES;
+
+//-----------------------------------------------------------------------------
+[object, uuid(703087c5-31bc-4156-bfd8-78048ac8e4f4), pointer_default(unique), local]
+// Controls the computing device mask for the cinecoder object
+interface ICC_ExecutiveDeviceMaskProp : IUnknown
+//-----------------------------------------------------------------------------
+{
+  // The device mask for an object. (see CC_EXECUTIVE_DEVICE_TYPES)
+  [propget] HRESULT   DeviceMask([out,retval] DWORD*);
+  [propput] HRESULT   DeviceMask([in]         DWORD);
+}
+

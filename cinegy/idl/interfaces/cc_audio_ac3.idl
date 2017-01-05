@@ -1,0 +1,198 @@
+typedef [v1_enum] enum CC_AC3_ENCODER_MODE
+{
+  CC_AC3_ENC_MODE_DDP = 0,			/// Mode 0: Dolby Digital Plus (bsid 16)
+  CC_AC3_ENC_MODE_DD,				/// Mode 1: Dolby Digital (bsid 6)
+  CC_AC3_ENC_MODE_RESERVED_1,		/// Mode 2: HDDVD (bsid 16) - no longer supported
+  CC_AC3_ENC_MODE_BLURAY_PRIMARY,	/// Mode 3: BD-compliant primary stream (bsid 6)
+  CC_AC3_ENC_MODE_BLURAY_SECONDARY,	/// Mode 4: BD-compliant secondary audio stream (bsid 16)
+  CC_AC3_ENC_MODE_RESERVED_2,		/// Mode 5: Dolby Digital Plus Consumer Mode RESERVED
+  CC_AC3_ENC_MODE_RESERVED_3,		/// Mode 6: Dolby Digital Consumer Mode RESERVED
+  CC_AC3_ENC_MODE_DD_LEGACY,		/// Mode 7: Dolby Digital legacy mode (bsid 8)
+}
+CC_AC3_ENCODER_MODE;
+
+typedef [v1_enum] enum CC_AC3_BITSTREAM_MODE
+{
+  CC_AC3_BSMOD_UNKNOWN  = -1,
+  CC_AC3_BSMOD_CM       = 0,	/// main audio service: complete main
+  CC_AC3_BSMOD_ME       = 1,    /// main audio service: music and effects
+  CC_AC3_BSMOD_VI       = 2,    /// associated service: visually impaired
+  CC_AC3_BSMOD_HI       = 3,    /// associated service: hearing impaired
+  CC_AC3_BSMOD_D        = 4,    /// associated service: dialogue
+  CC_AC3_BSMOD_C        = 5,    /// associated service: commentary
+  CC_AC3_BSMOD_E        = 6,    /// associated service: emergency
+  CC_AC3_BSMOD_VO       = 7,    /// associated service: voice over
+  CC_AC3_BSMOD_KAR      = 8     /// main audio service: karaoke
+}
+CC_AC3_BITSTREAM_MODE;
+
+// Audio Coding Mode
+typedef [v1_enum] enum CC_AC3_ACMOD
+{
+  CC_AC3_ACMOD_UNKNOWN  = -1,
+  CC_AC3_ACMOD_DUALMONO = 0,
+  CC_AC3_ACMOD_MONO     = 1,
+  CC_AC3_ACMOD_STEREO   = 2,
+  CC_AC3_ACMOD_3F       = 3,
+  CC_AC3_ACMOD_2F1R     = 4,
+  CC_AC3_ACMOD_3F1R     = 5,
+  CC_AC3_ACMOD_2F2R     = 6,
+  CC_AC3_ACMOD_3F2R     = 7
+}
+CC_AC3_ACMOD;
+
+// Center Mix Level
+typedef [v1_enum] enum CC_AC3_CMIXLEV
+{
+  CC_AC3_CMIXLEV_UNKNOWN= -1,
+  CC_AC3_CMIXLEV_0      = 0,    /// 0.707 (-3 dB)
+  CC_AC3_CMIXLEV_1      = 1,    /// 0.595 (-4.5 dB)
+  CC_AC3_CMIXLEV_2      = 2,    /// 0.500 (-6 dB)
+  CC_AC3_CMIXLEV_RESERVED       /// reserved
+}
+CC_AC3_CMIXLEV;
+
+// Surround Mix Level
+typedef [v1_enum] enum CC_AC3_SURMIXLEV
+{
+  CC_AC3_SURMIXLEV_UNKNOWN= -1,
+  CC_AC3_SURMIXLEV_0      = 0,    /// 0.707 (-3 dB)
+  CC_AC3_SURMIXLEV_1      = 1,    /// 0.500 (-6 dB)
+  CC_AC3_SURMIXLEV_2      = 2,    /// 0
+  CC_AC3_SURMIXLEV_RESERVED       /// reserved
+}
+CC_AC3_SURMIXLEV;
+
+/// Dolby Surround Mode
+typedef [v1_enum] enum CC_AC3_DSURMOD
+{
+  CC_AC3_DSURMOD_UNKNOWN   = 0,   /// not indicated
+  CC_AC3_DSURMOD_NOT_DOLBY = 1,   /// not Dolby Surround encoded
+  CC_AC3_DSURMOD_DOLBY     = 2,   /// Dolby Surround encoded
+  CC_AC3_DSURMOD_RESERVED,        /// reserved
+}
+CC_AC3_DSURMOD;
+
+/// Room Types
+typedef [v1_enum] enum CC_AC3_ROOMTYP
+{
+  CC_AC3_ROOMTYP_UNKNOWN   = 0,   /// not indicated
+  CC_AC3_ROOMTYP_LARGE_ROOM= 1,   /// Large Room, X-curve monitor
+  CC_AC3_ROOMTYP_SMALL_ROOM= 2,   /// Small Room, Flat Monitor
+  CC_AC3_ROOMTYP_RESERVED         /// reserved
+}
+CC_AC3_ROOMTYP;
+
+[object, uuid(d766dec9-3649-4958-96d4-508862420fa7), pointer_default(unique), local]
+// Represents the AC3-specified video stream description.
+interface ICC_AC3_AudioStreamInfo : ICC_AudioStreamInfo
+{
+  // bsid: Bit Stream Identification
+  [propget] HRESULT  BitStreamId         ([out,retval] CC_BYTE               *p);
+  // bsid: Bit Stream Identification
+  [propget] HRESULT  BitStreamMode       ([out,retval] CC_AC3_BITSTREAM_MODE *p);
+  // cmixlev: Center Mix Level
+  [propget] HRESULT  CenterMixLevelCode  ([out,retval] CC_AC3_CMIXLEV        *p);
+  // surmixlev: Surround Mix Level
+  [propget] HRESULT  SurroundMixLevelCode([out,retval] CC_AC3_SURMIXLEV      *p);
+  // surmixlev: Surround Mix Level      
+  [propget] HRESULT  DolbySurroundMode   ([out,retval] CC_AC3_DSURMOD        *p);
+  // dialnorm: Dialogue Normalization. Valid values 1..31, interpreted as -1dB..-31dB respectively
+  [propget] HRESULT  DialogueNorm        ([out,retval] CC_UINT               *p);
+  // compr: Compression Gain Word, 8 bits. The value -1 means no value is set.
+  [propget] HRESULT  CompressionGainWord ([out,retval] CC_INT                *p);
+  // langcod: Language Code, 8 bits (see ISO 639-2). The value -1 means no value is set.
+  [propget] HRESULT  LanguageCode        ([out,retval] CC_INT                *p);
+  // mixlevel: Mixing Level, 5 bits.  The value -1 means no value is set.
+  [propget] HRESULT  MixingLevel         ([out,retval] CC_INT                *p);
+  // roomtyp: Room Type
+  [propget] HRESULT  RoomType            ([out,retval] CC_AC3_ROOMTYP        *p);
+  // Indicates the information in the bit stream is indicated as protected by copyright or not.
+  [propget] HRESULT  CopyrightFlag       ([out,retval] CC_BOOL               *p);
+  // Indicates the bitstream as an original bit stream.(if true) or it is a copy of another bitstream (if false)
+  [propget] HRESULT  OriginalFlag        ([out,retval] CC_BOOL               *p);
+};
+
+[object, uuid(9b8e0766-3118-46f4-815b-7d2af4ecedb2), pointer_default(unique), local]
+// The information about a particular AC3 audio frame.
+interface ICC_AC3_AudioFrameInfo : ICC_AudioFrameInfo
+{                        
+};
+
+[object, uuid(b1e0805e-11b6-4f3e-8129-24de368334a3), pointer_default(unique), local]
+// The settings for CinecoderAC3_AudioEncoder initialization.
+interface ICC_AC3_AudioEncoderSettings : ICC_AudioEncoderSettings
+{                        
+  // The desired bitrate of a coded audio bitstream
+  [propget] HRESULT  BitRate         	 ([out,retval] CC_BITRATE   		 *p);      
+  [propput] HRESULT  BitRate         	 ([in]         CC_BITRATE    		  v);      
+  // The audio sampling frequency.
+  [propget] HRESULT  SampleRate      	 ([out,retval] CC_UINT      		 *p);
+  [propput] HRESULT  SampleRate      	 ([in]         CC_UINT      		  v);
+  // The channel's configuration
+  [propget] HRESULT	 ChannelConfig    	 ([out,retval] CC_AUDIO_CHANNEL_CONFIG*p);
+  [propput] HRESULT	 ChannelConfig       ([in]         CC_AUDIO_CHANNEL_CONFIG v);
+
+  // bsid: Bit Stream Identification
+  [propget] HRESULT  BitStreamId         ([out,retval] CC_BYTE               *p);
+  [propput] HRESULT  BitStreamId         ([in]         CC_BYTE                p);
+  // bsid: Bit Stream Identification
+  [propget] HRESULT  BitStreamMode       ([out,retval] CC_AC3_BITSTREAM_MODE *p);
+  [propput] HRESULT  BitStreamMode       ([in]         CC_AC3_BITSTREAM_MODE  p);
+  // cmixlev: Center Mix Level
+  [propget] HRESULT  CenterMixLevelCode  ([out,retval] CC_AC3_CMIXLEV        *p);
+  [propput] HRESULT  CenterMixLevelCode  ([in]         CC_AC3_CMIXLEV         p);
+  // surmixlev: Surround Mix Level
+  [propget] HRESULT  SurroundMixLevelCode([out,retval] CC_AC3_SURMIXLEV      *p);
+  [propput] HRESULT  SurroundMixLevelCode([in]         CC_AC3_SURMIXLEV       p);
+  // surmixlev: Surround Mix Level
+  [propget] HRESULT  DolbySurroundMode   ([out,retval] CC_AC3_DSURMOD        *p);
+  [propput] HRESULT  DolbySurroundMode   ([in]         CC_AC3_DSURMOD         p);
+  // dialnorm: Dialogue Normalization. Valid values 1..31, interpreted as -1dB..-31dB respectively
+  [propget] HRESULT  DialogueNorm        ([out,retval] CC_UINT               *p);
+  [propput] HRESULT  DialogueNorm        ([in]         CC_UINT                p);
+  // compr: Compression Gain Word, 8 bits. The value -1 means no value is set.
+  [propget] HRESULT  CompressionGainWord ([out,retval] CC_INT                *p);
+  [propput] HRESULT  CompressionGainWord ([in]         CC_INT                 p);
+  // langcod: Language Code, 8 bits (see ISO 639-2). The value -1 means no value is set.
+  [propget] HRESULT  LanguageCode        ([out,retval] CC_INT                *p);
+  [propput] HRESULT  LanguageCode        ([in]         CC_INT                 p);
+  // mixlevel: Mixing Level, 5 bits.  The value -1 means no value is set.
+  [propget] HRESULT  MixingLevel         ([out,retval] CC_INT                *p);
+  [propput] HRESULT  MixingLevel         ([in]         CC_INT                 p);
+  // roomtyp: Room Type
+  [propget] HRESULT  RoomType            ([out,retval] CC_AC3_ROOMTYP        *p);
+  [propput] HRESULT  RoomType            ([in]         CC_AC3_ROOMTYP         p);
+  // Indicates the information in the bit stream is indicated as protected by copyright or not.
+  [propget] HRESULT  CopyrightFlag       ([out,retval] CC_BOOL               *p);
+  [propput] HRESULT  CopyrightFlag       ([in]         CC_BOOL                p);
+  // Indicates the bitstream as an original bit stream.(if true) or it is a copy of another bitstream (if false)
+  [propget] HRESULT  OriginalFlag        ([out,retval] CC_BOOL               *p);
+  [propput] HRESULT  OriginalFlag        ([in]         CC_BOOL                p);
+};
+
+
+[object, uuid(b5779e7c-0d45-40e6-8fb6-ccba6f19e984), pointer_default(unique), local]
+// The main interface to access the CC_AC3_AudioEncoder class.
+interface ICC_AC3_AudioEncoder : ICC_AudioEncoder
+{
+  HRESULT GetAC3_AudioStreamInfo([out,retval] ICC_AC3_AudioStreamInfo **pDescr);
+  HRESULT GetAC3_AudioFrameInfo ([out,retval] ICC_AC3_AudioFrameInfo  **pDescr);
+};
+
+// The main interface to access the CC_AC3_AudioDecoder class.
+[object, uuid(7dd6b14b-3eaf-4bb5-b4e7-7144a078e5c3), pointer_default(unique), local]
+interface ICC_AC3_AudioDecoder : ICC_AudioDecoder
+{
+  HRESULT GetAC3_AudioStreamInfo([out,retval] ICC_AC3_AudioStreamInfo **pDescr);
+  HRESULT GetAC3_AudioFrameInfo ([out,retval] ICC_AC3_AudioFrameInfo  **pDescr);
+};
+
+// The main interface for CC_AC3_Parser class
+[object, uuid(c0d3bba8-ad71-48c1-911e-bb35ddc2e3f3), pointer_default(unique), local]
+interface ICC_AC3_AudioSplitter : ICC_AudioSplitter
+{
+  HRESULT GetAC3_AudioStreamInfo([out,retval] ICC_AC3_AudioStreamInfo **pDescr);
+  HRESULT GetAC3_AudioFrameInfo ([out,retval] ICC_AC3_AudioFrameInfo  **pDescr);
+};
+

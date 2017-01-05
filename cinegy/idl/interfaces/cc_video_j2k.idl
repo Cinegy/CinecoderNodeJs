@@ -1,0 +1,19 @@
+[object, uuid(abfb14e8-4aa5-40b3-8fc7-c8dc227a62c9), pointer_default(unique), local]
+interface ICC_J2K_VideoStreamInfo : ICC_VideoStreamInfo
+{
+};
+
+[object, uuid(23c787fa-1d2d-436c-95dc-264f1806e557), pointer_default(unique), local]
+interface ICC_J2K_VideoFrameInfo : ICC_VideoFrameInfo
+{
+};
+
+[object, uuid(f341b209-d017-40a7-b9a1-2682d08ae123), pointer_default(unique), local]
+interface ICC_J2K_VideoSplitter : ICC_VideoSplitter
+{
+};
+
+[object, uuid(1c4dfcfd-6afc-471d-bd09-65b2a4bd9a13), pointer_default(unique), local]
+interface ICC_J2K_VideoDecoder : ICC_VideoDecoder
+{
+};

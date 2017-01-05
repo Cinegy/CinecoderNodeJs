@@ -1,0 +1,96 @@
+[object, uuid(2B55773E-6140-4B82-88AD-B0F2656835BA), pointer_default(unique), local]
+///Represents base interface for all collection handlers.
+interface ICC_CollectionHandler : IUnknown
+{
+}
+
+[object, uuid(0579CA5C-09EE-4215-880A-9BDE78E8D5A4), pointer_default(unique), local]
+///Represents read - only collection of IUnknown elements.
+interface ICC_ReadOnlyCollection : IUnknown
+{
+	///Gets the number of elements in the collection.
+	[propget] HRESULT Count([out, retval]int *count);
+
+	///Gets the element at the specified index in the collection.
+	HRESULT Get(
+		[in]int index,					///The zero-based index of the element to get.
+		[out, retval]IUnknown **item	///The element at the specified index.
+	);
+
+	///Gets element index position in the collection.
+	HRESULT GetIndex(
+		[in]IUnknown *item,				///Element to get index position.
+		[out, retval]int *index			///Index position of the element.
+	);
+
+	///Adds handler to the collection.
+	HRESULT AddHandler(
+		[in]REFIID iid,						///Identifier of the handler.
+		[in]ICC_CollectionHandler *handler	///Handler object.
+	);
+
+	///Removes handler from the collection.
+	HRESULT RemoveHandler(
+		[in]REFIID iid,						///Identifier of the handler.
+		[in]ICC_CollectionHandler *handler	///Handler object.
+	);
+}
+
+[object, uuid(CEEABD5A-2915-4585-A558-A9C558587DA4), pointer_default(unique), local]
+///Represents collection of IUnknown elements.
+interface ICC_Collection : ICC_ReadOnlyCollection
+{
+	///Adds an item to the collection.
+	HRESULT Add(
+		[in]IUnknown *item					///The object to add to the collection.
+	);
+
+	///Removes the collection item at the specified index.
+	HRESULT RemoveByIndex(
+		[in]int index						///The zero-based index of the item to remove.
+	);
+
+	///Removes the first occurrence of a specific object from the collection.
+	HRESULT Remove(
+		[in]IUnknown *item					///The object to remove from the collection.
+	);
+
+	///Removes all items from the collection.
+	HRESULT Clear();
+
+	///Gets read - only facade for current collection.
+	HRESULT GetReadOnlyFacade(
+		ICC_ReadOnlyCollection **pCollection///The read - only facade for current collection.
+	);
+}
+
+[object, uuid(1A05F3A9-0943-4D65-AC76-2100E4EC6EA7), pointer_default(unique), local]
+///Represents collection handler for event that occurs when the collection changes.
+interface ICC_CollectionChanged : ICC_CollectionHandler
+{
+	///Item was added to the collection.
+	HRESULT OnItemAdded(
+		[in]ICC_Collection *collection,		///Source collection object.
+		[in]IUnknown *item					///Changed item object.
+	);
+	///Item was removed from the collection.
+	HRESULT OnItemRemoved(
+		[in]ICC_Collection *collection,		///Source collection object.
+		[in]IUnknown *item					///Changed item object.
+	);
+	///All items were removed from the collection.
+	HRESULT OnClear(
+		[in]ICC_Collection *collection		///Source collection object.
+	);
+}
+
+[object, uuid(C61A9F1F-2ABF-4CB2-9C5D-140516663DCE), pointer_default(unique), local]
+///Represents collection handler for event that occurs before new item adds.
+interface ICC_CollectionFilter : ICC_CollectionHandler
+{
+	HRESULT OnFilter(
+		[in]ICC_Collection *collection,		///Source collection object.
+		[in]IUnknown *item,					///Item object to filter.
+		[out, retval]VARIANT_BOOL *pResult	///Filter result.
+	);
+}

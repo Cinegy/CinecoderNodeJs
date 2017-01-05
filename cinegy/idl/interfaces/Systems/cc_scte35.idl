@@ -1,0 +1,42 @@
+typedef [v1_enum] enum SCTE35_SPLICE_COMMAND_TYPE
+{
+	SCTE35_CMD_SPLICE_NULL           = 0,
+	SCTE35_CMD_SPLICE_SCHEDULE       = 4,
+	SCTE35_CMD_SPLICE_INSERT         = 5,
+	SCTE35_CMD_TIME_SIGNAL           = 6,
+	SCTE35_CMD_BANDWIDTH_RESERVATION = 7
+}
+SCTE35_SPLICE_COMMAND_TYPE;
+
+typedef struct SCTE35_SPLICE_NULL_COMMAND_DESCR
+{
+	BYTE		command;
+	CC_TIME		command_time;				// The PCR at which this command should be put into the stream
+}
+SCTE35_SPLICE_NULL_COMMAND_DESCR;
+
+typedef struct SCTE35_SPLICE_INSERT_COMMAND_DESCR
+{
+	BYTE		command;
+	CC_TIME		command_time;				// The PCR at which this command should be put into the stream
+
+	DWORD		splice_event_id;
+											// If zero (not set) - approx (splice_time - 4s) value will be used
+	BYTE		splice_event_cancel_indicator;
+	BYTE		out_of_network_flag;	
+	BYTE		program_splice_flag;
+	BYTE		splice_immediate_flag;
+
+	CC_TIME		splice_time;
+	CC_TIME		splice_duration;
+	BYTE		auto_return;
+
+	WORD		unique_program_id;
+	BYTE		avail_num;
+	BYTE		avail_expected;
+
+	BYTE		DTMF_count;
+	BYTE		DTMF_chars[8];
+	BYTE		DTMF_preroll;
+}
+SCTE35_SPLICE_INSERT_COMMAND_DESCR;

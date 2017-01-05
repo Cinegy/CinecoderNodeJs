@@ -1,0 +1,346 @@
+typedef [v1_enum] enum CC_H264_PROFILE
+{
+	CC_H264_PROFILE_UNKNOWN  =   0,
+
+	CC_H264_BASELINE_PROFILE =  66,
+	CC_H264_MAIN_PROFILE	 =  77,
+	CC_H264_EXTENDED_PROFILE =  88,
+	CC_H264_HIGH_PROFILE	 = 100,
+	CC_H264_HIGH_10_PROFILE  = 110,
+	CC_H264_HIGH_422_PROFILE = 122,
+	CC_H264_HIGH_444_PROFILE = 144,
+} CC_H264_PROFILE;
+
+typedef [v1_enum] enum CC_H264_MOTION_FUNC
+{
+    CC_H264_ME_AUTO             = -1,
+	CC_H264_ME_FULL_SEARCH		= 0,
+	CC_H264_ME_CLASSIC_LOG		= 1,
+	CC_H264_ME_LOG              = 2,
+	CC_H264_ME_EPZS             = 3,
+	CC_H264_ME_FULL_ORTHOGONAL  = 4,
+	CC_H264_ME_LOG_ORTHOGONAL   = 5,
+	CC_H264_ME_TTS              = 6,
+} CC_H264_MOTION_FUNC;
+
+typedef [v1_enum] enum CC_H264_ENTROPY_CODING_MODE
+{
+	CC_H264_CAVLC   = 0,    	   /// cavlc.
+	CC_H264_CABAC   = 1,		   /// cabac_init_idc = 0.
+	CC_H264_CABAC_0 = 1,		   /// cabac_init_idc = 0.
+	CC_H264_CABAC_1 = 2,           /// cabac_init_idc = 1.
+	CC_H264_CABAC_2 = 3,           /// cabac_init_idc = 2.
+} CC_H264_ENTROPY_CODING_MODE;
+
+typedef [v1_enum] enum CC_H264_SUBBLOCK_SPLIT_MODE
+{
+	CC_H264_SUBBLK_NO_SPLIT = 0,	/// No macroblock split (16x16) used in ME.
+	CC_H264_SUBBLK_SPLIT_8x8,		/// Up to 4 subblocks (16x8, 8x16, 8x8 in any combinations).
+	CC_H264_SUBBLK_SPLIT_4x4,		/// Up to 16 subblocks (8x4, 4x8, 4x4, in any combinations) - not implemented yet.
+} CC_H264_SUBBLOCK_SPLIT_MODE;
+
+/// H264 deblocking filter modes
+typedef [v1_enum] enum CC_H264_DEBLOCKING_FILTER_MODE
+{
+	CC_H264_DEBLOCKING_ON = 0,      /// Deblocking filter is ON (by default).
+	CC_H264_DEBLOCKING_OFF,			/// Deblocking filter is OFF.
+	CC_H264_DEBLOCKING_WITHIN_SLICE,/// Deblocking filter is ON but without crossing slice boundaries.
+} CC_H264_DEBLOCKING_FILTER_MODE;
+
+/// H.264 deblocking filter parameters.
+typedef struct CC_H264_DEBLOCKING_FILTER_DESCR
+{
+	CC_H264_DEBLOCKING_FILTER_MODE Mode;
+	CC_INT		Alpha;             /// (-6..6), specifies the offset used in accessing the alpha and tC0 deblocking filter tables. Refer H.264 8.7 "Deblocking filter process" for details.
+	CC_INT		Beta;              /// (-6..6), specifies the offset used in accessing the beta deblocking filter table. Refer H.264 8.7 "Deblocking filter process" for details.
+} CC_H264_DEBLOCKING_FILTER_DESCR;
+
+cpp_quote("#ifdef __cplusplus")
+cpp_quote("namespace cinecoder {")
+cpp_quote("inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_DEBLOCKING_FILTER_MODE mode, CC_UINT alpha, CC_UINT beta) { CC_H264_DEBLOCKING_FILTER_DESCR d={mode,alpha,beta}; return d; }")
+cpp_quote("};")
+cpp_quote("#endif")
+
+/// Scaling matrices for 8x8 quantization.
+typedef [v1_enum] enum CC_H264_SCALING_MATRIX
+{
+	CC_H264_STANDARD_SCALING_MATRIX,
+	CC_H264_DEFAULT_SCALING_MATRIX,
+} CC_H264_SCALING_MATRIX;
+
+/// 
+typedef [v1_enum] enum CC_H264_DIRECT_PRED_MODE
+{
+	CC_H264_DIRECT_PRED_NONE,
+	CC_H264_DIRECT_PRED_TEMPORAL,
+	CC_H264_DIRECT_PRED_SPATIAL,
+} CC_H264_DIRECT_PRED_MODE;
+
+typedef [v1_enum] enum CC_H264_FRAME_FLAGS
+{
+    CC_H264_FRAME_FLG_PROGRESSIVE_FRAME  = 0x00000001,
+    CC_H264_FRAME_FLG_TOP_FIELD_FIRST    = 0x00000002,
+
+    CC_H264_FRAME_IDR                    = 0x00001000,
+    
+    CC_H264_HDR_SEQ_PARAM_SET            = 0x01000000,
+    CC_H264_HDR_PIC_PARAM_SET            = 0x02000000,
+
+    CC_H264_HDR_AU_DELIMITER             = 0x08000000,
+} CC_H264_FRAME_FLAGS;
+
+[object, uuid(63cf41b3-b6ac-448f-ac25-5b2160825d9c), pointer_default(unique), local]
+// The interface represents H.264 video bitstream parameters.
+interface ICC_H264VideoStreamInfo : ICC_VideoStreamInfo//ICC_Settings.
+{
+  // The Profile of an H.264 stream. 
+  // For more information please refer to the H.264 standard Annex A.
+  [propget] HRESULT Profile             ([out,retval] CC_H264_PROFILE   *);
+  // The Level is a specified set of constraints imposed on values of the syntax elements in the bitstream.
+  // Levels are specified within each profile.
+  // For more information please refer to the H.264 standard Annex A.
+  [propget] HRESULT Level   	        ([out,retval] DWORD             *);
+//##  // The physical frame size, in pixels
+//##  [propget] HRESULT FrameSize           ([out,retval] CC_SIZE           *);
+//##  // The video frame rate
+//##  [propget] HRESULT FrameRate           ([out,retval] CC_FRAME_RATE     *);
+  // The video bitstream bitrate.
+  [propget] HRESULT BitRate             ([out,retval] CC_BITRATE        *);
+//##  // The Aspect Ratio in natural format x:y
+//##  [propget] HRESULT AspectRatio         ([out,retval] CC_RATIONAL       *);
+  // Chroma format.
+  [propget] HRESULT ChromaFormat        ([out,retval] CC_CHROMA_FORMAT *);
+  // The luma samples' bit depth 
+  [propget] HRESULT BitDepthLuma        ([out,retval] DWORD*); 
+  // The chroma samples' bit depth.
+  [propget] HRESULT BitDepthChroma      ([out,retval] DWORD*); 
+  // The video format.
+  [propget] HRESULT VideoFormat         ([out,retval] CC_VIDEO_FORMAT  *);
+  // The color transformarion description.
+  [propget] HRESULT ColorCoefs          ([out,retval] CC_COLOUR_DESCRIPTION*);
+};
+
+[object, uuid(7baac45c-1da0-4fa6-b645-f9afdd84246f), pointer_default(unique), local]
+// The settings for initialization the instance of CinecoderH264VideoEncoder class.
+interface ICC_H264VideoEncoderSettings : ICC_Settings
+{                        
+  // The physical frame size, in pixels.                               
+  [propget] HRESULT  FrameSize                ([out,retval] CC_SIZE*); 
+  [propput] HRESULT  FrameSize                ([in]         CC_SIZE ); 
+  // The frame rate of video stream.                                          
+  [propget] HRESULT  FrameRate                ([out,retval] CC_FRAME_RATE*); 
+  [propput] HRESULT  FrameRate                ([in]         CC_FRAME_RATE ); 
+  // The aspect ratio cx:cy.
+  [propget] HRESULT  AspectRatio              ([out,retval] CC_RATIONAL*);
+  [propput] HRESULT  AspectRatio              ([in]         CC_RATIONAL );
+  // The target bitrate in CBR mode or max bitrate in VBR mode.
+  [propget] HRESULT  BitRate                  ([out,retval] CC_BITRATE*); 
+  [propput] HRESULT  BitRate                  ([in]         CC_BITRATE ); 
+  // The mode of bitrate controller - see CC_BITRATE_MODE.                    
+  [propget] HRESULT  RateMode                 ([out,retval] CC_BITRATE_MODE*); 
+  [propput] HRESULT  RateMode                 ([in]         CC_BITRATE_MODE ); 
+  // The minimal bitrate in VBR mode (default is 0).
+  [propget] HRESULT  MinBitRate               ([out,retval] CC_BITRATE*); 
+  [propput] HRESULT  MinBitRate               ([in]         CC_BITRATE ); 
+  // The average bitrate in VBR mode.
+  [propget] HRESULT  AvgBitRate               ([out,retval] CC_BITRATE*); 
+  [propput] HRESULT  AvgBitRate               ([in]         CC_BITRATE ); 
+  // The Instantaneous Decoding Refresh period.
+  [propget] HRESULT  IDR_Period               ([out,retval] CC_PERIOD*);
+  [propput] HRESULT  IDR_Period               ([in]         CC_PERIOD );
+  // The GOP settings. See CC_GOP_DESCR for details.
+  [propget] HRESULT  GOP                      ([out,retval] CC_GOP_DESCR*);
+  [propput] HRESULT  GOP                      ([in]         CC_GOP_DESCR );
+  // The number of reference frames.
+  [propget] HRESULT  NumRefFrames             ([out,retval] DWORD*);
+  [propput] HRESULT  NumRefFrames             ([in]         DWORD );
+  // The max number of slices per frame.
+  [propget] HRESULT  NumSlices                ([out,retval] DWORD*); 
+  [propput] HRESULT  NumSlices                ([in]         DWORD ); 
+  // The destination stream profile.
+  [propget] HRESULT  Profile                  ([out,retval] CC_H264_PROFILE*); 
+  [propput] HRESULT  Profile                  ([in]         CC_H264_PROFILE ); 
+  // The level of destination stream.
+  [propget] HRESULT  Level                    ([out,retval] DWORD*); 
+  [propput] HRESULT  Level                    ([in]         DWORD ); 
+  // The chroma resolution format (4:2:0, 4:2:2 or 4:4:4).
+  [propget] HRESULT  ChromaFormat             ([out,retval] CC_CHROMA_FORMAT*); 
+  [propput] HRESULT  ChromaFormat             ([in]         CC_CHROMA_FORMAT );
+  // The luma samples' bit depth (8-12).
+  [propget] HRESULT  BitDepthLuma             ([out,retval] DWORD*); 
+  [propput] HRESULT  BitDepthLuma             ([in]         DWORD );
+  // The chroma samples' bit depth (8-12).
+  [propget] HRESULT  BitDepthChroma           ([out,retval] DWORD*); 
+  [propput] HRESULT  BitDepthChroma           ([in]         DWORD );
+  // The motion estimation method.
+  [propget] HRESULT  MotionFunc               ([out,retval] CC_H264_MOTION_FUNC*); 
+  [propput] HRESULT  MotionFunc               ([in]         CC_H264_MOTION_FUNC );
+  // The motion estimation window.
+  [propget] HRESULT  MotionWindow             ([out,retval] CC_SIZE*); 
+  [propput] HRESULT  MotionWindow             ([in]         CC_SIZE );
+  // The subblock split mode.
+  [propget] HRESULT  SubBlockSplitMode        ([out,retval] CC_H264_SUBBLOCK_SPLIT_MODE*); 
+  [propput] HRESULT  SubBlockSplitMode        ([in]         CC_H264_SUBBLOCK_SPLIT_MODE );
+  // The entropy coding method.
+  [propget] HRESULT  EntropyCodingMode        ([out,retval] CC_H264_ENTROPY_CODING_MODE*); 
+  [propput] HRESULT  EntropyCodingMode        ([in]         CC_H264_ENTROPY_CODING_MODE );
+  // Deblocking filter params.
+  [propget] HRESULT  DeblockingFilter		  ([out,retval] CC_H264_DEBLOCKING_FILTER_DESCR*);
+  [propput] HRESULT  DeblockingFilter		  ([in]         CC_H264_DEBLOCKING_FILTER_DESCR );
+  // The video format.
+  [propget] HRESULT  VideoFormat              ([out,retval] CC_VIDEO_FORMAT*); 
+  [propput] HRESULT  VideoFormat              ([in]         CC_VIDEO_FORMAT ); 
+  // The field order video.
+  [propget] HRESULT  InterlaceType            ([out,retval] CC_INTERLACE_TYPE*); 
+  [propput] HRESULT  InterlaceType            ([in]         CC_INTERLACE_TYPE ); 
+  // The picture structure.
+  [propget] HRESULT  PictureStructure         ([out,retval] CC_PICTURE_STRUCTURE*); 
+  [propput] HRESULT  PictureStructure         ([in]         CC_PICTURE_STRUCTURE ); 
+  // Field/frame macrobloc structure.
+  [propget] HRESULT  MB_Struct                ([out,retval] CC_MB_STRUCTURE*); 
+  [propput] HRESULT  MB_Struct                ([in]         CC_MB_STRUCTURE ); 
+  // Sequence display extension - color coefficients.
+  [propget] HRESULT  ColorCoefs               ([out,retval] CC_COLOUR_DESCRIPTION*); 
+  [propput] HRESULT  ColorCoefs               ([in]         CC_COLOUR_DESCRIPTION ); 
+  // Toggle access unit delimiter (nal_unit_type = 9) on/off.
+  [propget] HRESULT  PutAccessUnitDelimiter   ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  PutAccessUnitDelimiter   ([in]         CC_BOOL );
+  // Enable/disable the built-in scene change detector (which is ON by default).
+  [propget] HRESULT  DisableSceneDetector     ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  DisableSceneDetector     ([in]         CC_BOOL ); 
+  // Weighted Prediction.
+  [propget] HRESULT  UseWeightedPrediction    ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  UseWeightedPrediction    ([in]         CC_BOOL ); 
+  // Weighted BiPrediction.
+  [propget] HRESULT  UseWeightedBiPrediction  ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  UseWeightedBiPrediction  ([in]         CC_BOOL ); 
+  // Direct Prediction Mode.
+  [propget] HRESULT  DirectPredMode           ([out,retval] CC_H264_DIRECT_PRED_MODE*); 
+  [propput] HRESULT  DirectPredMode           ([in]         CC_H264_DIRECT_PRED_MODE );
+  //  
+  [propget] HRESULT  Enable8x8Transform       ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  Enable8x8Transform       ([in]         CC_BOOL );
+  // Standard/Default scaling matrix for 8x8 transform.
+  [propget] HRESULT  ScalingMatrix            ([out,retval] CC_H264_SCALING_MATRIX*); 
+  [propput] HRESULT  ScalingMatrix            ([in]         CC_H264_SCALING_MATRIX ); 
+  // 
+  [propget] HRESULT  QPPrimeY0TransformBypass ([out,retval] CC_BOOL*); 
+  [propput] HRESULT  QPPrimeY0TransformBypass ([in]         CC_BOOL );
+  // The initial quantization parameter for VBR mode.
+  [propget] HRESULT  QP                       ([out,retval] CC_QUANT_DESCR*); 
+  [propput] HRESULT  QP                       ([in]         CC_QUANT_DESCR );
+  // The offset from the luma QP value for chroma components
+  [propget] HRESULT  ChromaQPOffset           ([out,retval] CC_INT *x); 
+  [propput] HRESULT  ChromaQPOffset           ([in]         CC_INT  x);
+  // The Coded Picture Buffer (CPB) size. You can set it up either by bytes or milliseconds (just add FRQ_TIMEVAL_MS flag to the value)
+  [propget] HRESULT  CpbSize                  ([out,retval] CC_PERIOD*x); 
+  [propput] HRESULT  CpbSize                  ([in]         CC_PERIOD x); 
+  // The initial CPB fullness. You can specify it either in bytes or milliseconds.
+  [propget] HRESULT  InitialCpbLevel          ([out,retval] CC_PERIOD*x); 
+  [propput] HRESULT  InitialCpbLevel          ([in]         CC_PERIOD x); 
+  // You can also specify the period in milliseconds by adding the FRQ_TIMEVAL_MS flag to the value.
+  [propget] HRESULT  SequenceHeaderPeriod     ([out,retval] CC_PERIOD*x);
+  [propput] HRESULT  SequenceHeaderPeriod     ([in]         CC_PERIOD x);
+  // Put sequence_end_code after the last coded picture.
+  [propget] HRESULT  PutSeqEndCode       	  ([out,retval] CC_BOOL*x); 
+  [propput] HRESULT  PutSeqEndCode       	  ([in]         CC_BOOL x); 
+  // Blur filter coefficient. Simple 3x3 matrix of ones, with specified central coef (lower value means stronger blurring). 0 = disable blur. negative values = auto blur
+  [propget] HRESULT  BlurFilterCoef           ([out,retval] CC_INT *x);
+  [propput] HRESULT  BlurFilterCoef           ([in]         CC_INT  x);
+  // Deinterlace method
+  [propget] HRESULT  Deinterlace              ([out,retval] CC_DEINTERLACE_METHOD *x);
+  [propput] HRESULT  Deinterlace              ([in]         CC_DEINTERLACE_METHOD  x);
+  // The delay buffer for smoothing the output times
+  //[propget] HRESULT  DelayBuffer              ([out,retval] CC_PERIOD *x);
+  //[propput] HRESULT  DelayBuffer              ([in]         CC_PERIOD  x);
+};
+
+[object, uuid(ecfd3260-3a6b-474a-94e5-7d35c7482c8b), pointer_default(unique), local]
+// Provides the particular H.264 video frame description.
+interface ICC_H264VideoFrameInfo : ICC_VideoFrameInfo//##ICC_Settings
+{
+//##  // the number of video frame in native (display) order. zero-based.
+//##  [propget] HRESULT  Number             ([out,retval] DWORD             *);
+//##  // The Presentation Time Stamp.
+//##  [propget] HRESULT  PTS                ([out,retval] CC_TIME           *x);
+//##  // the number of video frame in the coding order. zero-based.
+//##  [propget] HRESULT  CodingNumber       ([out,retval] DWORD             *);
+//##  // the timecode of video frame.
+//##  [propget] HRESULT  TimeCode           ([out,retval] CC_TIMECODE       *);
+//##  // the field order of video frame.
+//##  [propget] HRESULT  InterlaceType      ([out,retval] CC_INTERLACE_TYPE *);
+//##  // The frame <link CC_FRAME_TYPE, coding type>.
+//##  [propget] HRESULT  FrameType          ([out,retval] CC_FRAME_TYPE     *x);
+//##  // The picture structure of the mpeg video frame.
+//##  [propget] HRESULT  PictureStructure   ([out,retval] CC_PICTURE_STRUCTURE*x);
+//##  // Flags of the mpeg video frame. See the CC_H264_FRAME_FLAGS description.
+//##  [propget] HRESULT	 Flags              ([out,retval] DWORD             *x);
+
+  // The number of user_data SEI messages, associated with the video frame.
+  [propget] HRESULT  UserDataCount      ([out,retval] DWORD             *x);
+
+  // Retrieves the specified user data which belongs to the video frame.
+  // Returns: Returns S_OK if successful or E_INVALIDARG in case of incorrect <i>dwUserDataNumber</i>.
+  HRESULT   GetUserData(
+    [in] DWORD dwUserDataNumber,               // Specified the user data number, zero-based.
+    [out, size_is(cbBufSize)] BYTE *pData,     // Place to store the user data, if NULL the only size of the specified user data will be returned.
+    [in] DWORD cbBufSize,                      // Buffer size.
+    [out,retval] DWORD *pcbRetSize             // Place to store the user data size.
+  );  
+};
+
+[object, uuid(60DAA884-1861-4771-BF4D-4A82570DDC8E), pointer_default(unique), local]
+// Interface gives the control to the instance of CC_H264VideoEncoder class.
+interface ICC_H264VideoEncoder : ICC_VideoEncoder
+{
+  //## Get the description of video stream which is being encoded
+  //## Returns S_OK, or S_FALSE if encoder is not initialized
+  //##HRESULT   GetStreamInfo([out,retval] ICC_H264VideoStreamInfo **pDescr);
+
+  //
+  HRESULT   GetH264VideoFrameInfo(DWORD field_no, [out,retval] ICC_H264VideoFrameInfo **pDescr);
+
+  // Maximum number of threads which object can use. 0 = automatic.
+  [propget] HRESULT   ThreadsCount   ([out,retval] CC_AMOUNT*);
+  [propput] HRESULT   ThreadsCount   ([in]         CC_AMOUNT);
+  // The affinity mask for object's threads. 0 = default (current process) affinity mask
+  [propget] HRESULT   ThreadsAffinity([out,retval] CC_AFFINITY*);
+  [propput] HRESULT   ThreadsAffinity([in]         CC_AFFINITY);
+  // The pripority for object's threads. 
+  [propget] HRESULT   ThreadsPriority([out,retval] CC_PRIORITY*);
+  [propput] HRESULT   ThreadsPriority([in]         CC_PRIORITY);
+
+  // Adds user data for the subsequent video frame.
+  // Note: You may call AddUserData several times to add more than one user data.
+  // Returns: Returns S_OK if successful or an error code otherwise.
+  HRESULT   AddUserData(
+    [in, size_is(cbSize)] const BYTE *pbUserData,    // The user data.
+    [in] DWORD cbSize,                               // The size of the user data, in bytes.
+    [in,defaultvalue(CC_FALSE)] CC_BOOL bSecondField // Tells that incoming user data must appear at the second field (in case of interlaced coding).
+  );  
+};
+
+[object, uuid(f7b72085-b7b8-42a2-a6ec-e81814e84f32), pointer_default(unique), local]
+// The interface gives the control to the instance of CC_H264VideoDecoder class.
+interface ICC_H264VideoDecoder : ICC_VideoDecoder
+{
+};
+
+[object, uuid(0976d3ec-341a-4805-954a-3a8cb0d1d33a), pointer_default(unique), local]
+// The interface gives the control to the instance of CC_AVC1VideoDecoder class.
+// The main reason to implement such decoder is that AVC1 format is differs from elementary H.264 stream
+// by changing the startcodes prefixes 0x00000001 to the lengths of corresponding NALUs.
+// The data should start with chunk start and should contain a whole number of chunks.
+interface ICC_AVC1VideoDecoder : ICC_VideoDecoder
+{
+};
+
+[object, uuid(ec6d9953-2ea1-422e-bf66-9db8b24f0fc8), pointer_default(unique), local]
+interface ICC_H264VideoSplitter : ICC_VideoSplitter
+{
+  ///<copy ICC_H264VideoEncoder::GetH264VideoStreamInfo>
+  HRESULT   GetH264VideoStreamInfo([out,retval] ICC_H264VideoStreamInfo **pDescr);
+
+  ///<copy ICC_H264VideoEncoder::GetH264VideoFrameInfo>
+  HRESULT   GetH264VideoFrameInfo([out,retval] ICC_H264VideoFrameInfo **pDescr);
+};

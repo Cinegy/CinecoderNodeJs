@@ -1,0 +1,28 @@
+{
+  "name": "cindecoder",
+  "version": "0.0.1",
+  "description": "Async processing addon",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.3.5"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "tape": "^4.5.1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

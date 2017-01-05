@@ -1,0 +1,273 @@
+typedef WORD     CC_PID;    
+typedef LONGLONG CC_SCR;    /// The Stream Clock Reference, measured in 27MHz clock
+
+// The stream types.
+typedef [v1_enum] enum CC_MULTIPLEXED_STREAM_TYPE
+{
+  CC_MUX_UNKNOWN_STREAM                    = 0,      /// 
+  CC_MUX_ELEMENTARY_STREAM                 = 1,      ///
+  CC_MUX_PES_STREAM                        = 2,      ///
+  CC_MUX_SYSTEM_STREAM                     = 3,      ///
+  CC_MUX_PROGRAM_STREAM                    = 4,      ///
+  CC_MUX_TRANSPORT_STREAM                  = 5,      ///
+  CC_MUX_MP4_STREAM                        = 6       ///
+}
+CC_MULTIPLEXED_STREAM_TYPE;
+
+// A list of the elementary stream IDs.
+// Refer to table 2-18 of ISO/IEC 13818-1 2.4.3.7 "Semantic definition of fields in PES packets".
+typedef enum CC_PES_ID
+{
+  CC_PESID_UNKNOWN                         = 0x00,   /// Unknown stream type.
+
+  CC_PESID_MIN                             = 0xBC,                                        
+
+  CC_PESID_PROGRAM_STREAM_MAP              = 0xBC,   ///
+  CC_PESID_PRIVATE_1                       = 0xBD,   ///
+  CC_PESID_PADDING                         = 0xBE,   ///
+  CC_PESID_PRIVATE_2                       = 0xBF,   ///
+  CC_PESID_AUDIO                           = 0xC0,   /// 32 different stream_id allowed in range 0xC0..0xDF.
+  CC_PESID_VIDEO                           = 0xE0,   /// 16 different stream_id allowed in range 0xE0..0xEF.
+  CC_PESID_MPEG1_DATA                      = 0xF0,   ///
+  CC_PESID_ECM                             = 0xF0,   ///
+  CC_PESID_EMM                             = 0xF1,   ///
+  CC_PESID_DSMCC                           = 0xF2,   ///
+  CC_PESID_ISO_IEC_13522                   = 0xF3,   ///
+  CC_PESID_H222_1_TYPE_A                   = 0xF4,   ///
+  CC_PESID_H222_1_TYPE_B                   = 0xF5,   ///
+  CC_PESID_H222_1_TYPE_C                   = 0xF6,   ///
+  CC_PESID_H222_1_TYPE_D                   = 0xF7,   ///
+  CC_PESID_H222_1_TYPE_E                   = 0xF8,   ///
+  CC_PESID_ANCILLARY                       = 0xF9,   ///
+  CC_PESID_MPEG4_SL_PACKETIZED             = 0xFA,   ///
+  CC_PESID_MPEG4_FLEX_MUX                  = 0xFB,   ///
+  CC_PESID_METADATA                        = 0xFC,   ///
+  CC_PESID_EXTENDED                        = 0xFD,   ///
+  CC_PESID_RESERVED                        = 0xFE,   ///
+  CC_PESID_PROGRAM_STREAM_DIRECTORY        = 0xFF,   ///
+
+  CC_PESID_MAX                             = 0xFF
+}
+CC_PES_ID;
+  
+// A list of the standard PSI Table ID's.
+// Refer to the ISO/IEC 13818-1 2.4.4 "Program specific information".
+typedef enum CC_PSI_TABLE_ID
+{
+  CC_PSITBL_PROGRAM_ASSOCIATION_SECTION    = 0x00, /// ISO/IEC 13818-1 Transport Stream.
+  CC_PSITBL_CONDITIONAL_ACCESS_SECTION     = 0x01, /// ISO/IEC 13818-1 Transport Stream.
+  CC_PSITBL_PROGRAM_MAP_SECTION            = 0x02, /// ISO/IEC 13818-1 Program & Transport Streams.
+  CC_PSITBL_DESCRIPTION_SECTION            = 0x03, /// ISO/IEC 13818-1 Program & Transport Streams.
+  CC_PSITBL_SCENE_DESCRIPTION_SECTION      = 0x04, /// ISO/IEC 14496.
+  CC_PSITBL_OBJECT_DESCRIPTOR_SECTION      = 0x05  /// ISO/IEC 14496.
+}
+CC_PSI_TABLE_ID;
+
+/// Description of the multiplexed elementary stream data unit.
+typedef struct CC_ACCESS_UNIT_DESCR
+{
+  DWORD		size;       // Size (in bytes) of the elementary stream unit.
+  DWORD		offset;		// Offset (in bytes) of the first byte of the elementary data unit. From the beginning of the transmitted packet.
+  CC_TIME	pts;        // The Presentation Time Stamp (PTS) of the elementary data unit.
+  CC_TIME	dts;        // The Decoding Time Stamp (PTS) of the elementary data unit.
+}
+MPG_ACCESS_UNIT_DESCR;
+
+/// Description of the multiplexed packet.
+typedef struct CC_PACKET_DESCR
+{
+  CC_PES_ID pes_id;		// PES ID of the stream.
+  CC_PID	pid;		// PID of the stream.
+  CC_SCR	scr;		// The stream clock reference of the first byte of the packet.
+  CC_UINT	duration;	// Duration of the packet in CC_PCR units.
+  CC_UINT	size;		// Packet size in bytes.
+  CC_UINT	offset;		// Offset in bytes.
+}
+CC_PACKET_DESCR;
+
+[object, uuid(022813a8-3467-4f49-b17a-57bffd5fd21f), pointer_default(unique), local]
+/// The description of data coming from the multiplexer (via ICC_StreamDescr::DataInfo property).
+interface ICC_MultiplexedDataDescr : ICC_Settings
+{
+  [propget] HRESULT NumPackets([out,retval]CC_UINT*);
+  HRESULT	GetPacketInfo([in] CC_UINT idx, [out,retval]CC_PACKET_DESCR*);
+
+  [propget] HRESULT NumAccessUnits([out,retval]CC_UINT*);
+  HRESULT	GetAccessUnitInfo([in] CC_UINT idx, [out,retval]MPG_ACCESS_UNIT_DESCR*);
+};
+
+typedef enum CC_MUX_OUTPUT_POLICY
+{
+  CC_FLUSH_EACH_PACKET          = 0,
+  CC_FLUSH_AT_ACCESS_UNIT_START = 1,
+  CC_FLUSH_AT_BUFFER_FULL       = 2,
+
+  CC_MUX_OUTPUT_POLICIES_COUNT
+}
+CC_MUX_OUTPUT_POLICY;
+
+#include "cc_sys_descr.idl"
+#include "sys_settings.idl"
+
+[object, uuid(6EEBE83C-8F8B-4321-8C1E-D950C7E0A282), pointer_default(unique), local]
+/// Interface provides the methods specific for general stream multiplexer object.
+interface ICC_Multiplexer : ICC_Encoder
+{
+  /// Method creates an input pin to add the specified type of elementary data needed to be multipolexed.
+  /// Returns: Returns S_OK if successful or error code otherwise.
+  HRESULT   CreatePin(
+    [in] ICC_Settings *pPinDescr,                   // Pin description.
+    [out,retval] ICC_ByteStreamConsumer **pOutput   // Address where pointer to the created object will be stored.
+  );
+
+  /// Method creates an input pin to add the specified type of elementary data needed to be multipolexed.
+  /// Returns: Returns S_OK if successful or error code otherwise.
+  HRESULT   CreatePinByXml(
+    [in] CC_STRING pPinXmlDescr,                    // Pin description in XML format
+    [out,retval] ICC_ByteStreamConsumer **pOutput   // Address where pointer to the created object will be stored.
+  );
+/*
+  /// Method creates an input pin to add the specified type of elementary data needed to be multipolexed.
+  /// Returns: Returns S_OK if successful or error code otherwise.
+  HRESULT   CreatePinByType(
+    [in] CC_ELEMENTARY_STREAM_TYPE stream_type,     // Pin type
+    [out,retval] ICC_ByteStreamConsumer **pOutput   // Address where pointer to the created object will be stored.
+  );
+*/
+  [propget] 
+  HRESULT   PinCount([out,retval] CC_UINT *pPinCount);
+
+  HRESULT   GetPin([in] CC_UINT PinNumber, [out,retval] ICC_ByteStreamConsumer **pOutput);
+};
+
+[object, uuid(00001101-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Unified demultiplexer data output - for Program & Transport demultiplexers.
+interface ICC_DemultiplexedDataCallback : IUnknown
+{
+  HRESULT	ProcessData (
+    [in] DWORD stream_id,                     // stream_id (or pid in case of TS).
+  	[in,size_is(cbSize)] const BYTE *pbData,  // Pointer to the data.
+  	[in] DWORD cbSize,                        // The size, in bytes, of the incoming data.
+  	[in] CC_TIME pts,                         // The presentation time stamp of the first unit commencing in the packet.
+  	                                          // If no units commencing, the value of CC_NO_TIME will be assigned.
+  	[in] IUnknown *pDescr                     // The demultiplexer itself.
+  );
+};
+
+[object, uuid(a3a2d00f-72e6-4611-b4f6-de4941393acf), pointer_default(unique), local]
+// Unified demultiplexer data output - for Program & Transport demultiplexers.
+interface ICC_DemultiplexedDataCallbackExt : IUnknown
+{
+  HRESULT	ProcessData (
+    [in] DWORD stream_id,                     // stream_id (or pid in case of TS).
+  	[in,size_is(cbSize)] const BYTE *pbData,  // Pointer to the data.
+  	[in] DWORD cbSize,                        // The size, in bytes, of the incoming data.
+  	[in] CC_TIME pts,                         // The presentation time stamp of the first unit commencing in the packet.
+  	                                          // If no units starts in the packet, the value of CC_NO_TIME will be assigned.
+  	[in] CC_TIME dts,                         // The decoding time stamp of the first unit commencing in the packet.
+  	                                          // If no units starts in the packet, the value of CC_NO_TIME will be assigned.
+  	[in] CC_OFFSET pkt_offset,                // The offset of packet, counting from the last Break()
+  	[in] IUnknown *pDescr                     // The demultiplexer itself.
+  );
+};
+
+[object, uuid(1c420773-d168-404a-85f2-07b2b6ec5455), pointer_default(unique), local]
+interface ICC_StreamClockReferenceProp : IUnknown
+{
+  /// The current stream clock reference associated with a first byte of incoming data or last value read from the stream
+  [propget]
+  HRESULT	SCR([out,retval] CC_SCR*p);
+};
+
+[object, uuid(43a07dea-9101-4b35-b6c2-c9dda551b08b), pointer_default(unique), local]
+interface ICC_ProgramClockReferencePidProp : IUnknown
+{
+  /// The PCR PID
+  [propget] HRESULT	PCR_PID([out,retval] CC_PID *p);
+  [propput] HRESULT	PCR_PID([in        ] CC_PID  v);
+};
+
+typedef [v1_enum] enum CC_CATCH_STREAM_MODE
+{
+  CC_CATCH_MODE_DEFAULT    = 0,
+  CC_CATCH_MODE_RAW_STREAM = 1,
+  CC_CATCH_MODE_PES_STREAM = 2,
+  CC_CATCH_MODE_SI_STREAM  = 3,
+
+  CC_CATCH_MODES_TOTAL
+}
+CC_CATCH_STREAM_MODE;
+
+
+[object, uuid(00001102-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// Interface provides the methods specific for general stream demultiplexer object.
+interface ICC_Demultiplexer : ICC_Decoder
+{
+  HRESULT	GetStreamInfo([out,retval]ICC_MultiplexedStreamInfo **pStreamInfo);
+
+  HRESULT   CatchStream(
+    [in] DWORD stream_id, 
+    [in,defaultvalue(NULL)] IUnknown *pDecoder, // Expected an object with ICC_ByteStreamCallback interface
+    [in,defaultvalue(CC_CATCH_MODE_DEFAULT)] CC_CATCH_STREAM_MODE mode
+  ); 
+
+  HRESULT   ReleaseStream([in] DWORD stream_id);
+  HRESULT   ReleaseAllStreams();
+
+  [propget]
+  HRESULT	DataSize([out,retval] CC_UINT*p);
+
+  [propget]
+  HRESULT	StreamID([out,retval] CC_UINT*p);
+
+  /// The last clock reference (SCR or PCR) read from the multiplexed stream
+  [propget]
+  HRESULT	SCR([out,retval] CC_SCR*p);
+
+  /// The method to obtain the demultiplexed packet directly (not via callback).
+  HRESULT	GetData(
+    [out] CC_UINT *p_stream_id,               // Can be NULL, otherwise the stream_id will be placed here.
+    [out,size_is(cbBufSize)] CC_PBYTE pbData, // Can be NULL, in such case the full data size will be returned via pcbRetSize.
+    [in] CC_UINT cbBufSize,                   // The number of bytes you have to copy to.
+    [out] CC_TIME *p_pts,                     // Can be NULL, otherwise the first commenced pts of the data will be placed (or CC_NO_TIME if no pts).
+    [out,retval,defaultvalue(NULL)] CC_UINT *pcbRetSize // Can be NULL.
+  );
+};
+
+[object, uuid(00001D12-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+/// This interface provides a methods specific for the HDV2_Multilexer class.
+interface ICC_HDV2_Multiplexer : ICC_Multiplexer
+{
+  [propget] HRESULT InitialTimeCode  ([out,retval]CC_TIMECODE*);
+  [propput] HRESULT InitialTimeCode  ([in]        CC_TIMECODE);
+};
+
+[object, uuid(00007777-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
+// 
+interface ICC_StreamRecognizer : ICC_StreamProcessor
+{
+  HRESULT	GetStreamInfo([out,retval]ICC_MultiplexedStreamInfo **pStreamInfo);
+};
+
+[object, uuid(3aaf6ee8-11db-4801-9229-9993d743a0ea), pointer_default(unique), local]
+// 
+interface ICC_DebugDumpIncomingDataToFile : IUnknown
+{
+  HRESULT	DumpIncomingDataToFile([in] CC_STRING pFileName);
+};
+
+[object, uuid(0fdcdb5a-5eee-4152-9a14-d9daaa755be8), pointer_default(unique), local]
+// The interface to immediate handling of new incoming PCR in demultiplexer
+interface ICC_PCR_Callback : IUnknown
+{
+  HRESULT	HandlePCR(CC_TIME pcr); // the value of PCR measured in CC_TIMEBASE units
+};
+
+[object, uuid(c83bc0f4-dffb-4061-b60e-60895f1d4f7d), pointer_default(unique), local]
+// The interface for assigning the ICC_PCR_Callback
+interface ICC_PCR_CallbackProp : IUnknown
+{
+  [propget] HRESULT PCR_Callback  ([out,retval]ICC_PCR_Callback** ppcb);
+  [propput] HRESULT PCR_Callback  ([in]        ICC_PCR_Callback*  pcb);
+};
+
