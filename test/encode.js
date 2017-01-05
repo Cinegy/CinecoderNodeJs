@@ -14,7 +14,7 @@
 */
 
 var test = require('tape');
-var cinecoder = require('../../cinecoder');
+var cinecoder = require('../../cinecodernodejs');
 
 function makeUYVY10Buf(width, height) {
   var pitchBytes = width * 4;

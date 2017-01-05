@@ -12,16 +12,16 @@ This module has native C++ files that are compiled with node-gyp. To use the mod
 
 CinecoderNodeJs is designed to be `require`d to use from your own application to provide async processing.
 
-    npm install --save cinecoder
+    npm install --save cinecodernodejs
 
 Node.js addons use [libuv](http://libuv.org/) which by default supports up to 4 async threads in a threadpool for activities such as file I/O. These same threads are used by cinecoder and if you wish to use a number of the functions in one Node.js process then you will need to set the environment variable UV_THREADPOOL_SIZE to a suitable number before the first use of the libuv threadpool.
 
-## Using cinecoder
+## Using cinecodernodejs
 
 To use cinecoder in your own application, `require` the module then create and use workers as required.  The processing functions follow a standard pattern as shown in the example code below.
 
 ```javascript
-var cinecoder = require('cinecoder');
+var cinecoder = require('cinecodernodejs');
 var fn = new cinecoder.fn(params);
 
 fn.on('exit', function() {
