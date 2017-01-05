@@ -1,3 +1,22 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
+
+
 // List of the elementary streams types
 // (see ISO/IEC 13818-1 2.5.4.2 "Semantic definition of fields in Program Stream map").
 typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
@@ -29,8 +48,8 @@ typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
 
   CC_ES_TYPE_VIDEO_J2K					  = 0x21,  /// Jpeg-2000 elementary stream
 
-  CC_ES_TYPE_VIDEO_H265                   = 0x27,  /// H.265/HEVC Video
-  CC_ES_TYPE_VIDEO_HEVC                   = 0x27,  /// H.265/HEVC Video
+  CC_ES_TYPE_VIDEO_H265                   = 0x24,  /// H.265/HEVC Video
+  CC_ES_TYPE_VIDEO_HEVC                   = 0x24,  /// H.265/HEVC Video
   
   //CC_ES_TYPE_USER_PRIVATE                 = 0x80,  /// User Private
   CC_ES_TYPE_AUDIO_LPCM                   = 0x80,  /// LPCM Audio
@@ -45,6 +64,7 @@ typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
 
   CC_ES_TYPE_AUDIO_AES3                   = 0x98,  /// SMPTE-302M Audio.
   CC_ES_TYPE_DATA_AES3                    = 0x99,  /// SMPTE-302M Data.
+  CC_ES_TYPE_AUDIO_SMPTE302               = 0x9806,/// SMPTE-302M Audio (standard 06 stream type).
 
   CC_ES_TYPE_AUDIO_DOLBY_E                = 0x9906,/// SMPTE-302M Data carried by stream type 06.
                                           
@@ -56,6 +76,12 @@ typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
   CC_ES_TYPE_VIDEO_DNxHD                  = 0x1d2, /// VC-3 Video (DNxHD Codec).
 
   CC_ES_TYPE_VIDEO_AVC_INTRA              = 0x11b, /// AVC-Intra Video
+
+  CC_ES_TYPE_VIDEO_PRORES                 = 0x120, /// Apple ProRes Video
+
+  CC_ES_TYPE_EBU_TELETEXT                 = 0x4206,/// ITU-R System B Teletext (OP42) carried by stream type 06.
+
+  CC_ES_TYPE_SMPTE_436                    = 0x436, /// SMPTE 436 Encoded VANC data
 }
 CC_ELEMENTARY_STREAM_TYPE;
 

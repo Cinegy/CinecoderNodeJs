@@ -1,3 +1,20 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 typedef [v1_enum] enum CC_AVCI_MODE
 {
   CC_AVCI_MODE_UNKNOWN   = 0x00,
@@ -49,11 +66,26 @@ interface ICC_AVCIntraEncoderSettings : ICC_Settings
 };
 
 [object, uuid(0242b581-180a-430e-bb9c-1a78e60de3e5), pointer_default(unique), local]
-// Interface for AVC Intra video encoder is the same as for H264VideoEncoder.
+// Interface for AVC Intra video encoder
 interface ICC_AVCIntraEncoder : ICC_H264VideoEncoder
 {
   // Specifies the initial timecode for the first frame.
   // Note: Should be used before first call to AddFrame.
   [propput] HRESULT  InitialTimeCode          ([in]         CC_TIMECODE   x);
+};
+
+[object, uuid(6c54b9dd-6608-4b3c-8325-3d45a612cbb9), pointer_default(unique), local]
+// Interface for AVC Intra video decoder
+interface ICC_AVCIntraDecoder : ICC_H264VideoDecoder
+{
+};
+
+[object, uuid(1a5e58f3-876d-4efa-aa2b-8d68d5f9da4e), pointer_default(unique), local]
+// Interface for AVCIntraVideoDecoder2 object
+interface ICC_AVCIntraDecoder2 : ICC_H264VideoDecoder
+{
+  // The number of "single" decoders running in parallel
+  [propget] HRESULT   ConcurrencyLevel([out,retval] CC_AMOUNT *p);
+  [propput] HRESULT   ConcurrencyLevel([in]         CC_AMOUNT  v);
 };
 

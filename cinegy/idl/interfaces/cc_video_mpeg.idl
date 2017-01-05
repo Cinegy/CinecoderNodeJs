@@ -1,3 +1,20 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 // MPEG-2 Profiles and Levels.
 // Description
 // Provide a means of defining subsets of the syntax and semantics of MPEG-2 video streams and
@@ -8,20 +25,50 @@ typedef [v1_enum] enum CC_MPG_PROFILE_LEVEL
 {
     CC_MPG_PROFILE_LEVEL_UNKNOWN = 0, // Unknown profile&level.
 
-    CC_MPG_SP_ML       = 0x58,        // Simple Profile & Main Level.
-    CC_MPG_MP_LL       = 0x4A,        // Main Profile & Low Level.
-    CC_MPG_MP_ML       = 0x48,        // Main Profile & Main Level.
-    CC_MPG_MP_H14      = 0x46,        // Main Profile & High 1440 level.
-    CC_MPG_MP_HL       = 0x44,        // Main Profile & High Level.
+    CC_MPEG1_CONSTRAINED = 0x01,
+    CC_MPEG1_ESCAPE      = 0X81,
+
+    CC_MPEG2_SP_ML       = 0x58,        // Simple Profile @ Main Level
+    
+    CC_MPEG2_MP_LL       = 0x4A,        // Main Profile @ Low level
+    CC_MPEG2_MP_ML       = 0x48,        // Main Profile @ Main level
+    CC_MPEG2_MP_H14      = 0x46,        // Main Profile @ High1440 level
+    CC_MPEG2_MP_HL       = 0x44,        // Main Profile @ High level
                                    
-    CC_MPG_HP_ML       = 0x18,        // High Profile & Main Level.
-    CC_MPG_HP_H14      = 0x16,        // High Profile & High 1440 level.     
-    CC_MPG_HP_HL       = 0x14,        // High Profile & High Level.
+    CC_MPEG2_422_ML      = 0x85,        // 4:2:2 Profile @ Main level
+    CC_MPEG2_422_HL      = 0x82,        // 4:2:2 Profile @ High level
 
-    CC_MPG_ESCAPE      = 0x80,        // Avoid any limitations (free coding).
+    CC_MPEG2_SNR_LL      = 0x3A,        // SNR Scalable Profile @ Low level
+    CC_MPEG2_SNR_ML      = 0x38,        // SNR Scalable Profile @ Main level
 
-    CC_MPG_422_ML      = 0x85,        // 4:2:2 Profile & Main Level.
-    CC_MPG_422_HL      = 0x82         // 4:2:2 Profile & High Level.
+    CC_MPEG2_SPAT_H14    = 0x26,        // Spatial Scalable Profile @ High1440 level
+
+    CC_MPEG2_HP_ML       = 0x18,        // High Profile @ Main level
+    CC_MPEG2_HP_H14      = 0x16,        // High Profile @ High1440 level
+    CC_MPEG2_HP_HL       = 0x14,        // High Profile @ High level
+
+    CC_MPEG2_MVP_LL      = 0x8E,        // Multi View Profile @ Low level
+    CC_MPEG2_MVP_ML      = 0x8D,        // Multi View Profile @ Main level
+    CC_MPEG2_MVP_H14     = 0x8B,        // Multi View Profile @ High1440 level
+    CC_MPEG2_MVP_HL      = 0x8A,        // Multi View Profile @ High level
+                                   
+    CC_MPEG2_ESCAPE      = 0x80,        // Avoid any limitations (free coding).
+
+    CC_MPG_SP_ML         = CC_MPEG2_SP_ML, 
+    CC_MPG_MP_LL         = CC_MPEG2_MP_LL, 
+    CC_MPG_MP_ML         = CC_MPEG2_MP_ML, 
+    CC_MPG_MP_H14        = CC_MPEG2_MP_H14,
+    CC_MPG_MP_HL         = CC_MPEG2_MP_HL, 
+                                          
+    CC_MPG_HP_ML         = CC_MPEG2_HP_ML, 
+    CC_MPG_HP_H14        = CC_MPEG2_HP_H14,
+    CC_MPG_HP_HL         = CC_MPEG2_HP_HL, 
+                                          
+    CC_MPG_ESCAPE        = CC_MPEG2_ESCAPE,
+                                          
+    CC_MPG_422_ML        = CC_MPEG2_422_ML,
+    CC_MPG_422_HL        = CC_MPEG2_422_HL,
+
 } CC_MPG_PROFILE_LEVEL;
 
 // Frame aspect ratios.
@@ -140,6 +187,11 @@ typedef [v1_enum] enum CC_MPG_MOTION_PARAMS
 	                             
 	CC_MPG_ME_OPPOSITE_FLD= 0x00040000,     /// Search opposite fields.
 	CC_MPG_ME_ALIGN_VEC   = 0x00080000,     /// Aligned vectors is usually better then exact, but with small deviance.
+
+    CC_MPG_ME_NO_INTERLACED_SEARCH           = 0x00100000, /// This flag disables interlaced search, even if coding mode is interlaced
+    CC_MPG_ME_NO_ADAPTIVE_SEARCH_WINDOW      = 0x00200000, /// This flag disables adaptive search window
+	CC_MPG_ME_NO_PREDICTIVE_SEARCH           = 0x00400000, /// This flag disables predictive search (usu no prediction from neighboring blocks)
+	CC_MPG_ME_NO_RECALC_MISPREDICTED_VECTORS = 0x00800000, /// This flag disables recalculation of mispredicted vectors
 
 	CC_MPG_ME_FASTEST     = CC_MPG_ME_WND_16  | CC_MPG_ME_CELL4 | CC_MPG_ME_SPC_4 | CC_MPG_ME_INCR_0 | CC_MPG_ME_NO_HALFPEL,
 	CC_MPG_ME_NORMAL      = CC_MPG_ME_WND_64  | CC_MPG_ME_CELL2 | CC_MPG_ME_SPC_2 | CC_MPG_ME_INCR_1 | CC_MPG_ME_HALFPEL | CC_MPG_ME_ALIGN_VEC,

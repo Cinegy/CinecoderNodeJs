@@ -1,3 +1,20 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Data types
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -28,23 +45,28 @@ typedef [v1_enum] enum CC_COLOR_FMT
   CCF_YUV422       = 0x00000042,     /// Planar YUV 4:2:2
   CCF_YUV444       = 0x00000043,     /// Planar YUV 4:4:4
 
+  CCF_YUV400_10BIT = 0x00000240,     /// Planar YUV 4:0:0 (10 of 16 bit data, LSB).
+  CCF_YUV420_10BIT = 0x00000241,     /// Planar YUV 4:2:0 (10 of 16 bit data, LSB).
+  CCF_YUV422_10BIT = 0x00000242,     /// Planar YUV 4:2:2 (10 of 16 bit data, LSB).
+  CCF_YUV444_10BIT = 0x00000243,     /// Planar YUV 4:4:4 (10 of 16 bit data, LSB).
+
+  CCF_YUV400_16BIT = 0x00000840,     /// Planar YUV 4:0:0 16 bit data (LSB).
+  CCF_YUV420_16BIT = 0x00000841,     /// Planar YUV 4:2:0 16 bit data (LSB).
+  CCF_YUV422_16BIT = 0x00000842,     /// Planar YUV 4:2:2 16 bit data (LSB).
+  CCF_YUV444_16BIT = 0x00000843,     /// Planar YUV 4:4:4 16 bit data (LSB).
+
+  CCF_UYVY_10BIT   = 0x00000231,     /// The packed YUV 4:2:2 10-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
+  CCF_YUY2_10BIT   = 0x00000232,     /// The packed YUV 4:2:2 10-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
+  
+  CCF_UYVY_16BIT   = 0x00000831,     /// The packed YUV 4:2:2 16-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
+  CCF_YUY2_16BIT   = 0x00000832,     /// The packed YUV 4:2:2 16-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
+  
   CCF_YV12         = CCF_YUV420,
   CCF_YV16         = CCF_YUV422,
-
   CCF_NV12         = 0x00000112,     /// 4:2:0 Planar Y, UV interleaved
 
-  CCF_UYVY_10BIT   = 0x00000131,     /// The packed YUV 4:2:2 10-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
-  CCF_YUY2_10BIT   = 0x00000132,     /// The packed YUV 4:2:2 10-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
-  
-  CCF_YUV422_10BIT = 0x00000142,     /// Planar YUV 4:2:2 (10 of 16 bit data, LSB).
-
-  CCF_UYVY_16BIT   = 0x00000631,     /// The packed YUV 4:2:2 16-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
-  CCF_YUY2_16BIT   = 0x00000632,     /// The packed YUV 4:2:2 16-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
-  
-  CCF_YUV422_16BIT = 0x00000642,     /// Planar YUV 4:2:2 16 bit data (LSB).
-
   CCF_V210         = 0x00000210,     /// V210 10-bit 4:2:2 color format.
-  CCF_SC10         = 0x00000211,     /// Seachange 10-bit 4:2:2 color format (the 16-pixel 8-bit YUY2 chunks with a packed 2-bit trails).
+  CCF_SC10         = 0x00000211,     /// Seachange 10-bit 4:2:2 color format (the 16-pixel 40-bytes chunks with 8-bit YUY2 data (32 bytes) followed by packed 2-bit trails (8 bytes)).
 
   CCF_Y8           = 0x00000008      /// Monochrome (greyscale) data, 1 byte per pixel.
 }
@@ -163,16 +185,20 @@ cpp_quote("#endif")
 // The chromaticity coordinates of the source primaries (see iso/iec 13818-2 6.3.6 Table 6-7 for details).
 typedef [v1_enum] enum CC_COLOUR_PRIMARIES
 {
-    CC_CPRIMS_UNKNOWN = 0,            /// Forbidden value.
-    CC_CPRIMS_ITUR_BT_709,            /// Recommendation ITU-R BT.709.
-    CC_CPRIMS_UNSPECIFIED,            /// Unspecified Video - image characteristics are unknown.
-    CC_CPRIMS_RESERVED,               /// Reserved.
-    CC_CPRIMS_ITUR_BT_470_M,          /// Recommendation ITU-R BT.470 System M.
-    CC_CPRIMS_ITUR_BT_470_BG,         /// Recommendation ITU-R BT.470 System B, G.
-    CC_CPRIMS_SMPTE_170M,             /// SMPTE 170M.
-    CC_CPRIMS_SMPTE_240M,             /// SMPTE 240M (1987).
+    CC_CPRIMS_UNKNOWN = 0,            /// 0 Forbidden value.
+    CC_CPRIMS_ITUR_BT_709,            /// 1 Recommendation ITU-R BT.709.
+    CC_CPRIMS_UNSPECIFIED,            /// 2 Unspecified Video - image characteristics are unknown.
+    CC_CPRIMS_RESERVED,               /// 3 Reserved.
+    CC_CPRIMS_ITUR_BT_470_M,          /// 4 Recommendation ITU-R BT.470 System M.
+    CC_CPRIMS_ITUR_BT_470_BG,         /// 5 Recommendation ITU-R BT.470 System B, G.
+    CC_CPRIMS_SMPTE_170M,             /// 6 SMPTE 170M.
+    CC_CPRIMS_SMPTE_240M,             /// 7 SMPTE 240M (1987).
+    CC_CPRIMS_GENERIC_FILM,           /// 8 Generic film (colour filters using Illuminant C)
+    CC_CPRIMS_ITUR_BT_2020,           /// 9 Recommendation ITU-R BT.2020
+    CC_CPRIMS_SMPTE_ST_428_1,         /// 10 SMPTE ST 428-1 (CIE 1931 XYZ as in ISO 11664-1)
+    CC_CPRIMS_SMPTE_ST_431_2,         /// 11 SMPTE ST 431-2 (2011)
+    CC_CPRIMS_SMPTE_ST_432_1,         /// 12 SMPTE ST 432-1 (2010)
 
-    CC_CPRIMS_GENERIC_FILM,           /// Colour filters using Illuminant C.
 //DOM-IGNORE-BEGIN
     CC_CPRIMS_TOTAL                   ///
 //DOM-IGNORE-END
@@ -182,19 +208,26 @@ CC_COLOUR_PRIMARIES;
 // The opto-electronic transfer characteristic of the source picture (see iso/iec 13818-2 6.3.6 Table 6-8 for details).
 typedef [v1_enum] enum CC_TRANSFER_CHARACTERISTICS
 {
-    CC_TXCHRS_UNKNOWN = 0,            /// Forbidden value.
+    CC_TXCHRS_UNKNOWN = 0,            /// 0 Forbidden value.
 
-    CC_TXCHRS_ITUR_BT_709,            /// Recommendation ITU-R BT.709.
-    CC_TXCHRS_UNSPECIFIED,            /// Unspecified Video - image characteristics are unknown.
-    CC_TXCHRS_RESERVED,              /// Reserved.
-    CC_TXCHRS_ITUR_BT_470_M,          /// Recommendation ITU-R BT.470 System M (assumed display gamma 2.2).
-    CC_TXCHRS_ITUR_BT_470_BG,         /// Recommendation ITU-R BT.470 System B, G (assumed display gamma 2.8).
-    CC_TXCHRS_SMPTE_170M,             /// SMPTE 170M.
-    CC_TXCHRS_SMPTE_240M,             /// SMPTE 240M (1987).
+    CC_TXCHRS_ITUR_BT_709,            /// 1 Recommendation ITU-R BT.709.
+    CC_TXCHRS_UNSPECIFIED,            /// 2 Unspecified Video - image characteristics are unknown.
+    CC_TXCHRS_RESERVED,               /// 3 Reserved.
+    CC_TXCHRS_ITUR_BT_470_M,          /// 4 Recommendation ITU-R BT.470 System M (assumed display gamma 2.2).
+    CC_TXCHRS_ITUR_BT_470_BG,         /// 5 Recommendation ITU-R BT.470 System B, G (assumed display gamma 2.8).
+    CC_TXCHRS_SMPTE_170M,             /// 6 SMPTE 170M.
+    CC_TXCHRS_SMPTE_240M,             /// 7 SMPTE 240M (1987).
+    CC_TXCHRS_LINEAR,                 /// 8 Linear transfer characteristics.
+    CC_TXCHRS_LOG_100,                /// 9 Logarithmic transfer characteristic ( 100:1 range ).
+    CC_TXCHRS_LOG_316,                /// 10 Logarithmic transfer characteristic ( 316.22777:1 range ).
+    CC_TXCHRS_IEC_61966_2_4,          /// 11 IEC 61966-2-4
+    CC_TXCHRS_ITUR_BT_1361,           /// 12 Recommendation ITU-R BT.1361 extended colour gamut system
+    CC_TXCHRS_IEC_61966_2_1,		  /// 13 IEC 61966-2-1 (sRGB or sYCC)
+    CC_TXCHRS_ITUR_BT_2020_10BIT,     /// 14 Recommendation ITU-R BT.2020 for 10 bit system
+    CC_TXCHRS_ITUR_BT_2020_12BIT,     /// 15 Recommendation ITU-R BT.2020 for 12 bit system
+    CC_TXCHRS_SMPTE_ST_2084,          /// 16 SMPTE ST 2084 for 10, 12, 14, and 16-bit systems.
+    CC_TXCHRS_SMPTE_ST_428_1,         /// 17 SMPTE ST 428-1
 
-    CC_TXCHRS_LINEAR,                 /// Linear transfer characteristics.
-    CC_TXCHRS_LOG_100,                /// Logarithmic transfer characteristic ( 100:1 range ).
-    CC_TXCHRS_LOG_316,                /// Logarithmic transfer characteristic ( 316.22777:1 range ).
 //DOM-IGNORE-BEGIN
     CC_TXCHRS_TOTAL                   ///
 //DOM-IGNORE-END
@@ -205,15 +238,19 @@ CC_TRANSFER_CHARACTERISTICS;
 // (see iso/iec 13818-2 6.3.6 Table 6-9 for details).
 typedef [v1_enum] enum CC_MATRIX_COEFFICIENTS
 {
-    CC_MCOEFS_UNKNOWN = 0,            /// Forbidden value.
+    CC_MCOEFS_UNKNOWN = 0,            /// 0 Forbidden value.
 
-    CC_MCOEFS_ITUR_BT_709,            /// Recommendation ITU-R BT.709.
-    CC_MCOEFS_UNSPECIFIED,            /// Unspecified Video - image characteristics are unknown.
-    CC_MCOEFS_RESERVED,               /// Reserved for future use by ITU-T / ISO/IEC.
-    CC_MCOEFS_FCC,                    /// FCC.
-    CC_MCOEFS_ITUR_BT_470_BG,         /// Recommendation ITU-R BT.470 System B, G.
-    CC_MCOEFS_SMPTE_170M,             /// SMPTE 170M.
-    CC_MCOEFS_SMPTE_240M,             /// SMPTE 240M (1987).
+    CC_MCOEFS_ITUR_BT_709,            /// 1 Recommendation ITU-R BT.709 (Kr = 0.2126; Kb = 0.0722).
+    CC_MCOEFS_UNSPECIFIED,            /// 2 Unspecified Video - image characteristics are unknown.
+    CC_MCOEFS_RESERVED,               /// 3 Reserved for future use by ITU-T / ISO/IEC.
+    CC_MCOEFS_FCC,                    /// 4 FCC (Kr = 0.30; Kb = 0.11)
+    CC_MCOEFS_ITUR_BT_470_BG,         /// 5 Recommendation ITU-R BT.470 System B,G (Kr = 0.299; Kb = 0.114).
+    CC_MCOEFS_SMPTE_170M,             /// 6 SMPTE 170M (Kr = 0.299; Kb = 0.114).
+    CC_MCOEFS_SMPTE_240M,             /// 7 SMPTE 240M (1987) (Kr = 0.212; Kb = 0.087).
+    CC_MCOEFS_YCGCO,                  /// 8 YCgCo
+    CC_MCOEFS_ITUR_BT_2020_NON_CONST, /// 9 ITU-R BT.2020 non-constant luminance system (Kr = 0.2627; Kb = 0.0593).
+    CC_MCOEFS_ITUR_BT_2020_CONST,     /// 10 ITU-R BT.2020 constant luminance system (Kr = 0.2627; Kb = 0.0593).
+    CC_MCOEFS_SMPTE_2085,             /// 11 SMPTE ST 2085 (2015) (aka Y' D'z D'x)
 //DOM-IGNORE-BEGIN
     CC_MCOEFS_TOTAL                   ///
 //DOM-IGNORE-END

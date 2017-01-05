@@ -1,10 +1,27 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 
 
 /* this ALWAYS GENERATED file contains the definitions for the interfaces */
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Jan 30 13:19:47 2015
+/* at Sat Dec 10 23:04:46 2016
  */
 /* Compiler settings for Cinecoder.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
@@ -253,6 +270,12 @@ typedef interface ICC_ProcessDataPolicyProp ICC_ProcessDataPolicyProp;
 #define __ICC_AddUserDataCtrl_FWD_DEFINED__
 typedef interface ICC_AddUserDataCtrl ICC_AddUserDataCtrl;
 #endif 	/* __ICC_AddUserDataCtrl_FWD_DEFINED__ */
+
+
+#ifndef __ICC_ConcurrencyLevelProp_FWD_DEFINED__
+#define __ICC_ConcurrencyLevelProp_FWD_DEFINED__
+typedef interface ICC_ConcurrencyLevelProp ICC_ConcurrencyLevelProp;
+#endif 	/* __ICC_ConcurrencyLevelProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataWriter_FWD_DEFINED__
@@ -825,6 +848,42 @@ typedef interface ICC_H264VideoSplitter ICC_H264VideoSplitter;
 #endif 	/* __ICC_H264VideoSplitter_FWD_DEFINED__ */
 
 
+#ifndef __ICC_HEVCVideoStreamInfo_FWD_DEFINED__
+#define __ICC_HEVCVideoStreamInfo_FWD_DEFINED__
+typedef interface ICC_HEVCVideoStreamInfo ICC_HEVCVideoStreamInfo;
+#endif 	/* __ICC_HEVCVideoStreamInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoFrameInfo_FWD_DEFINED__
+#define __ICC_HEVCVideoFrameInfo_FWD_DEFINED__
+typedef interface ICC_HEVCVideoFrameInfo ICC_HEVCVideoFrameInfo;
+#endif 	/* __ICC_HEVCVideoFrameInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoDecoder_FWD_DEFINED__
+#define __ICC_HEVCVideoDecoder_FWD_DEFINED__
+typedef interface ICC_HEVCVideoDecoder ICC_HEVCVideoDecoder;
+#endif 	/* __ICC_HEVCVideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoSplitter_FWD_DEFINED__
+#define __ICC_HEVCVideoSplitter_FWD_DEFINED__
+typedef interface ICC_HEVCVideoSplitter ICC_HEVCVideoSplitter;
+#endif 	/* __ICC_HEVCVideoSplitter_FWD_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoEncoder_FWD_DEFINED__
+#define __ICC_HEVCVideoEncoder_FWD_DEFINED__
+typedef interface ICC_HEVCVideoEncoder ICC_HEVCVideoEncoder;
+#endif 	/* __ICC_HEVCVideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__
+#define __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__
+typedef interface ICC_HEVCVideoEncoderSettings ICC_HEVCVideoEncoderSettings;
+#endif 	/* __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__ */
+
+
 #ifndef __ICC_AVCIntraEncoderSettings_FWD_DEFINED__
 #define __ICC_AVCIntraEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AVCIntraEncoderSettings ICC_AVCIntraEncoderSettings;
@@ -835,6 +894,18 @@ typedef interface ICC_AVCIntraEncoderSettings ICC_AVCIntraEncoderSettings;
 #define __ICC_AVCIntraEncoder_FWD_DEFINED__
 typedef interface ICC_AVCIntraEncoder ICC_AVCIntraEncoder;
 #endif 	/* __ICC_AVCIntraEncoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_AVCIntraDecoder_FWD_DEFINED__
+#define __ICC_AVCIntraDecoder_FWD_DEFINED__
+typedef interface ICC_AVCIntraDecoder ICC_AVCIntraDecoder;
+#endif 	/* __ICC_AVCIntraDecoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_AVCIntraDecoder2_FWD_DEFINED__
+#define __ICC_AVCIntraDecoder2_FWD_DEFINED__
+typedef interface ICC_AVCIntraDecoder2 ICC_AVCIntraDecoder2;
+#endif 	/* __ICC_AVCIntraDecoder2_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Mpeg4VideoStreamInfo_FWD_DEFINED__
@@ -1105,6 +1176,42 @@ typedef interface ICC_MP4_FragmentedPin ICC_MP4_FragmentedPin;
 #define __ICC_MP4_InitialTimeCodeProp_FWD_DEFINED__
 typedef interface ICC_MP4_InitialTimeCodeProp ICC_MP4_InitialTimeCodeProp;
 #endif 	/* __ICC_MP4_InitialTimeCodeProp_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4_MpegDashSettings_FWD_DEFINED__
+#define __ICC_MP4_MpegDashSettings_FWD_DEFINED__
+typedef interface ICC_MP4_MpegDashSettings ICC_MP4_MpegDashSettings;
+#endif 	/* __ICC_MP4_MpegDashSettings_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4ChunkInfo_FWD_DEFINED__
+#define __ICC_MP4ChunkInfo_FWD_DEFINED__
+typedef interface ICC_MP4ChunkInfo ICC_MP4ChunkInfo;
+#endif 	/* __ICC_MP4ChunkInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4Fragment_FWD_DEFINED__
+#define __ICC_MP4Fragment_FWD_DEFINED__
+typedef interface ICC_MP4Fragment ICC_MP4Fragment;
+#endif 	/* __ICC_MP4Fragment_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4InitFragment_FWD_DEFINED__
+#define __ICC_MP4InitFragment_FWD_DEFINED__
+typedef interface ICC_MP4InitFragment ICC_MP4InitFragment;
+#endif 	/* __ICC_MP4InitFragment_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4RandomAccessFragment_FWD_DEFINED__
+#define __ICC_MP4RandomAccessFragment_FWD_DEFINED__
+typedef interface ICC_MP4RandomAccessFragment ICC_MP4RandomAccessFragment;
+#endif 	/* __ICC_MP4RandomAccessFragment_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4Producer_FWD_DEFINED__
+#define __ICC_MP4Producer_FWD_DEFINED__
+typedef interface ICC_MP4Producer ICC_MP4Producer;
+#endif 	/* __ICC_MP4Producer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HLS_MultiplexerSettings_FWD_DEFINED__
@@ -1383,6 +1490,18 @@ typedef interface ICC_CollectionFilter ICC_CollectionFilter;
 #endif 	/* __ICC_CollectionFilter_FWD_DEFINED__ */
 
 
+#ifndef __ICC_MP4Fragment_FWD_DEFINED__
+#define __ICC_MP4Fragment_FWD_DEFINED__
+typedef interface ICC_MP4Fragment ICC_MP4Fragment;
+#endif 	/* __ICC_MP4Fragment_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4InitFragment_FWD_DEFINED__
+#define __ICC_MP4InitFragment_FWD_DEFINED__
+typedef interface ICC_MP4InitFragment ICC_MP4InitFragment;
+#endif 	/* __ICC_MP4InitFragment_FWD_DEFINED__ */
+
+
 #ifndef __ICC_File_FWD_DEFINED__
 #define __ICC_File_FWD_DEFINED__
 typedef interface ICC_File ICC_File;
@@ -1435,6 +1554,18 @@ typedef struct CC_MpegVideoDecoder CC_MpegVideoDecoder;
 #endif /* __cplusplus */
 
 #endif 	/* __CC_MpegVideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_MpegVideoDecoder0_FWD_DEFINED__
+#define __CC_MpegVideoDecoder0_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_MpegVideoDecoder0 CC_MpegVideoDecoder0;
+#else
+typedef struct CC_MpegVideoDecoder0 CC_MpegVideoDecoder0;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_MpegVideoDecoder0_FWD_DEFINED__ */
 
 
 #ifndef __CC_MpegVideoDecoder2_FWD_DEFINED__
@@ -1815,16 +1946,16 @@ typedef struct CC_H264VideoDecoder CC_H264VideoDecoder;
 #endif 	/* __CC_H264VideoDecoder_FWD_DEFINED__ */
 
 
-#ifndef __CC_H264VideoDecoderCUDA_FWD_DEFINED__
-#define __CC_H264VideoDecoderCUDA_FWD_DEFINED__
+#ifndef __CC_H264VideoDecoder0_FWD_DEFINED__
+#define __CC_H264VideoDecoder0_FWD_DEFINED__
 
 #ifdef __cplusplus
-typedef class CC_H264VideoDecoderCUDA CC_H264VideoDecoderCUDA;
+typedef class CC_H264VideoDecoder0 CC_H264VideoDecoder0;
 #else
-typedef struct CC_H264VideoDecoderCUDA CC_H264VideoDecoderCUDA;
+typedef struct CC_H264VideoDecoder0 CC_H264VideoDecoder0;
 #endif /* __cplusplus */
 
-#endif 	/* __CC_H264VideoDecoderCUDA_FWD_DEFINED__ */
+#endif 	/* __CC_H264VideoDecoder0_FWD_DEFINED__ */
 
 
 #ifndef __CC_AVC1VideoDecoder_FWD_DEFINED__
@@ -1837,6 +1968,18 @@ typedef struct CC_AVC1VideoDecoder CC_AVC1VideoDecoder;
 #endif /* __cplusplus */
 
 #endif 	/* __CC_AVC1VideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_AVC1VideoDecoder0_FWD_DEFINED__
+#define __CC_AVC1VideoDecoder0_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_AVC1VideoDecoder0 CC_AVC1VideoDecoder0;
+#else
+typedef struct CC_AVC1VideoDecoder0 CC_AVC1VideoDecoder0;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_AVC1VideoDecoder0_FWD_DEFINED__ */
 
 
 #ifndef __CC_H264VideoEncoder_FWD_DEFINED__
@@ -1921,6 +2064,18 @@ typedef struct CC_MP4_MuxerPinSettings CC_MP4_MuxerPinSettings;
 #endif /* __cplusplus */
 
 #endif 	/* __CC_MP4_MuxerPinSettings_FWD_DEFINED__ */
+
+
+#ifndef __CC_MP4_MpegDashSettings_FWD_DEFINED__
+#define __CC_MP4_MpegDashSettings_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_MP4_MpegDashSettings CC_MP4_MpegDashSettings;
+#else
+typedef struct CC_MP4_MpegDashSettings CC_MP4_MpegDashSettings;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_MP4_MpegDashSettings_FWD_DEFINED__ */
 
 
 #ifndef __CC_AAC_AudioDecoder_FWD_DEFINED__
@@ -2029,6 +2184,30 @@ typedef struct CC_AC3_AudioEncoderSettings CC_AC3_AudioEncoderSettings;
 #endif /* __cplusplus */
 
 #endif 	/* __CC_AC3_AudioEncoderSettings_FWD_DEFINED__ */
+
+
+#ifndef __CC_AVCIntraDecoder_FWD_DEFINED__
+#define __CC_AVCIntraDecoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_AVCIntraDecoder CC_AVCIntraDecoder;
+#else
+typedef struct CC_AVCIntraDecoder CC_AVCIntraDecoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_AVCIntraDecoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_AVCIntraDecoder2_FWD_DEFINED__
+#define __CC_AVCIntraDecoder2_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_AVCIntraDecoder2 CC_AVCIntraDecoder2;
+#else
+typedef struct CC_AVCIntraDecoder2 CC_AVCIntraDecoder2;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_AVCIntraDecoder2_FWD_DEFINED__ */
 
 
 #ifndef __CC_AVCIntraEncoder_FWD_DEFINED__
@@ -2235,6 +2414,66 @@ typedef struct CC_WavAudioEncoderSettings CC_WavAudioEncoderSettings;
 #endif 	/* __CC_WavAudioEncoderSettings_FWD_DEFINED__ */
 
 
+#ifndef __CC_HEVCVideoEncoder_FWD_DEFINED__
+#define __CC_HEVCVideoEncoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_HEVCVideoEncoder CC_HEVCVideoEncoder;
+#else
+typedef struct CC_HEVCVideoEncoder CC_HEVCVideoEncoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_HEVCVideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_HEVCVideoEncoderSettings_FWD_DEFINED__
+#define __CC_HEVCVideoEncoderSettings_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_HEVCVideoEncoderSettings CC_HEVCVideoEncoderSettings;
+#else
+typedef struct CC_HEVCVideoEncoderSettings CC_HEVCVideoEncoderSettings;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_HEVCVideoEncoderSettings_FWD_DEFINED__ */
+
+
+#ifndef __CC_HEVCVideoSplitter_FWD_DEFINED__
+#define __CC_HEVCVideoSplitter_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_HEVCVideoSplitter CC_HEVCVideoSplitter;
+#else
+typedef struct CC_HEVCVideoSplitter CC_HEVCVideoSplitter;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_HEVCVideoSplitter_FWD_DEFINED__ */
+
+
+#ifndef __CC_HEVCVideoDecoder_FWD_DEFINED__
+#define __CC_HEVCVideoDecoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_HEVCVideoDecoder CC_HEVCVideoDecoder;
+#else
+typedef struct CC_HEVCVideoDecoder CC_HEVCVideoDecoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_HEVCVideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_HEVCVideoDecoder0_FWD_DEFINED__
+#define __CC_HEVCVideoDecoder0_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_HEVCVideoDecoder0 CC_HEVCVideoDecoder0;
+#else
+typedef struct CC_HEVCVideoDecoder0 CC_HEVCVideoDecoder0;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_HEVCVideoDecoder0_FWD_DEFINED__ */
+
+
 /* header files for imported files */
 #include "Unknwn.h"
 
@@ -2246,11 +2485,11 @@ extern "C"{
 /* interface __MIDL_itf_Cinecoder_0000_0000 */
 /* [local] */ 
 
-#define	CINECODER_VERSION	( 32615 )
+#define	CINECODER_VERSION	( 32734 )
 
 #ifndef __CINECODER_DISABLE_PRINT_VERSION__
 #pragma message ("------------------------------------------------------------------")
-#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.26.15.6962" " (build date " "30-Jan-2015" "30-Jan-2015")
+#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.27.34.10631" " (build date " "10-Dez-2016" "10-Dez-2016")
 #pragma message ("------------------------------------------------------------------")
 #endif
 
@@ -2306,6 +2545,8 @@ typedef const BYTE *CC_PCBYTE;
 typedef CC_UINT CC_AMOUNT;
 
 typedef BSTR CC_STRING;
+
+typedef CC_STRING CC_TEXT;
 
 typedef POINT CC_POINT;
 
@@ -6515,6 +6756,95 @@ EXTERN_C const IID IID_ICC_AddUserDataCtrl;
 #endif 	/* __ICC_AddUserDataCtrl_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICC_ConcurrencyLevelProp_INTERFACE_DEFINED__
+#define __ICC_ConcurrencyLevelProp_INTERFACE_DEFINED__
+
+/* interface ICC_ConcurrencyLevelProp */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_ConcurrencyLevelProp;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("610330b7-3359-471e-bdc0-2a5ac72be372")
+    ICC_ConcurrencyLevelProp : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ConcurrencyLevel( 
+            /* [retval][out] */ CC_AMOUNT *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ConcurrencyLevel( 
+            /* [in] */ CC_AMOUNT v) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_ConcurrencyLevelPropVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_ConcurrencyLevelProp * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_ConcurrencyLevelProp * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_ConcurrencyLevelProp * This);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ConcurrencyLevel )( 
+            ICC_ConcurrencyLevelProp * This,
+            /* [retval][out] */ CC_AMOUNT *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ConcurrencyLevel )( 
+            ICC_ConcurrencyLevelProp * This,
+            /* [in] */ CC_AMOUNT v);
+        
+        END_INTERFACE
+    } ICC_ConcurrencyLevelPropVtbl;
+
+    interface ICC_ConcurrencyLevelProp
+    {
+        CONST_VTBL struct ICC_ConcurrencyLevelPropVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_ConcurrencyLevelProp_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_ConcurrencyLevelProp_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_ConcurrencyLevelProp_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_ConcurrencyLevelProp_get_ConcurrencyLevel(This,p)	\
+    ( (This)->lpVtbl -> get_ConcurrencyLevel(This,p) ) 
+
+#define ICC_ConcurrencyLevelProp_put_ConcurrencyLevel(This,v)	\
+    ( (This)->lpVtbl -> put_ConcurrencyLevel(This,v) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_ConcurrencyLevelProp_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICC_DataWriter_INTERFACE_DEFINED__
 #define __ICC_DataWriter_INTERFACE_DEFINED__
 
@@ -7157,7 +7487,7 @@ EXTERN_C const IID IID_ICC_InputStream;
 #endif 	/* __ICC_InputStream_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0042 */
+/* interface __MIDL_itf_Cinecoder_0000_0043 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -7167,8 +7497,8 @@ enum CC_OPEN_FLAGS
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0042_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0042_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0043_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0043_v0_0_s_ifspec;
 
 #ifndef __ICC_File_INTERFACE_DEFINED__
 #define __ICC_File_INTERFACE_DEFINED__
@@ -7589,7 +7919,7 @@ EXTERN_C const IID IID_ICC_OutputFile;
 #endif 	/* __ICC_OutputFile_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0045 */
+/* interface __MIDL_itf_Cinecoder_0000_0046 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -7618,8 +7948,8 @@ enum CC_ELEMENTARY_STREAM_TYPE
 	CC_ES_TYPE_VIDEO_H264	= 0x1b,
 	CC_ES_TYPE_VIDEO_AVC	= 0x1b,
 	CC_ES_TYPE_VIDEO_J2K	= 0x21,
-	CC_ES_TYPE_VIDEO_H265	= 0x27,
-	CC_ES_TYPE_VIDEO_HEVC	= 0x27,
+	CC_ES_TYPE_VIDEO_H265	= 0x24,
+	CC_ES_TYPE_VIDEO_HEVC	= 0x24,
 	CC_ES_TYPE_AUDIO_LPCM	= 0x80,
 	CC_ES_TYPE_AUDIO_AC3	= 0x81,
 	CC_ES_TYPE_AUDIO_AC3_ATSC	= 0x81,
@@ -7630,19 +7960,23 @@ enum CC_ELEMENTARY_STREAM_TYPE
 	CC_ES_INTERACTIVE_GRAPHICS	= 0x91,
 	CC_ES_TYPE_AUDIO_AES3	= 0x98,
 	CC_ES_TYPE_DATA_AES3	= 0x99,
+	CC_ES_TYPE_AUDIO_SMPTE302	= 0x9806,
 	CC_ES_TYPE_AUDIO_DOLBY_E	= 0x9906,
 	CC_ES_TYPE_HDV2_AUX_A	= 0xa0,
 	CC_ES_TYPE_HDV2_AUX_V	= 0xa1,
 	CC_ES_TYPE_VIDEO_DV	= 0x1d0,
 	CC_ES_TYPE_VIDEO_DVCPRO	= 0x1d1,
 	CC_ES_TYPE_VIDEO_DNxHD	= 0x1d2,
-	CC_ES_TYPE_VIDEO_AVC_INTRA	= 0x11b
+	CC_ES_TYPE_VIDEO_AVC_INTRA	= 0x11b,
+	CC_ES_TYPE_VIDEO_PRORES	= 0x120,
+	CC_ES_TYPE_EBU_TELETEXT	= 0x4206,
+	CC_ES_TYPE_SMPTE_436	= 0x436
     } 	CC_ELEMENTARY_STREAM_TYPE;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0045_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0045_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0046_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0046_v0_0_s_ifspec;
 
 #ifndef __ICC_ElementaryStreamInfo_INTERFACE_DEFINED__
 #define __ICC_ElementaryStreamInfo_INTERFACE_DEFINED__
@@ -8318,7 +8652,7 @@ EXTERN_C const IID IID_ICC_CodedStreamHeaderProp;
 #endif 	/* __ICC_CodedStreamHeaderProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0050 */
+/* interface __MIDL_itf_Cinecoder_0000_0051 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -8343,8 +8677,8 @@ enum CC_EXECUTIVE_DEVICE_TYPES
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0050_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0050_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0051_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0051_v0_0_s_ifspec;
 
 #ifndef __ICC_ExecutiveDeviceMaskProp_INTERFACE_DEFINED__
 #define __ICC_ExecutiveDeviceMaskProp_INTERFACE_DEFINED__
@@ -8976,7 +9310,7 @@ EXTERN_C const IID IID_ICC_CollectionFilter;
 #endif 	/* __ICC_CollectionFilter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0056 */
+/* interface __MIDL_itf_Cinecoder_0000_0057 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -9090,8 +9424,8 @@ enum CC_AUDIO_CHANNEL_CONFIG
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0056_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0056_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0057_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0057_v0_0_s_ifspec;
 
 #ifndef __ICC_AudioStreamInfo_INTERFACE_DEFINED__
 #define __ICC_AudioStreamInfo_INTERFACE_DEFINED__
@@ -9741,7 +10075,7 @@ EXTERN_C const IID IID_ICC_AudioConsumer;
 #endif 	/* __ICC_AudioConsumer_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0061 */
+/* interface __MIDL_itf_Cinecoder_0000_0062 */
 /* [local] */ 
 
 typedef struct CC_AUDIO_FMT_EXT
@@ -9753,8 +10087,8 @@ typedef struct CC_AUDIO_FMT_EXT
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0061_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0061_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0062_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0062_v0_0_s_ifspec;
 
 #ifndef __ICC_AudioProducerExt_INTERFACE_DEFINED__
 #define __ICC_AudioProducerExt_INTERFACE_DEFINED__
@@ -10892,7 +11226,7 @@ EXTERN_C const IID IID_ICC_AudioFilter;
 #endif 	/* __ICC_AudioFilter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0067 */
+/* interface __MIDL_itf_Cinecoder_0000_0068 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -10913,8 +11247,8 @@ enum CC_MPG_AUDIO_EMPHASIS
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0067_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0067_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0068_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0068_v0_0_s_ifspec;
 
 #ifndef __ICC_MpegAudioStreamInfo_INTERFACE_DEFINED__
 #define __ICC_MpegAudioStreamInfo_INTERFACE_DEFINED__
@@ -13184,7 +13518,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoder;
 #endif 	/* __ICC_Aes3AudioEncoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0078 */
+/* interface __MIDL_itf_Cinecoder_0000_0079 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -13210,8 +13544,8 @@ enum CC_AAC_PROFILE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0078_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0078_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0079_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0079_v0_0_s_ifspec;
 
 #ifndef __ICC_AAC_AudioStreamInfo_INTERFACE_DEFINED__
 #define __ICC_AAC_AudioStreamInfo_INTERFACE_DEFINED__
@@ -15721,7 +16055,7 @@ EXTERN_C const IID IID_ICC_BluRay_PCM_AudioDecoder;
 #endif 	/* __ICC_BluRay_PCM_AudioDecoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0091 */
+/* interface __MIDL_itf_Cinecoder_0000_0092 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -15799,8 +16133,8 @@ enum CC_AC3_ROOMTYP
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0091_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0091_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0092_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0092_v0_0_s_ifspec;
 
 #ifndef __ICC_AC3_AudioStreamInfo_INTERFACE_DEFINED__
 #define __ICC_AC3_AudioStreamInfo_INTERFACE_DEFINED__
@@ -17815,7 +18149,7 @@ EXTERN_C const IID IID_ICC_WavAudioEncoder;
 #endif 	/* __ICC_WavAudioEncoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0100 */
+/* interface __MIDL_itf_Cinecoder_0000_0101 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -17835,15 +18169,21 @@ enum CC_COLOR_FMT
 	CCF_YUV420	= 0x41,
 	CCF_YUV422	= 0x42,
 	CCF_YUV444	= 0x43,
+	CCF_YUV400_10BIT	= 0x240,
+	CCF_YUV420_10BIT	= 0x241,
+	CCF_YUV422_10BIT	= 0x242,
+	CCF_YUV444_10BIT	= 0x243,
+	CCF_YUV400_16BIT	= 0x840,
+	CCF_YUV420_16BIT	= 0x841,
+	CCF_YUV422_16BIT	= 0x842,
+	CCF_YUV444_16BIT	= 0x843,
+	CCF_UYVY_10BIT	= 0x231,
+	CCF_YUY2_10BIT	= 0x232,
+	CCF_UYVY_16BIT	= 0x831,
+	CCF_YUY2_16BIT	= 0x832,
 	CCF_YV12	= CCF_YUV420,
 	CCF_YV16	= CCF_YUV422,
 	CCF_NV12	= 0x112,
-	CCF_UYVY_10BIT	= 0x131,
-	CCF_YUY2_10BIT	= 0x132,
-	CCF_YUV422_10BIT	= 0x142,
-	CCF_UYVY_16BIT	= 0x631,
-	CCF_YUY2_16BIT	= 0x632,
-	CCF_YUV422_16BIT	= 0x642,
 	CCF_V210	= 0x210,
 	CCF_SC10	= 0x211,
 	CCF_Y8	= 0x8
@@ -17943,7 +18283,11 @@ enum CC_COLOUR_PRIMARIES
 	CC_CPRIMS_SMPTE_170M	= ( CC_CPRIMS_ITUR_BT_470_BG + 1 ) ,
 	CC_CPRIMS_SMPTE_240M	= ( CC_CPRIMS_SMPTE_170M + 1 ) ,
 	CC_CPRIMS_GENERIC_FILM	= ( CC_CPRIMS_SMPTE_240M + 1 ) ,
-	CC_CPRIMS_TOTAL	= ( CC_CPRIMS_GENERIC_FILM + 1 ) 
+	CC_CPRIMS_ITUR_BT_2020	= ( CC_CPRIMS_GENERIC_FILM + 1 ) ,
+	CC_CPRIMS_SMPTE_ST_428_1	= ( CC_CPRIMS_ITUR_BT_2020 + 1 ) ,
+	CC_CPRIMS_SMPTE_ST_431_2	= ( CC_CPRIMS_SMPTE_ST_428_1 + 1 ) ,
+	CC_CPRIMS_SMPTE_ST_432_1	= ( CC_CPRIMS_SMPTE_ST_431_2 + 1 ) ,
+	CC_CPRIMS_TOTAL	= ( CC_CPRIMS_SMPTE_ST_432_1 + 1 ) 
     } 	CC_COLOUR_PRIMARIES;
 
 typedef /* [v1_enum] */ 
@@ -17959,7 +18303,14 @@ enum CC_TRANSFER_CHARACTERISTICS
 	CC_TXCHRS_LINEAR	= ( CC_TXCHRS_SMPTE_240M + 1 ) ,
 	CC_TXCHRS_LOG_100	= ( CC_TXCHRS_LINEAR + 1 ) ,
 	CC_TXCHRS_LOG_316	= ( CC_TXCHRS_LOG_100 + 1 ) ,
-	CC_TXCHRS_TOTAL	= ( CC_TXCHRS_LOG_316 + 1 ) 
+	CC_TXCHRS_IEC_61966_2_4	= ( CC_TXCHRS_LOG_316 + 1 ) ,
+	CC_TXCHRS_ITUR_BT_1361	= ( CC_TXCHRS_IEC_61966_2_4 + 1 ) ,
+	CC_TXCHRS_IEC_61966_2_1	= ( CC_TXCHRS_ITUR_BT_1361 + 1 ) ,
+	CC_TXCHRS_ITUR_BT_2020_10BIT	= ( CC_TXCHRS_IEC_61966_2_1 + 1 ) ,
+	CC_TXCHRS_ITUR_BT_2020_12BIT	= ( CC_TXCHRS_ITUR_BT_2020_10BIT + 1 ) ,
+	CC_TXCHRS_SMPTE_ST_2084	= ( CC_TXCHRS_ITUR_BT_2020_12BIT + 1 ) ,
+	CC_TXCHRS_SMPTE_ST_428_1	= ( CC_TXCHRS_SMPTE_ST_2084 + 1 ) ,
+	CC_TXCHRS_TOTAL	= ( CC_TXCHRS_SMPTE_ST_428_1 + 1 ) 
     } 	CC_TRANSFER_CHARACTERISTICS;
 
 typedef /* [v1_enum] */ 
@@ -17972,7 +18323,11 @@ enum CC_MATRIX_COEFFICIENTS
 	CC_MCOEFS_ITUR_BT_470_BG	= ( CC_MCOEFS_FCC + 1 ) ,
 	CC_MCOEFS_SMPTE_170M	= ( CC_MCOEFS_ITUR_BT_470_BG + 1 ) ,
 	CC_MCOEFS_SMPTE_240M	= ( CC_MCOEFS_SMPTE_170M + 1 ) ,
-	CC_MCOEFS_TOTAL	= ( CC_MCOEFS_SMPTE_240M + 1 ) 
+	CC_MCOEFS_YCGCO	= ( CC_MCOEFS_SMPTE_240M + 1 ) ,
+	CC_MCOEFS_ITUR_BT_2020_NON_CONST	= ( CC_MCOEFS_YCGCO + 1 ) ,
+	CC_MCOEFS_ITUR_BT_2020_CONST	= ( CC_MCOEFS_ITUR_BT_2020_NON_CONST + 1 ) ,
+	CC_MCOEFS_SMPTE_2085	= ( CC_MCOEFS_ITUR_BT_2020_CONST + 1 ) ,
+	CC_MCOEFS_TOTAL	= ( CC_MCOEFS_SMPTE_2085 + 1 ) 
     } 	CC_MATRIX_COEFFICIENTS;
 
 typedef struct CC_COLOUR_DESCRIPTION
@@ -18041,8 +18396,8 @@ typedef struct CC_QUANT_MATRIX_8x8
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0100_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0100_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0101_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0101_v0_0_s_ifspec;
 
 #ifndef __ICC_VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_VideoStreamInfo_INTERFACE_DEFINED__
@@ -18627,7 +18982,7 @@ EXTERN_C const IID IID_ICC_VideoFrameSecondFieldProp;
 #endif 	/* __ICC_VideoFrameSecondFieldProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0104 */
+/* interface __MIDL_itf_Cinecoder_0000_0105 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -18639,8 +18994,8 @@ enum CC_USER_DATA_TYPE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0104_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0104_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0105_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0105_v0_0_s_ifspec;
 
 #ifndef __ICC_VideoFrameUserDataProp_INTERFACE_DEFINED__
 #define __ICC_VideoFrameUserDataProp_INTERFACE_DEFINED__
@@ -18749,7 +19104,7 @@ EXTERN_C const IID IID_ICC_VideoFrameUserDataProp;
 #endif 	/* __ICC_VideoFrameUserDataProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0105 */
+/* interface __MIDL_itf_Cinecoder_0000_0106 */
 /* [local] */ 
 
 typedef struct CC_VIDEO_QUALITY_INFO
@@ -18766,8 +19121,8 @@ inline const CC_VIDEO_QUALITY_INFO MK_VIDEO_QUALITY_INFO(CC_QUALITY_MEASURE y, C
 #endif
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0105_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0105_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0106_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0106_v0_0_s_ifspec;
 
 #ifndef __ICC_VideoFrameQualityInfo_INTERFACE_DEFINED__
 #define __ICC_VideoFrameQualityInfo_INTERFACE_DEFINED__
@@ -18947,15 +19302,15 @@ EXTERN_C const IID IID_ICC_PsnrCalculationProp;
 #endif 	/* __ICC_PsnrCalculationProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0107 */
+/* interface __MIDL_itf_Cinecoder_0000_0108 */
 /* [local] */ 
 
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0107_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0107_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0108_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0108_v0_0_s_ifspec;
 
 #ifndef __ICC_VideoProducer_INTERFACE_DEFINED__
 #define __ICC_VideoProducer_INTERFACE_DEFINED__
@@ -20226,7 +20581,7 @@ EXTERN_C const IID IID_ICC_VideoSplitter;
 #endif 	/* __ICC_VideoSplitter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0114 */
+/* interface __MIDL_itf_Cinecoder_0000_0115 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -20237,8 +20592,8 @@ enum CC_VDEC_FRAME_OUTPUT_ORDER
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0114_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0114_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_s_ifspec;
 
 #ifndef __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__
 #define __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__
@@ -20329,23 +20684,43 @@ EXTERN_C const IID IID_ICC_VDecFrameOutputOrderProp;
 #endif 	/* __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0115 */
+/* interface __MIDL_itf_Cinecoder_0000_0116 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_PROFILE_LEVEL
     {	CC_MPG_PROFILE_LEVEL_UNKNOWN	= 0,
-	CC_MPG_SP_ML	= 0x58,
-	CC_MPG_MP_LL	= 0x4a,
-	CC_MPG_MP_ML	= 0x48,
-	CC_MPG_MP_H14	= 0x46,
-	CC_MPG_MP_HL	= 0x44,
-	CC_MPG_HP_ML	= 0x18,
-	CC_MPG_HP_H14	= 0x16,
-	CC_MPG_HP_HL	= 0x14,
-	CC_MPG_ESCAPE	= 0x80,
-	CC_MPG_422_ML	= 0x85,
-	CC_MPG_422_HL	= 0x82
+	CC_MPEG1_CONSTRAINED	= 0x1,
+	CC_MPEG1_ESCAPE	= 0x81,
+	CC_MPEG2_SP_ML	= 0x58,
+	CC_MPEG2_MP_LL	= 0x4a,
+	CC_MPEG2_MP_ML	= 0x48,
+	CC_MPEG2_MP_H14	= 0x46,
+	CC_MPEG2_MP_HL	= 0x44,
+	CC_MPEG2_422_ML	= 0x85,
+	CC_MPEG2_422_HL	= 0x82,
+	CC_MPEG2_SNR_LL	= 0x3a,
+	CC_MPEG2_SNR_ML	= 0x38,
+	CC_MPEG2_SPAT_H14	= 0x26,
+	CC_MPEG2_HP_ML	= 0x18,
+	CC_MPEG2_HP_H14	= 0x16,
+	CC_MPEG2_HP_HL	= 0x14,
+	CC_MPEG2_MVP_LL	= 0x8e,
+	CC_MPEG2_MVP_ML	= 0x8d,
+	CC_MPEG2_MVP_H14	= 0x8b,
+	CC_MPEG2_MVP_HL	= 0x8a,
+	CC_MPEG2_ESCAPE	= 0x80,
+	CC_MPG_SP_ML	= CC_MPEG2_SP_ML,
+	CC_MPG_MP_LL	= CC_MPEG2_MP_LL,
+	CC_MPG_MP_ML	= CC_MPEG2_MP_ML,
+	CC_MPG_MP_H14	= CC_MPEG2_MP_H14,
+	CC_MPG_MP_HL	= CC_MPEG2_MP_HL,
+	CC_MPG_HP_ML	= CC_MPEG2_HP_ML,
+	CC_MPG_HP_H14	= CC_MPEG2_HP_H14,
+	CC_MPG_HP_HL	= CC_MPEG2_HP_HL,
+	CC_MPG_ESCAPE	= CC_MPEG2_ESCAPE,
+	CC_MPG_422_ML	= CC_MPEG2_422_ML,
+	CC_MPG_422_HL	= CC_MPEG2_422_HL
     } 	CC_MPG_PROFILE_LEVEL;
 
 typedef /* [v1_enum] */ 
@@ -20448,6 +20823,10 @@ enum CC_MPG_MOTION_PARAMS
 	CC_MPG_ME_NORMAL_SAD	= 0x20000,
 	CC_MPG_ME_OPPOSITE_FLD	= 0x40000,
 	CC_MPG_ME_ALIGN_VEC	= 0x80000,
+	CC_MPG_ME_NO_INTERLACED_SEARCH	= 0x100000,
+	CC_MPG_ME_NO_ADAPTIVE_SEARCH_WINDOW	= 0x200000,
+	CC_MPG_ME_NO_PREDICTIVE_SEARCH	= 0x400000,
+	CC_MPG_ME_NO_RECALC_MISPREDICTED_VECTORS	= 0x800000,
 	CC_MPG_ME_FASTEST	= ( ( ( ( CC_MPG_ME_WND_16 | CC_MPG_ME_CELL4 )  | CC_MPG_ME_SPC_4 )  | CC_MPG_ME_INCR_0 )  | CC_MPG_ME_NO_HALFPEL ) ,
 	CC_MPG_ME_NORMAL	= ( ( ( ( ( CC_MPG_ME_WND_64 | CC_MPG_ME_CELL2 )  | CC_MPG_ME_SPC_2 )  | CC_MPG_ME_INCR_1 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC ) ,
 	CC_MPG_ME_BEST	= ( ( ( ( ( ( ( CC_MPG_ME_WND_128 | CC_MPG_ME_CELL1 )  | CC_MPG_ME_SPC_1 )  | CC_MPG_ME_INCR_2 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC )  | CC_MPG_ME_NORMAL_SAD )  | CC_MPG_ME_OPPOSITE_FLD ) 
@@ -20473,8 +20852,8 @@ enum CC_MPG_QUANT_MATRIX
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_s_ifspec;
 
 #ifndef __ICC_MpegVideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_MpegVideoStreamInfo_INTERFACE_DEFINED__
@@ -23377,7 +23756,7 @@ EXTERN_C const IID IID_ICC_D10VideoEncoder;
 #endif 	/* __ICC_D10VideoEncoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0123 */
+/* interface __MIDL_itf_Cinecoder_0000_0124 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -23494,8 +23873,8 @@ enum CC_H264_FRAME_FLAGS
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0123_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0123_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0124_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0124_v0_0_s_ifspec;
 
 #ifndef __ICC_H264VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_H264VideoStreamInfo_INTERFACE_DEFINED__
@@ -25879,7 +26258,1706 @@ EXTERN_C const IID IID_ICC_H264VideoSplitter;
 #endif 	/* __ICC_H264VideoSplitter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0130 */
+/* interface __MIDL_itf_Cinecoder_0000_0131 */
+/* [local] */ 
+
+typedef /* [v1_enum] */ 
+enum CC_HEVC_PROFILE
+    {	CC_HEVC_PROFILE_UNKNOWN	= 0,
+	CC_HEVC_MAIN_PROFILE	= 1,
+	CC_HEVC_MAIN_10_PROFILE	= 2,
+	CC_HEVC_MAIN_STILL_PROFILE	= 3
+    } 	CC_HEVC_PROFILE;
+
+typedef /* [v1_enum] */ 
+enum CC_HEVC_FRAME_FLAGS
+    {	CC_HEVC_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
+	CC_HEVC_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
+	CC_HEVC_FRAME_IDR	= 0x1000,
+	CC_HEVC_HDR_SEQ_PARAM_SET	= 0x1000000,
+	CC_HEVC_HDR_PIC_PARAM_SET	= 0x2000000,
+	CC_HEVC_HDR_AU_DELIMITER	= 0x8000000
+    } 	CC_HEVC_FRAME_FLAGS;
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0131_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0131_v0_0_s_ifspec;
+
+#ifndef __ICC_HEVCVideoStreamInfo_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoStreamInfo_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoStreamInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoStreamInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("59d8bbc4-4f9e-4e91-a113-5d4d01262579")
+    ICC_HEVCVideoStreamInfo : public ICC_VideoStreamInfo
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoStreamInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoStreamInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoStreamInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamType )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_ELEMENTARY_STREAM_TYPE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_FRAME_RATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_SIZE *s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_RATIONAL *a);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProgressiveSequence )( 
+            ICC_HEVCVideoStreamInfo * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoStreamInfoVtbl;
+
+    interface ICC_HEVCVideoStreamInfo
+    {
+        CONST_VTBL struct ICC_HEVCVideoStreamInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoStreamInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoStreamInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoStreamInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoStreamInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_HEVCVideoStreamInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_HEVCVideoStreamInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_HEVCVideoStreamInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_HEVCVideoStreamInfo_get_StreamType(This,p)	\
+    ( (This)->lpVtbl -> get_StreamType(This,p) ) 
+
+#define ICC_HEVCVideoStreamInfo_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_HEVCVideoStreamInfo_get_FrameRate(This,p)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,p) ) 
+
+
+#define ICC_HEVCVideoStreamInfo_get_FrameSize(This,s)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,s) ) 
+
+#define ICC_HEVCVideoStreamInfo_get_AspectRatio(This,a)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,a) ) 
+
+#define ICC_HEVCVideoStreamInfo_get_ProgressiveSequence(This,x)	\
+    ( (This)->lpVtbl -> get_ProgressiveSequence(This,x) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoStreamInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoFrameInfo_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoFrameInfo_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoFrameInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoFrameInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("ed49d3da-7b4d-4f43-adfe-961aac27492c")
+    ICC_HEVCVideoFrameInfo : public ICC_VideoFrameInfo
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoFrameInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoFrameInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoFrameInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ByteStreamDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ByteOffset )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ByteStreamDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSamples )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ElementaryDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SampleOffset )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ElementaryDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Duration )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0002);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PresentationDelta )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_INT *__MIDL__ICC_ElementaryDataInfo0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PTS )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0004);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DTS )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SequenceEntryFlag )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_BOOL *__MIDL__ICC_ElementaryDataInfo0006);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Number )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *n);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingNumber )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *c);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeCode )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIMECODE *t);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *i);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameType )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_FRAME_TYPE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictStruct )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ CC_PICTURE_STRUCTURE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Flags )( 
+            ICC_HEVCVideoFrameInfo * This,
+            /* [retval][out] */ DWORD *x);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoFrameInfoVtbl;
+
+    interface ICC_HEVCVideoFrameInfo
+    {
+        CONST_VTBL struct ICC_HEVCVideoFrameInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoFrameInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoFrameInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoFrameInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoFrameInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_HEVCVideoFrameInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_HEVCVideoFrameInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_HEVCVideoFrameInfo_get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001)	\
+    ( (This)->lpVtbl -> get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001) ) 
+
+
+#define ICC_HEVCVideoFrameInfo_get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000)	\
+    ( (This)->lpVtbl -> get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001)	\
+    ( (This)->lpVtbl -> get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002)	\
+    ( (This)->lpVtbl -> get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003)	\
+    ( (This)->lpVtbl -> get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004)	\
+    ( (This)->lpVtbl -> get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005)	\
+    ( (This)->lpVtbl -> get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006)	\
+    ( (This)->lpVtbl -> get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006) ) 
+
+
+#define ICC_HEVCVideoFrameInfo_get_Number(This,n)	\
+    ( (This)->lpVtbl -> get_Number(This,n) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_CodingNumber(This,c)	\
+    ( (This)->lpVtbl -> get_CodingNumber(This,c) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_TimeCode(This,t)	\
+    ( (This)->lpVtbl -> get_TimeCode(This,t) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_InterlaceType(This,i)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,i) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_FrameType(This,x)	\
+    ( (This)->lpVtbl -> get_FrameType(This,x) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_PictStruct(This,x)	\
+    ( (This)->lpVtbl -> get_PictStruct(This,x) ) 
+
+#define ICC_HEVCVideoFrameInfo_get_Flags(This,x)	\
+    ( (This)->lpVtbl -> get_Flags(This,x) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoFrameInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoDecoder_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoDecoder_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoDecoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoDecoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("b0584a0a-a32c-4040-a796-a624f2dca37f")
+    ICC_HEVCVideoDecoder : public ICC_VideoDecoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoDecoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoDecoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoDecoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_HEVCVideoDecoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoDecoderVtbl;
+
+    interface ICC_HEVCVideoDecoder
+    {
+        CONST_VTBL struct ICC_HEVCVideoDecoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoDecoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoDecoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoDecoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoDecoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_HEVCVideoDecoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_HEVCVideoDecoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_HEVCVideoDecoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_HEVCVideoDecoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_HEVCVideoDecoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_HEVCVideoDecoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_HEVCVideoDecoder_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_HEVCVideoDecoder_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_HEVCVideoDecoder_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_HEVCVideoDecoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_HEVCVideoDecoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_HEVCVideoDecoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_HEVCVideoDecoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoDecoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoSplitter_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoSplitter_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoSplitter */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoSplitter;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("693b38d6-a8cf-4d96-9099-a12fada9b769")
+    ICC_HEVCVideoSplitter : public ICC_VideoSplitter
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoSplitterVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoSplitter * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoSplitter * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Transcoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_HEVCVideoSplitter * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoSplitterVtbl;
+
+    interface ICC_HEVCVideoSplitter
+    {
+        CONST_VTBL struct ICC_HEVCVideoSplitterVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoSplitter_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoSplitter_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoSplitter_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoSplitter_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_HEVCVideoSplitter_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_HEVCVideoSplitter_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_HEVCVideoSplitter_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_HEVCVideoSplitter_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_HEVCVideoSplitter_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_HEVCVideoSplitter_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_HEVCVideoSplitter_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_HEVCVideoSplitter_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_HEVCVideoSplitter_get_DataSize(This,__MIDL__ICC_Transcoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Transcoder0000) ) 
+
+#define ICC_HEVCVideoSplitter_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+
+#define ICC_HEVCVideoSplitter_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_HEVCVideoSplitter_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoSplitter_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoEncoder_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoEncoder_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoEncoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoEncoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("78058b0d-b691-4ea1-b36e-599b804fda66")
+    ICC_HEVCVideoEncoder : public ICC_VideoEncoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoEncoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoEncoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoEncoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ IUnknown *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Encoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddFrame )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrame )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsScaleAvailable )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_VideoEncoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_HEVCVideoEncoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoEncoderVtbl;
+
+    interface ICC_HEVCVideoEncoder
+    {
+        CONST_VTBL struct ICC_HEVCVideoEncoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoEncoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoEncoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoEncoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoEncoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_HEVCVideoEncoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_HEVCVideoEncoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_HEVCVideoEncoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_HEVCVideoEncoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_HEVCVideoEncoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_HEVCVideoEncoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_HEVCVideoEncoder_get_DataSize(This,__MIDL__ICC_Encoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Encoder0000) ) 
+
+#define ICC_HEVCVideoEncoder_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+#define ICC_HEVCVideoEncoder_AddFrame(This,Format,pData,cbSize,stride,pResult)	\
+    ( (This)->lpVtbl -> AddFrame(This,Format,pData,cbSize,stride,pResult) ) 
+
+#define ICC_HEVCVideoEncoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_HEVCVideoEncoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_HEVCVideoEncoder_AddScaleFrame(This,pData,cbSize,pParams,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrame(This,pData,cbSize,pParams,pResult) ) 
+
+#define ICC_HEVCVideoEncoder_IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000)	\
+    ( (This)->lpVtbl -> IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000) ) 
+
+#define ICC_HEVCVideoEncoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_HEVCVideoEncoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoEncoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_HEVCVideoEncoderSettings_INTERFACE_DEFINED__
+#define __ICC_HEVCVideoEncoderSettings_INTERFACE_DEFINED__
+
+/* interface ICC_HEVCVideoEncoderSettings */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_HEVCVideoEncoderSettings;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("e9d5616d-b262-44d5-8869-96aec9f78aa9")
+    ICC_HEVCVideoEncoderSettings : public ICC_Settings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameSize( 
+            /* [retval][out] */ CC_SIZE *__MIDL__ICC_HEVCVideoEncoderSettings0000) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameSize( 
+            /* [in] */ CC_SIZE __MIDL__ICC_HEVCVideoEncoderSettings0001) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameRate( 
+            /* [retval][out] */ CC_FRAME_RATE *__MIDL__ICC_HEVCVideoEncoderSettings0002) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameRate( 
+            /* [in] */ CC_FRAME_RATE __MIDL__ICC_HEVCVideoEncoderSettings0003) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AspectRatio( 
+            /* [retval][out] */ CC_RATIONAL *__MIDL__ICC_HEVCVideoEncoderSettings0004) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AspectRatio( 
+            /* [in] */ CC_RATIONAL __MIDL__ICC_HEVCVideoEncoderSettings0005) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitRate( 
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0006) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitRate( 
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0007) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_RateMode( 
+            /* [retval][out] */ CC_BITRATE_MODE *__MIDL__ICC_HEVCVideoEncoderSettings0008) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_RateMode( 
+            /* [in] */ CC_BITRATE_MODE __MIDL__ICC_HEVCVideoEncoderSettings0009) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_MinBitRate( 
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0010) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_MinBitRate( 
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0011) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AvgBitRate( 
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0012) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AvgBitRate( 
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0013) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IDR_Period( 
+            /* [retval][out] */ CC_PERIOD *__MIDL__ICC_HEVCVideoEncoderSettings0014) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IDR_Period( 
+            /* [in] */ CC_PERIOD __MIDL__ICC_HEVCVideoEncoderSettings0015) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_GOP( 
+            /* [retval][out] */ CC_GOP_DESCR *__MIDL__ICC_HEVCVideoEncoderSettings0016) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_GOP( 
+            /* [in] */ CC_GOP_DESCR __MIDL__ICC_HEVCVideoEncoderSettings0017) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_NumRefFrames( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0018) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_NumRefFrames( 
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0019) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_NumSlices( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0020) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_NumSlices( 
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0021) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Profile( 
+            /* [retval][out] */ CC_HEVC_PROFILE *__MIDL__ICC_HEVCVideoEncoderSettings0022) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Profile( 
+            /* [in] */ CC_HEVC_PROFILE __MIDL__ICC_HEVCVideoEncoderSettings0023) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Level( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0024) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Level( 
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0025) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaFormat( 
+            /* [retval][out] */ CC_CHROMA_FORMAT *__MIDL__ICC_HEVCVideoEncoderSettings0026) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ChromaFormat( 
+            /* [in] */ CC_CHROMA_FORMAT __MIDL__ICC_HEVCVideoEncoderSettings0027) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitDepthLuma( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0028) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitDepthLuma( 
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0029) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitDepthChroma( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0030) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitDepthChroma( 
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0031) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_VideoFormat( 
+            /* [retval][out] */ CC_VIDEO_FORMAT *__MIDL__ICC_HEVCVideoEncoderSettings0032) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_VideoFormat( 
+            /* [in] */ CC_VIDEO_FORMAT __MIDL__ICC_HEVCVideoEncoderSettings0033) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InterlaceType( 
+            /* [retval][out] */ CC_INTERLACE_TYPE *__MIDL__ICC_HEVCVideoEncoderSettings0034) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InterlaceType( 
+            /* [in] */ CC_INTERLACE_TYPE __MIDL__ICC_HEVCVideoEncoderSettings0035) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PictureStructure( 
+            /* [retval][out] */ CC_PICTURE_STRUCTURE *__MIDL__ICC_HEVCVideoEncoderSettings0036) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_PictureStructure( 
+            /* [in] */ CC_PICTURE_STRUCTURE __MIDL__ICC_HEVCVideoEncoderSettings0037) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_MB_Struct( 
+            /* [retval][out] */ CC_MB_STRUCTURE *__MIDL__ICC_HEVCVideoEncoderSettings0038) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_MB_Struct( 
+            /* [in] */ CC_MB_STRUCTURE __MIDL__ICC_HEVCVideoEncoderSettings0039) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ColorCoefs( 
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *__MIDL__ICC_HEVCVideoEncoderSettings0040) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ColorCoefs( 
+            /* [in] */ CC_COLOUR_DESCRIPTION __MIDL__ICC_HEVCVideoEncoderSettings0041) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_QP( 
+            /* [retval][out] */ CC_QUANT_DESCR *__MIDL__ICC_HEVCVideoEncoderSettings0042) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_QP( 
+            /* [in] */ CC_QUANT_DESCR __MIDL__ICC_HEVCVideoEncoderSettings0043) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaQPOffset( 
+            /* [retval][out] */ CC_INT *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ChromaQPOffset( 
+            /* [in] */ CC_INT x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_CpbSize( 
+            /* [retval][out] */ CC_PERIOD *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_CpbSize( 
+            /* [in] */ CC_PERIOD x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InitialCpbLevel( 
+            /* [retval][out] */ CC_PERIOD *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InitialCpbLevel( 
+            /* [in] */ CC_PERIOD x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_SequenceHeaderPeriod( 
+            /* [retval][out] */ CC_PERIOD *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_SequenceHeaderPeriod( 
+            /* [in] */ CC_PERIOD x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PutAccessUnitDelimiter( 
+            /* [retval][out] */ CC_BOOL *__MIDL__ICC_HEVCVideoEncoderSettings0044) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_PutAccessUnitDelimiter( 
+            /* [in] */ CC_BOOL __MIDL__ICC_HEVCVideoEncoderSettings0045) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PutSeqEndCode( 
+            /* [retval][out] */ CC_BOOL *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_PutSeqEndCode( 
+            /* [in] */ CC_BOOL x) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_HEVCVideoEncoderSettingsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_HEVCVideoEncoderSettings * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_HEVCVideoEncoderSettings * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_SIZE *__MIDL__ICC_HEVCVideoEncoderSettings0000);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameSize )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_SIZE __MIDL__ICC_HEVCVideoEncoderSettings0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_FRAME_RATE *__MIDL__ICC_HEVCVideoEncoderSettings0002);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_FRAME_RATE __MIDL__ICC_HEVCVideoEncoderSettings0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_RATIONAL *__MIDL__ICC_HEVCVideoEncoderSettings0004);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AspectRatio )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_RATIONAL __MIDL__ICC_HEVCVideoEncoderSettings0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0006);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0007);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_RateMode )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE_MODE *__MIDL__ICC_HEVCVideoEncoderSettings0008);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_RateMode )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE_MODE __MIDL__ICC_HEVCVideoEncoderSettings0009);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_MinBitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0010);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_MinBitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0011);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AvgBitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE *__MIDL__ICC_HEVCVideoEncoderSettings0012);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AvgBitRate )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE __MIDL__ICC_HEVCVideoEncoderSettings0013);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IDR_Period )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PERIOD *__MIDL__ICC_HEVCVideoEncoderSettings0014);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IDR_Period )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_PERIOD __MIDL__ICC_HEVCVideoEncoderSettings0015);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_GOP )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_GOP_DESCR *__MIDL__ICC_HEVCVideoEncoderSettings0016);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_GOP )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_GOP_DESCR __MIDL__ICC_HEVCVideoEncoderSettings0017);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumRefFrames )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0018);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_NumRefFrames )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0019);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSlices )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0020);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_NumSlices )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0021);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_HEVC_PROFILE *__MIDL__ICC_HEVCVideoEncoderSettings0022);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Profile )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_HEVC_PROFILE __MIDL__ICC_HEVCVideoEncoderSettings0023);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Level )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0024);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Level )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0025);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaFormat )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_CHROMA_FORMAT *__MIDL__ICC_HEVCVideoEncoderSettings0026);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaFormat )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_CHROMA_FORMAT __MIDL__ICC_HEVCVideoEncoderSettings0027);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepthLuma )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0028);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitDepthLuma )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0029);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepthChroma )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_HEVCVideoEncoderSettings0030);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitDepthChroma )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_HEVCVideoEncoderSettings0031);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VideoFormat )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_VIDEO_FORMAT *__MIDL__ICC_HEVCVideoEncoderSettings0032);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_VideoFormat )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_VIDEO_FORMAT __MIDL__ICC_HEVCVideoEncoderSettings0033);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *__MIDL__ICC_HEVCVideoEncoderSettings0034);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterlaceType )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_INTERLACE_TYPE __MIDL__ICC_HEVCVideoEncoderSettings0035);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictureStructure )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PICTURE_STRUCTURE *__MIDL__ICC_HEVCVideoEncoderSettings0036);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PictureStructure )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_PICTURE_STRUCTURE __MIDL__ICC_HEVCVideoEncoderSettings0037);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_MB_Struct )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_MB_STRUCTURE *__MIDL__ICC_HEVCVideoEncoderSettings0038);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_MB_Struct )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_MB_STRUCTURE __MIDL__ICC_HEVCVideoEncoderSettings0039);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *__MIDL__ICC_HEVCVideoEncoderSettings0040);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ColorCoefs )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_COLOUR_DESCRIPTION __MIDL__ICC_HEVCVideoEncoderSettings0041);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_QP )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_QUANT_DESCR *__MIDL__ICC_HEVCVideoEncoderSettings0042);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_QP )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_QUANT_DESCR __MIDL__ICC_HEVCVideoEncoderSettings0043);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaQPOffset )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_INT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaQPOffset )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_INT x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CpbSize )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PERIOD *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_CpbSize )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_PERIOD x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InitialCpbLevel )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PERIOD *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InitialCpbLevel )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_PERIOD x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SequenceHeaderPeriod )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PERIOD *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_SequenceHeaderPeriod )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_PERIOD x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PutAccessUnitDelimiter )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BOOL *__MIDL__ICC_HEVCVideoEncoderSettings0044);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PutAccessUnitDelimiter )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BOOL __MIDL__ICC_HEVCVideoEncoderSettings0045);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PutSeqEndCode )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PutSeqEndCode )( 
+            ICC_HEVCVideoEncoderSettings * This,
+            /* [in] */ CC_BOOL x);
+        
+        END_INTERFACE
+    } ICC_HEVCVideoEncoderSettingsVtbl;
+
+    interface ICC_HEVCVideoEncoderSettings
+    {
+        CONST_VTBL struct ICC_HEVCVideoEncoderSettingsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_HEVCVideoEncoderSettings_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_HEVCVideoEncoderSettings_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_HEVCVideoEncoderSettings_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_HEVCVideoEncoderSettings_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_HEVCVideoEncoderSettings_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_HEVCVideoEncoderSettings_get_FrameSize(This,__MIDL__ICC_HEVCVideoEncoderSettings0000)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,__MIDL__ICC_HEVCVideoEncoderSettings0000) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_FrameSize(This,__MIDL__ICC_HEVCVideoEncoderSettings0001)	\
+    ( (This)->lpVtbl -> put_FrameSize(This,__MIDL__ICC_HEVCVideoEncoderSettings0001) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_FrameRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0002)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0002) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_FrameRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0003)	\
+    ( (This)->lpVtbl -> put_FrameRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0003) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_AspectRatio(This,__MIDL__ICC_HEVCVideoEncoderSettings0004)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,__MIDL__ICC_HEVCVideoEncoderSettings0004) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_AspectRatio(This,__MIDL__ICC_HEVCVideoEncoderSettings0005)	\
+    ( (This)->lpVtbl -> put_AspectRatio(This,__MIDL__ICC_HEVCVideoEncoderSettings0005) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_BitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0006)	\
+    ( (This)->lpVtbl -> get_BitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0006) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_BitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0007)	\
+    ( (This)->lpVtbl -> put_BitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0007) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_RateMode(This,__MIDL__ICC_HEVCVideoEncoderSettings0008)	\
+    ( (This)->lpVtbl -> get_RateMode(This,__MIDL__ICC_HEVCVideoEncoderSettings0008) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_RateMode(This,__MIDL__ICC_HEVCVideoEncoderSettings0009)	\
+    ( (This)->lpVtbl -> put_RateMode(This,__MIDL__ICC_HEVCVideoEncoderSettings0009) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_MinBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0010)	\
+    ( (This)->lpVtbl -> get_MinBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0010) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_MinBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0011)	\
+    ( (This)->lpVtbl -> put_MinBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0011) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_AvgBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0012)	\
+    ( (This)->lpVtbl -> get_AvgBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0012) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_AvgBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0013)	\
+    ( (This)->lpVtbl -> put_AvgBitRate(This,__MIDL__ICC_HEVCVideoEncoderSettings0013) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_IDR_Period(This,__MIDL__ICC_HEVCVideoEncoderSettings0014)	\
+    ( (This)->lpVtbl -> get_IDR_Period(This,__MIDL__ICC_HEVCVideoEncoderSettings0014) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_IDR_Period(This,__MIDL__ICC_HEVCVideoEncoderSettings0015)	\
+    ( (This)->lpVtbl -> put_IDR_Period(This,__MIDL__ICC_HEVCVideoEncoderSettings0015) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_GOP(This,__MIDL__ICC_HEVCVideoEncoderSettings0016)	\
+    ( (This)->lpVtbl -> get_GOP(This,__MIDL__ICC_HEVCVideoEncoderSettings0016) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_GOP(This,__MIDL__ICC_HEVCVideoEncoderSettings0017)	\
+    ( (This)->lpVtbl -> put_GOP(This,__MIDL__ICC_HEVCVideoEncoderSettings0017) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_NumRefFrames(This,__MIDL__ICC_HEVCVideoEncoderSettings0018)	\
+    ( (This)->lpVtbl -> get_NumRefFrames(This,__MIDL__ICC_HEVCVideoEncoderSettings0018) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_NumRefFrames(This,__MIDL__ICC_HEVCVideoEncoderSettings0019)	\
+    ( (This)->lpVtbl -> put_NumRefFrames(This,__MIDL__ICC_HEVCVideoEncoderSettings0019) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_NumSlices(This,__MIDL__ICC_HEVCVideoEncoderSettings0020)	\
+    ( (This)->lpVtbl -> get_NumSlices(This,__MIDL__ICC_HEVCVideoEncoderSettings0020) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_NumSlices(This,__MIDL__ICC_HEVCVideoEncoderSettings0021)	\
+    ( (This)->lpVtbl -> put_NumSlices(This,__MIDL__ICC_HEVCVideoEncoderSettings0021) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_Profile(This,__MIDL__ICC_HEVCVideoEncoderSettings0022)	\
+    ( (This)->lpVtbl -> get_Profile(This,__MIDL__ICC_HEVCVideoEncoderSettings0022) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_Profile(This,__MIDL__ICC_HEVCVideoEncoderSettings0023)	\
+    ( (This)->lpVtbl -> put_Profile(This,__MIDL__ICC_HEVCVideoEncoderSettings0023) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_Level(This,__MIDL__ICC_HEVCVideoEncoderSettings0024)	\
+    ( (This)->lpVtbl -> get_Level(This,__MIDL__ICC_HEVCVideoEncoderSettings0024) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_Level(This,__MIDL__ICC_HEVCVideoEncoderSettings0025)	\
+    ( (This)->lpVtbl -> put_Level(This,__MIDL__ICC_HEVCVideoEncoderSettings0025) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_ChromaFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0026)	\
+    ( (This)->lpVtbl -> get_ChromaFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0026) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_ChromaFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0027)	\
+    ( (This)->lpVtbl -> put_ChromaFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0027) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_BitDepthLuma(This,__MIDL__ICC_HEVCVideoEncoderSettings0028)	\
+    ( (This)->lpVtbl -> get_BitDepthLuma(This,__MIDL__ICC_HEVCVideoEncoderSettings0028) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_BitDepthLuma(This,__MIDL__ICC_HEVCVideoEncoderSettings0029)	\
+    ( (This)->lpVtbl -> put_BitDepthLuma(This,__MIDL__ICC_HEVCVideoEncoderSettings0029) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_BitDepthChroma(This,__MIDL__ICC_HEVCVideoEncoderSettings0030)	\
+    ( (This)->lpVtbl -> get_BitDepthChroma(This,__MIDL__ICC_HEVCVideoEncoderSettings0030) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_BitDepthChroma(This,__MIDL__ICC_HEVCVideoEncoderSettings0031)	\
+    ( (This)->lpVtbl -> put_BitDepthChroma(This,__MIDL__ICC_HEVCVideoEncoderSettings0031) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_VideoFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0032)	\
+    ( (This)->lpVtbl -> get_VideoFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0032) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_VideoFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0033)	\
+    ( (This)->lpVtbl -> put_VideoFormat(This,__MIDL__ICC_HEVCVideoEncoderSettings0033) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_InterlaceType(This,__MIDL__ICC_HEVCVideoEncoderSettings0034)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,__MIDL__ICC_HEVCVideoEncoderSettings0034) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_InterlaceType(This,__MIDL__ICC_HEVCVideoEncoderSettings0035)	\
+    ( (This)->lpVtbl -> put_InterlaceType(This,__MIDL__ICC_HEVCVideoEncoderSettings0035) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_PictureStructure(This,__MIDL__ICC_HEVCVideoEncoderSettings0036)	\
+    ( (This)->lpVtbl -> get_PictureStructure(This,__MIDL__ICC_HEVCVideoEncoderSettings0036) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_PictureStructure(This,__MIDL__ICC_HEVCVideoEncoderSettings0037)	\
+    ( (This)->lpVtbl -> put_PictureStructure(This,__MIDL__ICC_HEVCVideoEncoderSettings0037) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_MB_Struct(This,__MIDL__ICC_HEVCVideoEncoderSettings0038)	\
+    ( (This)->lpVtbl -> get_MB_Struct(This,__MIDL__ICC_HEVCVideoEncoderSettings0038) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_MB_Struct(This,__MIDL__ICC_HEVCVideoEncoderSettings0039)	\
+    ( (This)->lpVtbl -> put_MB_Struct(This,__MIDL__ICC_HEVCVideoEncoderSettings0039) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_ColorCoefs(This,__MIDL__ICC_HEVCVideoEncoderSettings0040)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,__MIDL__ICC_HEVCVideoEncoderSettings0040) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_ColorCoefs(This,__MIDL__ICC_HEVCVideoEncoderSettings0041)	\
+    ( (This)->lpVtbl -> put_ColorCoefs(This,__MIDL__ICC_HEVCVideoEncoderSettings0041) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_QP(This,__MIDL__ICC_HEVCVideoEncoderSettings0042)	\
+    ( (This)->lpVtbl -> get_QP(This,__MIDL__ICC_HEVCVideoEncoderSettings0042) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_QP(This,__MIDL__ICC_HEVCVideoEncoderSettings0043)	\
+    ( (This)->lpVtbl -> put_QP(This,__MIDL__ICC_HEVCVideoEncoderSettings0043) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_ChromaQPOffset(This,x)	\
+    ( (This)->lpVtbl -> get_ChromaQPOffset(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_ChromaQPOffset(This,x)	\
+    ( (This)->lpVtbl -> put_ChromaQPOffset(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_CpbSize(This,x)	\
+    ( (This)->lpVtbl -> get_CpbSize(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_CpbSize(This,x)	\
+    ( (This)->lpVtbl -> put_CpbSize(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_InitialCpbLevel(This,x)	\
+    ( (This)->lpVtbl -> get_InitialCpbLevel(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_InitialCpbLevel(This,x)	\
+    ( (This)->lpVtbl -> put_InitialCpbLevel(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_SequenceHeaderPeriod(This,x)	\
+    ( (This)->lpVtbl -> get_SequenceHeaderPeriod(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_SequenceHeaderPeriod(This,x)	\
+    ( (This)->lpVtbl -> put_SequenceHeaderPeriod(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_PutAccessUnitDelimiter(This,__MIDL__ICC_HEVCVideoEncoderSettings0044)	\
+    ( (This)->lpVtbl -> get_PutAccessUnitDelimiter(This,__MIDL__ICC_HEVCVideoEncoderSettings0044) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_PutAccessUnitDelimiter(This,__MIDL__ICC_HEVCVideoEncoderSettings0045)	\
+    ( (This)->lpVtbl -> put_PutAccessUnitDelimiter(This,__MIDL__ICC_HEVCVideoEncoderSettings0045) ) 
+
+#define ICC_HEVCVideoEncoderSettings_get_PutSeqEndCode(This,x)	\
+    ( (This)->lpVtbl -> get_PutSeqEndCode(This,x) ) 
+
+#define ICC_HEVCVideoEncoderSettings_put_PutSeqEndCode(This,x)	\
+    ( (This)->lpVtbl -> put_PutSeqEndCode(This,x) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_HEVCVideoEncoderSettings_INTERFACE_DEFINED__ */
+
+
+/* interface __MIDL_itf_Cinecoder_0000_0137 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -25909,8 +27987,8 @@ enum CC_AVCI_MODE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0130_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0130_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0137_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0137_v0_0_s_ifspec;
 
 #ifndef __ICC_AVCIntraEncoderSettings_INTERFACE_DEFINED__
 #define __ICC_AVCIntraEncoderSettings_INTERFACE_DEFINED__
@@ -26371,6 +28449,462 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoder;
 
 
 #endif 	/* __ICC_AVCIntraEncoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_AVCIntraDecoder_INTERFACE_DEFINED__
+#define __ICC_AVCIntraDecoder_INTERFACE_DEFINED__
+
+/* interface ICC_AVCIntraDecoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_AVCIntraDecoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("6c54b9dd-6608-4b3c-8325-3d45a612cbb9")
+    ICC_AVCIntraDecoder : public ICC_H264VideoDecoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_AVCIntraDecoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_AVCIntraDecoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_AVCIntraDecoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_AVCIntraDecoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_AVCIntraDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_AVCIntraDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_AVCIntraDecoder * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_AVCIntraDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_AVCIntraDecoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_AVCIntraDecoderVtbl;
+
+    interface ICC_AVCIntraDecoder
+    {
+        CONST_VTBL struct ICC_AVCIntraDecoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_AVCIntraDecoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_AVCIntraDecoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_AVCIntraDecoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_AVCIntraDecoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_AVCIntraDecoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_AVCIntraDecoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_AVCIntraDecoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_AVCIntraDecoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_AVCIntraDecoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_AVCIntraDecoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_AVCIntraDecoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_AVCIntraDecoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_AVCIntraDecoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_AVCIntraDecoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_AVCIntraDecoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_AVCIntraDecoder_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_AVCIntraDecoder_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_AVCIntraDecoder_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_AVCIntraDecoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_AVCIntraDecoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_AVCIntraDecoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_AVCIntraDecoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_AVCIntraDecoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_AVCIntraDecoder2_INTERFACE_DEFINED__
+#define __ICC_AVCIntraDecoder2_INTERFACE_DEFINED__
+
+/* interface ICC_AVCIntraDecoder2 */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_AVCIntraDecoder2;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("1a5e58f3-876d-4efa-aa2b-8d68d5f9da4e")
+    ICC_AVCIntraDecoder2 : public ICC_H264VideoDecoder
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ConcurrencyLevel( 
+            /* [retval][out] */ CC_AMOUNT *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ConcurrencyLevel( 
+            /* [in] */ CC_AMOUNT v) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_AVCIntraDecoder2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_AVCIntraDecoder2 * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_AVCIntraDecoder2 * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ConcurrencyLevel )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [retval][out] */ CC_AMOUNT *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ConcurrencyLevel )( 
+            ICC_AVCIntraDecoder2 * This,
+            /* [in] */ CC_AMOUNT v);
+        
+        END_INTERFACE
+    } ICC_AVCIntraDecoder2Vtbl;
+
+    interface ICC_AVCIntraDecoder2
+    {
+        CONST_VTBL struct ICC_AVCIntraDecoder2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_AVCIntraDecoder2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_AVCIntraDecoder2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_AVCIntraDecoder2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_AVCIntraDecoder2_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_AVCIntraDecoder2_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_AVCIntraDecoder2_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_AVCIntraDecoder2_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_AVCIntraDecoder2_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_AVCIntraDecoder2_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_AVCIntraDecoder2_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_AVCIntraDecoder2_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_AVCIntraDecoder2_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_AVCIntraDecoder2_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_AVCIntraDecoder2_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_AVCIntraDecoder2_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_AVCIntraDecoder2_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+
+#define ICC_AVCIntraDecoder2_get_ConcurrencyLevel(This,p)	\
+    ( (This)->lpVtbl -> get_ConcurrencyLevel(This,p) ) 
+
+#define ICC_AVCIntraDecoder2_put_ConcurrencyLevel(This,v)	\
+    ( (This)->lpVtbl -> put_ConcurrencyLevel(This,v) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_AVCIntraDecoder2_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICC_Mpeg4VideoStreamInfo_INTERFACE_DEFINED__
@@ -27527,6 +30061,12 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
     ICC_J2K_VideoDecoder : public ICC_VideoDecoder
     {
     public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ConcurrencyLevel( 
+            /* [retval][out] */ CC_AMOUNT *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ConcurrencyLevel( 
+            /* [in] */ CC_AMOUNT v) = 0;
+        
     };
     
 #else 	/* C style interface */
@@ -27635,6 +30175,14 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
             ICC_J2K_VideoDecoder * This,
             /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
         
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ConcurrencyLevel )( 
+            ICC_J2K_VideoDecoder * This,
+            /* [retval][out] */ CC_AMOUNT *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ConcurrencyLevel )( 
+            ICC_J2K_VideoDecoder * This,
+            /* [in] */ CC_AMOUNT v);
+        
         END_INTERFACE
     } ICC_J2K_VideoDecoderVtbl;
 
@@ -27718,6 +30266,12 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
     ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
 
 
+#define ICC_J2K_VideoDecoder_get_ConcurrencyLevel(This,p)	\
+    ( (This)->lpVtbl -> get_ConcurrencyLevel(This,p) ) 
+
+#define ICC_J2K_VideoDecoder_put_ConcurrencyLevel(This,v)	\
+    ( (This)->lpVtbl -> put_ConcurrencyLevel(This,v) ) 
+
 #endif /* COBJMACROS */
 
 
@@ -27729,7 +30283,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
 #endif 	/* __ICC_J2K_VideoDecoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0139 */
+/* interface __MIDL_itf_Cinecoder_0000_0148 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -27745,8 +30299,8 @@ enum CC_SONY_RAW_BITSTREAM_TYPE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0139_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0139_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0148_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0148_v0_0_s_ifspec;
 
 #ifndef __ICC_SonyRaw_VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_SonyRaw_VideoStreamInfo_INTERFACE_DEFINED__
@@ -28352,8 +30906,19 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoDecoder;
 #endif 	/* __ICC_SonyRaw_VideoDecoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0142 */
+/* interface __MIDL_itf_Cinecoder_0000_0151 */
 /* [local] */ 
+
+typedef /* [v1_enum] */ 
+enum CC_PRORES_TYPE
+    {	CC_PRORES_TYPE_UNKNOWN	= 0,
+	CC_PRORES_422_HQ	= ( CC_PRORES_TYPE_UNKNOWN + 1 ) ,
+	CC_PRORES_422	= ( CC_PRORES_422_HQ + 1 ) ,
+	CC_PRORES_422_LT	= ( CC_PRORES_422 + 1 ) ,
+	CC_PRORES_422_PROXY	= ( CC_PRORES_422_LT + 1 ) ,
+	CC_PRORES_4444	= ( CC_PRORES_422_PROXY + 1 ) ,
+	CC_PRORES_4444_XQ	= ( CC_PRORES_4444 + 1 ) 
+    } 	CC_PRORES_TYPE;
 
 typedef WORD CC_PID;
 
@@ -28430,8 +30995,8 @@ typedef struct CC_PACKET_DESCR
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0142_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0142_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_s_ifspec;
 
 #ifndef __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
 #define __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
@@ -28576,7 +31141,7 @@ EXTERN_C const IID IID_ICC_MultiplexedDataDescr;
 #endif 	/* __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0143 */
+/* interface __MIDL_itf_Cinecoder_0000_0152 */
 /* [local] */ 
 
 typedef 
@@ -28623,17 +31188,70 @@ enum MPEG_SYSTEM_DESCRIPTOR_TAG
 	CC_DESCR_AVC_VIDEO	= 0x28,
 	CC_DESCR_IPMP	= 0x29,
 	CC_DESCR_AVC_TIMING_AND_HDR	= 0x30,
+	CC_DESCR_NETWORK_NAME	= 0x40,
 	CC_DESCR_SERVICE_LIST	= 0x41,
 	CC_DESCR_STUFFING	= 0x42,
+	CC_DESCR_SATELLITE_DELIVERY_SYSTEM	= 0x43,
+	CC_DESCR_CABLE_DELIVERY_SYSTEM	= 0x44,
+	CC_DESCR_VBI_DATA	= 0x45,
+	CC_DESCR_VBI_TELETEXT	= 0x46,
+	CC_DESCR_BOUQUET_NAME	= 0x47,
 	CC_DESCR_SERVICE	= 0x48,
+	CC_DESCR_COUNTRY_AVAILABILITY	= 0x49,
+	CC_DESCR_LINKAGE	= 0x4a,
+	CC_DESCR_NVOD_REFERENCE	= 0x4b,
+	CC_DESCR_TIME_SHIFTED_SERVICE	= 0x4c,
 	CC_DESCR_SHORT_EVENT	= 0x4d,
 	CC_DESCR_EXTENDED_EVENT	= 0x4e,
+	CC_DESCR_TIME_SHIFTED_EVENT	= 0x4f,
 	CC_DESCR_COMPONENT	= 0x50,
+	CC_DESCR_MOSAIC	= 0x51,
 	CC_DESCR_STREAM_IDENTIFIER	= 0x52,
+	CC_DESCR_CA_IDENTIFIER	= 0x53,
 	CC_DESCR_CONTENT	= 0x54,
 	CC_DESCR_PARENTAL_RATING	= 0x55,
+	CC_DESCR_TELETEXT	= 0x56,
+	CC_DESCR_TELEPHONE	= 0x57,
+	CC_DESCR_LOCAL_TIME_OFFSET	= 0x58,
+	CC_DESCR_SUBTITLING	= 0x59,
+	CC_DESCR_TERRESTRIAL_DELIVERY_SYSTEM	= 0x5a,
+	CC_DESCR_MULTILINGUAL_NETWORK_NAME	= 0x5b,
+	CC_DESCR_MULTILINGUAL_BOUQUET_NAME	= 0x5c,
+	CC_DESCR_MULTILINGUAL_SERVICE_NAME	= 0x5d,
+	CC_DESCR_MULTILINGUAL_COMPONENT	= 0x5e,
+	CC_DESCR_PRIVATE_DATA_SPECIFIER	= 0x5f,
+	CC_DESCR_SERVICE_MOVE	= 0x60,
+	CC_DESCR_SHORT_SMOOTHING_BUFFER	= 0x61,
+	CC_DESCR_FREQUENCY_LIST	= 0x62,
 	CC_DESCR_PARTIAL_TRANSPORT_STREAM	= 0x63,
+	CC_DESCR_DATA_BROADCAST	= 0x64,
+	CC_DESCR_SCRAMBLING	= 0x65,
+	CC_DESCR_DATA_BROADCAST_ID	= 0x66,
+	CC_DESCR_TRANSPORT_STREAM	= 0x67,
+	CC_DESCR_DSNG	= 0x68,
+	CC_DESCR_PDC	= 0x69,
 	CC_DESCR_AC3_SYSTEM_B_DVB	= 0x6a,
+	CC_DESCR_ANCILLARY_DATA	= 0x6b,
+	CC_DESCR_CELL_LIST	= 0x6c,
+	CC_DESCR_CELL_FREQUENCY_LINK	= 0x6d,
+	CC_DESCR_ANNOUNCEMENT_SUPPORT	= 0x6e,
+	CC_DESCR_APPLICATION_SIGNALLING	= 0x6f,
+	CC_DESCR_ADAPTATION_FIELD_DATA	= 0x70,
+	CC_DESCR_SERVICE_IDENTIFIER	= 0x71,
+	CC_DESCR_SERVICE_AVAILABILITY	= 0x72,
+	CC_DESCR_DEFAULT_AUTHORITY	= 0x73,
+	CC_DESCR_RELATED_CONTENT	= 0x74,
+	CC_DESCR_TVA_ID	= 0x75,
+	CC_DESCR_CONTENT_IDENTIFIER	= 0x76,
+	CC_DESCR_TIME_SLICE_FEC_IDENTIFIER	= 0x77,
+	CC_DESCR_ECM_REPETITION_RATE	= 0x78,
+	CC_DESCR_S2_SATELLITE_DELIVERY_SYSTEM	= 0x79,
+	CC_DESCR_ENHANCED_AC3	= 0x7a,
+	CC_DESCR_DTS	= 0x7b,
+	CC_DESCR_AAC	= 0x7c,
+	CC_DESCR_XAIT_LOCATION	= 0x7d,
+	CC_DESCR_FTA_CONTENT_MANAGEMENT	= 0x7e,
+	CC_DESCR_EXTENSION	= 0x7f,
 	CC_DESCR_AC3_SYSTEM_A_ATSC	= 0x81,
 	CC_DESCR_BROADCAST_ID	= 0x85,
 	CC_DESCR_DTCP	= 0x88,
@@ -28658,7 +31276,7 @@ enum MPEG_SYSTEM_DESCRIPTOR_TAG
 	CC_DESCR_DATA_COMPONENT	= 0xfd
     } 	MPEG_SYSTEM_DESCRIPTOR_TAG;
 
-typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0143_0001
+typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0152_0001
     {
     MPEG_SYSTEM_DESCRIPTOR_TAG code;
     DWORD length;
@@ -28667,8 +31285,8 @@ typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0143_0001
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0143_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0143_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_s_ifspec;
 
 #ifndef __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
 #define __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
@@ -33497,7 +36115,7 @@ EXTERN_C const IID IID_ICC_ProgramClockReferencePidProp;
 #endif 	/* __ICC_ProgramClockReferencePidProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0165 */
+/* interface __MIDL_itf_Cinecoder_0000_0174 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -33511,8 +36129,8 @@ enum CC_CATCH_STREAM_MODE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0165_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0165_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0174_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0174_v0_0_s_ifspec;
 
 #ifndef __ICC_Demultiplexer_INTERFACE_DEFINED__
 #define __ICC_Demultiplexer_INTERFACE_DEFINED__
@@ -34415,6 +37033,21 @@ EXTERN_C const IID IID_ICC_PCR_CallbackProp;
 #endif 	/* __ICC_PCR_CallbackProp_INTERFACE_DEFINED__ */
 
 
+/* interface __MIDL_itf_Cinecoder_0000_0180 */
+/* [local] */ 
+
+typedef /* [v1_enum] */ 
+enum CC_MP4_CHUNK_FRAGMENT_POSITION
+    {	CC_MP4_INTERMEDIATE_POSITION	= 0,
+	CC_MP4_START_POSITION	= 0x1,
+	CC_MP4_END_POSITION	= 0x2
+    } 	CC_MP4_CHUNK_FRAGMENT_POSITION;
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_s_ifspec;
+
 #ifndef __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
 #define __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
 
@@ -34678,6 +37311,12 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_DataGranularity( 
             /* [in] */ CC_UINT p) = 0;
         
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Format( 
+            /* [retval][out] */ ICC_Settings **pp) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Format( 
+            /* [in] */ ICC_Settings *p) = 0;
+        
     };
     
 #else 	/* C style interface */
@@ -34747,6 +37386,14 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
             ICC_MP4_MultiplexerSettings * This,
             /* [in] */ CC_UINT p);
         
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Format )( 
+            ICC_MP4_MultiplexerSettings * This,
+            /* [retval][out] */ ICC_Settings **pp);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Format )( 
+            ICC_MP4_MultiplexerSettings * This,
+            /* [in] */ ICC_Settings *p);
+        
         END_INTERFACE
     } ICC_MP4_MultiplexerSettingsVtbl;
 
@@ -34806,6 +37453,12 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
 
 #define ICC_MP4_MultiplexerSettings_put_DataGranularity(This,p)	\
     ( (This)->lpVtbl -> put_DataGranularity(This,p) ) 
+
+#define ICC_MP4_MultiplexerSettings_get_Format(This,pp)	\
+    ( (This)->lpVtbl -> get_Format(This,pp) ) 
+
+#define ICC_MP4_MultiplexerSettings_put_Format(This,p)	\
+    ( (This)->lpVtbl -> put_Format(This,p) ) 
 
 #endif /* COBJMACROS */
 
@@ -35342,6 +37995,560 @@ EXTERN_C const IID IID_ICC_MP4_InitialTimeCodeProp;
 #endif 	/* __ICC_MP4_InitialTimeCodeProp_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICC_MP4_MpegDashSettings_INTERFACE_DEFINED__
+#define __ICC_MP4_MpegDashSettings_INTERFACE_DEFINED__
+
+/* interface ICC_MP4_MpegDashSettings */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4_MpegDashSettings;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("53919957-D8DA-41BC-B767-40344EDDD557")
+    ICC_MP4_MpegDashSettings : public ICC_Settings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FragmentDuration( 
+            /* [retval][out] */ CC_TIME *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FragmentDuration( 
+            /* [in] */ CC_TIME v) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4_MpegDashSettingsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4_MpegDashSettings * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4_MpegDashSettings * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FragmentDuration )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [retval][out] */ CC_TIME *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FragmentDuration )( 
+            ICC_MP4_MpegDashSettings * This,
+            /* [in] */ CC_TIME v);
+        
+        END_INTERFACE
+    } ICC_MP4_MpegDashSettingsVtbl;
+
+    interface ICC_MP4_MpegDashSettings
+    {
+        CONST_VTBL struct ICC_MP4_MpegDashSettingsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4_MpegDashSettings_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4_MpegDashSettings_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4_MpegDashSettings_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4_MpegDashSettings_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_MP4_MpegDashSettings_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_MP4_MpegDashSettings_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_MP4_MpegDashSettings_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_MP4_MpegDashSettings_get_FragmentDuration(This,p)	\
+    ( (This)->lpVtbl -> get_FragmentDuration(This,p) ) 
+
+#define ICC_MP4_MpegDashSettings_put_FragmentDuration(This,v)	\
+    ( (This)->lpVtbl -> put_FragmentDuration(This,v) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4_MpegDashSettings_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4ChunkInfo_INTERFACE_DEFINED__
+#define __ICC_MP4ChunkInfo_INTERFACE_DEFINED__
+
+/* interface ICC_MP4ChunkInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4ChunkInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("875370A3-312E-4D45-BD6F-4EAF62C0944A")
+    ICC_MP4ChunkInfo : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FragmentPosition( 
+            /* [retval][out] */ CC_MP4_CHUNK_FRAGMENT_POSITION *p) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4ChunkInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4ChunkInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4ChunkInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4ChunkInfo * This);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FragmentPosition )( 
+            ICC_MP4ChunkInfo * This,
+            /* [retval][out] */ CC_MP4_CHUNK_FRAGMENT_POSITION *p);
+        
+        END_INTERFACE
+    } ICC_MP4ChunkInfoVtbl;
+
+    interface ICC_MP4ChunkInfo
+    {
+        CONST_VTBL struct ICC_MP4ChunkInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4ChunkInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4ChunkInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4ChunkInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4ChunkInfo_get_FragmentPosition(This,p)	\
+    ( (This)->lpVtbl -> get_FragmentPosition(This,p) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4ChunkInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4Fragment_INTERFACE_DEFINED__
+#define __ICC_MP4Fragment_INTERFACE_DEFINED__
+
+/* interface ICC_MP4Fragment */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4Fragment;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("39D64FEB-4AFC-43B7-A319-67740104CE44")
+    ICC_MP4Fragment : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_SequenceNumber( 
+            /* [retval][out] */ CC_UINT *pSequenceNumber) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4FragmentVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4Fragment * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4Fragment * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4Fragment * This);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SequenceNumber )( 
+            ICC_MP4Fragment * This,
+            /* [retval][out] */ CC_UINT *pSequenceNumber);
+        
+        END_INTERFACE
+    } ICC_MP4FragmentVtbl;
+
+    interface ICC_MP4Fragment
+    {
+        CONST_VTBL struct ICC_MP4FragmentVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4Fragment_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4Fragment_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4Fragment_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4Fragment_get_SequenceNumber(This,pSequenceNumber)	\
+    ( (This)->lpVtbl -> get_SequenceNumber(This,pSequenceNumber) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4Fragment_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4InitFragment_INTERFACE_DEFINED__
+#define __ICC_MP4InitFragment_INTERFACE_DEFINED__
+
+/* interface ICC_MP4InitFragment */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4InitFragment;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("80BDD2C9-678A-407A-BA3C-503C452EB433")
+    ICC_MP4InitFragment : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsIndexTableFilled( 
+            /* [retval][out] */ CC_BOOL *pIndexTableFilled) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4InitFragmentVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4InitFragment * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4InitFragment * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4InitFragment * This);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsIndexTableFilled )( 
+            ICC_MP4InitFragment * This,
+            /* [retval][out] */ CC_BOOL *pIndexTableFilled);
+        
+        END_INTERFACE
+    } ICC_MP4InitFragmentVtbl;
+
+    interface ICC_MP4InitFragment
+    {
+        CONST_VTBL struct ICC_MP4InitFragmentVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4InitFragment_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4InitFragment_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4InitFragment_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4InitFragment_get_IsIndexTableFilled(This,pIndexTableFilled)	\
+    ( (This)->lpVtbl -> get_IsIndexTableFilled(This,pIndexTableFilled) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4InitFragment_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4RandomAccessFragment_INTERFACE_DEFINED__
+#define __ICC_MP4RandomAccessFragment_INTERFACE_DEFINED__
+
+/* interface ICC_MP4RandomAccessFragment */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4RandomAccessFragment;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("A8795B72-CA30-4FF5-9899-3F7DBFAD4AA9")
+    ICC_MP4RandomAccessFragment : public IUnknown
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4RandomAccessFragmentVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4RandomAccessFragment * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4RandomAccessFragment * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4RandomAccessFragment * This);
+        
+        END_INTERFACE
+    } ICC_MP4RandomAccessFragmentVtbl;
+
+    interface ICC_MP4RandomAccessFragment
+    {
+        CONST_VTBL struct ICC_MP4RandomAccessFragmentVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4RandomAccessFragment_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4RandomAccessFragment_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4RandomAccessFragment_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4RandomAccessFragment_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4Producer_INTERFACE_DEFINED__
+#define __ICC_MP4Producer_INTERFACE_DEFINED__
+
+/* interface ICC_MP4Producer */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4Producer;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("ACCD0235-EE69-4E40-B8AA-E4D1D44E6DD6")
+    ICC_MP4Producer : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE IsChunkAvailable( 
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult = 0) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChunkOffset( 
+            /* [retval][out] */ CC_OFFSET *pOffset) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChunkData( 
+            /* [retval][out] */ CC_PCBYTE *ppData) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChunkDataSize( 
+            /* [retval][out] */ CC_AMOUNT *pDataSize) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetChunkInfo( 
+            /* [retval][out] */ ICC_MP4ChunkInfo **ppInfo) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetDataContext( 
+            /* [retval][out] */ IUnknown **ppDataContext) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4ProducerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4Producer * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4Producer * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4Producer * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsChunkAvailable )( 
+            ICC_MP4Producer * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChunkOffset )( 
+            ICC_MP4Producer * This,
+            /* [retval][out] */ CC_OFFSET *pOffset);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChunkData )( 
+            ICC_MP4Producer * This,
+            /* [retval][out] */ CC_PCBYTE *ppData);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChunkDataSize )( 
+            ICC_MP4Producer * This,
+            /* [retval][out] */ CC_AMOUNT *pDataSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetChunkInfo )( 
+            ICC_MP4Producer * This,
+            /* [retval][out] */ ICC_MP4ChunkInfo **ppInfo);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetDataContext )( 
+            ICC_MP4Producer * This,
+            /* [retval][out] */ IUnknown **ppDataContext);
+        
+        END_INTERFACE
+    } ICC_MP4ProducerVtbl;
+
+    interface ICC_MP4Producer
+    {
+        CONST_VTBL struct ICC_MP4ProducerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4Producer_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4Producer_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4Producer_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4Producer_IsChunkAvailable(This,pResult)	\
+    ( (This)->lpVtbl -> IsChunkAvailable(This,pResult) ) 
+
+#define ICC_MP4Producer_get_ChunkOffset(This,pOffset)	\
+    ( (This)->lpVtbl -> get_ChunkOffset(This,pOffset) ) 
+
+#define ICC_MP4Producer_get_ChunkData(This,ppData)	\
+    ( (This)->lpVtbl -> get_ChunkData(This,ppData) ) 
+
+#define ICC_MP4Producer_get_ChunkDataSize(This,pDataSize)	\
+    ( (This)->lpVtbl -> get_ChunkDataSize(This,pDataSize) ) 
+
+#define ICC_MP4Producer_GetChunkInfo(This,ppInfo)	\
+    ( (This)->lpVtbl -> GetChunkInfo(This,ppInfo) ) 
+
+#define ICC_MP4Producer_GetDataContext(This,ppDataContext)	\
+    ( (This)->lpVtbl -> GetDataContext(This,ppDataContext) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4Producer_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICC_HLS_MultiplexerSettings_INTERFACE_DEFINED__
 #define __ICC_HLS_MultiplexerSettings_INTERFACE_DEFINED__
 
@@ -35481,7 +38688,7 @@ EXTERN_C const IID IID_ICC_HLS_MultiplexerSettings;
 #endif 	/* __ICC_HLS_MultiplexerSettings_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0178 */
+/* interface __MIDL_itf_Cinecoder_0000_0193 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -35526,8 +38733,8 @@ enum CC_READER_OPEN_FLAGS
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0178_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0178_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_s_ifspec;
 
 #ifndef __ICC_MediaReader_INTERFACE_DEFINED__
 #define __ICC_MediaReader_INTERFACE_DEFINED__
@@ -36295,6 +39502,8 @@ EXTERN_C const IID IID_ICC_MediaReader2;
 
 
 
+
+
 EXTERN_C const IID LIBID_Cinecoder;
 
 EXTERN_C const CLSID CLSID_CinecoderLibrary;
@@ -36327,6 +39536,14 @@ EXTERN_C const CLSID CLSID_CC_MpegVideoDecoder;
 
 class DECLSPEC_UUID("80011203-0315-11dc-a983-0018f3fe411b")
 CC_MpegVideoDecoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_MpegVideoDecoder0;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("a13ea19d-f813-4abd-ae8f-889e4f535c21")
+CC_MpegVideoDecoder0;
 #endif
 
 EXTERN_C const CLSID CLSID_CC_MpegVideoDecoder2;
@@ -36545,12 +39762,12 @@ class DECLSPEC_UUID("80011601-0315-11dc-a983-0018f3fe411b")
 CC_H264VideoDecoder;
 #endif
 
-EXTERN_C const CLSID CLSID_CC_H264VideoDecoderCUDA;
+EXTERN_C const CLSID CLSID_CC_H264VideoDecoder0;
 
 #ifdef __cplusplus
 
 class DECLSPEC_UUID("24f7109a-d910-411c-9630-de39efb028b3")
-CC_H264VideoDecoderCUDA;
+CC_H264VideoDecoder0;
 #endif
 
 EXTERN_C const CLSID CLSID_CC_AVC1VideoDecoder;
@@ -36559,6 +39776,14 @@ EXTERN_C const CLSID CLSID_CC_AVC1VideoDecoder;
 
 class DECLSPEC_UUID("80011602-0315-11dc-a983-0018f3fe411b")
 CC_AVC1VideoDecoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_AVC1VideoDecoder0;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("c618cb66-1a6d-468a-b7bf-a9c4da6ba0c5")
+CC_AVC1VideoDecoder0;
 #endif
 
 EXTERN_C const CLSID CLSID_CC_H264VideoEncoder;
@@ -36615,6 +39840,14 @@ EXTERN_C const CLSID CLSID_CC_MP4_MuxerPinSettings;
 
 class DECLSPEC_UUID("ec5dc6db-99f2-44f2-9657-eb629cfb705b")
 CC_MP4_MuxerPinSettings;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_MP4_MpegDashSettings;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("9954375D-1EFA-49A4-B2E4-C5A6C5352BA4")
+CC_MP4_MpegDashSettings;
 #endif
 
 EXTERN_C const CLSID CLSID_CC_AAC_AudioDecoder;
@@ -36687,6 +39920,22 @@ EXTERN_C const CLSID CLSID_CC_AC3_AudioEncoderSettings;
 
 class DECLSPEC_UUID("d066604f-7ccd-4e8d-8acd-01bcef8e99c3")
 CC_AC3_AudioEncoderSettings;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_AVCIntraDecoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("4907c8e2-ef67-480e-b90d-bdba3f4a570a")
+CC_AVCIntraDecoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_AVCIntraDecoder2;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("0cfa6ce8-0cd0-47d6-8e8e-3dc6b1e02e6f")
+CC_AVCIntraDecoder2;
 #endif
 
 EXTERN_C const CLSID CLSID_CC_AVCIntraEncoder;
@@ -36824,9 +40073,49 @@ EXTERN_C const CLSID CLSID_CC_WavAudioEncoderSettings;
 class DECLSPEC_UUID("ad9b9cfb-0644-4cce-859c-4aee1ec4f748")
 CC_WavAudioEncoderSettings;
 #endif
+
+EXTERN_C const CLSID CLSID_CC_HEVCVideoEncoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("0d9505f9-f31a-4351-bb39-d369950439a9")
+CC_HEVCVideoEncoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_HEVCVideoEncoderSettings;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("c7e8a86e-e4f8-4865-a313-b1dcb64b86cd")
+CC_HEVCVideoEncoderSettings;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_HEVCVideoSplitter;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("e53dc514-51cc-4844-b17e-edfa0ee32c17")
+CC_HEVCVideoSplitter;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_HEVCVideoDecoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("4013d46c-ce5f-4e6c-949b-0a872f575b59")
+CC_HEVCVideoDecoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_HEVCVideoDecoder0;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("d4ce1c4f-60d6-442d-b2bb-45b5d5c6de9b")
+CC_HEVCVideoDecoder0;
+#endif
 #endif /* __Cinecoder_LIBRARY_DEFINED__ */
 
-/* interface __MIDL_itf_Cinecoder_0000_0180 */
+/* interface __MIDL_itf_Cinecoder_0000_0195 */
 /* [local] */ 
 
 #ifdef __cplusplus
@@ -36834,8 +40123,8 @@ using namespace cinecoder;
 #endif
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0195_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0195_v0_0_s_ifspec;
 
 /* Additional Prototypes for ALL interfaces */
 

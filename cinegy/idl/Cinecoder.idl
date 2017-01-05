@@ -1,3 +1,20 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 import "Unknwn.idl";
 
 #include "Cinecoder_Version.h"
@@ -38,10 +55,12 @@ cpp_quote("#undef _DSO_VISIBLE_")
 #include "interfaces/cc_video_d10.idl"
 #include "interfaces/cc_video_xdcam.idl"
 #include "interfaces/cc_video_h264.idl"
+#include "interfaces/cc_video_hevc.idl"
 #include "interfaces/cc_video_avci.idl"
 #include "interfaces/cc_video_mpeg4.idl"
 #include "interfaces/cc_video_j2k.idl"
 #include "interfaces/cc_video_sonyraw.idl"
+#include "interfaces/cc_video_prores.idl"
 
 #include "interfaces/systems/cc_systems.idl"
 #include "interfaces/systems/cc_mp4_mux.idl"
@@ -128,6 +147,10 @@ library Cinecoder
   interface ICC_CollectionChanged;
   interface ICC_CollectionFilter;
 
+  // The mp4 additional interfaces
+  interface ICC_MP4Fragment;
+  interface ICC_MP4InitFragment;
+  
   interface ICC_File;
   interface ICC_InputFile;
   interface ICC_OutputFile;
@@ -160,6 +183,18 @@ library Cinecoder
 
   [uuid(80011203-0315-11dc-a983-0018f3fe411b)]
   coclass CC_MpegVideoDecoder
+  {
+    [default]
+    interface ICC_MpegVideoDecoder;
+    interface ICC_VideoDecoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_VideoProducer;
+  };
+
+  // An original CPU-based MPEG video decoder
+  [uuid(a13ea19d-f813-4abd-ae8f-889e4f535c21)]
+  coclass CC_MpegVideoDecoder0
   {
     [default]
     interface ICC_MpegVideoDecoder;
@@ -427,7 +462,6 @@ library Cinecoder
   };
 
   [uuid(80011601-0315-11dc-a983-0018f3fe411b)]
-//  [uuid(24f7109a-d910-411c-9630-de39efb028b3)]
   coclass CC_H264VideoDecoder
   {
     [default]
@@ -441,26 +475,39 @@ library Cinecoder
     interface ICC_TimeBaseProp;
   };
 
+  // An original CPU-based H264 video decoder
   [uuid(24f7109a-d910-411c-9630-de39efb028b3)]
-//  [uuid(80011601-0315-11dc-a983-0018f3fe411b)]
-  coclass CC_H264VideoDecoderCUDA
+  coclass CC_H264VideoDecoder0
   {
     [default]
-	interface ICC_H264VideoDecoder;
-	interface ICC_VideoDecoder;
-    interface ICC_StreamProcessor;
-	interface ICC_ByteStreamConsumer;
+    interface ICC_H264VideoDecoder;
+    interface ICC_VideoDecoder;
     interface ICC_VideoProducer;
-    interface ICC_VideoProducerExt;
-	interface ICC_ThreadsAffinityProp;
-	interface ICC_ThreadsPriorityProp;
-    interface ICC_ThreadsCountProp;
+    interface ICC_ByteStreamConsumer;
+    interface ICC_ByteStreamCallback;
+    interface ICC_StreamProcessor;
+    interface ICC_Breakable;
     interface ICC_TimeBaseProp;
-    interface ICC_InputBufferControl;
   };
+
 
   [uuid(80011602-0315-11dc-a983-0018f3fe411b)]
   coclass CC_AVC1VideoDecoder
+  {
+    [default]
+    interface ICC_AVC1VideoDecoder;
+    interface ICC_VideoDecoder;
+    interface ICC_VideoProducer;
+    interface ICC_ByteStreamConsumer;
+    interface ICC_ByteStreamCallback;
+    interface ICC_StreamProcessor;
+    interface ICC_Breakable;
+    interface ICC_TimeBaseProp;
+  };
+
+  // An original CPU-based AVC1 video decoder
+  [uuid(c618cb66-1a6d-468a-b7bf-a9c4da6ba0c5)]
+  coclass CC_AVC1VideoDecoder0
   {
     [default]
     interface ICC_AVC1VideoDecoder;
@@ -520,6 +567,7 @@ library Cinecoder
   {
     [default]
     interface ICC_MP4_Multiplexer;
+    interface ICC_MP4Producer;
     interface ICC_Multiplexer;
     interface ICC_StreamProcessor;
     interface ICC_ByteStreamProducer;
@@ -539,6 +587,7 @@ library Cinecoder
   {
     [default]
     interface ICC_MP4_Multiplexer;
+    interface ICC_MP4Producer;
     interface ICC_Multiplexer;
     interface ICC_StreamProcessor;
     interface ICC_ByteStreamProducer;
@@ -551,6 +600,13 @@ library Cinecoder
   {
   	interface ICC_MP4_MuxerPinSettings;
     interface ICC_ElementaryStreamInfo;
+  };
+
+  [uuid(9954375D-1EFA-49A4-B2E4-C5A6C5352BA4)]
+  coclass CC_MP4_MpegDashSettings
+  {
+    [default]
+    interface ICC_MP4_MpegDashSettings;
   };
 
   [uuid(c19bf495-813d-4e19-9234-578e745cdd34)]
@@ -663,6 +719,35 @@ library Cinecoder
     [default]
     interface ICC_AC3_AudioEncoderSettings;
     interface ICC_AC3_AudioStreamInfo;
+  };
+
+  [uuid(4907c8e2-ef67-480e-b90d-bdba3f4a570a)]
+  coclass CC_AVCIntraDecoder
+  {
+    [default]
+    interface ICC_AVCIntraDecoder;
+    interface ICC_StreamProcessor;
+    interface ICC_VideoProducer;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_ThreadsCountProp;
+    interface ICC_ThreadsAffinityProp;
+    interface ICC_ThreadsPriorityProp;
+    interface ICC_TimeBaseProp;
+  };
+
+  [uuid(0cfa6ce8-0cd0-47d6-8e8e-3dc6b1e02e6f)]
+  coclass CC_AVCIntraDecoder2
+  {
+    [default]
+    interface ICC_AVCIntraDecoder;
+    interface ICC_StreamProcessor;
+    interface ICC_VideoProducer;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_ThreadsCountProp;
+    interface ICC_ThreadsAffinityProp;
+    interface ICC_ThreadsPriorityProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_ConcurrencyLevelProp;
   };
 
   [uuid(8ad378a7-88cb-4c1c-8150-d61e158a7326)]
@@ -848,6 +933,68 @@ library Cinecoder
     interface ICC_WavAudioStreamInfo;
   };
 
+  [uuid(0d9505f9-f31a-4351-bb39-d369950439a9)]
+  coclass CC_HEVCVideoEncoder
+  {
+    [default]
+    interface ICC_HEVCVideoEncoder;
+    interface ICC_VideoEncoder;
+    interface ICC_VideoConsumer;
+    interface ICC_VideoConsumerExt;
+    interface ICC_ByteStreamProducer;
+    interface ICC_StreamProcessor;
+    interface ICC_InputBufferControl;
+    interface ICC_TimeBaseProp;
+    interface ICC_AddUserDataCtrl;
+  };
+
+  [uuid(c7e8a86e-e4f8-4865-a313-b1dcb64b86cd)]
+  coclass CC_HEVCVideoEncoderSettings
+  {
+    [default]
+    interface ICC_HEVCVideoEncoderSettings;
+  };
+
+  [uuid(e53dc514-51cc-4844-b17e-edfa0ee32c17)]
+  coclass CC_HEVCVideoSplitter
+  {
+    [default]
+    interface ICC_HEVCVideoSplitter;
+    interface ICC_Splitter;
+    interface ICC_Transcoder;
+	interface ICC_ByteStreamProducer;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_StreamProcessor;
+    interface ICC_TimeBaseProp;
+  };
+
+  [uuid(4013d46c-ce5f-4e6c-949b-0a872f575b59)]
+  coclass CC_HEVCVideoDecoder
+  {
+    [default]
+    interface ICC_HEVCVideoDecoder;
+    interface ICC_VideoDecoder;
+    interface ICC_VideoProducer;
+    interface ICC_ByteStreamConsumer;
+    interface ICC_ByteStreamCallback;
+    interface ICC_StreamProcessor;
+    interface ICC_Breakable;
+    interface ICC_TimeBaseProp;
+  };
+
+  [uuid(d4ce1c4f-60d6-442d-b2bb-45b5d5c6de9b)]
+  coclass CC_HEVCVideoDecoder0
+  {
+    [default]
+    interface ICC_HEVCVideoDecoder;
+    interface ICC_VideoDecoder;
+    interface ICC_VideoProducer;
+    interface ICC_ByteStreamConsumer;
+    interface ICC_ByteStreamCallback;
+    interface ICC_StreamProcessor;
+    interface ICC_Breakable;
+    interface ICC_TimeBaseProp;
+  };
 };
 
 cpp_quote("#ifdef __cplusplus")

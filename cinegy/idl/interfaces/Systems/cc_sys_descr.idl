@@ -1,3 +1,20 @@
+﻿/* Copyright 2017 Cinegy GmbH.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  The version of Cinecoder for these headers should be: 3.27.34.10631
+*/
+
 // The system descriptor codes listing (not full - just known).
 typedef enum MPEG_SYSTEM_DESCRIPTOR_TAG
 {
@@ -38,18 +55,72 @@ typedef enum MPEG_SYSTEM_DESCRIPTOR_TAG
   CC_DESCR_IPMP                          = 0x29,
   CC_DESCR_AVC_TIMING_AND_HDR            = 0x30,
 
+  CC_DESCR_NETWORK_NAME                  = 0x40,
   CC_DESCR_SERVICE_LIST                  = 0x41,
   CC_DESCR_STUFFING                      = 0x42,
+  CC_DESCR_SATELLITE_DELIVERY_SYSTEM     = 0x43,
+  CC_DESCR_CABLE_DELIVERY_SYSTEM         = 0x44,
+  CC_DESCR_VBI_DATA                      = 0x45,
+  CC_DESCR_VBI_TELETEXT                  = 0x46,
+  CC_DESCR_BOUQUET_NAME                  = 0x47,
   CC_DESCR_SERVICE                       = 0x48,
+  CC_DESCR_COUNTRY_AVAILABILITY          = 0x49,
+  CC_DESCR_LINKAGE                       = 0x4A,
+  CC_DESCR_NVOD_REFERENCE                = 0x4B,
+  CC_DESCR_TIME_SHIFTED_SERVICE          = 0x4C,
   CC_DESCR_SHORT_EVENT                   = 0x4D,
   CC_DESCR_EXTENDED_EVENT                = 0x4E,
+  CC_DESCR_TIME_SHIFTED_EVENT            = 0x4F,
+
   CC_DESCR_COMPONENT                     = 0x50,
+  CC_DESCR_MOSAIC                        = 0x51,
   CC_DESCR_STREAM_IDENTIFIER             = 0x52,
+  CC_DESCR_CA_IDENTIFIER                 = 0x53,
   CC_DESCR_CONTENT                       = 0x54,
   CC_DESCR_PARENTAL_RATING               = 0x55,
+  CC_DESCR_TELETEXT                      = 0x56,
+  CC_DESCR_TELEPHONE                     = 0x57,
+  CC_DESCR_LOCAL_TIME_OFFSET             = 0x58,
+  CC_DESCR_SUBTITLING                    = 0x59,
+  CC_DESCR_TERRESTRIAL_DELIVERY_SYSTEM   = 0x5A,
+  CC_DESCR_MULTILINGUAL_NETWORK_NAME     = 0x5B,
+  CC_DESCR_MULTILINGUAL_BOUQUET_NAME     = 0x5C,
+  CC_DESCR_MULTILINGUAL_SERVICE_NAME     = 0x5D,
+  CC_DESCR_MULTILINGUAL_COMPONENT        = 0x5E,
+  CC_DESCR_PRIVATE_DATA_SPECIFIER        = 0x5F,
+  CC_DESCR_SERVICE_MOVE                  = 0x60,
+  CC_DESCR_SHORT_SMOOTHING_BUFFER        = 0x61,
+  CC_DESCR_FREQUENCY_LIST                = 0x62,
   CC_DESCR_PARTIAL_TRANSPORT_STREAM      = 0x63,
-
+  CC_DESCR_DATA_BROADCAST                = 0x64,
+  CC_DESCR_SCRAMBLING                    = 0x65,
+  CC_DESCR_DATA_BROADCAST_ID             = 0x66,
+  CC_DESCR_TRANSPORT_STREAM              = 0x67,
+  CC_DESCR_DSNG                          = 0x68,
+  CC_DESCR_PDC                           = 0x69,
   CC_DESCR_AC3_SYSTEM_B_DVB				 = 0x6A,
+  CC_DESCR_ANCILLARY_DATA                = 0x6B,
+  CC_DESCR_CELL_LIST                     = 0x6C,
+  CC_DESCR_CELL_FREQUENCY_LINK           = 0x6D,
+  CC_DESCR_ANNOUNCEMENT_SUPPORT          = 0x6E,
+  CC_DESCR_APPLICATION_SIGNALLING        = 0x6F,
+  CC_DESCR_ADAPTATION_FIELD_DATA         = 0x70,
+  CC_DESCR_SERVICE_IDENTIFIER            = 0x71,
+  CC_DESCR_SERVICE_AVAILABILITY          = 0x72,
+  CC_DESCR_DEFAULT_AUTHORITY             = 0x73,
+  CC_DESCR_RELATED_CONTENT               = 0x74,
+  CC_DESCR_TVA_ID                        = 0x75,
+  CC_DESCR_CONTENT_IDENTIFIER            = 0x76,
+  CC_DESCR_TIME_SLICE_FEC_IDENTIFIER     = 0x77,
+  CC_DESCR_ECM_REPETITION_RATE           = 0x78,
+  CC_DESCR_S2_SATELLITE_DELIVERY_SYSTEM  = 0x79,
+  CC_DESCR_ENHANCED_AC3                  = 0x7A,
+  CC_DESCR_DTS                           = 0x7B,
+  CC_DESCR_AAC                           = 0x7C,
+  CC_DESCR_XAIT_LOCATION                 = 0x7D,
+  CC_DESCR_FTA_CONTENT_MANAGEMENT        = 0x7E,
+  CC_DESCR_EXTENSION                     = 0x7F,
+
   CC_DESCR_AC3_SYSTEM_A_ATSC			 = 0x81,
 
   CC_DESCR_BROADCAST_ID                  = 0x85,
