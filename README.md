@@ -1,16 +1,16 @@
-# Cinecoder
+# CinecoderNodeJs
 
-Cinecoder is a [Node.js](http://nodejs.org/) [addon](http://nodejs.org/api/addons.html) using Javascript and C++ to implement async processing for media encoding, decoding and processing.
+CinecoderNodeJs is a [Node.js](http://nodejs.org/) [addon](http://nodejs.org/api/addons.html) using Javascript and C++ to implement async processing for media encoding, decoding and processing. All the node wrapping and testing functions were made by the nice folks at StreamPunk Media, and passed to Cinegy for us to add our interfaces to get the Cinecoder binary to work with the addon. Complain to Cinegy first if we break something going forward before bothering the StreamPunk team!
 
 ## Installation
 
-Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) release.
+Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) 4.x release.
 
-This module has native C++ files that are compiled with node-gyp. To use the module, you many need to install a C++ compiler and python on your system. On Windows, compilation has been tested using the community edition of Microsoft Visual Studio 2015. On Windows, node may need to be configured with:
+This module has native C++ files that are compiled with node-gyp. To use the module, you many need to install a C++ compiler and python v2.x on your system. On Windows, compilation has been tested using the community edition of Microsoft Visual Studio 2015. On Windows, node may need to be configured with:
 
     npm config set msvs_version 2015 --global
 
-Cindecoder is designed to be `require`d to use from your own application to provide async processing.
+CinecoderNodeJs is designed to be `require`d to use from your own application to provide async processing.
 
     npm install --save cinecoder
 
@@ -46,4 +46,7 @@ fn.quit(function() {
 
 ## License
 
-This software is released under the Apache 2.0 license. Copyright 2016 Streampunk Media Ltd.
+This software is released under the Apache 2.0 license.
+
+Copyright 2016 Streampunk Media Ltd.
+Copyright 2017 Cinegy GmbH.
