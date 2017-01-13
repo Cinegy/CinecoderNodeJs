@@ -19,6 +19,8 @@
 #include "Memory.h"
 #include "EssenceInfo.h"
 #include <map>
+#include <mutex>
+#include <condition_variable>
 
 #include "../cinegy/include/cinecoder_h.h"
 
@@ -91,13 +93,21 @@ C_EncoderErrorHandler EncodeErrorHandler;
 
 class EncodeCallback : public ICC_ByteStreamCallback {
 public:
-  EncodeCallback() {}
+  EncodeCallback() : m(), cv() {}
   virtual ~EncodeCallback() {}
 
-  std::shared_ptr<Memory> getResult() { return mEncodedBuf; }
+  std::shared_ptr<Memory> getResult() { 
+    std::unique_lock<std::mutex> lk(m);
+    while(!mEncodedBuf) {
+      cv.wait(lk);
+    }
+    return mEncodedBuf; 
+  }
 
   STDMETHOD(ProcessData)(const BYTE *pbData, DWORD cbSize, CC_TIME /*pts*/, IUnknown *pUnknown) {
+    std::lock_guard<std::mutex> lk(m);
     mEncodedBuf = Memory::makeNew((uint8_t *)pbData, (uint32_t)cbSize);
+    cv.notify_one();
     return S_OK;
   }
 
@@ -119,6 +129,8 @@ protected:
   }
 
 private:
+  mutable std::mutex m;
+  std::condition_variable cv;
   std::shared_ptr<Memory> mEncodedBuf;
 };
 
@@ -224,17 +236,8 @@ void EncoderCinegy::encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr
     printf("Error calling AddScaleFrame against Cinecoder\n");
   
   std::shared_ptr<Memory> encodedBuf = mEncodeCb->getResult();
-
-  if (encodedBuf == NULL)
-  {
-	  printf("Null pointer from encoder callback\n");
-	  Nan::ThrowError("Cinecoder encoder callback returned NULL as result - failed to encode.");
-  }
-  else
-  {
-	  memcpy_s(dstBuf->buf(), dstBuf->numBytes(), encodedBuf->buf(), encodedBuf->numBytes());
-	  *pDstBytes = encodedBuf->numBytes();
-  }
+  memcpy_s(dstBuf->buf(), dstBuf->numBytes(), encodedBuf->buf(), encodedBuf->numBytes());
+  *pDstBytes = encodedBuf->numBytes();
 }
 
 } // namespace streampunk
