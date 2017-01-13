@@ -220,12 +220,20 @@ std::string EncoderCinegy::packingRequired() const {
 void EncoderCinegy::encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes) {
   HRESULT hr = S_OK;
   //if(FAILED(hr = mVideoEncoder->AddFrame(mVpar->cFormat, srcBuf->buf(), mSrcFrameSize, 0, NULL)))
-  if(FAILED(hr = mVideoEncoder->AddScaleFrame(srcBuf->buf(), mSrcFrameSize, (CC_ADD_VIDEO_FRAME_PARAMS*)mVpar)))
-    printf("Error\n");
+  if (FAILED(hr = mVideoEncoder->AddScaleFrame(srcBuf->buf(), mSrcFrameSize, (CC_ADD_VIDEO_FRAME_PARAMS*)mVpar)));
+    printf("Error calling AddScaleFrame against Cinecoder\n");
   
   std::shared_ptr<Memory> encodedBuf = mEncodeCb->getResult();
-  memcpy_s (dstBuf->buf(), dstBuf->numBytes(), encodedBuf->buf(), encodedBuf->numBytes());
-  *pDstBytes = encodedBuf->numBytes();  
+
+  if (encodedBuf == NULL)
+  {
+	  printf("Returned buffer is NULL\n");
+  }
+  else
+  {
+	  memcpy_s(dstBuf->buf(), dstBuf->numBytes(), encodedBuf->buf(), encodedBuf->numBytes());
+	  *pDstBytes = encodedBuf->numBytes();
+  }
 }
 
 } // namespace streampunk
