@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Cinegy/CinecoderNodeJs.git"
   },
   "dependencies": {
     "bindings": "^1.2.1",
@@ -19,10 +19,10 @@
   "devDependencies": {
     "tape": "^4.5.1"
   },
-  "author": "",
+  "author": "Cinegy GmbH",
   "license": "Apache-2.0",
   "bugs": {
     "url": ""
   },
-  "homepage": ""
+  "homepage": "https://home.cinegy.com"
 }
