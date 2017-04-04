@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.34.10631
+  The version of Cinecoder for these headers should be: 3.27.39.11441
 */
 
 #ifndef __CINECODER_ERRORS_H
@@ -22,6 +22,7 @@
 
 #define E_TIMEOUT             __HRESULT_FROM_WIN32(ERROR_TIMEOUT)
 #define E_INSUFFICIENT_BUFFER __HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)
+#define E_MODULE_NOT_FOUND    __HRESULT_FROM_WIN32(ERROR_MOD_NOT_FOUND)
 
 #ifndef __DECLARE_CINECODER_ERROR
 #define __DECLARE_CINECODER_ERROR(name,code) name = ((HRESULT)code)

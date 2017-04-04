@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.34.10631
+  The version of Cinecoder for these headers should be: 3.27.39.11441
 */
 
 
@@ -21,7 +21,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Sat Dec 10 23:04:46 2016
+/* at Mon Mar 13 23:56:57 2017
  */
 /* Compiler settings for Cinecoder.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
@@ -2485,11 +2485,11 @@ extern "C"{
 /* interface __MIDL_itf_Cinecoder_0000_0000 */
 /* [local] */ 
 
-#define	CINECODER_VERSION	( 32734 )
+#define	CINECODER_VERSION	( 32739 )
 
 #ifndef __CINECODER_DISABLE_PRINT_VERSION__
 #pragma message ("------------------------------------------------------------------")
-#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.27.34.10631" " (build date " "10-Dez-2016" "10-Dez-2016")
+#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.27.39.11441" " (build date " "13-Mrz-2017" "13-Mrz-2017")
 #pragma message ("------------------------------------------------------------------")
 #endif
 

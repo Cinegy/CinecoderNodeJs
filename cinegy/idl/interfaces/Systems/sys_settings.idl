@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.34.10631
+  The version of Cinecoder for these headers should be: 3.27.39.11441
 */
 
 [object, uuid(00001801-be08-11dc-aa88-005056c00008), pointer_default(unique), local]
@@ -76,7 +76,7 @@ interface ICC_BaseMultiplexerSettings : ICC_Settings
 	// The trailing stream alignment, specified in bytes. (1000 means 1000-bytes alignment of the stream).
 	[propget] HRESULT TrailingAlignment     ([out,retval]CC_UINT*a);
 	[propput] HRESULT TrailingAlignment     ([in]        CC_UINT a);
-	// Clock reference for the first byte of multiplexed stream.
+	// Clock reference for the first byte of multiplexed stream, in 90000 Hz units.
 	[propget] HRESULT InitialPTS            ([out,retval]CC_TIME*t);
 	[propput] HRESULT InitialPTS            ([in]        CC_TIME t);
 	// The output policy for multiplexer.
