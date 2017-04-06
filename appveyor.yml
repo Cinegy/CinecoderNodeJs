@@ -1,6 +1,9 @@
 version: 1.0.{build}
 init:
-- ps: Install-Product node 6.10.1 x64
+- ps: >-
+    iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+    Install-Product node 6.10.1 x64
 install:
 - cmd: npm config set msvs_version 2015
 build_script:
@@ -8,3 +11,4 @@ build_script:
 test_script:
 - cmd: npm test
 on_finish:
+- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
