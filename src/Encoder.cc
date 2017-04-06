@@ -56,13 +56,13 @@ Encoder::Encoder(Nan::Callback *callback)
 Encoder::~Encoder() {}
 
 // iProcess
-uint32_t Encoder::processFrame (std::shared_ptr<iProcessData> processData) {
+uint32_t Encoder::processFrame (std::shared_ptr<iProcessData> processData, std::string &errStr) {
   Timer t;
   std::shared_ptr<EncodeProcessData> epd = std::dynamic_pointer_cast<EncodeProcessData>(processData);
 
   // do the encode
   uint32_t dstBytes = 0;
-  mEncoderDriver->encodeFrame (epd->srcBuf(), epd->dstBuf(), mFrameNum++, &dstBytes);
+  mEncoderDriver->encodeFrame (epd->srcBuf(), epd->dstBuf(), mFrameNum++, &dstBytes, errStr);
   printf("encode : %.2fms\n", t.delta());
 
   return dstBytes;

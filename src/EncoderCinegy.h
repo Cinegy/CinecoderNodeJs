@@ -29,6 +29,7 @@ class Memory;
 class Duration;
 class EssenceInfo;
 class EncodeCallback;
+class EncoderErrorHandler;
 class EncoderCinegy : public iEncoderDriver {
 public:
   EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_ptr<EssenceInfo> dstInfo, const Duration& duration);
@@ -39,7 +40,7 @@ public:
   uint32_t width() const { return mWidth; }
   uint32_t height() const { return mHeight; }
   
-  void encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes);
+  void encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr);
 
 private:
   std::string mSrcPacking; 
@@ -52,6 +53,7 @@ private:
   
   void *mVpar;
   EncodeCallback *mEncodeCb;
+  EncoderErrorHandler *mErrorHandler;
 };
 
 } // namespace streampunk

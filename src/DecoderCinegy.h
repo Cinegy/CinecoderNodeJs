@@ -29,13 +29,14 @@ class Memory;
 class Duration;
 class EssenceInfo;
 class DecodeCallback;
+class DecoderErrorHandler;
 class DecoderCinegy : public iDecoderDriver {
 public:
   DecoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_ptr<EssenceInfo> dstInfo);
   ~DecoderCinegy();
 
   uint32_t bytesReq() const;
-  void decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes);
+  void decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr);
 
 private:
   std::string mSrcEncoding;
@@ -46,6 +47,7 @@ private:
   uint32_t mSrcFrameSize;
   CComPtr<ICC_VideoDecoder> mVideoDecoder;
   DecodeCallback *mDecodeCb;
+  DecoderErrorHandler *mErrorHandler;
 };
 
 } // namespace streampunk

@@ -14,10 +14,13 @@
 */
 
 #include <nan.h>
+#include <sstream>
 #include "DecoderCinegy.h"
 #include "CodecCinegy.h"
 #include "Memory.h"
 #include "EssenceInfo.h"
+#include <mutex>
+#include <condition_variable>
 
 #include "../cinegy/include/cinecoder_h.h"
 
@@ -25,7 +28,17 @@ namespace streampunk {
 
 #define TESTCOND(cond,hr) ATLASSERT(cond); if(!(cond)) return (hr)
 
-class C_DecoderErrorHandler : public ICC_ErrorHandler {
+class DecoderErrorHandler : public ICC_ErrorHandler {
+public:
+  DecoderErrorHandler() : mErrStr("") {}
+  virtual ~DecoderErrorHandler() {}
+
+  std::string readErrStr() { 
+    std::string errStr(mErrStr);
+    mErrStr.clear();
+    return errStr; 
+  }
+
   STDMETHOD(QueryInterface)(REFIID riid, void**p) {
     if (p == NULL)
       return E_POINTER;
@@ -44,18 +57,40 @@ class C_DecoderErrorHandler : public ICC_ErrorHandler {
     return 1;
   }
   STDMETHOD(ErrorHandlerFunc)(HRESULT ErrCode, LPCSTR ErrDescription, LPCSTR pFileName, INT LineNo) {
-    printf("Cinecoder decoder error %08xh (%s) at %s(%d): %s\n", ErrCode, Cinecoder_GetErrorString(ErrCode), pFileName, LineNo, ErrDescription);
+    // printf("Cinecoder decoder error %08xh (%s) at %s(%d): %s\n", ErrCode, Cinecoder_GetErrorString(ErrCode), pFileName, LineNo, ErrDescription);
+    std::stringstream ss;
+    ss << "Cinecoder decoder error " <<
+      std::hex << ErrCode << "h" <<
+      " (" << Cinecoder_GetErrorString(ErrCode) << ")" <<
+      " at " << pFileName <<
+      "(" << std::dec << LineNo << ")" <<
+      ": " << ErrDescription;
+    mErrStr = ss.str();
     return ErrCode;
   }
+
+private:
+  std::string mErrStr;
 };
-C_DecoderErrorHandler DecodeErrorHandler;
 
 class DecodeCallback : public ICC_DataReadyCallback {
 public:
-  DecodeCallback() : mFirstFrame(true) {}
+  DecodeCallback() : m(), cv(), mDecodeDone(false), mFirstFrame(true) {}
   virtual ~DecodeCallback() {}
 
-  void setDecodeBuffer(std::shared_ptr<Memory> buf)  { mDecodeBuffer = buf; }
+  void setDecodeBuffer(std::shared_ptr<Memory> buf)  { 
+    mDecodeDone = false;
+    mErrStr.clear();
+    mDecodeBuffer = buf;
+  }
+
+  void waitResult(std::string &errStr) { 
+    std::unique_lock<std::mutex> lk(m);
+    while(!mDecodeDone) {
+      cv.wait(lk);
+    }
+    errStr = mErrStr;
+  }
 
   // IUnknown implementation: AddRef, Release, QueryInterface 
   STDMETHOD_(ULONG, AddRef)(void)   { return 2;  }
@@ -106,14 +141,26 @@ public:
       return hr;
 
     DWORD dwBytesWrote = 0;
-    if(FAILED(hr = spProducer->GetFrame(CCF_UYVY_10BIT, mDecodeBuffer->buf(), mDecodeBuffer->numBytes(), szFrame.cx*4, &dwBytesWrote)))
-      return hr;
+    if(FAILED(hr = spProducer->GetFrame(CCF_UYVY_10BIT, mDecodeBuffer->buf(), mDecodeBuffer->numBytes(), szFrame.cx*4, &dwBytesWrote))) {
+      std::stringstream ss;
+      ss << "Cinecoder decoder error " <<
+        std::hex << hr << "h" <<
+        " (" << Cinecoder_GetErrorString(hr) << ")";
+      mErrStr = ss.str();
+    }
+    std::lock_guard<std::mutex> lk(m);
+    mDecodeDone = true;
+    cv.notify_one();
 
-    return S_OK;
+    return hr;
   }
 
 private:
+  mutable std::mutex m;
+  std::condition_variable cv;
+  bool mDecodeDone;
   bool mFirstFrame;
+  std::string mErrStr;
   std::shared_ptr<Memory> mDecodeBuffer;
 };
 
@@ -125,7 +172,8 @@ DecoderCinegy::DecoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   CC_VERSION_INFO version = Cinecoder_GetVersion();
   printf("Cinecoder.dll version %d.%02d.%02d\n\n", version.VersionHi, version.VersionLo, version.EditionNo);
 
-  Cinecoder_SetErrorHandler(&DecodeErrorHandler);
+  mErrorHandler = new DecoderErrorHandler;
+  Cinecoder_SetErrorHandler(mErrorHandler);
     
 	HRESULT hr = S_OK;
 
@@ -152,19 +200,24 @@ DecoderCinegy::DecoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
 DecoderCinegy::~DecoderCinegy() {}
 
 uint32_t DecoderCinegy::bytesReq() const {
-  return mWidth * 4 * 3 / 4 * mHeight; // Decoder doesn't support unsqueeze yet so 1920 -> 1440, 1280 -> 960  
+  uint32_t pitch = mSrcEncoding.compare("AVCi50") ? mWidth * 4 : mWidth * 3; // Decoder doesn't support unsqueeze yet so 1920 -> 1440, 1280 -> 960 
+  return pitch * mHeight;
 }
 
-void DecoderCinegy::decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes) {
-
+void DecoderCinegy::decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr) {
+  *pDstBytes = 0;
   mDecodeCb->setDecodeBuffer(dstBuf);
 
   HRESULT hr = S_OK;
   DWORD dwBytesProcessed = 0;
-  if(FAILED(hr = mVideoDecoder->ProcessData(srcBuf->buf(), (int)srcBuf->numBytes(), 0, -1, &dwBytesProcessed)))
+  if(FAILED(hr = mVideoDecoder->ProcessData(srcBuf->buf(), (int)srcBuf->numBytes(), 0, -1, &dwBytesProcessed))) {
     printf("Cinecoder decoder failed to process frame\n");
+    errStr = mErrorHandler->readErrStr();
+    return;
+  }
   mVideoDecoder->Break(CC_TRUE); // flush decoder frames immediately
 
+  mDecodeCb->waitResult(errStr);
   *pDstBytes = dstBuf->numBytes();  
 }
 

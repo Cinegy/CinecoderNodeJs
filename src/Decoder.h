@@ -30,7 +30,7 @@ public:
   static NAN_MODULE_INIT(Init);
 
   // iProcess
-  uint32_t processFrame (std::shared_ptr<iProcessData> processData);
+  uint32_t processFrame (std::shared_ptr<iProcessData> processData, std::string &errStr);
   
 private:
   explicit Decoder(Nan::Callback *callback);
@@ -50,7 +50,7 @@ private:
       const int argc = 3;
       v8::Local<v8::Value> argv[] = {info[0], info[1], info[2]};
       v8::Local<v8::Function> cons = Nan::New(constructor());
-      info.GetReturnValue().Set(cons->NewInstance(argc, argv));
+      info.GetReturnValue().Set(cons->NewInstance(Nan::GetCurrentContext(), argc, argv).ToLocalChecked());
     }
   }
 

@@ -66,7 +66,17 @@ private:
   }
 };
 
-class C_EncoderErrorHandler : public ICC_ErrorHandler {
+class EncoderErrorHandler : public ICC_ErrorHandler {
+public:
+  EncoderErrorHandler() : mErrStr("") {}
+  virtual ~EncoderErrorHandler() {}
+
+  std::string readErrStr() { 
+    std::string errStr(mErrStr);
+    mErrStr.clear();
+    return errStr; 
+  }
+
   STDMETHOD(QueryInterface)(REFIID riid, void**p) {
     if (p == NULL)
       return E_POINTER;
@@ -85,11 +95,21 @@ class C_EncoderErrorHandler : public ICC_ErrorHandler {
     return 1;
   }
   STDMETHOD(ErrorHandlerFunc)(HRESULT ErrCode, LPCSTR ErrDescription, LPCSTR pFileName, INT LineNo) {
-    printf("Cinecoder encoder error %08xh (%s) at %s(%d): %s\n", ErrCode, Cinecoder_GetErrorString(ErrCode), pFileName, LineNo, ErrDescription);
+    // printf("Cinecoder encoder error %08xh (%s) at %s(%d): %s\n", ErrCode, Cinecoder_GetErrorString(ErrCode), pFileName, LineNo, ErrDescription);
+    std::stringstream ss;
+    ss << "Cinecoder encoder error " <<
+      std::hex << ErrCode << "h" <<
+      " (" << Cinecoder_GetErrorString(ErrCode) << ")" <<
+      " at " << pFileName <<
+      "(" << std::dec << LineNo << ")" <<
+      ": " << ErrDescription << "\n";
+    mErrStr = ss.str();
     return ErrCode;
   }
+
+private:
+  std::string mErrStr;
 };
-C_EncoderErrorHandler EncodeErrorHandler;
 
 class EncodeCallback : public ICC_ByteStreamCallback {
 public:
@@ -152,7 +172,8 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   CC_VERSION_INFO version = Cinecoder_GetVersion();
   printf("Cinecoder.dll version %d.%02d.%02d\n\n", version.VersionHi, version.VersionLo, version.EditionNo);
 
-  Cinecoder_SetErrorHandler(&EncodeErrorHandler);
+  mErrorHandler = new EncoderErrorHandler;
+  Cinecoder_SetErrorHandler(mErrorHandler);
     
 	HRESULT hr = S_OK;
 
@@ -229,13 +250,22 @@ std::string EncoderCinegy::packingRequired() const {
   return "UYVY10";
 }
 
-void EncoderCinegy::encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes) {
+void EncoderCinegy::encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr) {
+  *pDstBytes = 0;
   HRESULT hr = S_OK;
   //if(FAILED(hr = mVideoEncoder->AddFrame(mVpar->cFormat, srcBuf->buf(), mSrcFrameSize, 0, NULL)))
-  if (FAILED(hr = mVideoEncoder->AddScaleFrame(srcBuf->buf(), mSrcFrameSize, (CC_ADD_VIDEO_FRAME_PARAMS*)mVpar)))
+  if (FAILED(hr = mVideoEncoder->AddScaleFrame(srcBuf->buf(), mSrcFrameSize, (CC_ADD_VIDEO_FRAME_PARAMS*)mVpar))) {
     printf("Error calling AddScaleFrame against Cinecoder\n");
-  
+    errStr = mErrorHandler->readErrStr();
+    return;
+  }
+
   std::shared_ptr<Memory> encodedBuf = mEncodeCb->getResult();
+  if (!encodedBuf) {
+    printf("Cinecoder encoder failed to encode\n");
+    errStr = mErrorHandler->readErrStr();
+    return;
+  }
   memcpy_s(dstBuf->buf(), dstBuf->numBytes(), encodedBuf->buf(), encodedBuf->numBytes());
   *pDstBytes = encodedBuf->numBytes();
 }

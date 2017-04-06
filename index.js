@@ -38,7 +38,7 @@ Decoder.prototype.setInfo = function(srcTags, dstTags) {
 
 Decoder.prototype.decode = function(srcBufArray, dstBuf, cb) {
   try {
-    var numQueued = this.decoderAdon.decode(srcBufArray, dstBuf, function(err, resultBytes) {
+    var numQueued = this.decoderAdon.decode(srcBufArray, dstBuf, (err, resultBytes) => {
       cb(err, resultBytes?dstBuf.slice(0,resultBytes):null);
     });
     return numQueued;
@@ -49,7 +49,7 @@ Decoder.prototype.decode = function(srcBufArray, dstBuf, cb) {
 
 Decoder.prototype.quit = function(cb) {
   try {
-    this.decoderAdon.quit(function(err, resultBytes) {
+    this.decoderAdon.quit((err, resultBytes) => {
       cb(err, resultBytes);
     });
   } catch (err) {
@@ -84,7 +84,7 @@ Encoder.prototype.setInfo = function(srcTags, dstTags, duration, bitrate, gopfra
 
 Encoder.prototype.encode = function(srcBufArray, dstBuf, cb) {
   try {
-    var numQueued = this.encoderAdon.encode(srcBufArray, dstBuf, function(err, resultBytes) {
+    var numQueued = this.encoderAdon.encode(srcBufArray, dstBuf, (err, resultBytes) => {
       cb(err, resultBytes?dstBuf.slice(0,resultBytes):null);
     });
     return numQueued;
@@ -95,7 +95,7 @@ Encoder.prototype.encode = function(srcBufArray, dstBuf, cb) {
 
 Encoder.prototype.quit = function(cb) {
   try {
-    this.encoderAdon.quit(function(err, resultBytes) {
+    this.encoderAdon.quit((err, resultBytes) => {
       cb(err, resultBytes);
     });
   } catch (err) {
