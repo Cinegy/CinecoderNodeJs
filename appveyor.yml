@@ -1,7 +1,6 @@
 version: 1.0.{build}
 init:
-
-    Install-Product node 6.10.1 x64
+- ps: Install-Product node 6.10.1 x64
 install:
 - cmd: npm config set msvs_version 2015
 build_script:
