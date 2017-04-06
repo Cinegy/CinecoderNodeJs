@@ -28,7 +28,7 @@ public:
 
   virtual uint32_t bytesReq() const = 0;
   virtual std::string packingRequired() const = 0;
-  virtual void encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes) = 0;
+  virtual void encodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr) = 0;
 };
 
 class iDecoderDriver {
@@ -36,7 +36,7 @@ public:
   virtual ~iDecoderDriver() {}
 
   virtual uint32_t bytesReq() const = 0;
-  virtual void decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes) = 0;
+  virtual void decodeFrame (std::shared_ptr<Memory> srcBuf, std::shared_ptr<Memory> dstBuf, uint32_t frameNum, uint32_t *pDstBytes, std::string &errStr) = 0;
 };
 
 } // namespace streampunk

@@ -86,7 +86,7 @@ private:
     while (mActive) {
       std::shared_ptr<WorkParams> wp = mWorkQueue.dequeue();
       if (wp->mProcess)
-        wp->mResultBytes = wp->mProcess->processFrame(wp->mProcessData);
+        wp->mResultBytes = wp->mProcess->processFrame(wp->mProcessData, wp->mErrStr);
       else
         mActive = false;
       mDoneQueue.enqueue(wp);
@@ -103,8 +103,13 @@ private:
     while (mDoneQueue.size() != 0)
     {
       std::shared_ptr<WorkParams> wp = mDoneQueue.dequeue();
-      Local<Value> argv[] = { Nan::Null(), Nan::New(wp->mResultBytes) };
-      wp->mCallback->Call(2, argv);
+      if (!wp->mErrStr.empty()) {
+        Local<Value> argv[] = { Nan::New(wp->mErrStr.c_str()).ToLocalChecked() };
+        wp->mCallback->Call(1, argv);
+      } else {
+        Local<Value> argv[] = { Nan::Null(), Nan::New(wp->mResultBytes) };
+        wp->mCallback->Call(2, argv);
+      }
 
       if (!wp->mProcess && !mActive) {
         // notify the thread to exit
@@ -128,6 +133,7 @@ private:
     std::shared_ptr<iProcessData> mProcessData;
     iProcess *mProcess;
     Nan::Callback *mCallback;
+    std::string mErrStr;
     uint32_t mResultBytes;
   };
   WorkQueue<std::shared_ptr<WorkParams> > mWorkQueue;

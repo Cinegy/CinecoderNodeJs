@@ -51,13 +51,13 @@ Decoder::Decoder(Nan::Callback *callback)
 Decoder::~Decoder() {}
 
 // iProcess
-uint32_t Decoder::processFrame (std::shared_ptr<iProcessData> processData) {
+uint32_t Decoder::processFrame (std::shared_ptr<iProcessData> processData, std::string &errStr) {
   Timer t;
   std::shared_ptr<DecodeProcessData> dpd = std::dynamic_pointer_cast<DecodeProcessData>(processData);
 
   // do the decode
   uint32_t dstBytes = 0;
-  mDecoderDriver->decodeFrame (dpd->srcBuf(), dpd->dstBuf(), mFrameNum++, &dstBytes);
+  mDecoderDriver->decodeFrame (dpd->srcBuf(), dpd->dstBuf(), mFrameNum++, &dstBytes, errStr);
   printf("decode : %.2fms\n", t.delta());
 
   return dstBytes;

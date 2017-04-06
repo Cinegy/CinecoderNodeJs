@@ -13,12 +13,13 @@
   limitations under the License.
 */
 
+var fs = require('fs');
 var test = require('tape');
 var cinecoder = require('../../cinecodernodejs');
 
 function makeUYVY10Buf(width, height) {
   var pitchBytes = width * 4;
-  var buf = new Buffer(pitchBytes * height);  
+  var buf = Buffer.alloc(pitchBytes * height);  
   var yOff = 0;
   for (var y=0; y<height; ++y) {
     var xOff = 0;
@@ -47,7 +48,7 @@ function makeTags(width, height, packing, encodingName, interlace) {
 }
 
 
-var duration = new Buffer(8);
+var duration = Buffer.alloc(8);
 duration.writeUIntBE(1, 0, 4);
 duration.writeUIntBE(25, 4, 4);
 
@@ -62,6 +63,21 @@ function encodeTest(description, onErr, fn) {
 
     fn(t, encoder, function() {
       encoder.quit(function() {});
+    });
+  });
+};
+
+function decodeTest(description, onErr, fn) {
+  test(description, function (t) {
+    var decoder = new cinecoder.Decoder(function() {
+      t.end();
+    });
+    decoder.on('error', function(err) {
+      onErr(t, err);
+    });
+
+    fn(t, decoder, function() {
+      decoder.quit(function() {});
     });
   });
 };
@@ -126,10 +142,37 @@ encodeTest('Performing AVCi encoding',
     var dstTags = makeTags(dstWidth, dstHeight, dstFormat, dstFormat, 0);
     var srcBuf = makeUYVY10Buf(srcWidth, srcHeight);
     var dstBufLen = encoder.setInfo(srcTags, dstTags, duration);
-    var dstBuf = new Buffer(dstBufLen);
+    var dstBuf = Buffer.alloc(dstBufLen);
     encoder.encode(srcBuf, dstBuf, function(err, result) {
       t.notOk(err, 'no error expected');
+      fs.writeFileSync("avci.raw", result);
       // todo: check for valid bitstream...
+      done();
+    });
+  });
+
+decodeTest('Performing AVCi decoding',
+  function (t, err) {
+    t.notOk(err, 'no error expected');
+  }, 
+  function (t, decoder, done) {
+    var srcWidth = 1920;
+    var srcHeight = 1080;
+    var srcFormat = 'AVCi50';
+    var dstWidth = 1920; 
+    var dstHeight = 1080; 
+    var dstFormat = 'UYVY10';
+    var srcTags = makeTags(srcWidth, srcHeight, srcFormat, srcFormat, 0);
+    var dstTags = makeTags(dstWidth, dstHeight, dstFormat, 'raw', 0);
+    var srcBuf = fs.readFileSync("avci.raw");
+    t.ok(srcBuf, 'read encoded file');
+    var dstBufLen = decoder.setInfo(srcTags, dstTags, duration);
+    var dstBuf = Buffer.alloc(dstBufLen);
+    decoder.decode(srcBuf, dstBuf, function(err, result) {
+      t.notOk(err, 'no error expected');
+      // todo: check for valid bitstream...
+      // var origBuf = makeUYVY10Buf(srcWidth * 3 / 4, srcHeight);
+      // t.deepEqual(result, origBuf, "matches expected result");
       done();
     });
   });
@@ -149,7 +192,7 @@ encodeTest('Handling an undefined source buffer',
     var dstTags = makeTags(dstWidth, dstHeight, dstFormat, dstFormat, 0);
     var dstBufLen = encoder.setInfo(srcTags, dstTags, duration);
     var srcBuf;
-    var dstBuf = new Buffer(dstBufLen);
+    var dstBuf = Buffer.alloc(dstBufLen);
     encoder.encode(srcBuf, dstBuf, function(err, result) {
       t.ok(err, 'should return error');
       done();
