@@ -52,11 +52,10 @@ var duration = Buffer.alloc(8);
 duration.writeUIntBE(1, 0, 4);
 duration.writeUIntBE(25, 4, 4);
 
-function encodeTest(description, onErr, fn) {
+function encodeTest(description, numTests, onErr, fn) {
   test(description, function (t) {
-    var encoder = new cinecoder.Encoder(function() {
-      t.end();
-    });
+    t.plan(numTests);
+    var encoder = new cinecoder.Encoder(function() {});
     encoder.on('error', function(err) {
       onErr(t, err);
     });
@@ -67,11 +66,10 @@ function encodeTest(description, onErr, fn) {
   });
 };
 
-function decodeTest(description, onErr, fn) {
+function decodeTest(description, numTests, onErr, fn) {
   test(description, function (t) {
-    var decoder = new cinecoder.Decoder(function() {
-      t.end();
-    });
+    t.plan(numTests);
+    var decoder = new cinecoder.Decoder(function() {});
     decoder.on('error', function(err) {
       onErr(t, err);
     });
@@ -94,7 +92,7 @@ function badFmt() {
   encoder.setInfo(srcTags, dstTags, duration);
 }
 
-encodeTest('Handling bad image dimensions',
+encodeTest('Handling bad image dimensions', 1,
   function (t, err) {
     t.ok(err, 'emits error');
   }, 
@@ -103,7 +101,7 @@ encodeTest('Handling bad image dimensions',
     done();
   });
 
-encodeTest('Handling bad image format',
+encodeTest('Handling bad image format', 1,
   function (t, err) {
     t.ok(err, 'emits error');
   }, 
@@ -112,7 +110,7 @@ encodeTest('Handling bad image format',
     done();
   });
 
-encodeTest('Starting up an encoder', 
+encodeTest('Starting up an encoder', 1,
   function (t, err) {
     t.notOk(err, 'no error expected');
   }, 
@@ -127,7 +125,7 @@ encodeTest('Starting up an encoder',
     done();
   });
 
-encodeTest('Performing AVCi encoding',
+encodeTest('Performing AVCi encoding', 1,
   function (t, err) {
     t.notOk(err, 'no error expected');
   }, 
@@ -151,7 +149,7 @@ encodeTest('Performing AVCi encoding',
     });
   });
 
-decodeTest('Performing AVCi decoding',
+decodeTest('Performing AVCi decoding', 2,
   function (t, err) {
     t.notOk(err, 'no error expected');
   }, 
@@ -177,7 +175,7 @@ decodeTest('Performing AVCi decoding',
     });
   });
 
-encodeTest('Handling an undefined source buffer', 
+encodeTest('Handling an undefined source buffer', 1,
   function (t, err) {
     t.notOk(err, 'no error expected');
   }, 
@@ -199,7 +197,7 @@ encodeTest('Handling an undefined source buffer',
     });
   });
 
-encodeTest('Handling an undefined destination buffer',
+encodeTest('Handling an undefined destination buffer', 1,
   function (t, err) {
     t.notOk(err, 'no error expected');
   }, 
