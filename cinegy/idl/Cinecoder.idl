@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 import "Unknwn.idl";
@@ -61,6 +61,8 @@ cpp_quote("#undef _DSO_VISIBLE_")
 #include "interfaces/cc_video_j2k.idl"
 #include "interfaces/cc_video_sonyraw.idl"
 #include "interfaces/cc_video_prores.idl"
+#include "interfaces/cc_video_daniel.idl"
+#include "interfaces/cc_video_y4m.idl"
 
 #include "interfaces/systems/cc_systems.idl"
 #include "interfaces/systems/cc_mp4_mux.idl"
@@ -163,6 +165,26 @@ library Cinecoder
 
   [uuid(80011102-0315-11dc-a983-0018f3fe411b)]
   coclass CC_MpegVideoEncoder
+  {
+    [default]
+    interface ICC_MpegVideoEncoder;
+    interface ICC_VideoEncoder;
+    interface ICC_Encoder;
+    interface ICC_VideoConsumer;
+    interface ICC_VideoConsumerExt;
+	interface ICC_ByteStreamProducer;
+    interface ICC_StreamProcessor;
+    interface ICC_InputBufferControl;
+    interface ICC_ThreadsCountProp;
+    interface ICC_ThreadsAffinityProp;
+    interface ICC_ThreadsPriorityProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_InitialTimeCodeProp;
+    interface ICC_AddUserDataCtrl;
+  };
+
+  [uuid(eb953846-1fbc-408a-91f9-f7a8acda02d1)]
+  coclass CC_MpegVideoEncoder2
   {
     [default]
     interface ICC_MpegVideoEncoder;
@@ -602,6 +624,14 @@ library Cinecoder
     interface ICC_ElementaryStreamInfo;
   };
 
+  [uuid(403de721-dade-4365-a587-589eb24215cf)]
+  coclass CC_MP4_MuxerVideoPinSettings
+  {
+    interface ICC_MP4_MuxerVideoPinSettings;
+    interface ICC_MP4_MuxerPinSettings;
+    interface ICC_ElementaryStreamInfo;
+  };
+
   [uuid(9954375D-1EFA-49A4-B2E4-C5A6C5352BA4)]
   coclass CC_MP4_MpegDashSettings
   {
@@ -883,6 +913,101 @@ library Cinecoder
     interface ICC_InputBufferControl;
   };
 
+  [uuid(76bef61e-f17d-4079-8f22-0c18fbf38e65)]
+  coclass CC_DanielVideoSplitter
+  {
+    [default]
+	interface ICC_DanielVideoSplitter;
+    interface ICC_Transcoder;
+    interface ICC_Splitter;
+	interface ICC_VideoSplitter;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_ByteStreamProducer;
+    interface ICC_TimeBaseProp;
+  };
+
+  [uuid(0236cdb4-3541-4c66-a211-496e91922dba)]
+  coclass CC_DanielVideoDecoder
+  {
+    [default]
+	interface ICC_DanielVideoDecoder;
+	interface ICC_VideoDecoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_VideoProducer;
+    interface ICC_VideoProducerExt;
+	interface ICC_ThreadsAffinityProp;
+	interface ICC_ThreadsPriorityProp;
+    interface ICC_ThreadsCountProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_InputBufferControl;
+  };
+
+  [uuid(00a25ffa-f7bf-4876-a592-73f944936a6f)]
+  coclass CC_DanielVideoDecoder_CUDA
+  {
+    [default]
+	interface ICC_DanielVideoDecoder;
+	interface ICC_VideoDecoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_VideoProducer;
+    interface ICC_VideoProducerExt;
+	interface ICC_ThreadsAffinityProp;
+	interface ICC_ThreadsPriorityProp;
+    interface ICC_ThreadsCountProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_InputBufferControl;
+    interface ICC_D2D_GetUpdateVideoBufferPtrProp;
+  };
+
+  [uuid(5fd43ca9-0f0f-40e0-a20a-74c9a5edbec8)]
+  coclass CC_DanielVideoEncoder
+  {
+    [default]
+	interface ICC_DanielVideoEncoder;
+	interface ICC_VideoEncoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamProducer;
+    interface ICC_VideoConsumer;
+    interface ICC_VideoConsumerExt;
+	interface ICC_ThreadsAffinityProp;
+	interface ICC_ThreadsPriorityProp;
+    interface ICC_ThreadsCountProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_InputBufferControl;
+  };
+
+  [uuid(6e0bf254-f734-4d75-ab2f-de598be15616)]
+  coclass CC_DanielVideoEncoder_CUDA
+  {
+    [default]
+	interface ICC_DanielVideoEncoder;
+	interface ICC_VideoEncoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamProducer;
+    interface ICC_VideoConsumer;
+    interface ICC_VideoConsumerExt;
+	interface ICC_ThreadsPriorityProp;
+    interface ICC_TimeBaseProp;
+    interface ICC_InputBufferControl;
+  };
+
+  [uuid(fd5a7ff2-a1fe-41af-b27a-0d786a738473)]
+  coclass CC_DanielVideoEncoderSettings
+  {
+    [default]
+    interface ICC_DanielVideoEncoderSettings;
+  };
+
+  [uuid(2faf33b7-bb91-401b-82de-363e3cd5d309)]
+  coclass CC_DanielVideoEncoderSettings_CUDA
+  {
+    [default]
+    interface ICC_DanielVideoEncoderSettings;
+  };
+
   [uuid(331cbbb5-6dd6-4bcb-92ae-037df25fe92e)]
   coclass CC_MediaReader
   {
@@ -994,6 +1119,26 @@ library Cinecoder
     interface ICC_StreamProcessor;
     interface ICC_Breakable;
     interface ICC_TimeBaseProp;
+  };
+
+  [uuid(6c6e79c1-d644-4d66-884d-7e9d9b0bbbda)]
+  coclass CC_Y4M_VideoEncoder
+  {
+    [default]
+	interface ICC_Y4M_VideoEncoder;
+	interface ICC_VideoEncoder;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamProducer;
+    interface ICC_VideoConsumer;
+    interface ICC_VideoConsumerExt;
+    interface ICC_TimeBaseProp;
+  };
+
+  [uuid(bc7a18e4-14eb-485d-bc43-c8932d250970)]
+  coclass CC_Y4M_VideoEncoderSettings
+  {
+    [default]
+    interface ICC_Y4M_VideoEncoderSettings;
   };
 };
 

@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 typedef [v1_enum] enum CC_EXECUTIVE_DEVICE_TYPES

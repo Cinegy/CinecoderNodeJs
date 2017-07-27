@@ -4,7 +4,7 @@ CinecoderNodeJs is a [Node.js](http://nodejs.org/) [addon](http://nodejs.org/api
 
 ## Installation
 
-Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) 4.x release.
+Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) 6.11.x release.
 
 This module has native C++ files that are compiled with node-gyp. To use the module, you many need to install a C++ compiler and python v2.x on your system. On Windows, compilation has been tested using the community edition of Microsoft Visual Studio 2015. On Windows, node may need to be configured with:
 

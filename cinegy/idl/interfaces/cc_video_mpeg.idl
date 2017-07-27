@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 // MPEG-2 Profiles and Levels.
@@ -89,14 +89,16 @@ typedef [v1_enum] enum CC_MPG_MB_SCAN_PATTERN
 {
 	CC_MPG_MB_SCAN_AUTO =0,           /// Automatic selection of the block scan pattern.
 	CC_MPG_MB_SCAN_ZIGZAG,            /// ZigZag scan pattern.
-	CC_MPG_MB_SCAN_ALTERNATE          /// Alternate scan pattern.
+	CC_MPG_MB_SCAN_ALTERNATE,         /// Alternate scan pattern.
+	CC_MPG_MB_SCAN_COUNT
 } CC_MPG_MB_SCAN_PATTERN;
 
 typedef [v1_enum] enum CC_MPG_QUANT_SCALE_TYPE
 {
 	CC_MPG_QSCALE_AUTO =0,            /// Automatic selection of the quantization scale.
 	CC_MPG_QSCALE_LINEAR,             /// Linear quant scales (1..31).
-	CC_MPG_QSCALE_NON_LINEAR          /// Non-linear quant scales (0.5..56).
+	CC_MPG_QSCALE_NON_LINEAR,         /// Non-linear quant scales (0.5..56).
+	CC_MPG_QSCALE_COUNT
 } CC_MPG_QUANT_SCALE_TYPE;
 
 /// The intra_vlc_format value. Refer ISO/IEC 13818-2 7.2.2.1 for details.
@@ -104,7 +106,8 @@ typedef [v1_enum] enum CC_MPG_INTRA_VLC_TABLE
 {
 	CC_MPG_INTRA_VLC_TABLE_AUTO =0,   /// Automatic selection of the intra_vlc_table.
 	CC_MPG_INTRA_VLC_TABLE_B14,       /// Use VLC table B.14 for intra coeffs.
-	CC_MPG_INTRA_VLC_TABLE_B15        /// Use VLC table B.15 for intra coeffs.
+	CC_MPG_INTRA_VLC_TABLE_B15,       /// Use VLC table B.15 for intra coeffs.
+	CC_MPG_INTRA_VLC_TABLE_COUNT
 } CC_MPG_INTRA_VLC_TABLE;
 
 typedef [v1_enum] enum CC_MPG_FRAME_FLAGS
@@ -415,9 +418,9 @@ interface ICC_MpegVideoEncoderSettings : ICC_Settings
   // The average quantization scale in VBR mode.
   [propget] HRESULT  QuantScale               ([out,retval] CC_FLOAT*x);
   [propput] HRESULT  QuantScale               ([in]         CC_FLOAT x);
-  // The VBV buffer size. Please refer to the ISO/IEC 13818-2 Annex C. "Video Buffer Verifier".
-  [propget] HRESULT  VBV_BufferSize           ([out,retval] CC_UINT*x); 
-  [propput] HRESULT  VBV_BufferSize           ([in]         CC_UINT x); 
+  // The VBV buffer size. Please refer to the ISO/IEC 13818-2 Annex C. "Video Buffer Verifier". You can also specify it in milliseconds by adding FRQ_TIMEVAL_MS.
+  [propget] HRESULT  VBV_BufferSize           ([out,retval] CC_PERIOD*x); 
+  [propput] HRESULT  VBV_BufferSize           ([in]         CC_PERIOD x); 
   // The GOP settings. See CC_GOP_DESCR for details.
   [propget] HRESULT  GOP                      ([out,retval] CC_GOP_DESCR*x);
   [propput] HRESULT  GOP                      ([in]         CC_GOP_DESCR x);
@@ -486,7 +489,7 @@ interface ICC_MpegVideoEncoderSettings : ICC_Settings
   // Put sequence_end_code after the last coded picture.
   [propget] HRESULT  SuppressSeqEndCode       ([out,retval] CC_BOOL*x); 
   [propput] HRESULT  SuppressSeqEndCode       ([in]         CC_BOOL x); 
-  // Low delay mode (under development).
+  // Low delay mode
   [propget] HRESULT  LowDelay                 ([out,retval] CC_BOOL*x); 
   [propput] HRESULT  LowDelay                 ([in]         CC_BOOL x); 
   // 
@@ -505,7 +508,12 @@ interface ICC_MpegVideoEncoderSettings : ICC_Settings
   // Quantization function
   [propget] HRESULT  QuantFunc                ([out,retval] CC_MPG_QUANT_FUNC*x);
   [propput] HRESULT  QuantFunc                ([in]         CC_MPG_QUANT_FUNC x);
-
+  // If true, all frames in the stream coded without fields (progressive).
+  [propget] HRESULT  ProgressiveSequence      ([out,retval] CC_BOOL			   *x);
+  [propput] HRESULT  ProgressiveSequence      ([in]         CC_BOOL			    x);
+  // If true, 
+  [propget] HRESULT  IntraRefresh			  ([out,retval] CC_BOOL			   *x);
+  [propput] HRESULT  IntraRefresh		      ([in]         CC_BOOL			    x);
 
   // The number of MPEG_USER_DATA, associated with the stream.
   [propget] HRESULT  UserDataCount            ([out,retval] CC_UINT*x);

@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 typedef [v1_enum] enum CC_H264_PROFILE
@@ -74,7 +74,7 @@ typedef struct CC_H264_DEBLOCKING_FILTER_DESCR
 
 cpp_quote("#ifdef __cplusplus")
 cpp_quote("namespace cinecoder {")
-cpp_quote("inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_DEBLOCKING_FILTER_MODE mode, CC_UINT alpha, CC_UINT beta) { CC_H264_DEBLOCKING_FILTER_DESCR d={mode,alpha,beta}; return d; }")
+cpp_quote("inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_DEBLOCKING_FILTER_MODE mode, CC_INT alpha, CC_INT beta) { CC_H264_DEBLOCKING_FILTER_DESCR d={mode,alpha,beta}; return d; }")
 cpp_quote("};")
 cpp_quote("#endif")
 

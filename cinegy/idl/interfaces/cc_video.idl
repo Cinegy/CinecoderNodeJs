@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -26,16 +26,32 @@ typedef [v1_enum] enum CC_COLOR_FMT
 {
   CCF_UNKNOWN      = 0x00000000,     /// Unknown color format.
 
-  CCF_RGB32        = 0x00000001,     /// The color data in the BGRA format, bytes order {B,G,R,A}, 4 bytes per pixel.
-  CCF_RGB24        = 0x00000002,     /// The color data in the BGR  format, bytes order {B,G,R},   3 bytes per pixel.
+  CCF_RGB32        = 0x00000001,     /// The color data in the RGBA format, 4 bytes per pixel.
+  CCF_RGB24        = 0x00000002,     /// The color data in the RGB  format, 3 bytes per pixel.
 
-  CCF_BGR32        = 0x00000011,     /// The color data in the RGBA format, bytes order {R,G,B,A}, 4 bytes per pixel.
-  CCF_BGR24        = 0x00000012,     /// The color data in the RGB  format, bytes order {R,G,B},   3 bytes per pixel.
+  CCF_BGR32        = 0x00000011,     /// The color data in the BGRA format, 4 bytes per pixel.
+  CCF_BGR24        = 0x00000012,     /// The color data in the BGR  format, 3 bytes per pixel.
 
   CCF_RGBA         = CCF_RGB32,
   CCF_RGB          = CCF_RGB24,
   CCF_BGRA         = CCF_BGR32,
   CCF_BGR          = CCF_BGR24,
+
+  CCF_RGB64        = 0x00000801,     /// The color data in the 16-bit RGBA format, 4 words per pixel.
+  CCF_RGB48        = 0x00000802,     /// The color data in the 16-bit RGB  format, 3 words per pixel.
+
+  CCF_BGR64        = 0x00000811,     /// The color data in the 16-bit BGRA format, 4 words per pixel.
+  CCF_BGR48        = 0x00000812,     /// The color data in the 16-bit BGR  format, 3 words per pixel.
+
+  CCF_ADOBE_RGBA_16u = 0x00000901,   /// The color data in the 16-bit RGBA format, 4 words per pixel, black at 0 to white at 32768
+  CCF_ADOBE_BGRA_16u = 0x00000911,   /// The color data in the 16-bit BGRA format, 4 words per pixel, black at 0 to white at 32768
+  CCF_ADOBE_RGBA_32f = 0x00000A01,   /// The color data in the 32-bit float RGBA format, 4 floats per pixel, black at 0 to white at 1
+  CCF_ADOBE_BGRA_32f = 0x00000A11,   /// The color data in the 32-bit float BGRA format, 4 floats per pixel, black at 0 to white at 1
+
+  CCF_RGBA_16BIT   = CCF_RGB64,
+  CCF_RGB_16BIT    = CCF_RGB48,
+  CCF_BGRA_16BIT   = CCF_BGR64,
+  CCF_BGR_16BIT    = CCF_BGR48,
 
   CCF_UYVY         = 0x00000031,     /// The packed YUV 4:2:2 color data, pixel order {u,y0,v,y1}, 4 bytes per 2 pixels
   CCF_YUY2         = 0x00000032,     /// The packed YUV 4:2:2 color data, pixel order {y0,u,y1,v}, 4 bytes per 2 pixels
@@ -50,6 +66,16 @@ typedef [v1_enum] enum CC_COLOR_FMT
   CCF_YUV422_10BIT = 0x00000242,     /// Planar YUV 4:2:2 (10 of 16 bit data, LSB).
   CCF_YUV444_10BIT = 0x00000243,     /// Planar YUV 4:4:4 (10 of 16 bit data, LSB).
 
+  CCF_YUV400_12BIT = 0x00000440,     /// Planar YUV 4:0:0 (12 of 16 bit data, LSB).
+  CCF_YUV420_12BIT = 0x00000441,     /// Planar YUV 4:2:0 (12 of 16 bit data, LSB).
+  CCF_YUV422_12BIT = 0x00000442,     /// Planar YUV 4:2:2 (12 of 16 bit data, LSB).
+  CCF_YUV444_12BIT = 0x00000443,     /// Planar YUV 4:4:4 (12 of 16 bit data, LSB).
+
+  CCF_YUV400_14BIT = 0x00000640,     /// Planar YUV 4:0:0 (14 of 16 bit data, LSB).
+  CCF_YUV420_14BIT = 0x00000641,     /// Planar YUV 4:2:0 (14 of 16 bit data, LSB).
+  CCF_YUV422_14BIT = 0x00000642,     /// Planar YUV 4:2:2 (14 of 16 bit data, LSB).
+  CCF_YUV444_14BIT = 0x00000643,     /// Planar YUV 4:4:4 (14 of 16 bit data, LSB).
+
   CCF_YUV400_16BIT = 0x00000840,     /// Planar YUV 4:0:0 16 bit data (LSB).
   CCF_YUV420_16BIT = 0x00000841,     /// Planar YUV 4:2:0 16 bit data (LSB).
   CCF_YUV422_16BIT = 0x00000842,     /// Planar YUV 4:2:2 16 bit data (LSB).
@@ -57,6 +83,12 @@ typedef [v1_enum] enum CC_COLOR_FMT
 
   CCF_UYVY_10BIT   = 0x00000231,     /// The packed YUV 4:2:2 10-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
   CCF_YUY2_10BIT   = 0x00000232,     /// The packed YUV 4:2:2 10-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
+  
+  CCF_UYVY_12BIT   = 0x00000431,     /// The packed YUV 4:2:2 12-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
+  CCF_YUY2_12BIT   = 0x00000432,     /// The packed YUV 4:2:2 12-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
+  
+  CCF_UYVY_14BIT   = 0x00000631,     /// The packed YUV 4:2:2 14-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
+  CCF_YUY2_14BIT   = 0x00000632,     /// The packed YUV 4:2:2 14-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
   
   CCF_UYVY_16BIT   = 0x00000831,     /// The packed YUV 4:2:2 16-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
   CCF_YUY2_16BIT   = 0x00000832,     /// The packed YUV 4:2:2 16-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
@@ -67,6 +99,7 @@ typedef [v1_enum] enum CC_COLOR_FMT
 
   CCF_V210         = 0x00000210,     /// V210 10-bit 4:2:2 color format.
   CCF_SC10         = 0x00000211,     /// Seachange 10-bit 4:2:2 color format (the 16-pixel 40-bytes chunks with 8-bit YUY2 data (32 bytes) followed by packed 2-bit trails (8 bytes)).
+  CCF_Y216         = CCF_YUY2_16BIT,
 
   CCF_Y8           = 0x00000008      /// Monochrome (greyscale) data, 1 byte per pixel.
 }
@@ -198,6 +231,8 @@ typedef [v1_enum] enum CC_COLOUR_PRIMARIES
     CC_CPRIMS_SMPTE_ST_428_1,         /// 10 SMPTE ST 428-1 (CIE 1931 XYZ as in ISO 11664-1)
     CC_CPRIMS_SMPTE_ST_431_2,         /// 11 SMPTE ST 431-2 (2011)
     CC_CPRIMS_SMPTE_ST_432_1,         /// 12 SMPTE ST 432-1 (2010)
+    CC_CPRIMS_DCI_P3 = CC_CPRIMS_SMPTE_ST_431_2, /// P3 with DCI white point
+    CC_CPRIMS_P3_D65 = CC_CPRIMS_SMPTE_ST_432_1, /// P3 with D65 white point
 
 //DOM-IGNORE-BEGIN
     CC_CPRIMS_TOTAL                   ///
@@ -227,6 +262,7 @@ typedef [v1_enum] enum CC_TRANSFER_CHARACTERISTICS
     CC_TXCHRS_ITUR_BT_2020_12BIT,     /// 15 Recommendation ITU-R BT.2020 for 12 bit system
     CC_TXCHRS_SMPTE_ST_2084,          /// 16 SMPTE ST 2084 for 10, 12, 14, and 16-bit systems.
     CC_TXCHRS_SMPTE_ST_428_1,         /// 17 SMPTE ST 428-1
+    CC_TXCHRS_HLG,                    /// 18 Hybrid Log Gamma
 
 //DOM-IGNORE-BEGIN
     CC_TXCHRS_TOTAL                   ///
@@ -277,16 +313,25 @@ cpp_quote("#endif")
 typedef [v1_enum] enum CC_CHROMA_FORMAT
 {
 	CC_CHROMA_FORMAT_UNKNOWN =-1, /// Unknown chroma format.
-	CC_CHROMA_400,                /// Luma-only mode
-	CC_CHROMA_420,                /// Half vertical, half horizontal color resolution.
-	CC_CHROMA_422,                /// Full vertical, half horizontal color resolution.
-	CC_CHROMA_444,                /// Full color resolution.
 
-	CC_CHROMA_RGB = 10,			  /// RGB, full color resolution
+	CC_CHROMA_400,                /// Grayscale
+	CC_CHROMA_420,                /// YUV 4:2:0 Half vertical, half horizontal color resolution.
+	CC_CHROMA_422,                /// YUV 4:2:2 Full vertical, half horizontal color resolution.
+	CC_CHROMA_444,                /// YUV 4:4:4 Full color resolution.
+	CC_CHROMA_RGB,			  	  /// RGB, full color resolution
 
-//DOM-IGNORE-BEGIN
-	CC_CHROMA_FORMAT_TOTAL
-//DOM-IGNORE-END
+	CC_CHROMA_ALPHA = 8,          /// Chroma has alpha channel
+
+	CC_CHROMA_4000	= CC_CHROMA_400,
+	CC_CHROMA_4004	= CC_CHROMA_400 | CC_CHROMA_ALPHA,
+	CC_CHROMA_4200	= CC_CHROMA_420,
+	CC_CHROMA_4204	= CC_CHROMA_420 | CC_CHROMA_ALPHA,
+	CC_CHROMA_4220	= CC_CHROMA_422,
+	CC_CHROMA_4224	= CC_CHROMA_422 | CC_CHROMA_ALPHA,
+	CC_CHROMA_4440	= CC_CHROMA_444,
+	CC_CHROMA_4444	= CC_CHROMA_444 | CC_CHROMA_ALPHA,
+
+	CC_CHROMA_RGBA	= CC_CHROMA_RGB | CC_CHROMA_ALPHA,
 } 
 CC_CHROMA_FORMAT;
 
@@ -305,6 +350,22 @@ typedef [v1_enum] enum CC_VIDEO_FORMAT
 //DOM-IGNORE-END
 } 
 CC_VIDEO_FORMAT;
+
+// The stored picture orientation. Shall be rotated/flipped accordingly before output, if set.
+typedef [v1_enum] enum CC_PICTURE_ORIENTATION
+{
+	CC_PO_DEFAULT         = 0, 		/// 
+	CC_PO_FLIP_VERTICAL   = 1,		///
+	CC_PO_FLIP_HORIZONTAL = 2,		///
+	CC_PO_ROTATED_180DEG  = 3,		///
+	CC_PO_ROTATED_90DEG   = 4, 		/// 
+	CC_PO_ROTATED_270DEG  = 5,		/// 
+//DOM-IGNORE-BEGIN
+	CC_PO_TOTAL
+//DOM-IGNORE-END
+} 
+CC_PICTURE_ORIENTATION;
+
 
 // The descriptions of uncompressed video frame used in AddScaleFrame & GetScaleFrame methods.
 typedef struct CC_VIDEO_FRAME_DESCR

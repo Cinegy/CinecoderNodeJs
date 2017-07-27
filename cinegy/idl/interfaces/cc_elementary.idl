@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 
@@ -80,8 +80,12 @@ typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
   CC_ES_TYPE_VIDEO_PRORES                 = 0x120, /// Apple ProRes Video
 
   CC_ES_TYPE_EBU_TELETEXT                 = 0x4206,/// ITU-R System B Teletext (OP42) carried by stream type 06.
+  CC_ES_TYPE_DVB_SUBTITLES				  = 0xBF06,/// REN/JTC-DVB-191 DVB Subtitles
 
   CC_ES_TYPE_SMPTE_436                    = 0x436, /// SMPTE 436 Encoded VANC data
+
+  CC_ES_TYPE_VIDEO_DANIEL                 = 0xD206,/// Daniel Video Stream.
+  CC_ES_TYPE_VIDEO_Y4M                    = 0xF406,/// Y4M Video Stream
 }
 CC_ELEMENTARY_STREAM_TYPE;
 

@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 #ifndef __CINECODER_ERRORS_H
@@ -58,6 +58,7 @@ enum CinecoderErrorCodes
  __DECLARE_CINECODER_ERROR(MPG_E_INSUFFICIENT_DATA                  , 0x8004F416),
  __DECLARE_CINECODER_ERROR(MPG_E_MAX_DURATION_EXCEEDED              , 0x8004F417),
  __DECLARE_CINECODER_ERROR(MPG_E_OUT_OF_RANGE                       , 0x8004F418),
+ __DECLARE_CINECODER_ERROR(MPG_E_GAP_IN_RANGE                       , 0x8004F419),
 
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_CROP_RECT                , 0x8004F420),
  __DECLARE_CINECODER_ERROR(MPG_E_RESIZE_NOT_SUPPORTED               , 0x8004F421),
@@ -151,6 +152,7 @@ enum CinecoderErrorCodes
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_INTERLACE_TYPE           , 0x8004F52C),
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_SCALING_MATRIX           , 0x8004F52D),
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_WEIGHTED_PRED            , 0x8004F52E),
+ __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_PICTURE_ORIENTATION      , 0x8004F52F),
                                                                                   
  __DECLARE_CINECODER_ERROR(MPG_E_BITRATE_TOO_LOW                    , 0x8004F530),
  __DECLARE_CINECODER_ERROR(MPG_E_VBV_BUFFER_TOO_LOW                 , 0x8004F531),
@@ -169,6 +171,8 @@ enum CinecoderErrorCodes
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_AFFINITY_MASK            , 0x8004F570),
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_PRIORITY                 , 0x8004F571),
  __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_THREADS_NUMBER           , 0x8004F572),
+
+ __DECLARE_CINECODER_ERROR(MPG_E_INCORRECT_DEVICE                   , 0x8004F578),
 };
 
 #endif

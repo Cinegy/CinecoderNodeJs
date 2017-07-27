@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 
@@ -21,7 +21,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Mon Mar 13 23:56:57 2017
+/* at Fri Jul 07 00:15:54 2017
  */
 /* Compiler settings for Cinecoder.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
@@ -968,6 +968,102 @@ typedef interface ICC_SonyRaw_VideoDecoder ICC_SonyRaw_VideoDecoder;
 #endif 	/* __ICC_SonyRaw_VideoDecoder_FWD_DEFINED__ */
 
 
+#ifndef __ICC_DanielVideoStreamInfo_FWD_DEFINED__
+#define __ICC_DanielVideoStreamInfo_FWD_DEFINED__
+typedef interface ICC_DanielVideoStreamInfo ICC_DanielVideoStreamInfo;
+#endif 	/* __ICC_DanielVideoStreamInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoFrameInfo_FWD_DEFINED__
+#define __ICC_DanielVideoFrameInfo_FWD_DEFINED__
+typedef interface ICC_DanielVideoFrameInfo ICC_DanielVideoFrameInfo;
+#endif 	/* __ICC_DanielVideoFrameInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoSplitter_FWD_DEFINED__
+#define __ICC_DanielVideoSplitter_FWD_DEFINED__
+typedef interface ICC_DanielVideoSplitter ICC_DanielVideoSplitter;
+#endif 	/* __ICC_DanielVideoSplitter_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoDecoder_FWD_DEFINED__
+#define __ICC_DanielVideoDecoder_FWD_DEFINED__
+typedef interface ICC_DanielVideoDecoder ICC_DanielVideoDecoder;
+#endif 	/* __ICC_DanielVideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoderSettings_FWD_DEFINED__
+#define __ICC_DanielVideoEncoderSettings_FWD_DEFINED__
+typedef interface ICC_DanielVideoEncoderSettings ICC_DanielVideoEncoderSettings;
+#endif 	/* __ICC_DanielVideoEncoderSettings_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
+#define __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
+typedef interface ICC_DanielVideoEncoderSettings_CUDA ICC_DanielVideoEncoderSettings_CUDA;
+#endif 	/* __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoder_FWD_DEFINED__
+#define __ICC_DanielVideoEncoder_FWD_DEFINED__
+typedef interface ICC_DanielVideoEncoder ICC_DanielVideoEncoder;
+#endif 	/* __ICC_DanielVideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__
+#define __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__
+typedef interface ICC_D2D_GetUpdateVideoBufferPtrProp ICC_D2D_GetUpdateVideoBufferPtrProp;
+#endif 	/* __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__
+#define __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__
+typedef interface ICC_DanielVideoDecoder_CUDA ICC_DanielVideoDecoder_CUDA;
+#endif 	/* __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__
+#define __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__
+typedef interface ICC_DanielVideoEncoder_CUDA ICC_DanielVideoEncoder_CUDA;
+#endif 	/* __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__
+#define __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoStreamInfo ICC_Y4M_VideoStreamInfo;
+#endif 	/* __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__
+#define __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoFrameInfo ICC_Y4M_VideoFrameInfo;
+#endif 	/* __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoSplitter_FWD_DEFINED__
+#define __ICC_Y4M_VideoSplitter_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoSplitter ICC_Y4M_VideoSplitter;
+#endif 	/* __ICC_Y4M_VideoSplitter_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoDecoder_FWD_DEFINED__
+#define __ICC_Y4M_VideoDecoder_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoDecoder ICC_Y4M_VideoDecoder;
+#endif 	/* __ICC_Y4M_VideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__
+#define __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoEncoderSettings ICC_Y4M_VideoEncoderSettings;
+#endif 	/* __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoEncoder_FWD_DEFINED__
+#define __ICC_Y4M_VideoEncoder_FWD_DEFINED__
+typedef interface ICC_Y4M_VideoEncoder ICC_Y4M_VideoEncoder;
+#endif 	/* __ICC_Y4M_VideoEncoder_FWD_DEFINED__ */
+
+
 #ifndef __ICC_MultiplexedDataDescr_FWD_DEFINED__
 #define __ICC_MultiplexedDataDescr_FWD_DEFINED__
 typedef interface ICC_MultiplexedDataDescr ICC_MultiplexedDataDescr;
@@ -1158,6 +1254,12 @@ typedef interface ICC_MP4_MultiplexerSettings ICC_MP4_MultiplexerSettings;
 #define __ICC_MP4_MuxerPinSettings_FWD_DEFINED__
 typedef interface ICC_MP4_MuxerPinSettings ICC_MP4_MuxerPinSettings;
 #endif 	/* __ICC_MP4_MuxerPinSettings_FWD_DEFINED__ */
+
+
+#ifndef __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
+#define __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
+typedef interface ICC_MP4_MuxerVideoPinSettings ICC_MP4_MuxerVideoPinSettings;
+#endif 	/* __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ReferenceDataConsumer_FWD_DEFINED__
@@ -1542,6 +1644,18 @@ typedef struct CC_MpegVideoEncoder CC_MpegVideoEncoder;
 #endif /* __cplusplus */
 
 #endif 	/* __CC_MpegVideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_MpegVideoEncoder2_FWD_DEFINED__
+#define __CC_MpegVideoEncoder2_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_MpegVideoEncoder2 CC_MpegVideoEncoder2;
+#else
+typedef struct CC_MpegVideoEncoder2 CC_MpegVideoEncoder2;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_MpegVideoEncoder2_FWD_DEFINED__ */
 
 
 #ifndef __CC_MpegVideoDecoder_FWD_DEFINED__
@@ -2066,6 +2180,18 @@ typedef struct CC_MP4_MuxerPinSettings CC_MP4_MuxerPinSettings;
 #endif 	/* __CC_MP4_MuxerPinSettings_FWD_DEFINED__ */
 
 
+#ifndef __CC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
+#define __CC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_MP4_MuxerVideoPinSettings CC_MP4_MuxerVideoPinSettings;
+#else
+typedef struct CC_MP4_MuxerVideoPinSettings CC_MP4_MuxerVideoPinSettings;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_MP4_MuxerVideoPinSettings_FWD_DEFINED__ */
+
+
 #ifndef __CC_MP4_MpegDashSettings_FWD_DEFINED__
 #define __CC_MP4_MpegDashSettings_FWD_DEFINED__
 
@@ -2354,6 +2480,90 @@ typedef struct CC_SonyRaw_VideoDecoder CC_SonyRaw_VideoDecoder;
 #endif 	/* __CC_SonyRaw_VideoDecoder_FWD_DEFINED__ */
 
 
+#ifndef __CC_DanielVideoSplitter_FWD_DEFINED__
+#define __CC_DanielVideoSplitter_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoSplitter CC_DanielVideoSplitter;
+#else
+typedef struct CC_DanielVideoSplitter CC_DanielVideoSplitter;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoSplitter_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoDecoder_FWD_DEFINED__
+#define __CC_DanielVideoDecoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoDecoder CC_DanielVideoDecoder;
+#else
+typedef struct CC_DanielVideoDecoder CC_DanielVideoDecoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoDecoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoDecoder_CUDA_FWD_DEFINED__
+#define __CC_DanielVideoDecoder_CUDA_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoDecoder_CUDA CC_DanielVideoDecoder_CUDA;
+#else
+typedef struct CC_DanielVideoDecoder_CUDA CC_DanielVideoDecoder_CUDA;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoDecoder_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoEncoder_FWD_DEFINED__
+#define __CC_DanielVideoEncoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoEncoder CC_DanielVideoEncoder;
+#else
+typedef struct CC_DanielVideoEncoder CC_DanielVideoEncoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoEncoder_CUDA_FWD_DEFINED__
+#define __CC_DanielVideoEncoder_CUDA_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoEncoder_CUDA CC_DanielVideoEncoder_CUDA;
+#else
+typedef struct CC_DanielVideoEncoder_CUDA CC_DanielVideoEncoder_CUDA;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoEncoder_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoEncoderSettings_FWD_DEFINED__
+#define __CC_DanielVideoEncoderSettings_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoEncoderSettings CC_DanielVideoEncoderSettings;
+#else
+typedef struct CC_DanielVideoEncoderSettings CC_DanielVideoEncoderSettings;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoEncoderSettings_FWD_DEFINED__ */
+
+
+#ifndef __CC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
+#define __CC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoEncoderSettings_CUDA CC_DanielVideoEncoderSettings_CUDA;
+#else
+typedef struct CC_DanielVideoEncoderSettings_CUDA CC_DanielVideoEncoderSettings_CUDA;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__ */
+
+
 #ifndef __CC_MediaReader_FWD_DEFINED__
 #define __CC_MediaReader_FWD_DEFINED__
 
@@ -2474,6 +2684,30 @@ typedef struct CC_HEVCVideoDecoder0 CC_HEVCVideoDecoder0;
 #endif 	/* __CC_HEVCVideoDecoder0_FWD_DEFINED__ */
 
 
+#ifndef __CC_Y4M_VideoEncoder_FWD_DEFINED__
+#define __CC_Y4M_VideoEncoder_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_Y4M_VideoEncoder CC_Y4M_VideoEncoder;
+#else
+typedef struct CC_Y4M_VideoEncoder CC_Y4M_VideoEncoder;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_Y4M_VideoEncoder_FWD_DEFINED__ */
+
+
+#ifndef __CC_Y4M_VideoEncoderSettings_FWD_DEFINED__
+#define __CC_Y4M_VideoEncoderSettings_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_Y4M_VideoEncoderSettings CC_Y4M_VideoEncoderSettings;
+#else
+typedef struct CC_Y4M_VideoEncoderSettings CC_Y4M_VideoEncoderSettings;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_Y4M_VideoEncoderSettings_FWD_DEFINED__ */
+
+
 /* header files for imported files */
 #include "Unknwn.h"
 
@@ -2485,11 +2719,11 @@ extern "C"{
 /* interface __MIDL_itf_Cinecoder_0000_0000 */
 /* [local] */ 
 
-#define	CINECODER_VERSION	( 32739 )
+#define	CINECODER_VERSION	( 32823 )
 
 #ifndef __CINECODER_DISABLE_PRINT_VERSION__
 #pragma message ("------------------------------------------------------------------")
-#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.27.39.11441" " (build date " "13-Mrz-2017" "13-Mrz-2017")
+#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.28.23.12518" " (build date " "6-Jul-2017" "6-Jul-2017")
 #pragma message ("------------------------------------------------------------------")
 #endif
 
@@ -7970,7 +8204,10 @@ enum CC_ELEMENTARY_STREAM_TYPE
 	CC_ES_TYPE_VIDEO_AVC_INTRA	= 0x11b,
 	CC_ES_TYPE_VIDEO_PRORES	= 0x120,
 	CC_ES_TYPE_EBU_TELETEXT	= 0x4206,
-	CC_ES_TYPE_SMPTE_436	= 0x436
+	CC_ES_TYPE_DVB_SUBTITLES	= 0xbf06,
+	CC_ES_TYPE_SMPTE_436	= 0x436,
+	CC_ES_TYPE_VIDEO_DANIEL	= 0xd206,
+	CC_ES_TYPE_VIDEO_Y4M	= 0xf406
     } 	CC_ELEMENTARY_STREAM_TYPE;
 
 
@@ -18163,6 +18400,18 @@ enum CC_COLOR_FMT
 	CCF_RGB	= CCF_RGB24,
 	CCF_BGRA	= CCF_BGR32,
 	CCF_BGR	= CCF_BGR24,
+	CCF_RGB64	= 0x801,
+	CCF_RGB48	= 0x802,
+	CCF_BGR64	= 0x811,
+	CCF_BGR48	= 0x812,
+	CCF_ADOBE_RGBA_16u	= 0x901,
+	CCF_ADOBE_BGRA_16u	= 0x911,
+	CCF_ADOBE_RGBA_32f	= 0xa01,
+	CCF_ADOBE_BGRA_32f	= 0xa11,
+	CCF_RGBA_16BIT	= CCF_RGB64,
+	CCF_RGB_16BIT	= CCF_RGB48,
+	CCF_BGRA_16BIT	= CCF_BGR64,
+	CCF_BGR_16BIT	= CCF_BGR48,
 	CCF_UYVY	= 0x31,
 	CCF_YUY2	= 0x32,
 	CCF_YUV400	= 0x40,
@@ -18173,12 +18422,24 @@ enum CC_COLOR_FMT
 	CCF_YUV420_10BIT	= 0x241,
 	CCF_YUV422_10BIT	= 0x242,
 	CCF_YUV444_10BIT	= 0x243,
+	CCF_YUV400_12BIT	= 0x440,
+	CCF_YUV420_12BIT	= 0x441,
+	CCF_YUV422_12BIT	= 0x442,
+	CCF_YUV444_12BIT	= 0x443,
+	CCF_YUV400_14BIT	= 0x640,
+	CCF_YUV420_14BIT	= 0x641,
+	CCF_YUV422_14BIT	= 0x642,
+	CCF_YUV444_14BIT	= 0x643,
 	CCF_YUV400_16BIT	= 0x840,
 	CCF_YUV420_16BIT	= 0x841,
 	CCF_YUV422_16BIT	= 0x842,
 	CCF_YUV444_16BIT	= 0x843,
 	CCF_UYVY_10BIT	= 0x231,
 	CCF_YUY2_10BIT	= 0x232,
+	CCF_UYVY_12BIT	= 0x431,
+	CCF_YUY2_12BIT	= 0x432,
+	CCF_UYVY_14BIT	= 0x631,
+	CCF_YUY2_14BIT	= 0x632,
 	CCF_UYVY_16BIT	= 0x831,
 	CCF_YUY2_16BIT	= 0x832,
 	CCF_YV12	= CCF_YUV420,
@@ -18186,6 +18447,7 @@ enum CC_COLOR_FMT
 	CCF_NV12	= 0x112,
 	CCF_V210	= 0x210,
 	CCF_SC10	= 0x211,
+	CCF_Y216	= CCF_YUY2_16BIT,
 	CCF_Y8	= 0x8
     } 	CC_COLOR_FMT;
 
@@ -18287,7 +18549,9 @@ enum CC_COLOUR_PRIMARIES
 	CC_CPRIMS_SMPTE_ST_428_1	= ( CC_CPRIMS_ITUR_BT_2020 + 1 ) ,
 	CC_CPRIMS_SMPTE_ST_431_2	= ( CC_CPRIMS_SMPTE_ST_428_1 + 1 ) ,
 	CC_CPRIMS_SMPTE_ST_432_1	= ( CC_CPRIMS_SMPTE_ST_431_2 + 1 ) ,
-	CC_CPRIMS_TOTAL	= ( CC_CPRIMS_SMPTE_ST_432_1 + 1 ) 
+	CC_CPRIMS_DCI_P3	= CC_CPRIMS_SMPTE_ST_431_2,
+	CC_CPRIMS_P3_D65	= CC_CPRIMS_SMPTE_ST_432_1,
+	CC_CPRIMS_TOTAL	= ( CC_CPRIMS_P3_D65 + 1 ) 
     } 	CC_COLOUR_PRIMARIES;
 
 typedef /* [v1_enum] */ 
@@ -18310,7 +18574,8 @@ enum CC_TRANSFER_CHARACTERISTICS
 	CC_TXCHRS_ITUR_BT_2020_12BIT	= ( CC_TXCHRS_ITUR_BT_2020_10BIT + 1 ) ,
 	CC_TXCHRS_SMPTE_ST_2084	= ( CC_TXCHRS_ITUR_BT_2020_12BIT + 1 ) ,
 	CC_TXCHRS_SMPTE_ST_428_1	= ( CC_TXCHRS_SMPTE_ST_2084 + 1 ) ,
-	CC_TXCHRS_TOTAL	= ( CC_TXCHRS_SMPTE_ST_428_1 + 1 ) 
+	CC_TXCHRS_HLG	= ( CC_TXCHRS_SMPTE_ST_428_1 + 1 ) ,
+	CC_TXCHRS_TOTAL	= ( CC_TXCHRS_HLG + 1 ) 
     } 	CC_TRANSFER_CHARACTERISTICS;
 
 typedef /* [v1_enum] */ 
@@ -18349,8 +18614,17 @@ enum CC_CHROMA_FORMAT
 	CC_CHROMA_420	= ( CC_CHROMA_400 + 1 ) ,
 	CC_CHROMA_422	= ( CC_CHROMA_420 + 1 ) ,
 	CC_CHROMA_444	= ( CC_CHROMA_422 + 1 ) ,
-	CC_CHROMA_RGB	= 10,
-	CC_CHROMA_FORMAT_TOTAL	= ( CC_CHROMA_RGB + 1 ) 
+	CC_CHROMA_RGB	= ( CC_CHROMA_444 + 1 ) ,
+	CC_CHROMA_ALPHA	= 8,
+	CC_CHROMA_4000	= CC_CHROMA_400,
+	CC_CHROMA_4004	= ( CC_CHROMA_400 | CC_CHROMA_ALPHA ) ,
+	CC_CHROMA_4200	= CC_CHROMA_420,
+	CC_CHROMA_4204	= ( CC_CHROMA_420 | CC_CHROMA_ALPHA ) ,
+	CC_CHROMA_4220	= CC_CHROMA_422,
+	CC_CHROMA_4224	= ( CC_CHROMA_422 | CC_CHROMA_ALPHA ) ,
+	CC_CHROMA_4440	= CC_CHROMA_444,
+	CC_CHROMA_4444	= ( CC_CHROMA_444 | CC_CHROMA_ALPHA ) ,
+	CC_CHROMA_RGBA	= ( CC_CHROMA_RGB | CC_CHROMA_ALPHA ) 
     } 	CC_CHROMA_FORMAT;
 
 typedef /* [v1_enum] */ 
@@ -18363,6 +18637,17 @@ enum CC_VIDEO_FORMAT
 	CC_VIDEO_FORMAT_UNSPECIFIED	= ( CC_VIDEO_FORMAT_MAC + 1 ) ,
 	CC_VIDEO_FORMAT_TOTAL	= ( CC_VIDEO_FORMAT_UNSPECIFIED + 1 ) 
     } 	CC_VIDEO_FORMAT;
+
+typedef /* [v1_enum] */ 
+enum CC_PICTURE_ORIENTATION
+    {	CC_PO_DEFAULT	= 0,
+	CC_PO_FLIP_VERTICAL	= 1,
+	CC_PO_FLIP_HORIZONTAL	= 2,
+	CC_PO_ROTATED_180DEG	= 3,
+	CC_PO_ROTATED_90DEG	= 4,
+	CC_PO_ROTATED_270DEG	= 5,
+	CC_PO_TOTAL	= ( CC_PO_ROTATED_270DEG + 1 ) 
+    } 	CC_PICTURE_ORIENTATION;
 
 typedef struct CC_VIDEO_FRAME_DESCR
     {
@@ -20736,21 +21021,24 @@ typedef /* [v1_enum] */
 enum CC_MPG_MB_SCAN_PATTERN
     {	CC_MPG_MB_SCAN_AUTO	= 0,
 	CC_MPG_MB_SCAN_ZIGZAG	= ( CC_MPG_MB_SCAN_AUTO + 1 ) ,
-	CC_MPG_MB_SCAN_ALTERNATE	= ( CC_MPG_MB_SCAN_ZIGZAG + 1 ) 
+	CC_MPG_MB_SCAN_ALTERNATE	= ( CC_MPG_MB_SCAN_ZIGZAG + 1 ) ,
+	CC_MPG_MB_SCAN_COUNT	= ( CC_MPG_MB_SCAN_ALTERNATE + 1 ) 
     } 	CC_MPG_MB_SCAN_PATTERN;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_QUANT_SCALE_TYPE
     {	CC_MPG_QSCALE_AUTO	= 0,
 	CC_MPG_QSCALE_LINEAR	= ( CC_MPG_QSCALE_AUTO + 1 ) ,
-	CC_MPG_QSCALE_NON_LINEAR	= ( CC_MPG_QSCALE_LINEAR + 1 ) 
+	CC_MPG_QSCALE_NON_LINEAR	= ( CC_MPG_QSCALE_LINEAR + 1 ) ,
+	CC_MPG_QSCALE_COUNT	= ( CC_MPG_QSCALE_NON_LINEAR + 1 ) 
     } 	CC_MPG_QUANT_SCALE_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_INTRA_VLC_TABLE
     {	CC_MPG_INTRA_VLC_TABLE_AUTO	= 0,
 	CC_MPG_INTRA_VLC_TABLE_B14	= ( CC_MPG_INTRA_VLC_TABLE_AUTO + 1 ) ,
-	CC_MPG_INTRA_VLC_TABLE_B15	= ( CC_MPG_INTRA_VLC_TABLE_B14 + 1 ) 
+	CC_MPG_INTRA_VLC_TABLE_B15	= ( CC_MPG_INTRA_VLC_TABLE_B14 + 1 ) ,
+	CC_MPG_INTRA_VLC_TABLE_COUNT	= ( CC_MPG_INTRA_VLC_TABLE_B15 + 1 ) 
     } 	CC_MPG_INTRA_VLC_TABLE;
 
 typedef /* [v1_enum] */ 
@@ -22141,10 +22429,10 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
             /* [in] */ CC_FLOAT x) = 0;
         
         virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_VBV_BufferSize( 
-            /* [retval][out] */ CC_UINT *x) = 0;
+            /* [retval][out] */ CC_PERIOD *x) = 0;
         
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_VBV_BufferSize( 
-            /* [in] */ CC_UINT x) = 0;
+            /* [in] */ CC_PERIOD x) = 0;
         
         virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_GOP( 
             /* [retval][out] */ CC_GOP_DESCR *x) = 0;
@@ -22316,6 +22604,18 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_QuantFunc( 
             /* [in] */ CC_MPG_QUANT_FUNC x) = 0;
         
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ProgressiveSequence( 
+            /* [retval][out] */ CC_BOOL *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ProgressiveSequence( 
+            /* [in] */ CC_BOOL x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IntraRefresh( 
+            /* [retval][out] */ CC_BOOL *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IntraRefresh( 
+            /* [in] */ CC_BOOL x) = 0;
+        
         virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_UserDataCount( 
             /* [retval][out] */ CC_UINT *x) = 0;
         
@@ -22440,11 +22740,11 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
         
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VBV_BufferSize )( 
             ICC_MpegVideoEncoderSettings * This,
-            /* [retval][out] */ CC_UINT *x);
+            /* [retval][out] */ CC_PERIOD *x);
         
         /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_VBV_BufferSize )( 
             ICC_MpegVideoEncoderSettings * This,
-            /* [in] */ CC_UINT x);
+            /* [in] */ CC_PERIOD x);
         
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_GOP )( 
             ICC_MpegVideoEncoderSettings * This,
@@ -22671,6 +22971,22 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
         /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_QuantFunc )( 
             ICC_MpegVideoEncoderSettings * This,
             /* [in] */ CC_MPG_QUANT_FUNC x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProgressiveSequence )( 
+            ICC_MpegVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ProgressiveSequence )( 
+            ICC_MpegVideoEncoderSettings * This,
+            /* [in] */ CC_BOOL x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IntraRefresh )( 
+            ICC_MpegVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IntraRefresh )( 
+            ICC_MpegVideoEncoderSettings * This,
+            /* [in] */ CC_BOOL x);
         
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataCount )( 
             ICC_MpegVideoEncoderSettings * This,
@@ -22951,6 +23267,18 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
 
 #define ICC_MpegVideoEncoderSettings_put_QuantFunc(This,x)	\
     ( (This)->lpVtbl -> put_QuantFunc(This,x) ) 
+
+#define ICC_MpegVideoEncoderSettings_get_ProgressiveSequence(This,x)	\
+    ( (This)->lpVtbl -> get_ProgressiveSequence(This,x) ) 
+
+#define ICC_MpegVideoEncoderSettings_put_ProgressiveSequence(This,x)	\
+    ( (This)->lpVtbl -> put_ProgressiveSequence(This,x) ) 
+
+#define ICC_MpegVideoEncoderSettings_get_IntraRefresh(This,x)	\
+    ( (This)->lpVtbl -> get_IntraRefresh(This,x) ) 
+
+#define ICC_MpegVideoEncoderSettings_put_IntraRefresh(This,x)	\
+    ( (This)->lpVtbl -> put_IntraRefresh(This,x) ) 
 
 #define ICC_MpegVideoEncoderSettings_get_UserDataCount(This,x)	\
     ( (This)->lpVtbl -> get_UserDataCount(This,x) ) 
@@ -23845,7 +24173,7 @@ typedef struct CC_H264_DEBLOCKING_FILTER_DESCR
 
 #ifdef __cplusplus
 namespace cinecoder {
-inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_DEBLOCKING_FILTER_MODE mode, CC_UINT alpha, CC_UINT beta) { CC_H264_DEBLOCKING_FILTER_DESCR d={mode,alpha,beta}; return d; }
+inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_DEBLOCKING_FILTER_MODE mode, CC_INT alpha, CC_INT beta) { CC_H264_DEBLOCKING_FILTER_DESCR d={mode,alpha,beta}; return d; }
 };
 #endif
 typedef /* [v1_enum] */ 
@@ -27982,7 +28310,12 @@ enum CC_AVCI_MODE
 	CC_AVCI_100_1080P_25	= 0x24,
 	CC_AVCI_100_1080P_2997	= 0x23,
 	CC_AVCI_100_1080I_50	= 0x22,
-	CC_AVCI_100_1080I_5994	= 0x21
+	CC_AVCI_100_1080I_5994	= 0x21,
+	CC_AVCI_4K_422_2398	= 0x400,
+	CC_AVCI_4K_422_25	= 0x401,
+	CC_AVCI_4K_422_2997	= 0x402,
+	CC_AVCI_4K_422_50	= 0x403,
+	CC_AVCI_4K_422_5994	= 0x404
     } 	CC_AVCI_MODE;
 
 
@@ -30920,6 +31253,3914 @@ enum CC_PRORES_TYPE
 	CC_PRORES_4444_XQ	= ( CC_PRORES_4444 + 1 ) 
     } 	CC_PRORES_TYPE;
 
+typedef /* [v1_enum] */ 
+enum CC_DANIEL2_CODING_METHOD
+    {	CC_D2_METHOD_DEFAULT	= -1,
+	CC_D2_METHOD_CUDA	= 0,
+	CC_D2_METHOD_VLC	= 1,
+	CC_D2_METHOD_CUDA_RLE	= 2,
+	CC_D2_METHOD_TOTAL	= ( CC_D2_METHOD_CUDA_RLE + 1 ) 
+    } 	CC_DANIEL2_CODING_METHOD;
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_s_ifspec;
+
+#ifndef __ICC_DanielVideoStreamInfo_INTERFACE_DEFINED__
+#define __ICC_DanielVideoStreamInfo_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoStreamInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoStreamInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("fd99aee9-6b26-43ec-bbd1-ff658ef6d864")
+    ICC_DanielVideoStreamInfo : public ICC_VideoStreamInfo
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaFormat( 
+            /* [retval][out] */ CC_CHROMA_FORMAT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_VideoFormat( 
+            /* [retval][out] */ CC_VIDEO_FORMAT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ColorCoefs( 
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitDepth( 
+            /* [retval][out] */ DWORD *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_QuantScale( 
+            /* [retval][out] */ CC_FLOAT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaQuantScaleAdd( 
+            /* [retval][out] */ CC_INT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AlphaQuantScaleAdd( 
+            /* [retval][out] */ CC_INT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_CodingMethod( 
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PictureOrientation( 
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoStreamInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoStreamInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoStreamInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamType )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_ELEMENTARY_STREAM_TYPE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_FRAME_RATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_SIZE *s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_RATIONAL *a);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProgressiveSequence )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaFormat )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_CHROMA_FORMAT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VideoFormat )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_VIDEO_FORMAT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepth )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ DWORD *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_QuantScale )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_FLOAT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaQuantScaleAdd )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AlphaQuantScaleAdd )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingMethod )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictureOrientation )( 
+            ICC_DanielVideoStreamInfo * This,
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v);
+        
+        END_INTERFACE
+    } ICC_DanielVideoStreamInfoVtbl;
+
+    interface ICC_DanielVideoStreamInfo
+    {
+        CONST_VTBL struct ICC_DanielVideoStreamInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoStreamInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoStreamInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoStreamInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoStreamInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_DanielVideoStreamInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_DanielVideoStreamInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_DanielVideoStreamInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_DanielVideoStreamInfo_get_StreamType(This,p)	\
+    ( (This)->lpVtbl -> get_StreamType(This,p) ) 
+
+#define ICC_DanielVideoStreamInfo_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoStreamInfo_get_FrameRate(This,p)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,p) ) 
+
+
+#define ICC_DanielVideoStreamInfo_get_FrameSize(This,s)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,s) ) 
+
+#define ICC_DanielVideoStreamInfo_get_AspectRatio(This,a)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,a) ) 
+
+#define ICC_DanielVideoStreamInfo_get_ProgressiveSequence(This,x)	\
+    ( (This)->lpVtbl -> get_ProgressiveSequence(This,x) ) 
+
+
+#define ICC_DanielVideoStreamInfo_get_ChromaFormat(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaFormat(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_VideoFormat(This,v)	\
+    ( (This)->lpVtbl -> get_VideoFormat(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_ColorCoefs(This,v)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_BitDepth(This,v)	\
+    ( (This)->lpVtbl -> get_BitDepth(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> get_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_ChromaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_AlphaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_AlphaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> get_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoStreamInfo_get_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> get_PictureOrientation(This,v) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoStreamInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoFrameInfo_INTERFACE_DEFINED__
+#define __ICC_DanielVideoFrameInfo_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoFrameInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoFrameInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("5e60a260-ffc6-4325-b6b1-f743aa1046b5")
+    ICC_DanielVideoFrameInfo : public ICC_VideoFrameInfo
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_QuantScale( 
+            /* [retval][out] */ CC_FLOAT *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_CodingMethod( 
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PictureOrientation( 
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_UserDataCount( 
+            /* [retval][out] */ DWORD *x) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetUserData( 
+            /* [in] */ DWORD dwUserDataNumber,
+            /* [size_is][out] */ BYTE *pData,
+            /* [in] */ DWORD cbBufSize,
+            /* [retval][out] */ DWORD *pcbRetSize) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoFrameInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoFrameInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoFrameInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ByteStreamDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ByteOffset )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ByteStreamDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSamples )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ElementaryDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SampleOffset )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ElementaryDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Duration )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0002);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PresentationDelta )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_INT *__MIDL__ICC_ElementaryDataInfo0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PTS )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0004);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DTS )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SequenceEntryFlag )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_BOOL *__MIDL__ICC_ElementaryDataInfo0006);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Number )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *n);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingNumber )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *c);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeCode )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_TIMECODE *t);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *i);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameType )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_FRAME_TYPE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictStruct )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_PICTURE_STRUCTURE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Flags )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ DWORD *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_QuantScale )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_FLOAT *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingMethod )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictureOrientation )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataCount )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [retval][out] */ DWORD *x);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetUserData )( 
+            ICC_DanielVideoFrameInfo * This,
+            /* [in] */ DWORD dwUserDataNumber,
+            /* [size_is][out] */ BYTE *pData,
+            /* [in] */ DWORD cbBufSize,
+            /* [retval][out] */ DWORD *pcbRetSize);
+        
+        END_INTERFACE
+    } ICC_DanielVideoFrameInfoVtbl;
+
+    interface ICC_DanielVideoFrameInfo
+    {
+        CONST_VTBL struct ICC_DanielVideoFrameInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoFrameInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoFrameInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoFrameInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoFrameInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_DanielVideoFrameInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_DanielVideoFrameInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_DanielVideoFrameInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_DanielVideoFrameInfo_get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000) ) 
+
+#define ICC_DanielVideoFrameInfo_get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001)	\
+    ( (This)->lpVtbl -> get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001) ) 
+
+
+#define ICC_DanielVideoFrameInfo_get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000)	\
+    ( (This)->lpVtbl -> get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000) ) 
+
+#define ICC_DanielVideoFrameInfo_get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001)	\
+    ( (This)->lpVtbl -> get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001) ) 
+
+#define ICC_DanielVideoFrameInfo_get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002)	\
+    ( (This)->lpVtbl -> get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002) ) 
+
+#define ICC_DanielVideoFrameInfo_get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003)	\
+    ( (This)->lpVtbl -> get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003) ) 
+
+#define ICC_DanielVideoFrameInfo_get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004)	\
+    ( (This)->lpVtbl -> get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004) ) 
+
+#define ICC_DanielVideoFrameInfo_get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005)	\
+    ( (This)->lpVtbl -> get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005) ) 
+
+#define ICC_DanielVideoFrameInfo_get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006)	\
+    ( (This)->lpVtbl -> get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006) ) 
+
+
+#define ICC_DanielVideoFrameInfo_get_Number(This,n)	\
+    ( (This)->lpVtbl -> get_Number(This,n) ) 
+
+#define ICC_DanielVideoFrameInfo_get_CodingNumber(This,c)	\
+    ( (This)->lpVtbl -> get_CodingNumber(This,c) ) 
+
+#define ICC_DanielVideoFrameInfo_get_TimeCode(This,t)	\
+    ( (This)->lpVtbl -> get_TimeCode(This,t) ) 
+
+#define ICC_DanielVideoFrameInfo_get_InterlaceType(This,i)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,i) ) 
+
+#define ICC_DanielVideoFrameInfo_get_FrameType(This,x)	\
+    ( (This)->lpVtbl -> get_FrameType(This,x) ) 
+
+#define ICC_DanielVideoFrameInfo_get_PictStruct(This,x)	\
+    ( (This)->lpVtbl -> get_PictStruct(This,x) ) 
+
+#define ICC_DanielVideoFrameInfo_get_Flags(This,x)	\
+    ( (This)->lpVtbl -> get_Flags(This,x) ) 
+
+
+#define ICC_DanielVideoFrameInfo_get_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> get_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoFrameInfo_get_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> get_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoFrameInfo_get_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> get_PictureOrientation(This,v) ) 
+
+#define ICC_DanielVideoFrameInfo_get_UserDataCount(This,x)	\
+    ( (This)->lpVtbl -> get_UserDataCount(This,x) ) 
+
+#define ICC_DanielVideoFrameInfo_GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoFrameInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoSplitter_INTERFACE_DEFINED__
+#define __ICC_DanielVideoSplitter_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoSplitter */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoSplitter;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("25f3f204-1537-4c7b-97bd-a5eb76788509")
+    ICC_DanielVideoSplitter : public ICC_VideoSplitter
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoSplitterVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoSplitter * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoSplitter * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoSplitter * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_DanielVideoSplitter * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_DanielVideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Transcoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_DanielVideoSplitter * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoSplitter * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_DanielVideoSplitterVtbl;
+
+    interface ICC_DanielVideoSplitter
+    {
+        CONST_VTBL struct ICC_DanielVideoSplitterVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoSplitter_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoSplitter_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoSplitter_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoSplitter_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoSplitter_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoSplitter_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoSplitter_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoSplitter_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoSplitter_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoSplitter_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoSplitter_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoSplitter_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoSplitter_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoSplitter_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoSplitter_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoSplitter_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_DanielVideoSplitter_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_DanielVideoSplitter_get_DataSize(This,__MIDL__ICC_Transcoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Transcoder0000) ) 
+
+#define ICC_DanielVideoSplitter_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+
+#define ICC_DanielVideoSplitter_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoSplitter_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoSplitter_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoDecoder_INTERFACE_DEFINED__
+#define __ICC_DanielVideoDecoder_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoDecoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoDecoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("2070fe32-e7b4-4063-ac68-86b134f1e8bd")
+    ICC_DanielVideoDecoder : public ICC_VideoDecoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoDecoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoDecoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoDecoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoDecoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_DanielVideoDecoder * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_DanielVideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoDecoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_DanielVideoDecoderVtbl;
+
+    interface ICC_DanielVideoDecoder
+    {
+        CONST_VTBL struct ICC_DanielVideoDecoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoDecoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoDecoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoDecoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoDecoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoDecoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoDecoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoDecoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoDecoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoDecoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoDecoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoDecoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoDecoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoDecoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoDecoder_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_DanielVideoDecoder_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_DanielVideoDecoder_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_DanielVideoDecoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_DanielVideoDecoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_DanielVideoDecoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoDecoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoDecoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoderSettings_INTERFACE_DEFINED__
+#define __ICC_DanielVideoEncoderSettings_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoEncoderSettings */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("5f03f830-497f-471a-bcc1-d5cfb417f544")
+    ICC_DanielVideoEncoderSettings : public ICC_Settings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameSize( 
+            /* [retval][out] */ CC_SIZE *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameSize( 
+            /* [in] */ CC_SIZE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameRate( 
+            /* [retval][out] */ CC_FRAME_RATE *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameRate( 
+            /* [in] */ CC_FRAME_RATE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AspectRatio( 
+            /* [retval][out] */ CC_RATIONAL *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AspectRatio( 
+            /* [in] */ CC_RATIONAL v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaFormat( 
+            /* [retval][out] */ CC_CHROMA_FORMAT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ChromaFormat( 
+            /* [in] */ CC_CHROMA_FORMAT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InterlaceType( 
+            /* [retval][out] */ CC_INTERLACE_TYPE *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InterlaceType( 
+            /* [in] */ CC_INTERLACE_TYPE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PictureOrientation( 
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_PictureOrientation( 
+            /* [in] */ CC_PICTURE_ORIENTATION v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_VideoFormat( 
+            /* [retval][out] */ CC_VIDEO_FORMAT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_VideoFormat( 
+            /* [in] */ CC_VIDEO_FORMAT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ColorCoefs( 
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ColorCoefs( 
+            /* [in] */ CC_COLOUR_DESCRIPTION v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitDepth( 
+            /* [retval][out] */ CC_UINT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitDepth( 
+            /* [in] */ CC_UINT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_QuantScale( 
+            /* [retval][out] */ CC_FLOAT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_QuantScale( 
+            /* [in] */ CC_FLOAT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaQuantScaleAdd( 
+            /* [retval][out] */ CC_INT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ChromaQuantScaleAdd( 
+            /* [in] */ CC_INT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AlphaQuantScaleAdd( 
+            /* [retval][out] */ CC_INT *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AlphaQuantScaleAdd( 
+            /* [in] */ CC_INT v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitRate( 
+            /* [retval][out] */ CC_BITRATE *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitRate( 
+            /* [in] */ CC_BITRATE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_RateMode( 
+            /* [retval][out] */ CC_BITRATE_MODE *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_RateMode( 
+            /* [in] */ CC_BITRATE_MODE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_CodingMethod( 
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_CodingMethod( 
+            /* [in] */ CC_DANIEL2_CODING_METHOD v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_GOP( 
+            /* [retval][out] */ CC_GOP_DESCR *v) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_GOP( 
+            /* [in] */ CC_GOP_DESCR v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InitialTimeCode( 
+            /* [retval][out] */ CC_TIMECODE *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InitialTimeCode( 
+            /* [in] */ CC_TIMECODE x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_NumSingleEncoders( 
+            /* [retval][out] */ CC_UINT *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_NumSingleEncoders( 
+            /* [in] */ CC_UINT x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InputColorFormat( 
+            /* [retval][out] */ CC_COLOR_FMT *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InputColorFormat( 
+            /* [in] */ CC_COLOR_FMT x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_UserDataCount( 
+            /* [retval][out] */ CC_UINT *x) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE AddUserData( 
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetUserData( 
+            /* [in] */ DWORD dwUserDataNumber,
+            /* [size_is][out] */ BYTE *pData,
+            /* [in] */ DWORD cbBufSize,
+            /* [retval][out] */ DWORD *pcbRetSize) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoEncoderSettingsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoEncoderSettings * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoEncoderSettings * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_SIZE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameSize )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_SIZE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_FRAME_RATE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameRate )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_FRAME_RATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_RATIONAL *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AspectRatio )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_RATIONAL v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_CHROMA_FORMAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_CHROMA_FORMAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterlaceType )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_INTERLACE_TYPE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictureOrientation )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PictureOrientation )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_PICTURE_ORIENTATION v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VideoFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_VIDEO_FORMAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_VideoFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_VIDEO_FORMAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ColorCoefs )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_COLOUR_DESCRIPTION v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepth )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_UINT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitDepth )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_UINT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_QuantScale )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_FLOAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_QuantScale )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_FLOAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_INT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AlphaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AlphaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_INT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitRate )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_RateMode )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_BITRATE_MODE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_RateMode )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_BITRATE_MODE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingMethod )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_CodingMethod )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_DANIEL2_CODING_METHOD v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_GOP )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_GOP_DESCR *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_GOP )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_GOP_DESCR v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InitialTimeCode )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_TIMECODE *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InitialTimeCode )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_TIMECODE x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSingleEncoders )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_UINT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_NumSingleEncoders )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_UINT x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InputColorFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_COLOR_FMT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InputColorFormat )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ CC_COLOR_FMT x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataCount )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [retval][out] */ CC_UINT *x);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddUserData )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetUserData )( 
+            ICC_DanielVideoEncoderSettings * This,
+            /* [in] */ DWORD dwUserDataNumber,
+            /* [size_is][out] */ BYTE *pData,
+            /* [in] */ DWORD cbBufSize,
+            /* [retval][out] */ DWORD *pcbRetSize);
+        
+        END_INTERFACE
+    } ICC_DanielVideoEncoderSettingsVtbl;
+
+    interface ICC_DanielVideoEncoderSettings
+    {
+        CONST_VTBL struct ICC_DanielVideoEncoderSettingsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoEncoderSettings_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoEncoderSettings_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoEncoderSettings_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoEncoderSettings_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_DanielVideoEncoderSettings_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_DanielVideoEncoderSettings_get_FrameSize(This,v)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_FrameSize(This,v)	\
+    ( (This)->lpVtbl -> put_FrameSize(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_FrameRate(This,v)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_FrameRate(This,v)	\
+    ( (This)->lpVtbl -> put_FrameRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_AspectRatio(This,v)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_AspectRatio(This,v)	\
+    ( (This)->lpVtbl -> put_AspectRatio(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_ChromaFormat(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_ChromaFormat(This,v)	\
+    ( (This)->lpVtbl -> put_ChromaFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_InterlaceType(This,v)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_InterlaceType(This,v)	\
+    ( (This)->lpVtbl -> put_InterlaceType(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> get_PictureOrientation(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> put_PictureOrientation(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_VideoFormat(This,v)	\
+    ( (This)->lpVtbl -> get_VideoFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_VideoFormat(This,v)	\
+    ( (This)->lpVtbl -> put_VideoFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_ColorCoefs(This,v)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_ColorCoefs(This,v)	\
+    ( (This)->lpVtbl -> put_ColorCoefs(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_BitDepth(This,v)	\
+    ( (This)->lpVtbl -> get_BitDepth(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_BitDepth(This,v)	\
+    ( (This)->lpVtbl -> put_BitDepth(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> get_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> put_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_ChromaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_ChromaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> put_ChromaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_AlphaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_AlphaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_AlphaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> put_AlphaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_BitRate(This,v)	\
+    ( (This)->lpVtbl -> get_BitRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_BitRate(This,v)	\
+    ( (This)->lpVtbl -> put_BitRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_RateMode(This,v)	\
+    ( (This)->lpVtbl -> get_RateMode(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_RateMode(This,v)	\
+    ( (This)->lpVtbl -> put_RateMode(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> get_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> put_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_GOP(This,v)	\
+    ( (This)->lpVtbl -> get_GOP(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_GOP(This,v)	\
+    ( (This)->lpVtbl -> put_GOP(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> get_InitialTimeCode(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> put_InitialTimeCode(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_NumSingleEncoders(This,x)	\
+    ( (This)->lpVtbl -> get_NumSingleEncoders(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_NumSingleEncoders(This,x)	\
+    ( (This)->lpVtbl -> put_NumSingleEncoders(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_InputColorFormat(This,x)	\
+    ( (This)->lpVtbl -> get_InputColorFormat(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_put_InputColorFormat(This,x)	\
+    ( (This)->lpVtbl -> put_InputColorFormat(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_get_UserDataCount(This,x)	\
+    ( (This)->lpVtbl -> get_UserDataCount(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_AddUserData(This,pbUserData,cbSize)	\
+    ( (This)->lpVtbl -> AddUserData(This,pbUserData,cbSize) ) 
+
+#define ICC_DanielVideoEncoderSettings_GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoEncoderSettings_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoderSettings_CUDA_INTERFACE_DEFINED__
+#define __ICC_DanielVideoEncoderSettings_CUDA_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoEncoderSettings_CUDA */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings_CUDA;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("64310105-efcc-4027-9c46-acba0014c703")
+    ICC_DanielVideoEncoderSettings_CUDA : public ICC_DanielVideoEncoderSettings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_DeviceID( 
+            /* [retval][out] */ CC_INT *__MIDL__ICC_DanielVideoEncoderSettings_CUDA0000) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_DeviceID( 
+            /* [in] */ CC_INT __MIDL__ICC_DanielVideoEncoderSettings_CUDA0001) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoEncoderSettings_CUDAVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_SIZE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameSize )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_SIZE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_FRAME_RATE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameRate )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_FRAME_RATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_RATIONAL *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AspectRatio )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_RATIONAL v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_CHROMA_FORMAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_CHROMA_FORMAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterlaceType )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_INTERLACE_TYPE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictureOrientation )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_PICTURE_ORIENTATION *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PictureOrientation )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_PICTURE_ORIENTATION v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VideoFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_VIDEO_FORMAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_VideoFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_VIDEO_FORMAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ColorCoefs )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_COLOUR_DESCRIPTION v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepth )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_UINT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitDepth )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_UINT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_QuantScale )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_FLOAT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_QuantScale )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_FLOAT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_INT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AlphaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_INT *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AlphaQuantScaleAdd )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_INT v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_BITRATE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitRate )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_BITRATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_RateMode )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_BITRATE_MODE *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_RateMode )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_BITRATE_MODE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingMethod )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_DANIEL2_CODING_METHOD *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_CodingMethod )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_DANIEL2_CODING_METHOD v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_GOP )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_GOP_DESCR *v);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_GOP )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_GOP_DESCR v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InitialTimeCode )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_TIMECODE *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InitialTimeCode )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_TIMECODE x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSingleEncoders )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_UINT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_NumSingleEncoders )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_UINT x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InputColorFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_COLOR_FMT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InputColorFormat )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_COLOR_FMT x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataCount )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_UINT *x);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddUserData )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetUserData )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ DWORD dwUserDataNumber,
+            /* [size_is][out] */ BYTE *pData,
+            /* [in] */ DWORD cbBufSize,
+            /* [retval][out] */ DWORD *pcbRetSize);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DeviceID )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [retval][out] */ CC_INT *__MIDL__ICC_DanielVideoEncoderSettings_CUDA0000);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DeviceID )( 
+            ICC_DanielVideoEncoderSettings_CUDA * This,
+            /* [in] */ CC_INT __MIDL__ICC_DanielVideoEncoderSettings_CUDA0001);
+        
+        END_INTERFACE
+    } ICC_DanielVideoEncoderSettings_CUDAVtbl;
+
+    interface ICC_DanielVideoEncoderSettings_CUDA
+    {
+        CONST_VTBL struct ICC_DanielVideoEncoderSettings_CUDAVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoEncoderSettings_CUDA_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoEncoderSettings_CUDA_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_FrameSize(This,v)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_FrameSize(This,v)	\
+    ( (This)->lpVtbl -> put_FrameSize(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_FrameRate(This,v)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_FrameRate(This,v)	\
+    ( (This)->lpVtbl -> put_FrameRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_AspectRatio(This,v)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_AspectRatio(This,v)	\
+    ( (This)->lpVtbl -> put_AspectRatio(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_ChromaFormat(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_ChromaFormat(This,v)	\
+    ( (This)->lpVtbl -> put_ChromaFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_InterlaceType(This,v)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_InterlaceType(This,v)	\
+    ( (This)->lpVtbl -> put_InterlaceType(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> get_PictureOrientation(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_PictureOrientation(This,v)	\
+    ( (This)->lpVtbl -> put_PictureOrientation(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_VideoFormat(This,v)	\
+    ( (This)->lpVtbl -> get_VideoFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_VideoFormat(This,v)	\
+    ( (This)->lpVtbl -> put_VideoFormat(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_ColorCoefs(This,v)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_ColorCoefs(This,v)	\
+    ( (This)->lpVtbl -> put_ColorCoefs(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_BitDepth(This,v)	\
+    ( (This)->lpVtbl -> get_BitDepth(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_BitDepth(This,v)	\
+    ( (This)->lpVtbl -> put_BitDepth(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> get_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_QuantScale(This,v)	\
+    ( (This)->lpVtbl -> put_QuantScale(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_ChromaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_ChromaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_ChromaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> put_ChromaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_AlphaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> get_AlphaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_AlphaQuantScaleAdd(This,v)	\
+    ( (This)->lpVtbl -> put_AlphaQuantScaleAdd(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_BitRate(This,v)	\
+    ( (This)->lpVtbl -> get_BitRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_BitRate(This,v)	\
+    ( (This)->lpVtbl -> put_BitRate(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_RateMode(This,v)	\
+    ( (This)->lpVtbl -> get_RateMode(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_RateMode(This,v)	\
+    ( (This)->lpVtbl -> put_RateMode(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> get_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_CodingMethod(This,v)	\
+    ( (This)->lpVtbl -> put_CodingMethod(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_GOP(This,v)	\
+    ( (This)->lpVtbl -> get_GOP(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_GOP(This,v)	\
+    ( (This)->lpVtbl -> put_GOP(This,v) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> get_InitialTimeCode(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> put_InitialTimeCode(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_NumSingleEncoders(This,x)	\
+    ( (This)->lpVtbl -> get_NumSingleEncoders(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_NumSingleEncoders(This,x)	\
+    ( (This)->lpVtbl -> put_NumSingleEncoders(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_InputColorFormat(This,x)	\
+    ( (This)->lpVtbl -> get_InputColorFormat(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_InputColorFormat(This,x)	\
+    ( (This)->lpVtbl -> put_InputColorFormat(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_UserDataCount(This,x)	\
+    ( (This)->lpVtbl -> get_UserDataCount(This,x) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_AddUserData(This,pbUserData,cbSize)	\
+    ( (This)->lpVtbl -> AddUserData(This,pbUserData,cbSize) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetUserData(This,dwUserDataNumber,pData,cbBufSize,pcbRetSize) ) 
+
+
+#define ICC_DanielVideoEncoderSettings_CUDA_get_DeviceID(This,__MIDL__ICC_DanielVideoEncoderSettings_CUDA0000)	\
+    ( (This)->lpVtbl -> get_DeviceID(This,__MIDL__ICC_DanielVideoEncoderSettings_CUDA0000) ) 
+
+#define ICC_DanielVideoEncoderSettings_CUDA_put_DeviceID(This,__MIDL__ICC_DanielVideoEncoderSettings_CUDA0001)	\
+    ( (This)->lpVtbl -> put_DeviceID(This,__MIDL__ICC_DanielVideoEncoderSettings_CUDA0001) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoEncoderSettings_CUDA_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoder_INTERFACE_DEFINED__
+#define __ICC_DanielVideoEncoder_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoEncoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoEncoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("ecab2803-01f0-4233-a346-3ab90e197129")
+    ICC_DanielVideoEncoder : public ICC_VideoEncoder
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE AddUserData( 
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ CC_BOOL bSecondField = CC_FALSE) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InitialTimeCode( 
+            /* [in] */ CC_TIMECODE x) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoEncoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoEncoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoEncoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoEncoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ IUnknown *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Encoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_DanielVideoEncoder * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddFrame )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrame )( 
+            ICC_DanielVideoEncoder * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsScaleAvailable )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_VideoEncoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoEncoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddUserData )( 
+            ICC_DanielVideoEncoder * This,
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ CC_BOOL bSecondField);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InitialTimeCode )( 
+            ICC_DanielVideoEncoder * This,
+            /* [in] */ CC_TIMECODE x);
+        
+        END_INTERFACE
+    } ICC_DanielVideoEncoderVtbl;
+
+    interface ICC_DanielVideoEncoder
+    {
+        CONST_VTBL struct ICC_DanielVideoEncoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoEncoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoEncoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoEncoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoEncoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoEncoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoEncoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoEncoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoEncoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoEncoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoEncoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoEncoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoEncoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoEncoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoEncoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoEncoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoEncoder_get_DataSize(This,__MIDL__ICC_Encoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Encoder0000) ) 
+
+#define ICC_DanielVideoEncoder_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+#define ICC_DanielVideoEncoder_AddFrame(This,Format,pData,cbSize,stride,pResult)	\
+    ( (This)->lpVtbl -> AddFrame(This,Format,pData,cbSize,stride,pResult) ) 
+
+#define ICC_DanielVideoEncoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_DanielVideoEncoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_DanielVideoEncoder_AddScaleFrame(This,pData,cbSize,pParams,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrame(This,pData,cbSize,pParams,pResult) ) 
+
+#define ICC_DanielVideoEncoder_IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000)	\
+    ( (This)->lpVtbl -> IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000) ) 
+
+#define ICC_DanielVideoEncoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoEncoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#define ICC_DanielVideoEncoder_AddUserData(This,pbUserData,cbSize,bSecondField)	\
+    ( (This)->lpVtbl -> AddUserData(This,pbUserData,cbSize,bSecondField) ) 
+
+#define ICC_DanielVideoEncoder_put_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> put_InitialTimeCode(This,x) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoEncoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_D2D_GetUpdateVideoBufferPtrProp_INTERFACE_DEFINED__
+#define __ICC_D2D_GetUpdateVideoBufferPtrProp_INTERFACE_DEFINED__
+
+/* interface ICC_D2D_GetUpdateVideoBufferPtrProp */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_D2D_GetUpdateVideoBufferPtrProp;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("f14dab53-5dc0-4edd-88e6-63d058f278b8")
+    ICC_D2D_GetUpdateVideoBufferPtrProp : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE GetUpdateVideoBufferPtr( 
+            /* [out][in] */ void **p) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_D2D_GetUpdateVideoBufferPtrPropVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_D2D_GetUpdateVideoBufferPtrProp * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_D2D_GetUpdateVideoBufferPtrProp * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_D2D_GetUpdateVideoBufferPtrProp * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetUpdateVideoBufferPtr )( 
+            ICC_D2D_GetUpdateVideoBufferPtrProp * This,
+            /* [out][in] */ void **p);
+        
+        END_INTERFACE
+    } ICC_D2D_GetUpdateVideoBufferPtrPropVtbl;
+
+    interface ICC_D2D_GetUpdateVideoBufferPtrProp
+    {
+        CONST_VTBL struct ICC_D2D_GetUpdateVideoBufferPtrPropVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_D2D_GetUpdateVideoBufferPtrProp_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_D2D_GetUpdateVideoBufferPtrProp_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_D2D_GetUpdateVideoBufferPtrProp_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_D2D_GetUpdateVideoBufferPtrProp_GetUpdateVideoBufferPtr(This,p)	\
+    ( (This)->lpVtbl -> GetUpdateVideoBufferPtr(This,p) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_D2D_GetUpdateVideoBufferPtrProp_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoDecoder_CUDA_INTERFACE_DEFINED__
+#define __ICC_DanielVideoDecoder_CUDA_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoDecoder_CUDA */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoDecoder_CUDA;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("60966b59-a6fb-4742-a562-223f7e4c45e3")
+    ICC_DanielVideoDecoder_CUDA : public ICC_DanielVideoDecoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoDecoder_CUDAVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoDecoder_CUDA * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoDecoder_CUDA * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_DanielVideoDecoder_CUDAVtbl;
+
+    interface ICC_DanielVideoDecoder_CUDA
+    {
+        CONST_VTBL struct ICC_DanielVideoDecoder_CUDAVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoDecoder_CUDA_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoDecoder_CUDA_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoDecoder_CUDA_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_DanielVideoDecoder_CUDA_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoDecoder_CUDA_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoEncoder_CUDA_INTERFACE_DEFINED__
+#define __ICC_DanielVideoEncoder_CUDA_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoEncoder_CUDA */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoEncoder_CUDA;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("9a156bd1-f05f-4d3c-9b55-c49f65200342")
+    ICC_DanielVideoEncoder_CUDA : public ICC_DanielVideoEncoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoEncoder_CUDAVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoEncoder_CUDA * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoEncoder_CUDA * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ IUnknown *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Encoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddFrame )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrame )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsScaleAvailable )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_VideoEncoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddUserData )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [size_is][in] */ const BYTE *pbUserData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ CC_BOOL bSecondField);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InitialTimeCode )( 
+            ICC_DanielVideoEncoder_CUDA * This,
+            /* [in] */ CC_TIMECODE x);
+        
+        END_INTERFACE
+    } ICC_DanielVideoEncoder_CUDAVtbl;
+
+    interface ICC_DanielVideoEncoder_CUDA
+    {
+        CONST_VTBL struct ICC_DanielVideoEncoder_CUDAVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoEncoder_CUDA_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoEncoder_CUDA_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoEncoder_CUDA_get_DataSize(This,__MIDL__ICC_Encoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Encoder0000) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+#define ICC_DanielVideoEncoder_CUDA_AddFrame(This,Format,pData,cbSize,stride,pResult)	\
+    ( (This)->lpVtbl -> AddFrame(This,Format,pData,cbSize,stride,pResult) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_AddScaleFrame(This,pData,cbSize,pParams,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrame(This,pData,cbSize,pParams,pResult) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000)	\
+    ( (This)->lpVtbl -> IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#define ICC_DanielVideoEncoder_CUDA_AddUserData(This,pbUserData,cbSize,bSecondField)	\
+    ( (This)->lpVtbl -> AddUserData(This,pbUserData,cbSize,bSecondField) ) 
+
+#define ICC_DanielVideoEncoder_CUDA_put_InitialTimeCode(This,x)	\
+    ( (This)->lpVtbl -> put_InitialTimeCode(This,x) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoEncoder_CUDA_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoStreamInfo_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoStreamInfo_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoStreamInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoStreamInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("5ad9b3a9-9a15-44ed-9341-7115670e7c77")
+    ICC_Y4M_VideoStreamInfo : public ICC_VideoStreamInfo
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoStreamInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoStreamInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoStreamInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamType )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_ELEMENTARY_STREAM_TYPE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_FRAME_RATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_SIZE *s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_RATIONAL *a);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProgressiveSequence )( 
+            ICC_Y4M_VideoStreamInfo * This,
+            /* [retval][out] */ CC_BOOL *x);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoStreamInfoVtbl;
+
+    interface ICC_Y4M_VideoStreamInfo
+    {
+        CONST_VTBL struct ICC_Y4M_VideoStreamInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoStreamInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoStreamInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoStreamInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoStreamInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_Y4M_VideoStreamInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_Y4M_VideoStreamInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_Y4M_VideoStreamInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_Y4M_VideoStreamInfo_get_StreamType(This,p)	\
+    ( (This)->lpVtbl -> get_StreamType(This,p) ) 
+
+#define ICC_Y4M_VideoStreamInfo_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_Y4M_VideoStreamInfo_get_FrameRate(This,p)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,p) ) 
+
+
+#define ICC_Y4M_VideoStreamInfo_get_FrameSize(This,s)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,s) ) 
+
+#define ICC_Y4M_VideoStreamInfo_get_AspectRatio(This,a)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,a) ) 
+
+#define ICC_Y4M_VideoStreamInfo_get_ProgressiveSequence(This,x)	\
+    ( (This)->lpVtbl -> get_ProgressiveSequence(This,x) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoStreamInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoFrameInfo_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoFrameInfo_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoFrameInfo */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoFrameInfo;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("43e44fc2-99d9-4e78-aa60-247df8293231")
+    ICC_Y4M_VideoFrameInfo : public ICC_VideoFrameInfo
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoFrameInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoFrameInfo * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoFrameInfo * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ByteStreamDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ByteOffset )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ByteStreamDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NumSamples )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_ElementaryDataInfo0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SampleOffset )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_OFFSET *__MIDL__ICC_ElementaryDataInfo0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Duration )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0002);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PresentationDelta )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_INT *__MIDL__ICC_ElementaryDataInfo0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PTS )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0004);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DTS )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_ElementaryDataInfo0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SequenceEntryFlag )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_BOOL *__MIDL__ICC_ElementaryDataInfo0006);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Number )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *n);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CodingNumber )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_UINT *c);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeCode )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_TIMECODE *t);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *i);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameType )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_FRAME_TYPE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PictStruct )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ CC_PICTURE_STRUCTURE *x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Flags )( 
+            ICC_Y4M_VideoFrameInfo * This,
+            /* [retval][out] */ DWORD *x);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoFrameInfoVtbl;
+
+    interface ICC_Y4M_VideoFrameInfo
+    {
+        CONST_VTBL struct ICC_Y4M_VideoFrameInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoFrameInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoFrameInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoFrameInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoFrameInfo_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_Y4M_VideoFrameInfo_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_Y4M_VideoFrameInfo_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_Y4M_VideoFrameInfo_get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_ByteStreamDataInfo0000) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001)	\
+    ( (This)->lpVtbl -> get_ByteOffset(This,__MIDL__ICC_ByteStreamDataInfo0001) ) 
+
+
+#define ICC_Y4M_VideoFrameInfo_get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000)	\
+    ( (This)->lpVtbl -> get_NumSamples(This,__MIDL__ICC_ElementaryDataInfo0000) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001)	\
+    ( (This)->lpVtbl -> get_SampleOffset(This,__MIDL__ICC_ElementaryDataInfo0001) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002)	\
+    ( (This)->lpVtbl -> get_Duration(This,__MIDL__ICC_ElementaryDataInfo0002) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003)	\
+    ( (This)->lpVtbl -> get_PresentationDelta(This,__MIDL__ICC_ElementaryDataInfo0003) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004)	\
+    ( (This)->lpVtbl -> get_PTS(This,__MIDL__ICC_ElementaryDataInfo0004) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005)	\
+    ( (This)->lpVtbl -> get_DTS(This,__MIDL__ICC_ElementaryDataInfo0005) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006)	\
+    ( (This)->lpVtbl -> get_SequenceEntryFlag(This,__MIDL__ICC_ElementaryDataInfo0006) ) 
+
+
+#define ICC_Y4M_VideoFrameInfo_get_Number(This,n)	\
+    ( (This)->lpVtbl -> get_Number(This,n) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_CodingNumber(This,c)	\
+    ( (This)->lpVtbl -> get_CodingNumber(This,c) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_TimeCode(This,t)	\
+    ( (This)->lpVtbl -> get_TimeCode(This,t) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_InterlaceType(This,i)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,i) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_FrameType(This,x)	\
+    ( (This)->lpVtbl -> get_FrameType(This,x) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_PictStruct(This,x)	\
+    ( (This)->lpVtbl -> get_PictStruct(This,x) ) 
+
+#define ICC_Y4M_VideoFrameInfo_get_Flags(This,x)	\
+    ( (This)->lpVtbl -> get_Flags(This,x) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoFrameInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoSplitter_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoSplitter_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoSplitter */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoSplitter;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("876b52d4-d01c-49e2-98d7-7449d4989cbb")
+    ICC_Y4M_VideoSplitter : public ICC_VideoSplitter
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoSplitterVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoSplitter * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoSplitter * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Transcoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_Y4M_VideoSplitter * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoSplitterVtbl;
+
+    interface ICC_Y4M_VideoSplitter
+    {
+        CONST_VTBL struct ICC_Y4M_VideoSplitterVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoSplitter_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoSplitter_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoSplitter_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoSplitter_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_Y4M_VideoSplitter_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_Y4M_VideoSplitter_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_Y4M_VideoSplitter_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_Y4M_VideoSplitter_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_Y4M_VideoSplitter_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_Y4M_VideoSplitter_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_Y4M_VideoSplitter_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_Y4M_VideoSplitter_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_Y4M_VideoSplitter_get_DataSize(This,__MIDL__ICC_Transcoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Transcoder0000) ) 
+
+#define ICC_Y4M_VideoSplitter_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+
+#define ICC_Y4M_VideoSplitter_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_Y4M_VideoSplitter_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoSplitter_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoDecoder_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoDecoder_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoDecoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoDecoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("569d8d00-59e0-440b-8304-fcc356135f9e")
+    ICC_Y4M_VideoDecoder : public ICC_VideoDecoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoDecoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoDecoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoDecoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_Y4M_VideoDecoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoDecoderVtbl;
+
+    interface ICC_Y4M_VideoDecoder
+    {
+        CONST_VTBL struct ICC_Y4M_VideoDecoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoDecoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoDecoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoDecoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoDecoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_Y4M_VideoDecoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_Y4M_VideoDecoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_Y4M_VideoDecoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_Y4M_VideoDecoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_Y4M_VideoDecoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_Y4M_VideoDecoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_Y4M_VideoDecoder_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_Y4M_VideoDecoder_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_Y4M_VideoDecoder_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_Y4M_VideoDecoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_Y4M_VideoDecoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_Y4M_VideoDecoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_Y4M_VideoDecoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoDecoder_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoEncoderSettings_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoEncoderSettings_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoEncoderSettings */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoEncoderSettings;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("bc708f85-7200-4056-80d1-93628c65e5f6")
+    ICC_Y4M_VideoEncoderSettings : public ICC_Settings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameSize( 
+            /* [retval][out] */ CC_SIZE *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameSize( 
+            /* [in] */ CC_SIZE x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameRate( 
+            /* [retval][out] */ CC_FRAME_RATE *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameRate( 
+            /* [in] */ CC_FRAME_RATE x) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InterlaceType( 
+            /* [retval][out] */ CC_INTERLACE_TYPE *__MIDL__ICC_Y4M_VideoEncoderSettings0000) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InterlaceType( 
+            /* [in] */ CC_INTERLACE_TYPE __MIDL__ICC_Y4M_VideoEncoderSettings0001) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AspectRatio( 
+            /* [retval][out] */ CC_RATIONAL *__MIDL__ICC_Y4M_VideoEncoderSettings0002) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AspectRatio( 
+            /* [in] */ CC_RATIONAL __MIDL__ICC_Y4M_VideoEncoderSettings0003) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ChromaFormat( 
+            /* [retval][out] */ CC_CHROMA_FORMAT *__MIDL__ICC_Y4M_VideoEncoderSettings0004) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ChromaFormat( 
+            /* [in] */ CC_CHROMA_FORMAT __MIDL__ICC_Y4M_VideoEncoderSettings0005) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_BitDepth( 
+            /* [retval][out] */ DWORD *__MIDL__ICC_Y4M_VideoEncoderSettings0006) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_BitDepth( 
+            /* [in] */ DWORD __MIDL__ICC_Y4M_VideoEncoderSettings0007) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoEncoderSettingsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoEncoderSettings * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoEncoderSettings * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_SIZE *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameSize )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_SIZE x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_FRAME_RATE *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameRate )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_FRAME_RATE x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *__MIDL__ICC_Y4M_VideoEncoderSettings0000);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterlaceType )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_INTERLACE_TYPE __MIDL__ICC_Y4M_VideoEncoderSettings0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_RATIONAL *__MIDL__ICC_Y4M_VideoEncoderSettings0002);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AspectRatio )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_RATIONAL __MIDL__ICC_Y4M_VideoEncoderSettings0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ChromaFormat )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ CC_CHROMA_FORMAT *__MIDL__ICC_Y4M_VideoEncoderSettings0004);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ChromaFormat )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ CC_CHROMA_FORMAT __MIDL__ICC_Y4M_VideoEncoderSettings0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitDepth )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_Y4M_VideoEncoderSettings0006);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitDepth )( 
+            ICC_Y4M_VideoEncoderSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_Y4M_VideoEncoderSettings0007);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoEncoderSettingsVtbl;
+
+    interface ICC_Y4M_VideoEncoderSettings
+    {
+        CONST_VTBL struct ICC_Y4M_VideoEncoderSettingsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoEncoderSettings_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoEncoderSettings_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_Y4M_VideoEncoderSettings_get_FrameSize(This,x)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,x) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_FrameSize(This,x)	\
+    ( (This)->lpVtbl -> put_FrameSize(This,x) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_FrameRate(This,x)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,x) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_FrameRate(This,x)	\
+    ( (This)->lpVtbl -> put_FrameRate(This,x) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_InterlaceType(This,__MIDL__ICC_Y4M_VideoEncoderSettings0000)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,__MIDL__ICC_Y4M_VideoEncoderSettings0000) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_InterlaceType(This,__MIDL__ICC_Y4M_VideoEncoderSettings0001)	\
+    ( (This)->lpVtbl -> put_InterlaceType(This,__MIDL__ICC_Y4M_VideoEncoderSettings0001) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_AspectRatio(This,__MIDL__ICC_Y4M_VideoEncoderSettings0002)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,__MIDL__ICC_Y4M_VideoEncoderSettings0002) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_AspectRatio(This,__MIDL__ICC_Y4M_VideoEncoderSettings0003)	\
+    ( (This)->lpVtbl -> put_AspectRatio(This,__MIDL__ICC_Y4M_VideoEncoderSettings0003) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_ChromaFormat(This,__MIDL__ICC_Y4M_VideoEncoderSettings0004)	\
+    ( (This)->lpVtbl -> get_ChromaFormat(This,__MIDL__ICC_Y4M_VideoEncoderSettings0004) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_ChromaFormat(This,__MIDL__ICC_Y4M_VideoEncoderSettings0005)	\
+    ( (This)->lpVtbl -> put_ChromaFormat(This,__MIDL__ICC_Y4M_VideoEncoderSettings0005) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_get_BitDepth(This,__MIDL__ICC_Y4M_VideoEncoderSettings0006)	\
+    ( (This)->lpVtbl -> get_BitDepth(This,__MIDL__ICC_Y4M_VideoEncoderSettings0006) ) 
+
+#define ICC_Y4M_VideoEncoderSettings_put_BitDepth(This,__MIDL__ICC_Y4M_VideoEncoderSettings0007)	\
+    ( (This)->lpVtbl -> put_BitDepth(This,__MIDL__ICC_Y4M_VideoEncoderSettings0007) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoEncoderSettings_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_Y4M_VideoEncoder_INTERFACE_DEFINED__
+#define __ICC_Y4M_VideoEncoder_INTERFACE_DEFINED__
+
+/* interface ICC_Y4M_VideoEncoder */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_Y4M_VideoEncoder;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("c753bffb-f306-44b4-b164-ec2f1939eec9")
+    ICC_Y4M_VideoEncoder : public ICC_VideoEncoder
+    {
+    public:
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_Y4M_VideoEncoderVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_Y4M_VideoEncoder * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_Y4M_VideoEncoder * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ IUnknown *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataSize )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_Encoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetData )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [size_is][out] */ CC_PBYTE pbData,
+            /* [in] */ CC_UINT cbBufSize,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddFrame )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrame )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsScaleAvailable )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [in] */ CC_ADD_VIDEO_FRAME_PARAMS *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_VideoEncoder0000);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_Y4M_VideoEncoder * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        END_INTERFACE
+    } ICC_Y4M_VideoEncoderVtbl;
+
+    interface ICC_Y4M_VideoEncoder
+    {
+        CONST_VTBL struct ICC_Y4M_VideoEncoderVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_Y4M_VideoEncoder_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_Y4M_VideoEncoder_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_Y4M_VideoEncoder_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_Y4M_VideoEncoder_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_Y4M_VideoEncoder_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_Y4M_VideoEncoder_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_Y4M_VideoEncoder_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_Y4M_VideoEncoder_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_Y4M_VideoEncoder_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_Y4M_VideoEncoder_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_Y4M_VideoEncoder_get_DataSize(This,__MIDL__ICC_Encoder0000)	\
+    ( (This)->lpVtbl -> get_DataSize(This,__MIDL__ICC_Encoder0000) ) 
+
+#define ICC_Y4M_VideoEncoder_GetData(This,pbData,cbBufSize,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetData(This,pbData,cbBufSize,pcbRetSize) ) 
+
+
+#define ICC_Y4M_VideoEncoder_AddFrame(This,Format,pData,cbSize,stride,pResult)	\
+    ( (This)->lpVtbl -> AddFrame(This,Format,pData,cbSize,stride,pResult) ) 
+
+#define ICC_Y4M_VideoEncoder_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_Y4M_VideoEncoder_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_Y4M_VideoEncoder_AddScaleFrame(This,pData,cbSize,pParams,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrame(This,pData,cbSize,pParams,pResult) ) 
+
+#define ICC_Y4M_VideoEncoder_IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000)	\
+    ( (This)->lpVtbl -> IsScaleAvailable(This,pParams,__MIDL__ICC_VideoEncoder0000) ) 
+
+#define ICC_Y4M_VideoEncoder_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_Y4M_VideoEncoder_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_Y4M_VideoEncoder_INTERFACE_DEFINED__ */
+
+
+/* interface __MIDL_itf_Cinecoder_0000_0167 */
+/* [local] */ 
+
 typedef WORD CC_PID;
 
 typedef LONGLONG CC_SCR;
@@ -30995,8 +35236,8 @@ typedef struct CC_PACKET_DESCR
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0167_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0167_v0_0_s_ifspec;
 
 #ifndef __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
 #define __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
@@ -31141,7 +35382,7 @@ EXTERN_C const IID IID_ICC_MultiplexedDataDescr;
 #endif 	/* __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0152 */
+/* interface __MIDL_itf_Cinecoder_0000_0168 */
 /* [local] */ 
 
 typedef 
@@ -31276,7 +35517,7 @@ enum MPEG_SYSTEM_DESCRIPTOR_TAG
 	CC_DESCR_DATA_COMPONENT	= 0xfd
     } 	MPEG_SYSTEM_DESCRIPTOR_TAG;
 
-typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0152_0001
+typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0168_0001
     {
     MPEG_SYSTEM_DESCRIPTOR_TAG code;
     DWORD length;
@@ -31285,8 +35526,8 @@ typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0152_0001
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0168_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0168_v0_0_s_ifspec;
 
 #ifndef __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
 #define __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
@@ -36115,7 +40356,7 @@ EXTERN_C const IID IID_ICC_ProgramClockReferencePidProp;
 #endif 	/* __ICC_ProgramClockReferencePidProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0174 */
+/* interface __MIDL_itf_Cinecoder_0000_0190 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -36129,8 +40370,8 @@ enum CC_CATCH_STREAM_MODE
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0174_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0174_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0190_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0190_v0_0_s_ifspec;
 
 #ifndef __ICC_Demultiplexer_INTERFACE_DEFINED__
 #define __ICC_Demultiplexer_INTERFACE_DEFINED__
@@ -37033,7 +41274,7 @@ EXTERN_C const IID IID_ICC_PCR_CallbackProp;
 #endif 	/* __ICC_PCR_CallbackProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0180 */
+/* interface __MIDL_itf_Cinecoder_0000_0196 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -37045,8 +41286,8 @@ enum CC_MP4_CHUNK_FRAGMENT_POSITION
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0180_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0196_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0196_v0_0_s_ifspec;
 
 #ifndef __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
 #define __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
@@ -37317,6 +41558,12 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Format( 
             /* [in] */ ICC_Settings *p) = 0;
         
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InterleavingPeriod( 
+            /* [retval][out] */ CC_PERIOD *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InterleavingPeriod( 
+            /* [in] */ CC_PERIOD v) = 0;
+        
     };
     
 #else 	/* C style interface */
@@ -37394,6 +41641,14 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
             ICC_MP4_MultiplexerSettings * This,
             /* [in] */ ICC_Settings *p);
         
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterleavingPeriod )( 
+            ICC_MP4_MultiplexerSettings * This,
+            /* [retval][out] */ CC_PERIOD *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterleavingPeriod )( 
+            ICC_MP4_MultiplexerSettings * This,
+            /* [in] */ CC_PERIOD v);
+        
         END_INTERFACE
     } ICC_MP4_MultiplexerSettingsVtbl;
 
@@ -37459,6 +41714,12 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
 
 #define ICC_MP4_MultiplexerSettings_put_Format(This,p)	\
     ( (This)->lpVtbl -> put_Format(This,p) ) 
+
+#define ICC_MP4_MultiplexerSettings_get_InterleavingPeriod(This,p)	\
+    ( (This)->lpVtbl -> get_InterleavingPeriod(This,p) ) 
+
+#define ICC_MP4_MultiplexerSettings_put_InterleavingPeriod(This,v)	\
+    ( (This)->lpVtbl -> put_InterleavingPeriod(This,v) ) 
 
 #endif /* COBJMACROS */
 
@@ -37711,6 +41972,259 @@ EXTERN_C const IID IID_ICC_MP4_MuxerPinSettings;
 
 
 #endif 	/* __ICC_MP4_MuxerPinSettings_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_MP4_MuxerVideoPinSettings_INTERFACE_DEFINED__
+#define __ICC_MP4_MuxerVideoPinSettings_INTERFACE_DEFINED__
+
+/* interface ICC_MP4_MuxerVideoPinSettings */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_MP4_MuxerVideoPinSettings;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("c08d455e-b958-4cda-ab53-6682f4fb2492")
+    ICC_MP4_MuxerVideoPinSettings : public ICC_MP4_MuxerPinSettings
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ColorCoefs( 
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *__MIDL__ICC_MP4_MuxerVideoPinSettings0000) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ColorCoefs( 
+            /* [in] */ CC_COLOUR_DESCRIPTION __MIDL__ICC_MP4_MuxerVideoPinSettings0001) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AspectRatio( 
+            /* [retval][out] */ CC_RATIONAL *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AspectRatio( 
+            /* [in] */ CC_RATIONAL v) = 0;
+        
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_MP4_MuxerVideoPinSettingsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_MP4_MuxerVideoPinSettings * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_MP4_MuxerVideoPinSettings * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Clear )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ LPCSTR strVarName);
+        
+        HRESULT ( STDMETHODCALLTYPE *Assigned )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ LPCSTR strVarName,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_Settings0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_XML )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_STRING *pstrXml);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_XML )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_STRING strXml);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamType )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_ELEMENTARY_STREAM_TYPE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_StreamType )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_ELEMENTARY_STREAM_TYPE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BitRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_BITRATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_FRAME_RATE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_FRAME_RATE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BasePTS )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_TIME *__MIDL__ICC_MP4_MuxerPinSettings0000);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_BasePTS )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_TIME __MIDL__ICC_MP4_MuxerPinSettings0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SampleRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_SAMPLE_RATE *__MIDL__ICC_MP4_MuxerPinSettings0002);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_SampleRate )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_SAMPLE_RATE __MIDL__ICC_MP4_MuxerPinSettings0003);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SubTypeCode )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ DWORD *__MIDL__ICC_MP4_MuxerPinSettings0004);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_SubTypeCode )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ DWORD __MIDL__ICC_MP4_MuxerPinSettings0005);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ReferenceURL )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_STRING *pURL);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ReferenceURL )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_STRING URL);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TrackTimeScale )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_UINT *__MIDL__ICC_MP4_MuxerPinSettings0006);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TrackTimeScale )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_UINT __MIDL__ICC_MP4_MuxerPinSettings0007);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *__MIDL__ICC_MP4_MuxerVideoPinSettings0000);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ColorCoefs )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_COLOUR_DESCRIPTION __MIDL__ICC_MP4_MuxerVideoPinSettings0001);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AspectRatio )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_RATIONAL *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AspectRatio )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_RATIONAL v);
+        
+        END_INTERFACE
+    } ICC_MP4_MuxerVideoPinSettingsVtbl;
+
+    interface ICC_MP4_MuxerVideoPinSettings
+    {
+        CONST_VTBL struct ICC_MP4_MuxerVideoPinSettingsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_MP4_MuxerVideoPinSettings_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_MP4_MuxerVideoPinSettings_Clear(This,strVarName)	\
+    ( (This)->lpVtbl -> Clear(This,strVarName) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_Assigned(This,strVarName,__MIDL__ICC_Settings0000)	\
+    ( (This)->lpVtbl -> Assigned(This,strVarName,__MIDL__ICC_Settings0000) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_XML(This,pstrXml)	\
+    ( (This)->lpVtbl -> get_XML(This,pstrXml) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_XML(This,strXml)	\
+    ( (This)->lpVtbl -> put_XML(This,strXml) ) 
+
+
+#define ICC_MP4_MuxerVideoPinSettings_get_StreamType(This,p)	\
+    ( (This)->lpVtbl -> get_StreamType(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_StreamType(This,v)	\
+    ( (This)->lpVtbl -> put_StreamType(This,v) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_BitRate(This,v)	\
+    ( (This)->lpVtbl -> put_BitRate(This,v) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_FrameRate(This,p)	\
+    ( (This)->lpVtbl -> get_FrameRate(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_FrameRate(This,v)	\
+    ( (This)->lpVtbl -> put_FrameRate(This,v) ) 
+
+
+#define ICC_MP4_MuxerVideoPinSettings_get_BasePTS(This,__MIDL__ICC_MP4_MuxerPinSettings0000)	\
+    ( (This)->lpVtbl -> get_BasePTS(This,__MIDL__ICC_MP4_MuxerPinSettings0000) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_BasePTS(This,__MIDL__ICC_MP4_MuxerPinSettings0001)	\
+    ( (This)->lpVtbl -> put_BasePTS(This,__MIDL__ICC_MP4_MuxerPinSettings0001) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_SampleRate(This,__MIDL__ICC_MP4_MuxerPinSettings0002)	\
+    ( (This)->lpVtbl -> get_SampleRate(This,__MIDL__ICC_MP4_MuxerPinSettings0002) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_SampleRate(This,__MIDL__ICC_MP4_MuxerPinSettings0003)	\
+    ( (This)->lpVtbl -> put_SampleRate(This,__MIDL__ICC_MP4_MuxerPinSettings0003) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_SubTypeCode(This,__MIDL__ICC_MP4_MuxerPinSettings0004)	\
+    ( (This)->lpVtbl -> get_SubTypeCode(This,__MIDL__ICC_MP4_MuxerPinSettings0004) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_SubTypeCode(This,__MIDL__ICC_MP4_MuxerPinSettings0005)	\
+    ( (This)->lpVtbl -> put_SubTypeCode(This,__MIDL__ICC_MP4_MuxerPinSettings0005) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_ReferenceURL(This,pURL)	\
+    ( (This)->lpVtbl -> get_ReferenceURL(This,pURL) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_ReferenceURL(This,URL)	\
+    ( (This)->lpVtbl -> put_ReferenceURL(This,URL) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_TrackTimeScale(This,__MIDL__ICC_MP4_MuxerPinSettings0006)	\
+    ( (This)->lpVtbl -> get_TrackTimeScale(This,__MIDL__ICC_MP4_MuxerPinSettings0006) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_TrackTimeScale(This,__MIDL__ICC_MP4_MuxerPinSettings0007)	\
+    ( (This)->lpVtbl -> put_TrackTimeScale(This,__MIDL__ICC_MP4_MuxerPinSettings0007) ) 
+
+
+#define ICC_MP4_MuxerVideoPinSettings_get_ColorCoefs(This,__MIDL__ICC_MP4_MuxerVideoPinSettings0000)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,__MIDL__ICC_MP4_MuxerVideoPinSettings0000) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_ColorCoefs(This,__MIDL__ICC_MP4_MuxerVideoPinSettings0001)	\
+    ( (This)->lpVtbl -> put_ColorCoefs(This,__MIDL__ICC_MP4_MuxerVideoPinSettings0001) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_AspectRatio(This,p)	\
+    ( (This)->lpVtbl -> get_AspectRatio(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_AspectRatio(This,v)	\
+    ( (This)->lpVtbl -> put_AspectRatio(This,v) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_MP4_MuxerVideoPinSettings_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICC_ReferenceDataConsumer_INTERFACE_DEFINED__
@@ -38688,7 +43202,7 @@ EXTERN_C const IID IID_ICC_HLS_MultiplexerSettings;
 #endif 	/* __ICC_HLS_MultiplexerSettings_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0193 */
+/* interface __MIDL_itf_Cinecoder_0000_0210 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
@@ -38733,8 +43247,8 @@ enum CC_READER_OPEN_FLAGS
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0210_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0210_v0_0_s_ifspec;
 
 #ifndef __ICC_MediaReader_INTERFACE_DEFINED__
 #define __ICC_MediaReader_INTERFACE_DEFINED__
@@ -39530,6 +44044,14 @@ class DECLSPEC_UUID("80011102-0315-11dc-a983-0018f3fe411b")
 CC_MpegVideoEncoder;
 #endif
 
+EXTERN_C const CLSID CLSID_CC_MpegVideoEncoder2;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("eb953846-1fbc-408a-91f9-f7a8acda02d1")
+CC_MpegVideoEncoder2;
+#endif
+
 EXTERN_C const CLSID CLSID_CC_MpegVideoDecoder;
 
 #ifdef __cplusplus
@@ -39842,6 +44364,14 @@ class DECLSPEC_UUID("ec5dc6db-99f2-44f2-9657-eb629cfb705b")
 CC_MP4_MuxerPinSettings;
 #endif
 
+EXTERN_C const CLSID CLSID_CC_MP4_MuxerVideoPinSettings;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("403de721-dade-4365-a587-589eb24215cf")
+CC_MP4_MuxerVideoPinSettings;
+#endif
+
 EXTERN_C const CLSID CLSID_CC_MP4_MpegDashSettings;
 
 #ifdef __cplusplus
@@ -40034,6 +44564,62 @@ class DECLSPEC_UUID("8c1e236a-2602-41b2-89b0-97810070a089")
 CC_SonyRaw_VideoDecoder;
 #endif
 
+EXTERN_C const CLSID CLSID_CC_DanielVideoSplitter;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("76bef61e-f17d-4079-8f22-0c18fbf38e65")
+CC_DanielVideoSplitter;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoDecoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("0236cdb4-3541-4c66-a211-496e91922dba")
+CC_DanielVideoDecoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoDecoder_CUDA;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("00a25ffa-f7bf-4876-a592-73f944936a6f")
+CC_DanielVideoDecoder_CUDA;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoEncoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("5fd43ca9-0f0f-40e0-a20a-74c9a5edbec8")
+CC_DanielVideoEncoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoEncoder_CUDA;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("6e0bf254-f734-4d75-ab2f-de598be15616")
+CC_DanielVideoEncoder_CUDA;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoEncoderSettings;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("fd5a7ff2-a1fe-41af-b27a-0d786a738473")
+CC_DanielVideoEncoderSettings;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_DanielVideoEncoderSettings_CUDA;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("2faf33b7-bb91-401b-82de-363e3cd5d309")
+CC_DanielVideoEncoderSettings_CUDA;
+#endif
+
 EXTERN_C const CLSID CLSID_CC_MediaReader;
 
 #ifdef __cplusplus
@@ -40113,9 +44699,25 @@ EXTERN_C const CLSID CLSID_CC_HEVCVideoDecoder0;
 class DECLSPEC_UUID("d4ce1c4f-60d6-442d-b2bb-45b5d5c6de9b")
 CC_HEVCVideoDecoder0;
 #endif
+
+EXTERN_C const CLSID CLSID_CC_Y4M_VideoEncoder;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("6c6e79c1-d644-4d66-884d-7e9d9b0bbbda")
+CC_Y4M_VideoEncoder;
+#endif
+
+EXTERN_C const CLSID CLSID_CC_Y4M_VideoEncoderSettings;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("bc7a18e4-14eb-485d-bc43-c8932d250970")
+CC_Y4M_VideoEncoderSettings;
+#endif
 #endif /* __Cinecoder_LIBRARY_DEFINED__ */
 
-/* interface __MIDL_itf_Cinecoder_0000_0195 */
+/* interface __MIDL_itf_Cinecoder_0000_0212 */
 /* [local] */ 
 
 #ifdef __cplusplus
@@ -40123,8 +44725,8 @@ using namespace cinecoder;
 #endif
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0195_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0195_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0212_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0212_v0_0_s_ifspec;
 
 /* Additional Prototypes for ALL interfaces */
 

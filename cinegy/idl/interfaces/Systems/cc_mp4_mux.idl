@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 typedef[v1_enum] enum CC_MP4_CHUNK_FRAGMENT_POSITION
@@ -51,6 +51,10 @@ interface ICC_MP4_MultiplexerSettings : ICC_Settings
 
 	[propget] HRESULT Format                ([out, retval] ICC_Settings **pp);
 	[propput] HRESULT Format                ([in]          ICC_Settings *p);
+
+	[propget] HRESULT InterleavingPeriod    ([out, retval]CC_PERIOD *p);
+	[propput] HRESULT InterleavingPeriod    ([in]         CC_PERIOD  v);
+
 };
 
 [object, uuid(bc0a4c83-d677-4a69-8514-5be234b14bda), pointer_default(unique), local]
@@ -77,6 +81,18 @@ interface ICC_MP4_MuxerPinSettings : ICC_ElementaryStreamSettings
 	/// The <link CC_TIMEBASE, time base> for all CC_TIME values, relating to any time stamps (PTS or DTS) of data, handled by stream processor.
 	[propget] HRESULT TrackTimeScale        ([out,retval]CC_UINT*);
 	[propput] HRESULT TrackTimeScale        ([in]        CC_UINT );
+};
+
+[object, uuid(c08d455e-b958-4cda-ab53-6682f4fb2492), pointer_default(unique), local]
+interface ICC_MP4_MuxerVideoPinSettings : ICC_MP4_MuxerPinSettings
+{
+	// The color transformarion description.
+	[propget] HRESULT ColorCoefs            ([out,retval]CC_COLOUR_DESCRIPTION*);
+	[propput] HRESULT ColorCoefs            ([in]        CC_COLOUR_DESCRIPTION);
+
+	// The aspect ratio of a frame W:H.
+	[propget] HRESULT AspectRatio           ([out, retval] CC_RATIONAL*p);
+	[propput] HRESULT AspectRatio           ([in]          CC_RATIONAL v);
 };
 
 //-----------------------------------------------------------------------------

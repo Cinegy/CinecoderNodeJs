@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.27.39.11441
+  The version of Cinecoder for these headers should be: 3.28.23.12518
 */
 
 typedef [v1_enum] enum CC_AVCI_MODE
@@ -42,6 +42,12 @@ typedef [v1_enum] enum CC_AVCI_MODE
   CC_AVCI_100_1080P_2997 = 0x23,
   CC_AVCI_100_1080I_50   = 0x22,
   CC_AVCI_100_1080I_5994 = 0x21,
+
+  CC_AVCI_4K_422_2398    = 0x400,
+  CC_AVCI_4K_422_25      = 0x401,
+  CC_AVCI_4K_422_2997    = 0x402,
+  CC_AVCI_4K_422_50      = 0x403,
+  CC_AVCI_4K_422_5994    = 0x404,
 } 
 CC_AVCI_MODE;
 
