@@ -28,7 +28,7 @@ namespace streampunk {
 class DecoderFactory {
 public:
   static std::shared_ptr<iDecoderDriver> createDecoder(std::shared_ptr<EssenceInfo> srcInfo, std::shared_ptr<EssenceInfo> dstInfo) {
-    if ((0 == srcInfo->encodingName().compare("AVCi50")) || (0 == srcInfo->encodingName().compare("AVCi100"))) {
+    if (0 == srcInfo->encodingName().substr(0, 4).compare("AVCi")) {
       #if defined _WIN32
         return std::make_shared<DecoderCinegy>(srcInfo, dstInfo);
       #else

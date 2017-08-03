@@ -69,11 +69,11 @@ void Decoder::doSetInfo(Local<Object> srcTags, Local<Object> dstTags) {
   mDstVidInfo = std::make_shared<EssenceInfo>(dstTags); 
   printf("Decoder DstVidInfo: %s\n", mDstVidInfo->toString().c_str());
 
-  if (mSrcVidInfo->encodingName().compare("AVCi50") && mSrcVidInfo->encodingName().compare("AVCi100")) {
+  if (mSrcVidInfo->encodingName().substr(0, 4).compare("AVCi")) {
     std::string err = std::string("Unsupported source encoding \'") + mSrcVidInfo->encodingName().c_str() + "\'";
     return Nan::ThrowError(err.c_str());
   }
-  if (mDstVidInfo->packing().compare("UYVY10")) {
+  if (mDstVidInfo->packing().compare("UYVY10") && mDstVidInfo->packing().compare("v210")) {
     std::string err = std::string("Unsupported packing type \'") + mDstVidInfo->packing() + "\'";
     Nan::ThrowError(err.c_str());
     return;
