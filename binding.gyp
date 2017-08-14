@@ -62,13 +62,17 @@
             }
           },
           "libraries": [ 
-            "-l../cinegy/lib/win64/cinecoder.lib"
+            "-l../cinegy/lib/win64/cinecoder.lib",
+            "-l../cinegy/lib/win64/D2_CUDA_lib.lib"
           ],
           "copies": [
             { 
               "destination": "build/Release/",
               "files": [
-                "cinegy/lib/win64/cinecoder.dll"
+                "cinegy/lib/win64/Cinecoder.dll",
+                "cinegy/lib/win64/Cinecoder.Interop.dll",
+                "cinegy/lib/win64/cudart64_80.dll",
+                "cinegy/lib/win64/D2_CUDA_lib.dll"
               ]
             }
           ]

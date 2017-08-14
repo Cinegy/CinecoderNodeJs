@@ -75,11 +75,11 @@ void Encoder::doSetInfo(Local<Object> srcTags, Local<Object> dstTags, const Dura
   mDstVidInfo = std::make_shared<EssenceInfo>(dstTags); 
   printf("Encoder DstVidInfo: %s\n", mDstVidInfo->toString().c_str());
 
-  if (mSrcVidInfo->packing().compare("UYVY10")) {
+  if (mSrcVidInfo->packing().compare("UYVY10") && mSrcVidInfo->packing().compare("v210")) {
     std::string err = std::string("Unsupported source format \'") + mSrcVidInfo->packing().c_str() + "\'";
     return Nan::ThrowError(err.c_str());
   }
-  if (mDstVidInfo->packing().compare("AVCi50") && mDstVidInfo->packing().compare("AVCi100")) {
+  if (mDstVidInfo->packing().substr(0, 4).compare("AVCi")) {
     std::string err = std::string("Unsupported codec type \'") + mDstVidInfo->packing() + "\'";
     Nan::ThrowError(err.c_str());
     return;
@@ -91,6 +91,16 @@ void Encoder::doSetInfo(Local<Object> srcTags, Local<Object> dstTags, const Dura
   if ((mSrcVidInfo->width() != mDstVidInfo->width()) || (mSrcVidInfo->height() != mDstVidInfo->height())) {
     std::string err = std::string("Unsupported dimensions \'") + std::to_string(mSrcVidInfo->width()) + "x" + std::to_string(mSrcVidInfo->height()) + "\'";
     return Nan::ThrowError(err.c_str());
+  }
+  if ((0 == mDstVidInfo->packing().compare("AVCi800")) && ((mDstVidInfo->width() < 3840) || (mDstVidInfo->height() < 2160))) {
+    std::string err = std::string("AVC Ultra encoding requires UHD frame \'") + std::to_string(mDstVidInfo->width()) + "x" + std::to_string(mDstVidInfo->height()) + "\'";
+    Nan::ThrowError(err.c_str());
+    return;
+  }
+  if ((0 != mDstVidInfo->packing().compare("AVCi800")) && ((mDstVidInfo->width() > 1920) || (mDstVidInfo->height() > 1080))) {
+    std::string err = std::string("UHD encoding requires AVC Ultra \'") + std::to_string(mDstVidInfo->width()) + "x" + std::to_string(mDstVidInfo->height()) + "\'";
+    Nan::ThrowError(err.c_str());
+    return;
   }
 
   try {

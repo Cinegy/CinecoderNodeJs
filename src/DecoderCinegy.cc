@@ -75,7 +75,11 @@ private:
 
 class DecodeCallback : public ICC_DataReadyCallback {
 public:
-  DecodeCallback() : m(), cv(), mDecodeDone(false), mFirstFrame(true) {}
+  DecodeCallback(std::shared_ptr<EssenceInfo> dstInfo)
+    : m(), cv(), mDstInfo(dstInfo), mDecodeDone(false), mFirstFrame(true), mColorFmt(CCF_UYVY_10BIT) {
+    if (0 == mDstInfo->packing().compare("v210"))
+      mColorFmt = CCF_V210;
+  }
   virtual ~DecodeCallback() {}
 
   void setDecodeBuffer(std::shared_ptr<Memory> buf)  { 
@@ -140,8 +144,12 @@ public:
     if(FAILED(hr = spFrame->get_Number(&dwFrameNumber)))
       return hr;
 
+    int pitch = szFrame.cx*4;
+    if (CCF_V210 == mColorFmt)
+      pitch = ((szFrame.cx + 47) / 48) * 48 * 8 / 3;
+
     DWORD dwBytesWrote = 0;
-    if(FAILED(hr = spProducer->GetFrame(CCF_UYVY_10BIT, mDecodeBuffer->buf(), mDecodeBuffer->numBytes(), szFrame.cx*4, &dwBytesWrote))) {
+    if(FAILED(hr = spProducer->GetFrame(mColorFmt, mDecodeBuffer->buf(), mDecodeBuffer->numBytes(), pitch, &dwBytesWrote))) {
       std::stringstream ss;
       ss << "Cinecoder decoder error " <<
         std::hex << hr << "h" <<
@@ -158,8 +166,10 @@ public:
 private:
   mutable std::mutex m;
   std::condition_variable cv;
+  std::shared_ptr<EssenceInfo> mDstInfo;
   bool mDecodeDone;
   bool mFirstFrame;
+  CC_COLOR_FMT mColorFmt;
   std::string mErrStr;
   std::shared_ptr<Memory> mDecodeBuffer;
 };
@@ -190,7 +200,7 @@ DecoderCinegy::DecoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
     return;
   }
 
-  mDecodeCb = new DecodeCallback();
+  mDecodeCb = new DecodeCallback(dstInfo);
   if(FAILED(hr = mVideoDecoder->put_OutputCallback(mDecodeCb))) {
     Nan::ThrowError("Cinecoder decoder failed to register decoder callback");
     return;
@@ -201,6 +211,8 @@ DecoderCinegy::~DecoderCinegy() {}
 
 uint32_t DecoderCinegy::bytesReq() const {
   uint32_t pitch = mSrcEncoding.compare("AVCi50") ? mWidth * 4 : mWidth * 3; // Decoder doesn't support unsqueeze yet so 1920 -> 1440, 1280 -> 960 
+  if (0 == mDstPacking.compare("v210"))
+    pitch = ((mWidth + 47) / 48) * 48 * 8 / 3;
   return pitch * mHeight;
 }
 
