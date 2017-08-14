@@ -175,6 +175,56 @@ decodeTest('Performing AVCi decoding', 2,
     });
   });
 
+encodeTest('Performing AVCUltra encoding', 1,
+  function (t, err) {
+    t.notOk(err, 'no error expected');
+  }, 
+  function (t, encoder, done) {
+    var srcWidth = 3840;
+    var srcHeight = 2160;
+    var srcFormat = 'UYVY10';
+    var dstWidth = 3840;
+    var dstHeight = 2160;
+    var dstFormat = 'AVCi800';
+    var srcTags = makeTags(srcWidth, srcHeight, srcFormat, 'raw', 0);
+    var dstTags = makeTags(dstWidth, dstHeight, dstFormat, dstFormat, 0);
+    var srcBuf = makeUYVY10Buf(srcWidth, srcHeight);
+    var dstBufLen = encoder.setInfo(srcTags, dstTags, duration);
+    var dstBuf = Buffer.alloc(dstBufLen);
+    encoder.encode(srcBuf, dstBuf, function(err, result) {
+      t.notOk(err, 'no error expected');
+      fs.writeFileSync("avci.raw", result);
+      // todo: check for valid bitstream...
+      done();
+    });
+  });
+
+decodeTest('Performing AVCUltra decoding', 2,
+  function (t, err) {
+    t.notOk(err, 'no error expected');
+  }, 
+  function (t, decoder, done) {
+    var srcWidth = 3840
+    var srcHeight = 2160
+    var srcFormat = 'AVCi800';
+    var dstWidth = 3840;
+    var dstHeight = 2160;
+    var dstFormat = 'UYVY10';
+    var srcTags = makeTags(srcWidth, srcHeight, srcFormat, srcFormat, 0);
+    var dstTags = makeTags(dstWidth, dstHeight, dstFormat, 'raw', 0);
+    var srcBuf = fs.readFileSync("avci.raw");
+    t.ok(srcBuf, 'read encoded file');
+    var dstBufLen = decoder.setInfo(srcTags, dstTags, duration);
+    var dstBuf = Buffer.alloc(dstBufLen);
+    decoder.decode(srcBuf, dstBuf, function(err, result) {
+      t.notOk(err, 'no error expected');
+      // todo: check for valid bitstream...
+      // var origBuf = makeUYVY10Buf(srcWidth * 3 / 4, srcHeight);
+      // t.deepEqual(result, origBuf, "matches expected result");
+      done();
+    });
+  });
+
 encodeTest('Handling an undefined source buffer', 1,
   function (t, err) {
     t.notOk(err, 'no error expected');

@@ -31,25 +31,31 @@ namespace streampunk {
 class AVCiMode {
 public:
   AVCiMode() {
-    addMode("AVCi50", 1280,  720, 24, 256);  addMode("AVCi100", 1280,  720, 24, 261);    
-    addMode("AVCi50", 1280,  720, 25, 257);  addMode("AVCi100", 1280,  720, 25, 262);    
-    addMode("AVCi50", 1280,  720, 30, 258);  addMode("AVCi100", 1280,  720, 30, 263);    
-    addMode("AVCi50", 1280,  720, 50,   9);  addMode("AVCi100", 1280,  720, 50,  41);    
-    addMode("AVCi50", 1280,  720, 60,   8);  addMode("AVCi100", 1280,  720, 60,  40);    
+    addMode("AVCi50", 1280,  720, 24, CC_AVCI_50_720P_2398);  addMode("AVCi100", 1280,  720, 24, CC_AVCI_100_720P_2398);
+    addMode("AVCi50", 1280,  720, 25, CC_AVCI_50_720P_25);    addMode("AVCi100", 1280,  720, 25, CC_AVCI_100_720P_25);
+    addMode("AVCi50", 1280,  720, 30, CC_AVCI_50_720P_2997);  addMode("AVCi100", 1280,  720, 30, CC_AVCI_100_720P_2997);
+    addMode("AVCi50", 1280,  720, 50, CC_AVCI_50_720P_50);    addMode("AVCi100", 1280,  720, 50, CC_AVCI_100_720P_50);
+    addMode("AVCi50", 1280,  720, 60, CC_AVCI_50_720P_5994);  addMode("AVCi100", 1280,  720, 60, CC_AVCI_100_720P_5994);
 
-    addMode("AVCi50", 1920, 1080, 24, 260);  addMode("AVCi100", 1920, 1080, 24, 264);    
-    addMode("AVCi50", 1920, 1080, 25,   4);  addMode("AVCi100", 1920, 1080, 25,  36);    
-    addMode("AVCi50", 1920, 1080, 30,   3);  addMode("AVCi100", 1920, 1080, 30,  35);    
-    addMode("AVCi50", 1920, 1080, 50,   2);  addMode("AVCi100", 1920, 1080, 50,  34);    
-    addMode("AVCi50", 1920, 1080, 60,   1);  addMode("AVCi100", 1920, 1080, 60,  33);    
+    addMode("AVCi50", 1920, 1080, 24, CC_AVCI_50_1080P_2398); addMode("AVCi100", 1920, 1080, 24, CC_AVCI_100_1080P_2398);
+    addMode("AVCi50", 1920, 1080, 25, CC_AVCI_50_1080P_25);   addMode("AVCi100", 1920, 1080, 25, CC_AVCI_100_1080P_25);
+    addMode("AVCi50", 1920, 1080, 30, CC_AVCI_50_1080P_2997); addMode("AVCi100", 1920, 1080, 30, CC_AVCI_100_1080P_2997);
+    addMode("AVCi50", 1920, 1080, 50, CC_AVCI_50_1080I_50);   addMode("AVCi100", 1920, 1080, 50, CC_AVCI_100_1080I_50);
+    addMode("AVCi50", 1920, 1080, 60, CC_AVCI_50_1080I_5994); addMode("AVCi100", 1920, 1080, 60, CC_AVCI_100_1080I_5994);
+
+                                                              addMode("AVCi800", 3840, 2160, 24, CC_AVCI_4K_422_2398);
+                                                              addMode("AVCi800", 3840, 2160, 25, CC_AVCI_4K_422_25);
+                                                              addMode("AVCi800", 3840, 2160, 30, CC_AVCI_4K_422_2997);
+                                                              addMode("AVCi800", 3840, 2160, 50, CC_AVCI_4K_422_50);
+                                                              addMode("AVCi800", 3840, 2160, 60, CC_AVCI_4K_422_5994);
   }
   ~AVCiMode() {}
 
-  uint32_t getMode(std::string cl, uint32_t x, uint32_t y, uint32_t fr) const {
-    uint32_t result = 0;
+  CC_AVCI_MODE getMode(std::string cl, uint32_t x, uint32_t y, uint32_t fr) const {
+    CC_AVCI_MODE result = CC_AVCI_MODE_UNKNOWN;
     std::map<uint32_t, uint32_t>::const_iterator it = mTable.find(makeHash(cl, x, y, fr));
     if (mTable.end() != it)
-      result = it->second;
+      result = (CC_AVCI_MODE)it->second;
     return result;
   }
 
@@ -159,7 +165,9 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   : mSrcPacking(srcInfo->packing()), mDstEncoding(dstInfo->encodingName()), mWidth(srcInfo->width()), mHeight(srcInfo->height()), 
     mFps(25), mSrcFrameSize(0), mVpar(NULL), mEncodeCb(NULL) { 
 
-  if (!((mWidth == 1920) && (mHeight == 1080)) && !((mWidth == 1280) && (mHeight == 720))) {
+  if (!((mWidth == 3840) && (mHeight == 2160)) && 
+      !((mWidth == 1920) && (mHeight == 1080)) &&
+      !((mWidth == 1280) && (mHeight == 720))) {
     std::string err = std::string("Unsupported dimensions \'") + std::to_string(mWidth) + "x" + std::to_string(mHeight) + "\'";
     Nan::ThrowError(err.c_str());
     return; 
@@ -196,8 +204,8 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
     return;
   }
 
-  int mode = AVCiMode().getMode(mDstEncoding, mWidth, mHeight, mFps);
-  pVideoSettings->put_Mode((CC_AVCI_MODE)mode);
+  CC_AVCI_MODE mode = AVCiMode().getMode(mDstEncoding, mWidth, mHeight, mFps);
+  pVideoSettings->put_Mode(mode);
 
   // initialize encoder with desired params
   if(FAILED(hr = mVideoEncoder->Init(pVideoSettings))) {
@@ -223,6 +231,10 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   CC_COLOR_FMT color_fmt = CCF_UYVY_10BIT;
   int bpp = 2 << int(color_fmt == CCF_YUY2_10BIT || color_fmt == CCF_UYVY_10BIT);
   int pitch = frame_size.cx * bpp;
+  if (0 == mSrcPacking.compare("v210")) {
+    color_fmt = CCF_V210;
+    pitch = ((frame_size.cx + 47) / 48) * 48 * 8 / 3;
+  }
   mSrcFrameSize = pitch * frame_size.cy;
 
   CC_ADD_VIDEO_FRAME_PARAMS *vpar = new CC_ADD_VIDEO_FRAME_PARAMS;
