@@ -44,6 +44,12 @@ fn.quit(function() {
 ```
 ## Status, support and further development
 
+We use AppVeyor to run integration tests, you can see the results of the last master branch build below:
+
+https://ci.appveyor.com/api/projects/status/nmy0sb6yceb8ub9p/branch/master?svg=true
+
+See the project on AppVeyor here: https://ci.appveyor.com/project/cinegy/cinecodernodejs
+
 ## License
 
 This software is released under the Apache 2.0 license.
