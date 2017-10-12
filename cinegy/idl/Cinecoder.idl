@@ -1,20 +1,3 @@
-﻿/* Copyright 2017 Cinegy GmbH.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
-  The version of Cinecoder for these headers should be: 3.28.23.12518
-*/
-
 import "Unknwn.idl";
 
 #include "Cinecoder_Version.h"
@@ -140,6 +123,8 @@ library Cinecoder
   interface ICC_VideoDataHandler;
   interface ICC_VideoProducer;
   interface ICC_VideoConsumer;
+  interface ICC_VideoConsumerExt;
+  interface ICC_VideoConsumerExtAsync;
   interface ICC_VideoRescaleConsumer;
 
   // The ICC_Collection interfaces
@@ -960,6 +945,16 @@ library Cinecoder
     interface ICC_TimeBaseProp;
     interface ICC_InputBufferControl;
     interface ICC_D2D_GetUpdateVideoBufferPtrProp;
+  };
+
+  [uuid(942d0694-04ec-4995-b4af-85869f5c605e)]
+  coclass CC_DanielVideoDecoder_CudaPlayer
+  {
+    [default]
+	interface ICC_DanielVideoDecoder_CudaPlayer;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_TimeBaseProp;
   };
 
   [uuid(5fd43ca9-0f0f-40e0-a20a-74c9a5edbec8)]

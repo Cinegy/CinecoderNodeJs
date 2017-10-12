@@ -1,20 +1,3 @@
-﻿/* Copyright 2017 Cinegy GmbH.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
-  The version of Cinecoder for these headers should be: 3.28.23.12518
-*/
-
 
 
 /* this ALWAYS GENERATED file contains the IIDs and CLSIDs */
@@ -22,11 +5,11 @@
 /* link this file in with the server and any clients */
 
 
- /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Jul 07 00:15:54 2017
+ /* File created by MIDL compiler version 8.00.0603 */
+/* at Wed Oct 11 15:55:24 2017
  */
 /* Compiler settings for Cinecoder.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -417,6 +400,9 @@ MIDL_DEFINE_GUID(IID, IID_ICC_VideoConsumer,0x00002003,0xbe08,0x11dc,0xaa,0x88,0
 MIDL_DEFINE_GUID(IID, IID_ICC_VideoConsumerExt,0x00002004,0xbe08,0x11dc,0xaa,0x88,0x00,0x50,0x56,0xc0,0x00,0x08);
 
 
+MIDL_DEFINE_GUID(IID, IID_ICC_VideoConsumerExtAsync,0xa54e5863,0x382b,0x4a9c,0xbf,0x2d,0x28,0x7d,0x5f,0xbd,0xb0,0xa8);
+
+
 MIDL_DEFINE_GUID(IID, IID_ICC_VideoProducerExt,0x71ac7c0a,0x7ca3,0x4774,0x94,0x5b,0x2b,0x17,0xe9,0x55,0xea,0x01);
 
 
@@ -565,6 +551,12 @@ MIDL_DEFINE_GUID(IID, IID_ICC_DanielVideoDecoder_CUDA,0x60966b59,0xa6fb,0x4742,0
 
 
 MIDL_DEFINE_GUID(IID, IID_ICC_DanielVideoEncoder_CUDA,0x9a156bd1,0xf05f,0x4d3c,0x9b,0x55,0xc4,0x9f,0x65,0x20,0x03,0x42);
+
+
+MIDL_DEFINE_GUID(IID, IID_ICC_DanielVideoDecoder_CudaPlayer,0x0add9766,0xf751,0x4a15,0xb8,0x91,0x14,0x95,0x60,0x5e,0xef,0x3b);
+
+
+MIDL_DEFINE_GUID(IID, IID_ICC_D2D_GetFrameDecodingParamsProp,0xd45d4f96,0xa218,0x4c54,0x96,0xfc,0x23,0x0f,0x2c,0x15,0x37,0xa7);
 
 
 MIDL_DEFINE_GUID(IID, IID_ICC_Y4M_VideoStreamInfo,0x5ad9b3a9,0x9a15,0x44ed,0x93,0x41,0x71,0x15,0x67,0x0e,0x7c,0x77);
@@ -934,6 +926,9 @@ MIDL_DEFINE_GUID(CLSID, CLSID_CC_DanielVideoDecoder,0x0236cdb4,0x3541,0x4c66,0xa
 
 
 MIDL_DEFINE_GUID(CLSID, CLSID_CC_DanielVideoDecoder_CUDA,0x00a25ffa,0xf7bf,0x4876,0xa5,0x92,0x73,0xf9,0x44,0x93,0x6a,0x6f);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_CC_DanielVideoDecoder_CudaPlayer,0x942d0694,0x04ec,0x4995,0xb4,0xaf,0x85,0x86,0x9f,0x5c,0x60,0x5e);
 
 
 MIDL_DEFINE_GUID(CLSID, CLSID_CC_DanielVideoEncoder,0x5fd43ca9,0x0f0f,0x40e0,0xa2,0x0a,0x74,0xc9,0xa5,0xed,0xbe,0xc8);

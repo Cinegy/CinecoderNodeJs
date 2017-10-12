@@ -1,20 +1,3 @@
-﻿/* Copyright 2017 Cinegy GmbH.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
-  The version of Cinecoder for these headers should be: 3.28.23.12518
-*/
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Data types
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,8 +28,9 @@ typedef [v1_enum] enum CC_COLOR_FMT
 
   CCF_ADOBE_RGBA_16u = 0x00000901,   /// The color data in the 16-bit RGBA format, 4 words per pixel, black at 0 to white at 32768
   CCF_ADOBE_BGRA_16u = 0x00000911,   /// The color data in the 16-bit BGRA format, 4 words per pixel, black at 0 to white at 32768
-  CCF_ADOBE_RGBA_32f = 0x00000A01,   /// The color data in the 32-bit float RGBA format, 4 floats per pixel, black at 0 to white at 1
-  CCF_ADOBE_BGRA_32f = 0x00000A11,   /// The color data in the 32-bit float BGRA format, 4 floats per pixel, black at 0 to white at 1
+
+  CCF_RGBA_32F     = 0x00000A01,     /// The color data in the 32-bit float RGBA format, 4 floats per pixel, black at 0 to white at 1
+  CCF_BGRA_32F     = 0x00000A11,     /// The color data in the 32-bit float BGRA format, 4 floats per pixel, black at 0 to white at 1
 
   CCF_RGBA_16BIT   = CCF_RGB64,
   CCF_RGB_16BIT    = CCF_RGB48,
@@ -93,6 +77,9 @@ typedef [v1_enum] enum CC_COLOR_FMT
   CCF_UYVY_16BIT   = 0x00000831,     /// The packed YUV 4:2:2 16-bit color data in order {u,y0,v,y1} 16-bits each (LSB).
   CCF_YUY2_16BIT   = 0x00000832,     /// The packed YUV 4:2:2 16-bit color data in order {y0,u,y1,v} 16-bits each (LSB).
   
+  CCF_UYVY_32F     = 0x00000A31,     /// The packed YUV 4:2:2 64-bit color data in order {u,y0,v,y1} float32 (Y:0..1, UV:-0.5..+0.5).
+  CCF_YUY2_32F     = 0x00000A32,     /// The packed YUV 4:2:2 64-bit color data in order {y0,u,y1,v} float32 (Y:0..1, UV:-0.5..+0.5).
+
   CCF_YV12         = CCF_YUV420,
   CCF_YV16         = CCF_YUV422,
   CCF_NV12         = 0x00000112,     /// 4:2:0 Planar Y, UV interleaved
@@ -637,7 +624,7 @@ interface ICC_VideoConsumerExt : ICC_VideoConsumer
   HRESULT   AddScaleFrame(
     [in, size_is(cbSize)] const BYTE *pData,// Pointer to the frame data.
     [in] DWORD cbSize,                      // The size of the frame in bytes.
-    [in] CC_VIDEO_FRAME_DESCR *pParams,// Frame description structure.
+    [in] CC_VIDEO_FRAME_DESCR *pParams,		// Frame description structure.
     [out,retval,defaultvalue(NULL)]
     CC_BOOL *pResult                        // The result of the AddFrame operation.
   );
@@ -645,6 +632,25 @@ interface ICC_VideoConsumerExt : ICC_VideoConsumer
   HRESULT	IsScaleAvailable(
     [in] CC_VIDEO_FRAME_DESCR *pParams,
     [out,retval,defaultvalue(NULL)] CC_BOOL *pResult
+  );
+};
+
+[object, uuid(a54e5863-382b-4a9c-bf2d-287d5fbdb0a8), pointer_default(unique), local]
+// Provides the method for the fastest video data processing.
+interface ICC_VideoConsumerExtAsync : ICC_VideoConsumerExt
+{
+  // Add a reference to the frame with (possibly) different size to the processing queue.
+  // This method might accelerate video data processing, since internal data saving is no more needed.
+  // The frame will be released asynchronously after pData handling.
+  // Note: pData bytes shouldn't change until unlock.
+  // Returns: Returns S_OK if successful or an error value otherwise.
+  HRESULT   AddScaleFrameAsync(
+    [in, size_is(cbSize)] const BYTE *pData,// Pointer to the frame data.
+    [in] DWORD cbSize,                      // The size of the frame in bytes.
+    [in] CC_VIDEO_FRAME_DESCR *pParams,		// Frame description structure.
+	[in, defaultvalue(NULL)] IUnknown *pLockObj,// The lock object.
+	[out,retval,defaultvalue(NULL)]
+    CC_BOOL *pResult                        // The result of the AddFrame operation.
   );
 };
 
