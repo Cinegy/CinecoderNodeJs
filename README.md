@@ -46,7 +46,7 @@ fn.quit(function() {
 
 We use AppVeyor to run integration tests, you can see the results of the last master branch build below:
 
-https://ci.appveyor.com/api/projects/status/nmy0sb6yceb8ub9p/branch/master?svg=true
+[![Build status](https://ci.appveyor.com/api/projects/status/nmy0sb6yceb8ub9p/branch/master?svg=true)]
 
 See the project on AppVeyor here: https://ci.appveyor.com/project/cinegy/cinecodernodejs
 
