@@ -1,4 +1,4 @@
-/* Copyright 2016 Streampunk Media Ltd.
+/* Copyright 2017 Streampunk Media Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@
 
 #include <nan.h>
 #include <sstream>
+#include "Params.h"
 
 using namespace v8;
 
@@ -40,11 +41,11 @@ private:
   Duration(const Duration&);
 };
 
-class EssenceInfo {
+class EssenceInfo : public Params {
 public:
   EssenceInfo(Local<Object> tags)
-    : mFormat(unpackStr(tags, "format", "video")),
-      mIsVideo(0==mFormat.compare("video")),
+    : mIsVideo(0==unpackStr(tags, "format", "video").compare("video")),
+      mFormat(unpackStr(tags, "format", "video")),
       mEncodingName(unpackStr(tags, "encodingName", mIsVideo?"raw":"L16")), 
       mClockRate(unpackNum(tags, "clockRate", mIsVideo?90000:48000)),
       mWidth(mIsVideo?unpackNum(tags, "width", 1920):0),
@@ -54,12 +55,13 @@ public:
       mColorimetry(mIsVideo?unpackStr(tags, "colorimetry", "BT709-2"):""),
       mInterlace(mIsVideo?unpackBool(tags, "interlace", true)?"tff":"prog":""),
       mPacking(mIsVideo?unpackStr(tags, "packing", "pgroup"):""),
+      mHasAlpha(mIsVideo?unpackBool(tags, "hasAlpha", false):false),
       mChannels(mIsVideo?0:unpackNum(tags, "channels", 2))
   {}
   ~EssenceInfo() {}
 
-  std::string format() const  { return mFormat; }
   bool isVideo() const  { return mIsVideo; }
+  std::string format() const  { return mFormat; }
   std::string encodingName() const  { return mEncodingName; }
   uint32_t clockRate() const  { return mClockRate; }
   uint32_t width() const  { return mWidth; }
@@ -69,20 +71,21 @@ public:
   std::string colorimetry() const  { return mColorimetry; }
   std::string interlace() const  { return mInterlace; }
   std::string packing() const  { return mPacking; }
+  bool hasAlpha() const  { return mHasAlpha; }
   uint32_t channels() const  { return mChannels; }
 
-  std::string toString() const  { 
+  std::string toString() const {
     std::stringstream ss;
     if (mIsVideo)
-      ss << "Video, " << mWidth << "x" << mHeight << ", " << (mInterlace.compare("prog")?"I":"P") << ", " << mPacking;
+      ss << "Video, " << mWidth << "x" << mHeight << ", " << (mInterlace.compare("prog")?"I":"P") << ", " << mPacking << (mHasAlpha?" with alpha":"");
     else 
       ss << "Audio, " << "Clock Rate " << mClockRate << ", Channels " << mChannels << ", Encoding " << mEncodingName;
     return ss.str();
   }
 
 private:
-  std::string mFormat;
   bool mIsVideo;
+  std::string mFormat;
   std::string mEncodingName;
   uint32_t mClockRate;
   uint32_t mWidth;
@@ -92,38 +95,8 @@ private:
   std::string mColorimetry;
   std::string mInterlace;
   std::string mPacking;
+  bool mHasAlpha;
   uint32_t mChannels;
-
-  std::string unpackValue(Local<Object> tags, const std::string& key) {
-    Local<String> keyStr = Nan::New<String>(key).ToLocalChecked();
-    if (!Nan::Has(tags, keyStr).FromJust())
-      return std::string();
-      
-    Local<Array> valueArray = Local<Array>::Cast(Nan::Get(tags, keyStr).ToLocalChecked());
-    return *String::Utf8Value(valueArray->Get(0));
-  }
-
-  bool unpackBool(Local<Object> tags, const std::string& key, bool dflt) {
-    std::string val = unpackValue(tags, key);
-    bool result = dflt;
-    if (!val.empty()) {
-      if ((0==val.compare("1")) || (0==val.compare("true")))
-        result = true;
-      else if ((0==val.compare("0")) || (0==val.compare("false")))
-        result = false;
-    }
-    return result;
-  }
-
-  uint32_t unpackNum(Local<Object> tags, const std::string& key, uint32_t dflt) {
-    std::string val = unpackValue(tags, key);
-    return val.empty()?dflt:std::stoi(val);
-  } 
-
-  std::string unpackStr(Local<Object> tags, const std::string& key, std::string dflt) {
-    std::string val = unpackValue(tags, key);
-    return val.empty()?dflt:val;
-  } 
 };
 
 } // namespace streampunk

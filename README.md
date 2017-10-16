@@ -21,25 +21,29 @@ Node.js addons use [libuv](http://libuv.org/) which by default supports up to 4 
 To use cinecoder in your own application, `require` the module then create and use workers as required.  The processing functions follow a standard pattern as shown in the example code below.
 
 ```javascript
-var cinecoder = require('cinecodernodejs');
-var fn = new cinecoder.fn(params);
+let cinecoder = require('cinecodernodejs');
 
-fn.on('exit', function() {
-  fn.finish();
+let encoder = new cinecoder.Encoder(() => {
+  // encoder has successfully exited
 });
-fn.on('error', function(err) {
-// handle error 
-});
-
-// start the processing thread
-fn.start();
-
-// async request for processing to be done
-fn.doFn(params, function(err, result) {
+encoder.on('error', err => {
+  // handle error
 });
 
-// async request for the processing thread to quit
-fn.quit(function() {
+// send the parameters for the function (these differ by function), return value is suggested result buffer size
+let dstBufLen = encoder.setInfo(srcTags, dstTags, duration, encodeTags);
+
+// async request for processing to be done.
+encoder.encode(srcBuf, Buffer.alloc(dstBufLen), (err, result) => {
+  if (err) {
+    // handle error
+  } else if (result) {
+    // result is a JS buffer containing the encoded data. Note it may be a different size to dstBuf
+  }
+});
+
+// async request for the processing thread to quit when it has finished the latest request
+encoder.quit(() => {
 });
 ```
 ## Status, support and further development

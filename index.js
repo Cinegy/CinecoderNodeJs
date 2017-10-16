@@ -36,9 +36,9 @@ Decoder.prototype.setInfo = function(srcTags, dstTags) {
   }
 }
 
-Decoder.prototype.decode = function(srcBufArray, dstBuf, cb) {
+Decoder.prototype.decode = function(srcBuf, dstBuf, cb) {
   try {
-    var numQueued = this.decoderAdon.decode(srcBufArray, dstBuf, (err, resultBytes) => {
+    var numQueued = this.decoderAdon.decode(srcBuf, dstBuf, (err, resultBytes) => {
       cb(err, resultBytes?dstBuf.slice(0,resultBytes):null);
     });
     return numQueued;
@@ -65,26 +65,22 @@ function Encoder (cb) {
 
 util.inherits(Encoder, EventEmitter);
 
-Encoder.prototype.setInfo = function(srcTags, dstTags, duration, bitrate, gopframes) {
-  var encodeBitrate = 5000000;
-  if (typeof arguments[3] === 'number')
-    encodeBitrate = arguments[3];
-
-  var encodeGopFrames = 10 * 60;
-  if (typeof arguments[4] === 'number')
-    encodeGopFrames = arguments[4];
+Encoder.prototype.setInfo = function(srcTags, dstTags, duration, encodeTags) {
+  let encodeParams = {};
+  if (typeof arguments[3] === 'object')
+    encodeParams = encodeTags;
 
   try {
-    return this.encoderAdon.setInfo(srcTags, dstTags, duration, encodeBitrate, encodeGopFrames);
+    return this.encoderAdon.setInfo(srcTags, dstTags, duration, encodeParams);
   } catch (err) {
     this.emit('error', err);
     return 0;
   }
 }
 
-Encoder.prototype.encode = function(srcBufArray, dstBuf, cb) {
+Encoder.prototype.encode = function(srcBuf, dstBuf, cb) {
   try {
-    var numQueued = this.encoderAdon.encode(srcBufArray, dstBuf, (err, resultBytes) => {
+    var numQueued = this.encoderAdon.encode(srcBuf, dstBuf, (err, resultBytes) => {
       cb(err, resultBytes?dstBuf.slice(0,resultBytes):null);
     });
     return numQueued;

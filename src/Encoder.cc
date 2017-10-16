@@ -69,11 +69,12 @@ uint32_t Encoder::processFrame (std::shared_ptr<iProcessData> processData, std::
 }
 
 void Encoder::doSetInfo(Local<Object> srcTags, Local<Object> dstTags, const Duration& duration,
-                        uint32_t bitrate, uint32_t gopFrames) {
+                        Local<Object> encodeTags) {
   mSrcVidInfo = std::make_shared<EssenceInfo>(srcTags); 
   printf ("Encoder SrcVidInfo: %s\n", mSrcVidInfo->toString().c_str());
   mDstVidInfo = std::make_shared<EssenceInfo>(dstTags); 
   printf("Encoder DstVidInfo: %s\n", mDstVidInfo->toString().c_str());
+  std::shared_ptr<EncodeParams> encodeParams = std::make_shared<EncodeParams>(encodeTags);
 
   if (mSrcVidInfo->packing().compare("UYVY10") && mSrcVidInfo->packing().compare("v210")) {
     std::string err = std::string("Unsupported source format \'") + mSrcVidInfo->packing().c_str() + "\'";
@@ -104,22 +105,27 @@ void Encoder::doSetInfo(Local<Object> srcTags, Local<Object> dstTags, const Dura
   }
 
   try {
-    mEncoderDriver = EncoderFactory::createEncoder(mSrcVidInfo, mDstVidInfo, duration, bitrate, gopFrames);
+    mEncoderDriver = EncoderFactory::createEncoder(mSrcVidInfo, mDstVidInfo, duration, encodeParams);
   } catch (std::exception& err) {
     return Nan::ThrowError(err.what());
   }
 }
 
 NAN_METHOD(Encoder::SetInfo) {
-  if (info.Length() != 5)
-    return Nan::ThrowError("Encoder SetInfo expects 5 arguments");
+  if (info.Length() != 4)
+    return Nan::ThrowError("Encoder SetInfo expects 4 arguments");
+  if (!info[0]->IsObject())
+    return Nan::ThrowError("Encoder SetInfo requires a valid source info object as the first parameter");
+  if (!info[1]->IsObject())
+    return Nan::ThrowError("Encoder SetInfo requires a valid destination info object as the second parameter");
   if (!info[2]->IsObject())
     return Nan::ThrowError("Encoder SetInfo requires a valid duration buffer as the third parameter");
+  if (!info[3]->IsObject())
+    return Nan::ThrowError("Encoder SetInfo requires a valid params object as the fourth parameter");
   Local<Object> srcTags = Local<Object>::Cast(info[0]);
   Local<Object> dstTags = Local<Object>::Cast(info[1]);
   Local<Object> durObj = Local<Object>::Cast(info[2]);
-  uint32_t bitrate = Nan::To<uint32_t>(info[3]).FromJust();
-  uint32_t gopFrames = Nan::To<uint32_t>(info[4]).FromJust();
+  Local<Object> encodeTags = Local<Object>::Cast(info[3]);
 
   Encoder* obj = Nan::ObjectWrap::Unwrap<Encoder>(info.Holder());
 
@@ -129,7 +135,7 @@ NAN_METHOD(Encoder::SetInfo) {
   Duration duration(durNum, durDen);
 
   Nan::TryCatch try_catch;
-  obj->doSetInfo(srcTags, dstTags, duration, bitrate, gopFrames);
+  obj->doSetInfo(srcTags, dstTags, duration, encodeTags);
   if (try_catch.HasCaught()) {
     obj->mSetInfoOK = false;
     try_catch.ReThrow();

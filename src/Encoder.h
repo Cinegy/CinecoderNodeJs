@@ -38,7 +38,7 @@ private:
   ~Encoder();
 
   void doSetInfo(v8::Local<v8::Object> srcTags, v8::Local<v8::Object> dstTags, const Duration& duration,
-                 uint32_t bitrate, uint32_t gopFrames);
+                 v8::Local<v8::Object> encodeTags);
 
   static NAN_METHOD(New) {
     if (info.IsConstructCall()) {

@@ -1,6 +1,6 @@
 {
   "name": "cinecodernodejs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Async processing addon",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
     "url": "https://github.com/Cinegy/CinecoderNodeJs.git"
   },
   "dependencies": {
-    "bindings": "^1.2.1",
-    "nan": "^2.5.1"
+    "bindings": "^1.3.0",
+    "nan": "^2.7.0"
   },
   "gypfile": true,
   "devDependencies": {
-    "tape": "^4.5.1"
+    "tape": "^4.8.0"
   },
   "author": "Cinegy GmbH",
   "license": "Apache-2.0",
