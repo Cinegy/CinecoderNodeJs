@@ -196,13 +196,17 @@ DecoderCinegy::DecoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   pFactory->AssignLicense(COMPANYNAME, LICENSEKEY);
 
   if(FAILED(hr = pFactory->CreateInstance(CLSID_CC_H264VideoDecoder, IID_ICC_VideoDecoder, (IUnknown**)&mVideoDecoder))) {
-    Nan::ThrowError("Cinecoder decoder failed to create h264 decoder");
+    std::stringstream ss;
+    ss << "Cinecoder decoder failed to create h264 decoder:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 
   mDecodeCb = new DecodeCallback(dstInfo);
   if(FAILED(hr = mVideoDecoder->put_OutputCallback(mDecodeCb))) {
-    Nan::ThrowError("Cinecoder decoder failed to register decoder callback");
+    std::stringstream ss;
+    ss << "Cinecoder decoder failed to register decoder callback:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 }

@@ -38,12 +38,12 @@ function makeUYVY10Buf(width, height) {
 
 function makeTags(width, height, packing, encodingName, interlace) {
   this.tags = [];
-  this.tags["format"] = [ "video" ];
-  this.tags["width"] = [ `${width}` ];
-  this.tags["height"] = [ `${height}` ];
-  this.tags["packing"] = [ packing ];
-  this.tags["encodingName"] = [ encodingName ];
-  this.tags["interlace"] = [ `${interlace}` ];
+  this.tags.format = "video";
+  this.tags.width = width;
+  this.tags.height = height;
+  this.tags.packing = packing;
+  this.tags.encodingName = encodingName;
+  this.tags.interlace = interlace;
   return tags;
 }
 
@@ -81,14 +81,14 @@ function decodeTest(description, numTests, onErr, fn) {
 };
 
 function badDims() {
-  var srcTags = makeTags(1280, 720, 'UYVY10', 'raw', 0);
-  var dstTags = makeTags(21, 0, 'AVCi50', 'AVCi50', 0);
+  var srcTags = makeTags(1280, 720, 'UYVY10', 'raw', false);
+  var dstTags = makeTags(21, 0, 'AVCi50', 'AVCi50', false);
   encoder.setInfo(srcTags, dstTags);
 }
 
 function badFmt() {
-  var srcTags = makeTags(1920, 1080, 'YUV422P10', 'raw', 0);
-  var dstTags = makeTags(1920, 1080, 'AVCi50', 'AVCi50', 0);
+  var srcTags = makeTags(1920, 1080, 'YUV422P10', 'raw', false);
+  var dstTags = makeTags(1920, 1080, 'AVCi50', 'AVCi50', false);
   encoder.setInfo(srcTags, dstTags, duration);
 }
 

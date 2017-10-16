@@ -194,13 +194,17 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   pFactory->AssignLicense(COMPANYNAME, LICENSEKEY);
   
   if(FAILED(hr = pFactory->CreateInstance(CLSID_CC_AVCIntraEncoder, IID_ICC_AVCIntraEncoder, (IUnknown**)&mVideoEncoder))) {
-    Nan::ThrowError("Cinecoder encoder failed to create AVCi encoder");
+    std::stringstream ss;
+    ss << "Cinecoder encoder failed to create AVCi encoder:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
     
   CComPtr<ICC_AVCIntraEncoderSettings> pVideoSettings;
   if(FAILED(hr = pFactory->CreateInstance(CLSID_CC_AVCIntraEncoderSettings, IID_ICC_AVCIntraEncoderSettings, (IUnknown**)&pVideoSettings))) {
-    Nan::ThrowError("Cinecoder encoder failed to create AVCi encoder settings");
+    std::stringstream ss;
+    ss << "Cinecoder encoder failed to create AVCi encoder settings:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 
@@ -209,13 +213,17 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
 
   // initialize encoder with desired params
   if(FAILED(hr = mVideoEncoder->Init(pVideoSettings))) {
-    Nan::ThrowError("Cinecoder encoder failed to initialise AVCi encoder settings");
+    std::stringstream ss;
+    ss << "Cinecoder encoder failed to initialise AVCi encoder settings:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 
   CComPtr<ICC_VideoStreamInfo> pVideoDescr;
   if(FAILED(hr = mVideoEncoder->GetVideoStreamInfo(&pVideoDescr))) {
-    Nan::ThrowError("Cinecoder encoder failed to get video stream info");
+    std::stringstream ss;
+    ss << "Cinecoder encoder failed to get video stream info:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 
@@ -247,7 +255,9 @@ EncoderCinegy::EncoderCinegy(std::shared_ptr<EssenceInfo> srcInfo, std::shared_p
   // creating the sink for encoded data
   mEncodeCb = new EncodeCallback();
   if(FAILED(hr = mVideoEncoder->put_OutputCallback(static_cast<ICC_ByteStreamCallback*>(mEncodeCb)))) {
-    Nan::ThrowError("Cinecoder encoder failed to register encoder callback");
+    std::stringstream ss;
+    ss << "Cinecoder encoder failed to register encoder callback:\n  " << mErrorHandler->readErrStr();
+    Nan::ThrowError(ss.str().c_str());
     return;
   }
 }

@@ -22,6 +22,7 @@
   #include "EncoderCinegy.h"
 #elif defined _LINUX
 #endif
+#include "EncodeParams.h"
 
 namespace streampunk {
 
@@ -30,7 +31,7 @@ class Duration;
 class EncoderFactory {
 public:
   static std::shared_ptr<iEncoderDriver> createEncoder(std::shared_ptr<EssenceInfo> srcInfo, std::shared_ptr<EssenceInfo> dstInfo, 
-                                                       const Duration& duration, uint32_t bitrate, uint32_t gopFrames) {
+                                                       const Duration& duration, std::shared_ptr<EncodeParams> encodeParams) {
     if (0 == dstInfo->packing().substr(0, 4).compare("AVCi")) {   
       #if defined _WIN32
         return std::make_shared<EncoderCinegy>(srcInfo, dstInfo, duration);
