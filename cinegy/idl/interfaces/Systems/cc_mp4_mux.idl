@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 typedef[v1_enum] enum CC_MP4_CHUNK_FRAGMENT_POSITION
@@ -87,12 +87,21 @@ interface ICC_MP4_MuxerPinSettings : ICC_ElementaryStreamSettings
 interface ICC_MP4_MuxerVideoPinSettings : ICC_MP4_MuxerPinSettings
 {
 	// The color transformarion description.
-	[propget] HRESULT ColorCoefs            ([out,retval]CC_COLOUR_DESCRIPTION*);
-	[propput] HRESULT ColorCoefs            ([in]        CC_COLOUR_DESCRIPTION);
+	[propget] HRESULT ColorCoefs            ([out,retval] CC_COLOUR_DESCRIPTION*);
+	[propput] HRESULT ColorCoefs            ([in]         CC_COLOUR_DESCRIPTION);
 
 	// The aspect ratio of a frame W:H.
-	[propget] HRESULT AspectRatio           ([out, retval] CC_RATIONAL*p);
-	[propput] HRESULT AspectRatio           ([in]          CC_RATIONAL v);
+	[propget] HRESULT AspectRatio           ([out,retval] CC_RATIONAL*p);
+	[propput] HRESULT AspectRatio           ([in]         CC_RATIONAL v);
+
+	// The physical frame size, in pixels.
+	[propget] HRESULT FrameSize             ([out,retval] CC_SIZE*p); 
+	[propput] HRESULT FrameSize             ([in]         CC_SIZE v); 
+
+	// The field order video.
+	[propget] HRESULT InterlaceType         ([out,retval] CC_INTERLACE_TYPE*p);
+	[propput] HRESULT InterlaceType         ([in]         CC_INTERLACE_TYPE v);
+
 };
 
 //-----------------------------------------------------------------------------

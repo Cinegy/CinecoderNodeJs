@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 
@@ -20,11 +20,11 @@
 /* this ALWAYS GENERATED file contains the proxy stub code */
 
 
- /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Jul 07 00:15:54 2017
+ /* File created by MIDL compiler version 8.00.0603 */
+/* at Wed Oct 11 15:55:24 2017
  */
 /* Compiler settings for Cinecoder.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -33,7 +33,7 @@
 */
 /* @@MIDL_FILE_HEADING(  ) */
 
-#if !defined(_M_IA64) && !defined(_M_AMD64)
+#if !defined(_M_IA64) && !defined(_M_AMD64) && !defined(_ARM_)
 
 
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
@@ -645,6 +645,10 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x00002004,0xbe08,0x11dc,{0xaa,0x88,0x00,0x50,0x56,0xc0,0x00,0x08}} */
 
 
+/* Object interface: ICC_VideoConsumerExtAsync, ver. 0.0,
+   GUID={0xa54e5863,0x382b,0x4a9c,{0xbf,0x2d,0x28,0x7d,0x5f,0xbd,0xb0,0xa8}} */
+
+
 /* Object interface: ICC_VideoProducerExt, ver. 0.0,
    GUID={0x71ac7c0a,0x7ca3,0x4774,{0x94,0x5b,0x2b,0x17,0xe9,0x55,0xea,0x01}} */
 
@@ -661,7 +665,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x61149ac1,0xd826,0x46be,{0x82,0xa9,0xc7,0xa8,0xfd,0xf1,0x9b,0x15}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0115, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0116, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -669,7 +673,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xdc5e98b4,0x0c61,0x4d00,{0x9e,0xe0,0x24,0x53,0xf7,0xe5,0x3e,0xde}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0116, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0117, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -705,7 +709,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xaa7effd7,0x7830,0x4400,{0xb5,0x1e,0xac,0x7b,0x35,0x10,0xf9,0xc1}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0124, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0125, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -737,7 +741,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xec6d9953,0x2ea1,0x422e,{0xbf,0x66,0x9d,0xb8,0xb2,0x4f,0x0f,0xc8}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0131, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0132, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -765,7 +769,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xe9d5616d,0xb262,0x44d5,{0x88,0x69,0x96,0xae,0xc9,0xf7,0x8a,0xa9}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0137, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0138, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -813,7 +817,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x1c4dfcfd,0x6afc,0x471d,{0xbd,0x09,0x65,0xb2,0xa4,0xbd,0x9a,0x13}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0148, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0149, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -829,7 +833,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xf7a23e0b,0x1d09,0x458d,{0xba,0x4f,0x62,0x33,0x56,0xad,0x93,0x61}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0151, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0152, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -873,6 +877,18 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x9a156bd1,0xf05f,0x4d3c,{0x9b,0x55,0xc4,0x9f,0x65,0x20,0x03,0x42}} */
 
 
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0162, ver. 0.0,
+   GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
+
+
+/* Object interface: ICC_DanielVideoDecoder_CudaPlayer, ver. 0.0,
+   GUID={0x0add9766,0xf751,0x4a15,{0xb8,0x91,0x14,0x95,0x60,0x5e,0xef,0x3b}} */
+
+
+/* Object interface: ICC_D2D_GetFrameDecodingParamsProp, ver. 0.0,
+   GUID={0xd45d4f96,0xa218,0x4c54,{0x96,0xfc,0x23,0x0f,0x2c,0x15,0x37,0xa7}} */
+
+
 /* Object interface: ICC_Y4M_VideoStreamInfo, ver. 0.0,
    GUID={0x5ad9b3a9,0x9a15,0x44ed,{0x93,0x41,0x71,0x15,0x67,0x0e,0x7c,0x77}} */
 
@@ -897,7 +913,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xc753bffb,0xf306,0x44b4,{0xb1,0x64,0xec,0x2f,0x19,0x39,0xee,0xc9}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0167, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0170, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -905,7 +921,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x022813a8,0x3467,0x4f49,{0xb1,0x7a,0x57,0xbf,0xfd,0x5f,0xd2,0x1f}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0168, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0171, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -997,7 +1013,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0x43a07dea,0x9101,0x4b35,{0xb6,0xc2,0xc9,0xdd,0xa5,0x51,0xb0,0x8b}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0190, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0193, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -1025,7 +1041,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xc83bc0f4,0xdffb,0x4061,{0xb6,0x0e,0x60,0x89,0x5f,0x1d,0x4f,0x7d}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0196, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0199, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -1085,7 +1101,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xf6397d60,0xf204,0x4acc,{0x83,0x39,0xd9,0x4d,0xba,0x6f,0xa4,0xdd}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0210, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0213, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -1097,7 +1113,7 @@ static const Cinecoder_MIDL_TYPE_FORMAT_STRING Cinecoder__MIDL_TypeFormatString 
    GUID={0xdbd2ea98,0x407b,0x4a3a,{0xa8,0x5a,0x3d,0x7e,0x42,0x96,0x42,0x70}} */
 
 
-/* Standard interface: __MIDL_itf_Cinecoder_0000_0212, ver. 0.0,
+/* Standard interface: __MIDL_itf_Cinecoder_0000_0216, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 static const MIDL_STUB_DESC Object_StubDesc = 
@@ -1114,7 +1130,7 @@ static const MIDL_STUB_DESC Object_StubDesc =
     1, /* -error bounds_check flag */
     0x50002, /* Ndr library version */
     0,
-    0x700022b, /* MIDL Version 7.0.555 */
+    0x800025b, /* MIDL Version 8.0.603 */
     0,
     0,
     0,  /* notify & notify_flag routine table */
@@ -1144,6 +1160,8 @@ PCInterfaceName const _Cinecoder_InterfaceNamesList[] =
 
 int __stdcall _Cinecoder_IID_Lookup( const IID * pIID, int * pIndex )
 {
+    UNREFERENCED_PARAMETER(pIID);
+    UNREFERENCED_PARAMETER(pIndex);
     return 0;
 }
 
@@ -1167,5 +1185,5 @@ const ExtendedProxyFileInfo Cinecoder_ProxyFileInfo =
 #endif
 
 
-#endif /* !defined(_M_IA64) && !defined(_M_AMD64)*/
+#endif /* !defined(_M_IA64) && !defined(_M_AMD64) && !defined(_ARM_) */
 

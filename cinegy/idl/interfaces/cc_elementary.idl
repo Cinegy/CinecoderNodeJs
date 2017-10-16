@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 
@@ -86,6 +86,8 @@ typedef [v1_enum] enum CC_ELEMENTARY_STREAM_TYPE
 
   CC_ES_TYPE_VIDEO_DANIEL                 = 0xD206,/// Daniel Video Stream.
   CC_ES_TYPE_VIDEO_Y4M                    = 0xF406,/// Y4M Video Stream
+
+  CC_ES_TYPE_VIDEO_UNCOMPRESSED           = 0xFF06,/// Uncompressed Video
 }
 CC_ELEMENTARY_STREAM_TYPE;
 

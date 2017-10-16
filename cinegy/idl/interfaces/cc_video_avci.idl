@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 typedef [v1_enum] enum CC_AVCI_MODE
@@ -69,6 +69,10 @@ interface ICC_AVCIntraEncoderSettings : ICC_Settings
   // The default value is CC_ONCE.
   [propget] HRESULT  SequenceHeaderPeriod     ([out,retval] CC_PERIOD    *x);
   [propput] HRESULT  SequenceHeaderPeriod     ([in]         CC_PERIOD     x);
+
+  // Sequence display extension - color coefficients.
+  [propget] HRESULT  ColorCoefs               ([out,retval] CC_COLOUR_DESCRIPTION*x); 
+  [propput] HRESULT  ColorCoefs               ([in]         CC_COLOUR_DESCRIPTION x); 
 };
 
 [object, uuid(0242b581-180a-430e-bb9c-1a78e60de3e5), pointer_default(unique), local]

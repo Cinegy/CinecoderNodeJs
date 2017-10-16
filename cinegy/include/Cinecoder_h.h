@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 
@@ -20,11 +20,11 @@
 /* this ALWAYS GENERATED file contains the definitions for the interfaces */
 
 
- /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Jul 07 00:15:54 2017
+ /* File created by MIDL compiler version 8.00.0603 */
+/* at Wed Oct 11 15:55:24 2017
  */
 /* Compiler settings for Cinecoder.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -65,1272 +65,1505 @@
 #ifndef __ICC_ClassFactory_FWD_DEFINED__
 #define __ICC_ClassFactory_FWD_DEFINED__
 typedef interface ICC_ClassFactory ICC_ClassFactory;
+
 #endif 	/* __ICC_ClassFactory_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Schema_FWD_DEFINED__
 #define __ICC_Schema_FWD_DEFINED__
 typedef interface ICC_Schema ICC_Schema;
+
 #endif 	/* __ICC_Schema_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ClassCreator_FWD_DEFINED__
 #define __ICC_ClassCreator_FWD_DEFINED__
 typedef interface ICC_ClassCreator ICC_ClassCreator;
+
 #endif 	/* __ICC_ClassCreator_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ErrorHandler_FWD_DEFINED__
 #define __ICC_ErrorHandler_FWD_DEFINED__
 typedef interface ICC_ErrorHandler ICC_ErrorHandler;
+
 #endif 	/* __ICC_ErrorHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ErrorHandlerGetter_FWD_DEFINED__
 #define __ICC_ErrorHandlerGetter_FWD_DEFINED__
 typedef interface ICC_ErrorHandlerGetter ICC_ErrorHandlerGetter;
+
 #endif 	/* __ICC_ErrorHandlerGetter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ErrorHandlerProp_FWD_DEFINED__
 #define __ICC_ErrorHandlerProp_FWD_DEFINED__
 typedef interface ICC_ErrorHandlerProp ICC_ErrorHandlerProp;
+
 #endif 	/* __ICC_ErrorHandlerProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ClassFactoryProvider_FWD_DEFINED__
 #define __ICC_ClassFactoryProvider_FWD_DEFINED__
 typedef interface ICC_ClassFactoryProvider ICC_ClassFactoryProvider;
+
 #endif 	/* __ICC_ClassFactoryProvider_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PluginDescr_FWD_DEFINED__
 #define __ICC_PluginDescr_FWD_DEFINED__
 typedef interface ICC_PluginDescr ICC_PluginDescr;
+
 #endif 	/* __ICC_PluginDescr_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Object_FWD_DEFINED__
 #define __ICC_Object_FWD_DEFINED__
 typedef interface ICC_Object ICC_Object;
+
 #endif 	/* __ICC_Object_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Settings_FWD_DEFINED__
 #define __ICC_Settings_FWD_DEFINED__
 typedef interface ICC_Settings ICC_Settings;
+
 #endif 	/* __ICC_Settings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamProcessor_FWD_DEFINED__
 #define __ICC_StreamProcessor_FWD_DEFINED__
 typedef interface ICC_StreamProcessor ICC_StreamProcessor;
+
 #endif 	/* __ICC_StreamProcessor_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamProducer_FWD_DEFINED__
 #define __ICC_ByteStreamProducer_FWD_DEFINED__
 typedef interface ICC_ByteStreamProducer ICC_ByteStreamProducer;
+
 #endif 	/* __ICC_ByteStreamProducer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamConsumer_FWD_DEFINED__
 #define __ICC_ByteStreamConsumer_FWD_DEFINED__
 typedef interface ICC_ByteStreamConsumer ICC_ByteStreamConsumer;
+
 #endif 	/* __ICC_ByteStreamConsumer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Breakable_FWD_DEFINED__
 #define __ICC_Breakable_FWD_DEFINED__
 typedef interface ICC_Breakable ICC_Breakable;
+
 #endif 	/* __ICC_Breakable_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Decoder_FWD_DEFINED__
 #define __ICC_Decoder_FWD_DEFINED__
 typedef interface ICC_Decoder ICC_Decoder;
+
 #endif 	/* __ICC_Decoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Encoder_FWD_DEFINED__
 #define __ICC_Encoder_FWD_DEFINED__
 typedef interface ICC_Encoder ICC_Encoder;
+
 #endif 	/* __ICC_Encoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Transcoder_FWD_DEFINED__
 #define __ICC_Transcoder_FWD_DEFINED__
 typedef interface ICC_Transcoder ICC_Transcoder;
+
 #endif 	/* __ICC_Transcoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Splitter_FWD_DEFINED__
 #define __ICC_Splitter_FWD_DEFINED__
 typedef interface ICC_Splitter ICC_Splitter;
+
 #endif 	/* __ICC_Splitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Cutter_FWD_DEFINED__
 #define __ICC_Cutter_FWD_DEFINED__
 typedef interface ICC_Cutter ICC_Cutter;
+
 #endif 	/* __ICC_Cutter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_IndexWriter_FWD_DEFINED__
 #define __ICC_IndexWriter_FWD_DEFINED__
 typedef interface ICC_IndexWriter ICC_IndexWriter;
+
 #endif 	/* __ICC_IndexWriter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamCallback_FWD_DEFINED__
 #define __ICC_ByteStreamCallback_FWD_DEFINED__
 typedef interface ICC_ByteStreamCallback ICC_ByteStreamCallback;
+
 #endif 	/* __ICC_ByteStreamCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataReadyCallback_FWD_DEFINED__
 #define __ICC_DataReadyCallback_FWD_DEFINED__
 typedef interface ICC_DataReadyCallback ICC_DataReadyCallback;
+
 #endif 	/* __ICC_DataReadyCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_TimeBaseProp_FWD_DEFINED__
 #define __ICC_TimeBaseProp_FWD_DEFINED__
 typedef interface ICC_TimeBaseProp ICC_TimeBaseProp;
+
 #endif 	/* __ICC_TimeBaseProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InitialTimeCodeProp_FWD_DEFINED__
 #define __ICC_InitialTimeCodeProp_FWD_DEFINED__
 typedef interface ICC_InitialTimeCodeProp ICC_InitialTimeCodeProp;
+
 #endif 	/* __ICC_InitialTimeCodeProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BitRateProp_FWD_DEFINED__
 #define __ICC_BitRateProp_FWD_DEFINED__
 typedef interface ICC_BitRateProp ICC_BitRateProp;
+
 #endif 	/* __ICC_BitRateProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_FrameRateProp_FWD_DEFINED__
 #define __ICC_FrameRateProp_FWD_DEFINED__
 typedef interface ICC_FrameRateProp ICC_FrameRateProp;
+
 #endif 	/* __ICC_FrameRateProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BufferAllocator_FWD_DEFINED__
 #define __ICC_BufferAllocator_FWD_DEFINED__
 typedef interface ICC_BufferAllocator ICC_BufferAllocator;
+
 #endif 	/* __ICC_BufferAllocator_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamRecovery_FWD_DEFINED__
 #define __ICC_StreamRecovery_FWD_DEFINED__
 typedef interface ICC_StreamRecovery ICC_StreamRecovery;
+
 #endif 	/* __ICC_StreamRecovery_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsCountProp_FWD_DEFINED__
 #define __ICC_ThreadsCountProp_FWD_DEFINED__
 typedef interface ICC_ThreadsCountProp ICC_ThreadsCountProp;
+
 #endif 	/* __ICC_ThreadsCountProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsAffinityProp_FWD_DEFINED__
 #define __ICC_ThreadsAffinityProp_FWD_DEFINED__
 typedef interface ICC_ThreadsAffinityProp ICC_ThreadsAffinityProp;
+
 #endif 	/* __ICC_ThreadsAffinityProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsPriorityProp_FWD_DEFINED__
 #define __ICC_ThreadsPriorityProp_FWD_DEFINED__
 typedef interface ICC_ThreadsPriorityProp ICC_ThreadsPriorityProp;
+
 #endif 	/* __ICC_ThreadsPriorityProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InputBufferControl_FWD_DEFINED__
 #define __ICC_InputBufferControl_FWD_DEFINED__
 typedef interface ICC_InputBufferControl ICC_InputBufferControl;
+
 #endif 	/* __ICC_InputBufferControl_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ReferenceAlisProp_FWD_DEFINED__
 #define __ICC_ReferenceAlisProp_FWD_DEFINED__
 typedef interface ICC_ReferenceAlisProp ICC_ReferenceAlisProp;
+
 #endif 	/* __ICC_ReferenceAlisProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProcessDataPolicyProp_FWD_DEFINED__
 #define __ICC_ProcessDataPolicyProp_FWD_DEFINED__
 typedef interface ICC_ProcessDataPolicyProp ICC_ProcessDataPolicyProp;
+
 #endif 	/* __ICC_ProcessDataPolicyProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AddUserDataCtrl_FWD_DEFINED__
 #define __ICC_AddUserDataCtrl_FWD_DEFINED__
 typedef interface ICC_AddUserDataCtrl ICC_AddUserDataCtrl;
+
 #endif 	/* __ICC_AddUserDataCtrl_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ConcurrencyLevelProp_FWD_DEFINED__
 #define __ICC_ConcurrencyLevelProp_FWD_DEFINED__
 typedef interface ICC_ConcurrencyLevelProp ICC_ConcurrencyLevelProp;
+
 #endif 	/* __ICC_ConcurrencyLevelProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataWriter_FWD_DEFINED__
 #define __ICC_DataWriter_FWD_DEFINED__
 typedef interface ICC_DataWriter ICC_DataWriter;
+
 #endif 	/* __ICC_DataWriter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataWriterEx_FWD_DEFINED__
 #define __ICC_DataWriterEx_FWD_DEFINED__
 typedef interface ICC_DataWriterEx ICC_DataWriterEx;
+
 #endif 	/* __ICC_DataWriterEx_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataReader_FWD_DEFINED__
 #define __ICC_DataReader_FWD_DEFINED__
 typedef interface ICC_DataReader ICC_DataReader;
+
 #endif 	/* __ICC_DataReader_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataReaderEx_FWD_DEFINED__
 #define __ICC_DataReaderEx_FWD_DEFINED__
 typedef interface ICC_DataReaderEx ICC_DataReaderEx;
+
 #endif 	/* __ICC_DataReaderEx_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamPositionProp_FWD_DEFINED__
 #define __ICC_StreamPositionProp_FWD_DEFINED__
 typedef interface ICC_StreamPositionProp ICC_StreamPositionProp;
+
 #endif 	/* __ICC_StreamPositionProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamLengthProp_FWD_DEFINED__
 #define __ICC_StreamLengthProp_FWD_DEFINED__
 typedef interface ICC_StreamLengthProp ICC_StreamLengthProp;
+
 #endif 	/* __ICC_StreamLengthProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InputStream_FWD_DEFINED__
 #define __ICC_InputStream_FWD_DEFINED__
 typedef interface ICC_InputStream ICC_InputStream;
+
 #endif 	/* __ICC_InputStream_FWD_DEFINED__ */
 
 
 #ifndef __ICC_File_FWD_DEFINED__
 #define __ICC_File_FWD_DEFINED__
 typedef interface ICC_File ICC_File;
+
 #endif 	/* __ICC_File_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InputFile_FWD_DEFINED__
 #define __ICC_InputFile_FWD_DEFINED__
 typedef interface ICC_InputFile ICC_InputFile;
+
 #endif 	/* __ICC_InputFile_FWD_DEFINED__ */
 
 
 #ifndef __ICC_OutputFile_FWD_DEFINED__
 #define __ICC_OutputFile_FWD_DEFINED__
 typedef interface ICC_OutputFile ICC_OutputFile;
+
 #endif 	/* __ICC_OutputFile_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ElementaryStreamInfo_FWD_DEFINED__
 #define __ICC_ElementaryStreamInfo_FWD_DEFINED__
 typedef interface ICC_ElementaryStreamInfo ICC_ElementaryStreamInfo;
+
 #endif 	/* __ICC_ElementaryStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ElementaryStreamSettings_FWD_DEFINED__
 #define __ICC_ElementaryStreamSettings_FWD_DEFINED__
 typedef interface ICC_ElementaryStreamSettings ICC_ElementaryStreamSettings;
+
 #endif 	/* __ICC_ElementaryStreamSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamDataInfo_FWD_DEFINED__
 #define __ICC_ByteStreamDataInfo_FWD_DEFINED__
 typedef interface ICC_ByteStreamDataInfo ICC_ByteStreamDataInfo;
+
 #endif 	/* __ICC_ByteStreamDataInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ElementaryDataInfo_FWD_DEFINED__
 #define __ICC_ElementaryDataInfo_FWD_DEFINED__
 typedef interface ICC_ElementaryDataInfo ICC_ElementaryDataInfo;
+
 #endif 	/* __ICC_ElementaryDataInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CodedStreamHeaderProp_FWD_DEFINED__
 #define __ICC_CodedStreamHeaderProp_FWD_DEFINED__
 typedef interface ICC_CodedStreamHeaderProp ICC_CodedStreamHeaderProp;
+
 #endif 	/* __ICC_CodedStreamHeaderProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__
 #define __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__
 typedef interface ICC_ExecutiveDeviceMaskProp ICC_ExecutiveDeviceMaskProp;
+
 #endif 	/* __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionHandler_FWD_DEFINED__
 #define __ICC_CollectionHandler_FWD_DEFINED__
 typedef interface ICC_CollectionHandler ICC_CollectionHandler;
+
 #endif 	/* __ICC_CollectionHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ReadOnlyCollection_FWD_DEFINED__
 #define __ICC_ReadOnlyCollection_FWD_DEFINED__
 typedef interface ICC_ReadOnlyCollection ICC_ReadOnlyCollection;
+
 #endif 	/* __ICC_ReadOnlyCollection_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Collection_FWD_DEFINED__
 #define __ICC_Collection_FWD_DEFINED__
 typedef interface ICC_Collection ICC_Collection;
+
 #endif 	/* __ICC_Collection_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionChanged_FWD_DEFINED__
 #define __ICC_CollectionChanged_FWD_DEFINED__
 typedef interface ICC_CollectionChanged ICC_CollectionChanged;
+
 #endif 	/* __ICC_CollectionChanged_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionFilter_FWD_DEFINED__
 #define __ICC_CollectionFilter_FWD_DEFINED__
 typedef interface ICC_CollectionFilter ICC_CollectionFilter;
+
 #endif 	/* __ICC_CollectionFilter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioStreamInfo_FWD_DEFINED__
 #define __ICC_AudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_AudioStreamInfo ICC_AudioStreamInfo;
+
 #endif 	/* __ICC_AudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AudioEncoderSettings ICC_AudioEncoderSettings;
+
 #endif 	/* __ICC_AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioFrameInfo_FWD_DEFINED__
 #define __ICC_AudioFrameInfo_FWD_DEFINED__
 typedef interface ICC_AudioFrameInfo ICC_AudioFrameInfo;
+
 #endif 	/* __ICC_AudioFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioProducer_FWD_DEFINED__
 #define __ICC_AudioProducer_FWD_DEFINED__
 typedef interface ICC_AudioProducer ICC_AudioProducer;
+
 #endif 	/* __ICC_AudioProducer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioConsumer_FWD_DEFINED__
 #define __ICC_AudioConsumer_FWD_DEFINED__
 typedef interface ICC_AudioConsumer ICC_AudioConsumer;
+
 #endif 	/* __ICC_AudioConsumer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioProducerExt_FWD_DEFINED__
 #define __ICC_AudioProducerExt_FWD_DEFINED__
 typedef interface ICC_AudioProducerExt ICC_AudioProducerExt;
+
 #endif 	/* __ICC_AudioProducerExt_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioConsumerExt_FWD_DEFINED__
 #define __ICC_AudioConsumerExt_FWD_DEFINED__
 typedef interface ICC_AudioConsumerExt ICC_AudioConsumerExt;
+
 #endif 	/* __ICC_AudioConsumerExt_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioDecoder_FWD_DEFINED__
 #define __ICC_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_AudioDecoder ICC_AudioDecoder;
+
 #endif 	/* __ICC_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioEncoder_FWD_DEFINED__
 #define __ICC_AudioEncoder_FWD_DEFINED__
 typedef interface ICC_AudioEncoder ICC_AudioEncoder;
+
 #endif 	/* __ICC_AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioSplitter_FWD_DEFINED__
 #define __ICC_AudioSplitter_FWD_DEFINED__
 typedef interface ICC_AudioSplitter ICC_AudioSplitter;
+
 #endif 	/* __ICC_AudioSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioFilter_FWD_DEFINED__
 #define __ICC_AudioFilter_FWD_DEFINED__
 typedef interface ICC_AudioFilter ICC_AudioFilter;
+
 #endif 	/* __ICC_AudioFilter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioStreamInfo_FWD_DEFINED__
 #define __ICC_MpegAudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_MpegAudioStreamInfo ICC_MpegAudioStreamInfo;
+
 #endif 	/* __ICC_MpegAudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioFrameInfo_FWD_DEFINED__
 #define __ICC_MpegAudioFrameInfo_FWD_DEFINED__
 typedef interface ICC_MpegAudioFrameInfo ICC_MpegAudioFrameInfo;
+
 #endif 	/* __ICC_MpegAudioFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioEncoderSettings_FWD_DEFINED__
 #define __ICC_MpegAudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_MpegAudioEncoderSettings ICC_MpegAudioEncoderSettings;
+
 #endif 	/* __ICC_MpegAudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioDecoder_FWD_DEFINED__
 #define __ICC_MpegAudioDecoder_FWD_DEFINED__
 typedef interface ICC_MpegAudioDecoder ICC_MpegAudioDecoder;
+
 #endif 	/* __ICC_MpegAudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioEncoder_FWD_DEFINED__
 #define __ICC_MpegAudioEncoder_FWD_DEFINED__
 typedef interface ICC_MpegAudioEncoder ICC_MpegAudioEncoder;
+
 #endif 	/* __ICC_MpegAudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioSplitter_FWD_DEFINED__
 #define __ICC_MpegAudioSplitter_FWD_DEFINED__
 typedef interface ICC_MpegAudioSplitter ICC_MpegAudioSplitter;
+
 #endif 	/* __ICC_MpegAudioSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Aes3AudioStreamInfo_FWD_DEFINED__
 #define __ICC_Aes3AudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_Aes3AudioStreamInfo ICC_Aes3AudioStreamInfo;
+
 #endif 	/* __ICC_Aes3AudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Aes3AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_Aes3AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_Aes3AudioEncoderSettings ICC_Aes3AudioEncoderSettings;
+
 #endif 	/* __ICC_Aes3AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Aes3AudioFrameInfo_FWD_DEFINED__
 #define __ICC_Aes3AudioFrameInfo_FWD_DEFINED__
 typedef interface ICC_Aes3AudioFrameInfo ICC_Aes3AudioFrameInfo;
+
 #endif 	/* __ICC_Aes3AudioFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Aes3AudioDecoder_FWD_DEFINED__
 #define __ICC_Aes3AudioDecoder_FWD_DEFINED__
 typedef interface ICC_Aes3AudioDecoder ICC_Aes3AudioDecoder;
+
 #endif 	/* __ICC_Aes3AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Aes3AudioEncoder_FWD_DEFINED__
 #define __ICC_Aes3AudioEncoder_FWD_DEFINED__
 typedef interface ICC_Aes3AudioEncoder ICC_Aes3AudioEncoder;
+
 #endif 	/* __ICC_Aes3AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioStreamInfo_FWD_DEFINED__
 #define __ICC_AAC_AudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_AAC_AudioStreamInfo ICC_AAC_AudioStreamInfo;
+
 #endif 	/* __ICC_AAC_AudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioFrameInfo_FWD_DEFINED__
 #define __ICC_AAC_AudioFrameInfo_FWD_DEFINED__
 typedef interface ICC_AAC_AudioFrameInfo ICC_AAC_AudioFrameInfo;
+
 #endif 	/* __ICC_AAC_AudioFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioStreamSettings_FWD_DEFINED__
 #define __ICC_AAC_AudioStreamSettings_FWD_DEFINED__
 typedef interface ICC_AAC_AudioStreamSettings ICC_AAC_AudioStreamSettings;
+
 #endif 	/* __ICC_AAC_AudioStreamSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_AAC_AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AAC_AudioEncoderSettings ICC_AAC_AudioEncoderSettings;
+
 #endif 	/* __ICC_AAC_AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioDecoder_FWD_DEFINED__
 #define __ICC_AAC_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_AAC_AudioDecoder ICC_AAC_AudioDecoder;
+
 #endif 	/* __ICC_AAC_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioEncoder_FWD_DEFINED__
 #define __ICC_AAC_AudioEncoder_FWD_DEFINED__
 typedef interface ICC_AAC_AudioEncoder ICC_AAC_AudioEncoder;
+
 #endif 	/* __ICC_AAC_AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AAC_AudioSplitter_FWD_DEFINED__
 #define __ICC_AAC_AudioSplitter_FWD_DEFINED__
 typedef interface ICC_AAC_AudioSplitter ICC_AAC_AudioSplitter;
+
 #endif 	/* __ICC_AAC_AudioSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_LATM_AAC_AudioDecoder_FWD_DEFINED__
 #define __ICC_LATM_AAC_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_LATM_AAC_AudioDecoder ICC_LATM_AAC_AudioDecoder;
+
 #endif 	/* __ICC_LATM_AAC_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_LPCM_AudioStreamInfo_FWD_DEFINED__
 #define __ICC_LPCM_AudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_LPCM_AudioStreamInfo ICC_LPCM_AudioStreamInfo;
+
 #endif 	/* __ICC_LPCM_AudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_LPCM_AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_LPCM_AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_LPCM_AudioEncoderSettings ICC_LPCM_AudioEncoderSettings;
+
 #endif 	/* __ICC_LPCM_AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_LPCM_AudioDecoder_FWD_DEFINED__
 #define __ICC_LPCM_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_LPCM_AudioDecoder ICC_LPCM_AudioDecoder;
+
 #endif 	/* __ICC_LPCM_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_LPCM_AudioEncoder_FWD_DEFINED__
 #define __ICC_LPCM_AudioEncoder_FWD_DEFINED__
 typedef interface ICC_LPCM_AudioEncoder ICC_LPCM_AudioEncoder;
+
 #endif 	/* __ICC_LPCM_AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BluRay_PCM_AudioDecoder_FWD_DEFINED__
 #define __ICC_BluRay_PCM_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_BluRay_PCM_AudioDecoder ICC_BluRay_PCM_AudioDecoder;
+
 #endif 	/* __ICC_BluRay_PCM_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioStreamInfo_FWD_DEFINED__
 #define __ICC_AC3_AudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_AC3_AudioStreamInfo ICC_AC3_AudioStreamInfo;
+
 #endif 	/* __ICC_AC3_AudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioFrameInfo_FWD_DEFINED__
 #define __ICC_AC3_AudioFrameInfo_FWD_DEFINED__
 typedef interface ICC_AC3_AudioFrameInfo ICC_AC3_AudioFrameInfo;
+
 #endif 	/* __ICC_AC3_AudioFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_AC3_AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AC3_AudioEncoderSettings ICC_AC3_AudioEncoderSettings;
+
 #endif 	/* __ICC_AC3_AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioEncoder_FWD_DEFINED__
 #define __ICC_AC3_AudioEncoder_FWD_DEFINED__
 typedef interface ICC_AC3_AudioEncoder ICC_AC3_AudioEncoder;
+
 #endif 	/* __ICC_AC3_AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioDecoder_FWD_DEFINED__
 #define __ICC_AC3_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_AC3_AudioDecoder ICC_AC3_AudioDecoder;
+
 #endif 	/* __ICC_AC3_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AC3_AudioSplitter_FWD_DEFINED__
 #define __ICC_AC3_AudioSplitter_FWD_DEFINED__
 typedef interface ICC_AC3_AudioSplitter ICC_AC3_AudioSplitter;
+
 #endif 	/* __ICC_AC3_AudioSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_WavAudioStreamInfo_FWD_DEFINED__
 #define __ICC_WavAudioStreamInfo_FWD_DEFINED__
 typedef interface ICC_WavAudioStreamInfo ICC_WavAudioStreamInfo;
+
 #endif 	/* __ICC_WavAudioStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_WavAudioEncoderSettings_FWD_DEFINED__
 #define __ICC_WavAudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_WavAudioEncoderSettings ICC_WavAudioEncoderSettings;
+
 #endif 	/* __ICC_WavAudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_WavAudioEncoder_FWD_DEFINED__
 #define __ICC_WavAudioEncoder_FWD_DEFINED__
 typedef interface ICC_WavAudioEncoder ICC_WavAudioEncoder;
+
 #endif 	/* __ICC_WavAudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoStreamInfo_FWD_DEFINED__
 #define __ICC_VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_VideoStreamInfo ICC_VideoStreamInfo;
+
 #endif 	/* __ICC_VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoStreamInfoExt_FWD_DEFINED__
 #define __ICC_VideoStreamInfoExt_FWD_DEFINED__
 typedef interface ICC_VideoStreamInfoExt ICC_VideoStreamInfoExt;
+
 #endif 	/* __ICC_VideoStreamInfoExt_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameInfo_FWD_DEFINED__
 #define __ICC_VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_VideoFrameInfo ICC_VideoFrameInfo;
+
 #endif 	/* __ICC_VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameSecondFieldProp_FWD_DEFINED__
 #define __ICC_VideoFrameSecondFieldProp_FWD_DEFINED__
 typedef interface ICC_VideoFrameSecondFieldProp ICC_VideoFrameSecondFieldProp;
+
 #endif 	/* __ICC_VideoFrameSecondFieldProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameUserDataProp_FWD_DEFINED__
 #define __ICC_VideoFrameUserDataProp_FWD_DEFINED__
 typedef interface ICC_VideoFrameUserDataProp ICC_VideoFrameUserDataProp;
+
 #endif 	/* __ICC_VideoFrameUserDataProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameQualityInfo_FWD_DEFINED__
 #define __ICC_VideoFrameQualityInfo_FWD_DEFINED__
 typedef interface ICC_VideoFrameQualityInfo ICC_VideoFrameQualityInfo;
+
 #endif 	/* __ICC_VideoFrameQualityInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PsnrCalculationProp_FWD_DEFINED__
 #define __ICC_PsnrCalculationProp_FWD_DEFINED__
 typedef interface ICC_PsnrCalculationProp ICC_PsnrCalculationProp;
+
 #endif 	/* __ICC_PsnrCalculationProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoProducer_FWD_DEFINED__
 #define __ICC_VideoProducer_FWD_DEFINED__
 typedef interface ICC_VideoProducer ICC_VideoProducer;
+
 #endif 	/* __ICC_VideoProducer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoConsumer_FWD_DEFINED__
 #define __ICC_VideoConsumer_FWD_DEFINED__
 typedef interface ICC_VideoConsumer ICC_VideoConsumer;
+
 #endif 	/* __ICC_VideoConsumer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoConsumerExt_FWD_DEFINED__
 #define __ICC_VideoConsumerExt_FWD_DEFINED__
 typedef interface ICC_VideoConsumerExt ICC_VideoConsumerExt;
+
 #endif 	/* __ICC_VideoConsumerExt_FWD_DEFINED__ */
+
+
+#ifndef __ICC_VideoConsumerExtAsync_FWD_DEFINED__
+#define __ICC_VideoConsumerExtAsync_FWD_DEFINED__
+typedef interface ICC_VideoConsumerExtAsync ICC_VideoConsumerExtAsync;
+
+#endif 	/* __ICC_VideoConsumerExtAsync_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoProducerExt_FWD_DEFINED__
 #define __ICC_VideoProducerExt_FWD_DEFINED__
 typedef interface ICC_VideoProducerExt ICC_VideoProducerExt;
+
 #endif 	/* __ICC_VideoProducerExt_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoDecoder_FWD_DEFINED__
 #define __ICC_VideoDecoder_FWD_DEFINED__
 typedef interface ICC_VideoDecoder ICC_VideoDecoder;
+
 #endif 	/* __ICC_VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoEncoder_FWD_DEFINED__
 #define __ICC_VideoEncoder_FWD_DEFINED__
 typedef interface ICC_VideoEncoder ICC_VideoEncoder;
+
 #endif 	/* __ICC_VideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoSplitter_FWD_DEFINED__
 #define __ICC_VideoSplitter_FWD_DEFINED__
 typedef interface ICC_VideoSplitter ICC_VideoSplitter;
+
 #endif 	/* __ICC_VideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VDecFrameOutputOrderProp_FWD_DEFINED__
 #define __ICC_VDecFrameOutputOrderProp_FWD_DEFINED__
 typedef interface ICC_VDecFrameOutputOrderProp ICC_VDecFrameOutputOrderProp;
+
 #endif 	/* __ICC_VDecFrameOutputOrderProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoStreamInfo_FWD_DEFINED__
 #define __ICC_MpegVideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_MpegVideoStreamInfo ICC_MpegVideoStreamInfo;
+
 #endif 	/* __ICC_MpegVideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoFrameInfo_FWD_DEFINED__
 #define __ICC_MpegVideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_MpegVideoFrameInfo ICC_MpegVideoFrameInfo;
+
 #endif 	/* __ICC_MpegVideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoDecoder_FWD_DEFINED__
 #define __ICC_MpegVideoDecoder_FWD_DEFINED__
 typedef interface ICC_MpegVideoDecoder ICC_MpegVideoDecoder;
+
 #endif 	/* __ICC_MpegVideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoEncoder_FWD_DEFINED__
 #define __ICC_MpegVideoEncoder_FWD_DEFINED__
 typedef interface ICC_MpegVideoEncoder ICC_MpegVideoEncoder;
+
 #endif 	/* __ICC_MpegVideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoEncoderSettings_FWD_DEFINED__
 #define __ICC_MpegVideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_MpegVideoEncoderSettings ICC_MpegVideoEncoderSettings;
+
 #endif 	/* __ICC_MpegVideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoSplitter_FWD_DEFINED__
 #define __ICC_MpegVideoSplitter_FWD_DEFINED__
 typedef interface ICC_MpegVideoSplitter ICC_MpegVideoSplitter;
+
 #endif 	/* __ICC_MpegVideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_D10VideoEncoderSettings_FWD_DEFINED__
 #define __ICC_D10VideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_D10VideoEncoderSettings ICC_D10VideoEncoderSettings;
+
 #endif 	/* __ICC_D10VideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_D10VideoEncoder_FWD_DEFINED__
 #define __ICC_D10VideoEncoder_FWD_DEFINED__
 typedef interface ICC_D10VideoEncoder ICC_D10VideoEncoder;
+
 #endif 	/* __ICC_D10VideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoStreamInfo_FWD_DEFINED__
 #define __ICC_H264VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_H264VideoStreamInfo ICC_H264VideoStreamInfo;
+
 #endif 	/* __ICC_H264VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoEncoderSettings_FWD_DEFINED__
 #define __ICC_H264VideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_H264VideoEncoderSettings ICC_H264VideoEncoderSettings;
+
 #endif 	/* __ICC_H264VideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoFrameInfo_FWD_DEFINED__
 #define __ICC_H264VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_H264VideoFrameInfo ICC_H264VideoFrameInfo;
+
 #endif 	/* __ICC_H264VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoEncoder_FWD_DEFINED__
 #define __ICC_H264VideoEncoder_FWD_DEFINED__
 typedef interface ICC_H264VideoEncoder ICC_H264VideoEncoder;
+
 #endif 	/* __ICC_H264VideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoDecoder_FWD_DEFINED__
 #define __ICC_H264VideoDecoder_FWD_DEFINED__
 typedef interface ICC_H264VideoDecoder ICC_H264VideoDecoder;
+
 #endif 	/* __ICC_H264VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AVC1VideoDecoder_FWD_DEFINED__
 #define __ICC_AVC1VideoDecoder_FWD_DEFINED__
 typedef interface ICC_AVC1VideoDecoder ICC_AVC1VideoDecoder;
+
 #endif 	/* __ICC_AVC1VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_H264VideoSplitter_FWD_DEFINED__
 #define __ICC_H264VideoSplitter_FWD_DEFINED__
 typedef interface ICC_H264VideoSplitter ICC_H264VideoSplitter;
+
 #endif 	/* __ICC_H264VideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoStreamInfo_FWD_DEFINED__
 #define __ICC_HEVCVideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_HEVCVideoStreamInfo ICC_HEVCVideoStreamInfo;
+
 #endif 	/* __ICC_HEVCVideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoFrameInfo_FWD_DEFINED__
 #define __ICC_HEVCVideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_HEVCVideoFrameInfo ICC_HEVCVideoFrameInfo;
+
 #endif 	/* __ICC_HEVCVideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoDecoder_FWD_DEFINED__
 #define __ICC_HEVCVideoDecoder_FWD_DEFINED__
 typedef interface ICC_HEVCVideoDecoder ICC_HEVCVideoDecoder;
+
 #endif 	/* __ICC_HEVCVideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoSplitter_FWD_DEFINED__
 #define __ICC_HEVCVideoSplitter_FWD_DEFINED__
 typedef interface ICC_HEVCVideoSplitter ICC_HEVCVideoSplitter;
+
 #endif 	/* __ICC_HEVCVideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoEncoder_FWD_DEFINED__
 #define __ICC_HEVCVideoEncoder_FWD_DEFINED__
 typedef interface ICC_HEVCVideoEncoder ICC_HEVCVideoEncoder;
+
 #endif 	/* __ICC_HEVCVideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__
 #define __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_HEVCVideoEncoderSettings ICC_HEVCVideoEncoderSettings;
+
 #endif 	/* __ICC_HEVCVideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AVCIntraEncoderSettings_FWD_DEFINED__
 #define __ICC_AVCIntraEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AVCIntraEncoderSettings ICC_AVCIntraEncoderSettings;
+
 #endif 	/* __ICC_AVCIntraEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AVCIntraEncoder_FWD_DEFINED__
 #define __ICC_AVCIntraEncoder_FWD_DEFINED__
 typedef interface ICC_AVCIntraEncoder ICC_AVCIntraEncoder;
+
 #endif 	/* __ICC_AVCIntraEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AVCIntraDecoder_FWD_DEFINED__
 #define __ICC_AVCIntraDecoder_FWD_DEFINED__
 typedef interface ICC_AVCIntraDecoder ICC_AVCIntraDecoder;
+
 #endif 	/* __ICC_AVCIntraDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AVCIntraDecoder2_FWD_DEFINED__
 #define __ICC_AVCIntraDecoder2_FWD_DEFINED__
 typedef interface ICC_AVCIntraDecoder2 ICC_AVCIntraDecoder2;
+
 #endif 	/* __ICC_AVCIntraDecoder2_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Mpeg4VideoStreamInfo_FWD_DEFINED__
 #define __ICC_Mpeg4VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_Mpeg4VideoStreamInfo ICC_Mpeg4VideoStreamInfo;
+
 #endif 	/* __ICC_Mpeg4VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Mpeg4VideoFrameInfo_FWD_DEFINED__
 #define __ICC_Mpeg4VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_Mpeg4VideoFrameInfo ICC_Mpeg4VideoFrameInfo;
+
 #endif 	/* __ICC_Mpeg4VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Mpeg4VideoDecoder_FWD_DEFINED__
 #define __ICC_Mpeg4VideoDecoder_FWD_DEFINED__
 typedef interface ICC_Mpeg4VideoDecoder ICC_Mpeg4VideoDecoder;
+
 #endif 	/* __ICC_Mpeg4VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_J2K_VideoStreamInfo_FWD_DEFINED__
 #define __ICC_J2K_VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_J2K_VideoStreamInfo ICC_J2K_VideoStreamInfo;
+
 #endif 	/* __ICC_J2K_VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_J2K_VideoFrameInfo_FWD_DEFINED__
 #define __ICC_J2K_VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_J2K_VideoFrameInfo ICC_J2K_VideoFrameInfo;
+
 #endif 	/* __ICC_J2K_VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_J2K_VideoSplitter_FWD_DEFINED__
 #define __ICC_J2K_VideoSplitter_FWD_DEFINED__
 typedef interface ICC_J2K_VideoSplitter ICC_J2K_VideoSplitter;
+
 #endif 	/* __ICC_J2K_VideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_J2K_VideoDecoder_FWD_DEFINED__
 #define __ICC_J2K_VideoDecoder_FWD_DEFINED__
 typedef interface ICC_J2K_VideoDecoder ICC_J2K_VideoDecoder;
+
 #endif 	/* __ICC_J2K_VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SonyRaw_VideoStreamInfo_FWD_DEFINED__
 #define __ICC_SonyRaw_VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_SonyRaw_VideoStreamInfo ICC_SonyRaw_VideoStreamInfo;
+
 #endif 	/* __ICC_SonyRaw_VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SonyRaw_VideoFrameInfo_FWD_DEFINED__
 #define __ICC_SonyRaw_VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_SonyRaw_VideoFrameInfo ICC_SonyRaw_VideoFrameInfo;
+
 #endif 	/* __ICC_SonyRaw_VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SonyRaw_VideoDecoder_FWD_DEFINED__
 #define __ICC_SonyRaw_VideoDecoder_FWD_DEFINED__
 typedef interface ICC_SonyRaw_VideoDecoder ICC_SonyRaw_VideoDecoder;
+
 #endif 	/* __ICC_SonyRaw_VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoStreamInfo_FWD_DEFINED__
 #define __ICC_DanielVideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_DanielVideoStreamInfo ICC_DanielVideoStreamInfo;
+
 #endif 	/* __ICC_DanielVideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoFrameInfo_FWD_DEFINED__
 #define __ICC_DanielVideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_DanielVideoFrameInfo ICC_DanielVideoFrameInfo;
+
 #endif 	/* __ICC_DanielVideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoSplitter_FWD_DEFINED__
 #define __ICC_DanielVideoSplitter_FWD_DEFINED__
 typedef interface ICC_DanielVideoSplitter ICC_DanielVideoSplitter;
+
 #endif 	/* __ICC_DanielVideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoDecoder_FWD_DEFINED__
 #define __ICC_DanielVideoDecoder_FWD_DEFINED__
 typedef interface ICC_DanielVideoDecoder ICC_DanielVideoDecoder;
+
 #endif 	/* __ICC_DanielVideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoEncoderSettings_FWD_DEFINED__
 #define __ICC_DanielVideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_DanielVideoEncoderSettings ICC_DanielVideoEncoderSettings;
+
 #endif 	/* __ICC_DanielVideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
 #define __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__
 typedef interface ICC_DanielVideoEncoderSettings_CUDA ICC_DanielVideoEncoderSettings_CUDA;
+
 #endif 	/* __ICC_DanielVideoEncoderSettings_CUDA_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoEncoder_FWD_DEFINED__
 #define __ICC_DanielVideoEncoder_FWD_DEFINED__
 typedef interface ICC_DanielVideoEncoder ICC_DanielVideoEncoder;
+
 #endif 	/* __ICC_DanielVideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__
 #define __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__
 typedef interface ICC_D2D_GetUpdateVideoBufferPtrProp ICC_D2D_GetUpdateVideoBufferPtrProp;
+
 #endif 	/* __ICC_D2D_GetUpdateVideoBufferPtrProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__
 #define __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__
 typedef interface ICC_DanielVideoDecoder_CUDA ICC_DanielVideoDecoder_CUDA;
+
 #endif 	/* __ICC_DanielVideoDecoder_CUDA_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__
 #define __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__
 typedef interface ICC_DanielVideoEncoder_CUDA ICC_DanielVideoEncoder_CUDA;
+
 #endif 	/* __ICC_DanielVideoEncoder_CUDA_FWD_DEFINED__ */
+
+
+#ifndef __ICC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__
+#define __ICC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__
+typedef interface ICC_DanielVideoDecoder_CudaPlayer ICC_DanielVideoDecoder_CudaPlayer;
+
+#endif 	/* __ICC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__ */
+
+
+#ifndef __ICC_D2D_GetFrameDecodingParamsProp_FWD_DEFINED__
+#define __ICC_D2D_GetFrameDecodingParamsProp_FWD_DEFINED__
+typedef interface ICC_D2D_GetFrameDecodingParamsProp ICC_D2D_GetFrameDecodingParamsProp;
+
+#endif 	/* __ICC_D2D_GetFrameDecodingParamsProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__
 #define __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoStreamInfo ICC_Y4M_VideoStreamInfo;
+
 #endif 	/* __ICC_Y4M_VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__
 #define __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoFrameInfo ICC_Y4M_VideoFrameInfo;
+
 #endif 	/* __ICC_Y4M_VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoSplitter_FWD_DEFINED__
 #define __ICC_Y4M_VideoSplitter_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoSplitter ICC_Y4M_VideoSplitter;
+
 #endif 	/* __ICC_Y4M_VideoSplitter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoDecoder_FWD_DEFINED__
 #define __ICC_Y4M_VideoDecoder_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoDecoder ICC_Y4M_VideoDecoder;
+
 #endif 	/* __ICC_Y4M_VideoDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__
 #define __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoEncoderSettings ICC_Y4M_VideoEncoderSettings;
+
 #endif 	/* __ICC_Y4M_VideoEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Y4M_VideoEncoder_FWD_DEFINED__
 #define __ICC_Y4M_VideoEncoder_FWD_DEFINED__
 typedef interface ICC_Y4M_VideoEncoder ICC_Y4M_VideoEncoder;
+
 #endif 	/* __ICC_Y4M_VideoEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MultiplexedDataDescr_FWD_DEFINED__
 #define __ICC_MultiplexedDataDescr_FWD_DEFINED__
 typedef interface ICC_MultiplexedDataDescr ICC_MultiplexedDataDescr;
+
 #endif 	/* __ICC_MultiplexedDataDescr_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SystemDescriptorsReader_FWD_DEFINED__
 #define __ICC_SystemDescriptorsReader_FWD_DEFINED__
 typedef interface ICC_SystemDescriptorsReader ICC_SystemDescriptorsReader;
+
 #endif 	/* __ICC_SystemDescriptorsReader_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SystemDescriptorsManager_FWD_DEFINED__
 #define __ICC_SystemDescriptorsManager_FWD_DEFINED__
 typedef interface ICC_SystemDescriptorsManager ICC_SystemDescriptorsManager;
+
 #endif 	/* __ICC_SystemDescriptorsManager_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PES_Info_FWD_DEFINED__
 #define __ICC_PES_Info_FWD_DEFINED__
 typedef interface ICC_PES_Info ICC_PES_Info;
+
 #endif 	/* __ICC_PES_Info_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProgramInfo_FWD_DEFINED__
 #define __ICC_ProgramInfo_FWD_DEFINED__
 typedef interface ICC_ProgramInfo ICC_ProgramInfo;
+
 #endif 	/* __ICC_ProgramInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MultiplexedStreamInfo_FWD_DEFINED__
 #define __ICC_MultiplexedStreamInfo_FWD_DEFINED__
 typedef interface ICC_MultiplexedStreamInfo ICC_MultiplexedStreamInfo;
+
 #endif 	/* __ICC_MultiplexedStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BaseMultiplexerSettings_FWD_DEFINED__
 #define __ICC_BaseMultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_BaseMultiplexerSettings ICC_BaseMultiplexerSettings;
+
 #endif 	/* __ICC_BaseMultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BaseMultiplexerPinSettings_FWD_DEFINED__
 #define __ICC_BaseMultiplexerPinSettings_FWD_DEFINED__
 typedef interface ICC_BaseMultiplexerPinSettings ICC_BaseMultiplexerPinSettings;
+
 #endif 	/* __ICC_BaseMultiplexerPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SystemMuxerPinSettings_FWD_DEFINED__
 #define __ICC_SystemMuxerPinSettings_FWD_DEFINED__
 typedef interface ICC_SystemMuxerPinSettings ICC_SystemMuxerPinSettings;
+
 #endif 	/* __ICC_SystemMuxerPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_SystemMuxerSettings_FWD_DEFINED__
 #define __ICC_SystemMuxerSettings_FWD_DEFINED__
 typedef interface ICC_SystemMuxerSettings ICC_SystemMuxerSettings;
+
 #endif 	/* __ICC_SystemMuxerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProgramMuxerPinSettings_FWD_DEFINED__
 #define __ICC_ProgramMuxerPinSettings_FWD_DEFINED__
 typedef interface ICC_ProgramMuxerPinSettings ICC_ProgramMuxerPinSettings;
+
 #endif 	/* __ICC_ProgramMuxerPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProgramMultiplexerSettings_FWD_DEFINED__
 #define __ICC_ProgramMultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_ProgramMultiplexerSettings ICC_ProgramMultiplexerSettings;
+
 #endif 	/* __ICC_ProgramMultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_TransportMuxerPinSettings_FWD_DEFINED__
 #define __ICC_TransportMuxerPinSettings_FWD_DEFINED__
 typedef interface ICC_TransportMuxerPinSettings ICC_TransportMuxerPinSettings;
+
 #endif 	/* __ICC_TransportMuxerPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_TransportMultiplexerSettings_FWD_DEFINED__
 #define __ICC_TransportMultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_TransportMultiplexerSettings ICC_TransportMultiplexerSettings;
+
 #endif 	/* __ICC_TransportMultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_TS_ProgramDescr_FWD_DEFINED__
 #define __ICC_TS_ProgramDescr_FWD_DEFINED__
 typedef interface ICC_TS_ProgramDescr ICC_TS_ProgramDescr;
+
 #endif 	/* __ICC_TS_ProgramDescr_FWD_DEFINED__ */
 
 
 #ifndef __ICC_M2TSMP_MultiplexerSettings_FWD_DEFINED__
 #define __ICC_M2TSMP_MultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_M2TSMP_MultiplexerSettings ICC_M2TSMP_MultiplexerSettings;
+
 #endif 	/* __ICC_M2TSMP_MultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HDV1MuxerSettings_FWD_DEFINED__
 #define __ICC_HDV1MuxerSettings_FWD_DEFINED__
 typedef interface ICC_HDV1MuxerSettings ICC_HDV1MuxerSettings;
+
 #endif 	/* __ICC_HDV1MuxerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HDV2MuxerSettings_FWD_DEFINED__
 #define __ICC_HDV2MuxerSettings_FWD_DEFINED__
 typedef interface ICC_HDV2MuxerSettings ICC_HDV2MuxerSettings;
+
 #endif 	/* __ICC_HDV2MuxerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Multiplexer_FWD_DEFINED__
 #define __ICC_Multiplexer_FWD_DEFINED__
 typedef interface ICC_Multiplexer ICC_Multiplexer;
+
 #endif 	/* __ICC_Multiplexer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DemultiplexedDataCallback_FWD_DEFINED__
 #define __ICC_DemultiplexedDataCallback_FWD_DEFINED__
 typedef interface ICC_DemultiplexedDataCallback ICC_DemultiplexedDataCallback;
+
 #endif 	/* __ICC_DemultiplexedDataCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DemultiplexedDataCallbackExt_FWD_DEFINED__
 #define __ICC_DemultiplexedDataCallbackExt_FWD_DEFINED__
 typedef interface ICC_DemultiplexedDataCallbackExt ICC_DemultiplexedDataCallbackExt;
+
 #endif 	/* __ICC_DemultiplexedDataCallbackExt_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamClockReferenceProp_FWD_DEFINED__
 #define __ICC_StreamClockReferenceProp_FWD_DEFINED__
 typedef interface ICC_StreamClockReferenceProp ICC_StreamClockReferenceProp;
+
 #endif 	/* __ICC_StreamClockReferenceProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProgramClockReferencePidProp_FWD_DEFINED__
 #define __ICC_ProgramClockReferencePidProp_FWD_DEFINED__
 typedef interface ICC_ProgramClockReferencePidProp ICC_ProgramClockReferencePidProp;
+
 #endif 	/* __ICC_ProgramClockReferencePidProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Demultiplexer_FWD_DEFINED__
 #define __ICC_Demultiplexer_FWD_DEFINED__
 typedef interface ICC_Demultiplexer ICC_Demultiplexer;
+
 #endif 	/* __ICC_Demultiplexer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HDV2_Multiplexer_FWD_DEFINED__
 #define __ICC_HDV2_Multiplexer_FWD_DEFINED__
 typedef interface ICC_HDV2_Multiplexer ICC_HDV2_Multiplexer;
+
 #endif 	/* __ICC_HDV2_Multiplexer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamRecognizer_FWD_DEFINED__
 #define __ICC_StreamRecognizer_FWD_DEFINED__
 typedef interface ICC_StreamRecognizer ICC_StreamRecognizer;
+
 #endif 	/* __ICC_StreamRecognizer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__
 #define __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__
 typedef interface ICC_DebugDumpIncomingDataToFile ICC_DebugDumpIncomingDataToFile;
+
 #endif 	/* __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PCR_Callback_FWD_DEFINED__
 #define __ICC_PCR_Callback_FWD_DEFINED__
 typedef interface ICC_PCR_Callback ICC_PCR_Callback;
+
 #endif 	/* __ICC_PCR_Callback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PCR_CallbackProp_FWD_DEFINED__
 #define __ICC_PCR_CallbackProp_FWD_DEFINED__
 typedef interface ICC_PCR_CallbackProp ICC_PCR_CallbackProp;
+
 #endif 	/* __ICC_PCR_CallbackProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_Multiplexer_FWD_DEFINED__
 #define __ICC_MP4_Multiplexer_FWD_DEFINED__
 typedef interface ICC_MP4_Multiplexer ICC_MP4_Multiplexer;
+
 #endif 	/* __ICC_MP4_Multiplexer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_MultiplexerSettings_FWD_DEFINED__
 #define __ICC_MP4_MultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_MP4_MultiplexerSettings ICC_MP4_MultiplexerSettings;
+
 #endif 	/* __ICC_MP4_MultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_MuxerPinSettings_FWD_DEFINED__
 #define __ICC_MP4_MuxerPinSettings_FWD_DEFINED__
 typedef interface ICC_MP4_MuxerPinSettings ICC_MP4_MuxerPinSettings;
+
 #endif 	/* __ICC_MP4_MuxerPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
 #define __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__
 typedef interface ICC_MP4_MuxerVideoPinSettings ICC_MP4_MuxerVideoPinSettings;
+
 #endif 	/* __ICC_MP4_MuxerVideoPinSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ReferenceDataConsumer_FWD_DEFINED__
 #define __ICC_ReferenceDataConsumer_FWD_DEFINED__
 typedef interface ICC_ReferenceDataConsumer ICC_ReferenceDataConsumer;
+
 #endif 	/* __ICC_ReferenceDataConsumer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_FragmentedPin_FWD_DEFINED__
 #define __ICC_MP4_FragmentedPin_FWD_DEFINED__
 typedef interface ICC_MP4_FragmentedPin ICC_MP4_FragmentedPin;
+
 #endif 	/* __ICC_MP4_FragmentedPin_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_InitialTimeCodeProp_FWD_DEFINED__
 #define __ICC_MP4_InitialTimeCodeProp_FWD_DEFINED__
 typedef interface ICC_MP4_InitialTimeCodeProp ICC_MP4_InitialTimeCodeProp;
+
 #endif 	/* __ICC_MP4_InitialTimeCodeProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4_MpegDashSettings_FWD_DEFINED__
 #define __ICC_MP4_MpegDashSettings_FWD_DEFINED__
 typedef interface ICC_MP4_MpegDashSettings ICC_MP4_MpegDashSettings;
+
 #endif 	/* __ICC_MP4_MpegDashSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4ChunkInfo_FWD_DEFINED__
 #define __ICC_MP4ChunkInfo_FWD_DEFINED__
 typedef interface ICC_MP4ChunkInfo ICC_MP4ChunkInfo;
+
 #endif 	/* __ICC_MP4ChunkInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4Fragment_FWD_DEFINED__
 #define __ICC_MP4Fragment_FWD_DEFINED__
 typedef interface ICC_MP4Fragment ICC_MP4Fragment;
+
 #endif 	/* __ICC_MP4Fragment_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4InitFragment_FWD_DEFINED__
 #define __ICC_MP4InitFragment_FWD_DEFINED__
 typedef interface ICC_MP4InitFragment ICC_MP4InitFragment;
+
 #endif 	/* __ICC_MP4InitFragment_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4RandomAccessFragment_FWD_DEFINED__
 #define __ICC_MP4RandomAccessFragment_FWD_DEFINED__
 typedef interface ICC_MP4RandomAccessFragment ICC_MP4RandomAccessFragment;
+
 #endif 	/* __ICC_MP4RandomAccessFragment_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4Producer_FWD_DEFINED__
 #define __ICC_MP4Producer_FWD_DEFINED__
 typedef interface ICC_MP4Producer ICC_MP4Producer;
+
 #endif 	/* __ICC_MP4Producer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_HLS_MultiplexerSettings_FWD_DEFINED__
 #define __ICC_HLS_MultiplexerSettings_FWD_DEFINED__
 typedef interface ICC_HLS_MultiplexerSettings ICC_HLS_MultiplexerSettings;
+
 #endif 	/* __ICC_HLS_MultiplexerSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MediaReader_FWD_DEFINED__
 #define __ICC_MediaReader_FWD_DEFINED__
 typedef interface ICC_MediaReader ICC_MediaReader;
+
 #endif 	/* __ICC_MediaReader_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MediaReader2_FWD_DEFINED__
 #define __ICC_MediaReader2_FWD_DEFINED__
 typedef interface ICC_MediaReader2 ICC_MediaReader2;
+
 #endif 	/* __ICC_MediaReader2_FWD_DEFINED__ */
 
 
@@ -1349,276 +1582,336 @@ typedef struct CinecoderLibrary CinecoderLibrary;
 #ifndef __ICC_Schema_FWD_DEFINED__
 #define __ICC_Schema_FWD_DEFINED__
 typedef interface ICC_Schema ICC_Schema;
+
 #endif 	/* __ICC_Schema_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ErrorHandler_FWD_DEFINED__
 #define __ICC_ErrorHandler_FWD_DEFINED__
 typedef interface ICC_ErrorHandler ICC_ErrorHandler;
+
 #endif 	/* __ICC_ErrorHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BufferAllocator_FWD_DEFINED__
 #define __ICC_BufferAllocator_FWD_DEFINED__
 typedef interface ICC_BufferAllocator ICC_BufferAllocator;
+
 #endif 	/* __ICC_BufferAllocator_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Breakable_FWD_DEFINED__
 #define __ICC_Breakable_FWD_DEFINED__
 typedef interface ICC_Breakable ICC_Breakable;
+
 #endif 	/* __ICC_Breakable_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataReadyCallback_FWD_DEFINED__
 #define __ICC_DataReadyCallback_FWD_DEFINED__
 typedef interface ICC_DataReadyCallback ICC_DataReadyCallback;
+
 #endif 	/* __ICC_DataReadyCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamCallback_FWD_DEFINED__
 #define __ICC_ByteStreamCallback_FWD_DEFINED__
 typedef interface ICC_ByteStreamCallback ICC_ByteStreamCallback;
+
 #endif 	/* __ICC_ByteStreamCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamProcessor_FWD_DEFINED__
 #define __ICC_StreamProcessor_FWD_DEFINED__
 typedef interface ICC_StreamProcessor ICC_StreamProcessor;
+
 #endif 	/* __ICC_StreamProcessor_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Decoder_FWD_DEFINED__
 #define __ICC_Decoder_FWD_DEFINED__
 typedef interface ICC_Decoder ICC_Decoder;
+
 #endif 	/* __ICC_Decoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DemultiplexedDataCallback_FWD_DEFINED__
 #define __ICC_DemultiplexedDataCallback_FWD_DEFINED__
 typedef interface ICC_DemultiplexedDataCallback ICC_DemultiplexedDataCallback;
+
 #endif 	/* __ICC_DemultiplexedDataCallback_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InitialTimeCodeProp_FWD_DEFINED__
 #define __ICC_InitialTimeCodeProp_FWD_DEFINED__
 typedef interface ICC_InitialTimeCodeProp ICC_InitialTimeCodeProp;
+
 #endif 	/* __ICC_InitialTimeCodeProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamClockReferenceProp_FWD_DEFINED__
 #define __ICC_StreamClockReferenceProp_FWD_DEFINED__
 typedef interface ICC_StreamClockReferenceProp ICC_StreamClockReferenceProp;
+
 #endif 	/* __ICC_StreamClockReferenceProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__
 #define __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__
 typedef interface ICC_DebugDumpIncomingDataToFile ICC_DebugDumpIncomingDataToFile;
+
 #endif 	/* __ICC_DebugDumpIncomingDataToFile_FWD_DEFINED__ */
 
 
 #ifndef __ICC_PsnrCalculationProp_FWD_DEFINED__
 #define __ICC_PsnrCalculationProp_FWD_DEFINED__
 typedef interface ICC_PsnrCalculationProp ICC_PsnrCalculationProp;
+
 #endif 	/* __ICC_PsnrCalculationProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Settings_FWD_DEFINED__
 #define __ICC_Settings_FWD_DEFINED__
 typedef interface ICC_Settings ICC_Settings;
+
 #endif 	/* __ICC_Settings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MultiplexedDataDescr_FWD_DEFINED__
 #define __ICC_MultiplexedDataDescr_FWD_DEFINED__
 typedef interface ICC_MultiplexedDataDescr ICC_MultiplexedDataDescr;
+
 #endif 	/* __ICC_MultiplexedDataDescr_FWD_DEFINED__ */
 
 
 #ifndef __ICC_StreamPositionProp_FWD_DEFINED__
 #define __ICC_StreamPositionProp_FWD_DEFINED__
 typedef interface ICC_StreamPositionProp ICC_StreamPositionProp;
+
 #endif 	/* __ICC_StreamPositionProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataWriter_FWD_DEFINED__
 #define __ICC_DataWriter_FWD_DEFINED__
 typedef interface ICC_DataWriter ICC_DataWriter;
+
 #endif 	/* __ICC_DataWriter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_DataWriterEx_FWD_DEFINED__
 #define __ICC_DataWriterEx_FWD_DEFINED__
 typedef interface ICC_DataWriterEx ICC_DataWriterEx;
+
 #endif 	/* __ICC_DataWriterEx_FWD_DEFINED__ */
 
 
 #ifndef __ICC_TimeBaseProp_FWD_DEFINED__
 #define __ICC_TimeBaseProp_FWD_DEFINED__
 typedef interface ICC_TimeBaseProp ICC_TimeBaseProp;
+
 #endif 	/* __ICC_TimeBaseProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_BitRateProp_FWD_DEFINED__
 #define __ICC_BitRateProp_FWD_DEFINED__
 typedef interface ICC_BitRateProp ICC_BitRateProp;
+
 #endif 	/* __ICC_BitRateProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsCountProp_FWD_DEFINED__
 #define __ICC_ThreadsCountProp_FWD_DEFINED__
 typedef interface ICC_ThreadsCountProp ICC_ThreadsCountProp;
+
 #endif 	/* __ICC_ThreadsCountProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsAffinityProp_FWD_DEFINED__
 #define __ICC_ThreadsAffinityProp_FWD_DEFINED__
 typedef interface ICC_ThreadsAffinityProp ICC_ThreadsAffinityProp;
+
 #endif 	/* __ICC_ThreadsAffinityProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ThreadsPriorityProp_FWD_DEFINED__
 #define __ICC_ThreadsPriorityProp_FWD_DEFINED__
 typedef interface ICC_ThreadsPriorityProp ICC_ThreadsPriorityProp;
+
 #endif 	/* __ICC_ThreadsPriorityProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ProcessDataPolicyProp_FWD_DEFINED__
 #define __ICC_ProcessDataPolicyProp_FWD_DEFINED__
 typedef interface ICC_ProcessDataPolicyProp ICC_ProcessDataPolicyProp;
+
 #endif 	/* __ICC_ProcessDataPolicyProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__
 #define __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__
 typedef interface ICC_ExecutiveDeviceMaskProp ICC_ExecutiveDeviceMaskProp;
+
 #endif 	/* __ICC_ExecutiveDeviceMaskProp_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AddUserDataCtrl_FWD_DEFINED__
 #define __ICC_AddUserDataCtrl_FWD_DEFINED__
 typedef interface ICC_AddUserDataCtrl ICC_AddUserDataCtrl;
+
 #endif 	/* __ICC_AddUserDataCtrl_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ElementaryStreamInfo_FWD_DEFINED__
 #define __ICC_ElementaryStreamInfo_FWD_DEFINED__
 typedef interface ICC_ElementaryStreamInfo ICC_ElementaryStreamInfo;
+
 #endif 	/* __ICC_ElementaryStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoStreamInfo_FWD_DEFINED__
 #define __ICC_VideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_VideoStreamInfo ICC_VideoStreamInfo;
+
 #endif 	/* __ICC_VideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoStreamInfo_FWD_DEFINED__
 #define __ICC_MpegVideoStreamInfo_FWD_DEFINED__
 typedef interface ICC_MpegVideoStreamInfo ICC_MpegVideoStreamInfo;
+
 #endif 	/* __ICC_MpegVideoStreamInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ByteStreamDataInfo_FWD_DEFINED__
 #define __ICC_ByteStreamDataInfo_FWD_DEFINED__
 typedef interface ICC_ByteStreamDataInfo ICC_ByteStreamDataInfo;
+
 #endif 	/* __ICC_ByteStreamDataInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ElementaryDataInfo_FWD_DEFINED__
 #define __ICC_ElementaryDataInfo_FWD_DEFINED__
 typedef interface ICC_ElementaryDataInfo ICC_ElementaryDataInfo;
+
 #endif 	/* __ICC_ElementaryDataInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameInfo_FWD_DEFINED__
 #define __ICC_VideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_VideoFrameInfo ICC_VideoFrameInfo;
+
 #endif 	/* __ICC_VideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegVideoFrameInfo_FWD_DEFINED__
 #define __ICC_MpegVideoFrameInfo_FWD_DEFINED__
 typedef interface ICC_MpegVideoFrameInfo ICC_MpegVideoFrameInfo;
+
 #endif 	/* __ICC_MpegVideoFrameInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoFrameQualityInfo_FWD_DEFINED__
 #define __ICC_VideoFrameQualityInfo_FWD_DEFINED__
 typedef interface ICC_VideoFrameQualityInfo ICC_VideoFrameQualityInfo;
+
 #endif 	/* __ICC_VideoFrameQualityInfo_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoProducer_FWD_DEFINED__
 #define __ICC_VideoProducer_FWD_DEFINED__
 typedef interface ICC_VideoProducer ICC_VideoProducer;
+
 #endif 	/* __ICC_VideoProducer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_VideoConsumer_FWD_DEFINED__
 #define __ICC_VideoConsumer_FWD_DEFINED__
 typedef interface ICC_VideoConsumer ICC_VideoConsumer;
+
 #endif 	/* __ICC_VideoConsumer_FWD_DEFINED__ */
+
+
+#ifndef __ICC_VideoConsumerExt_FWD_DEFINED__
+#define __ICC_VideoConsumerExt_FWD_DEFINED__
+typedef interface ICC_VideoConsumerExt ICC_VideoConsumerExt;
+
+#endif 	/* __ICC_VideoConsumerExt_FWD_DEFINED__ */
+
+
+#ifndef __ICC_VideoConsumerExtAsync_FWD_DEFINED__
+#define __ICC_VideoConsumerExtAsync_FWD_DEFINED__
+typedef interface ICC_VideoConsumerExtAsync ICC_VideoConsumerExtAsync;
+
+#endif 	/* __ICC_VideoConsumerExtAsync_FWD_DEFINED__ */
 
 
 #ifndef __ICC_ReadOnlyCollection_FWD_DEFINED__
 #define __ICC_ReadOnlyCollection_FWD_DEFINED__
 typedef interface ICC_ReadOnlyCollection ICC_ReadOnlyCollection;
+
 #endif 	/* __ICC_ReadOnlyCollection_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Collection_FWD_DEFINED__
 #define __ICC_Collection_FWD_DEFINED__
 typedef interface ICC_Collection ICC_Collection;
+
 #endif 	/* __ICC_Collection_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionHandler_FWD_DEFINED__
 #define __ICC_CollectionHandler_FWD_DEFINED__
 typedef interface ICC_CollectionHandler ICC_CollectionHandler;
+
 #endif 	/* __ICC_CollectionHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionChanged_FWD_DEFINED__
 #define __ICC_CollectionChanged_FWD_DEFINED__
 typedef interface ICC_CollectionChanged ICC_CollectionChanged;
+
 #endif 	/* __ICC_CollectionChanged_FWD_DEFINED__ */
 
 
 #ifndef __ICC_CollectionFilter_FWD_DEFINED__
 #define __ICC_CollectionFilter_FWD_DEFINED__
 typedef interface ICC_CollectionFilter ICC_CollectionFilter;
+
 #endif 	/* __ICC_CollectionFilter_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4Fragment_FWD_DEFINED__
 #define __ICC_MP4Fragment_FWD_DEFINED__
 typedef interface ICC_MP4Fragment ICC_MP4Fragment;
+
 #endif 	/* __ICC_MP4Fragment_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MP4InitFragment_FWD_DEFINED__
 #define __ICC_MP4InitFragment_FWD_DEFINED__
 typedef interface ICC_MP4InitFragment ICC_MP4InitFragment;
+
 #endif 	/* __ICC_MP4InitFragment_FWD_DEFINED__ */
 
 
 #ifndef __ICC_File_FWD_DEFINED__
 #define __ICC_File_FWD_DEFINED__
 typedef interface ICC_File ICC_File;
+
 #endif 	/* __ICC_File_FWD_DEFINED__ */
 
 
 #ifndef __ICC_InputFile_FWD_DEFINED__
 #define __ICC_InputFile_FWD_DEFINED__
 typedef interface ICC_InputFile ICC_InputFile;
+
 #endif 	/* __ICC_InputFile_FWD_DEFINED__ */
 
 
 #ifndef __ICC_OutputFile_FWD_DEFINED__
 #define __ICC_OutputFile_FWD_DEFINED__
 typedef interface ICC_OutputFile ICC_OutputFile;
+
 #endif 	/* __ICC_OutputFile_FWD_DEFINED__ */
 
 
@@ -1733,54 +2026,63 @@ typedef struct CC_MpegVideoSplitter CC_MpegVideoSplitter;
 #ifndef __ICC_AudioProducer_FWD_DEFINED__
 #define __ICC_AudioProducer_FWD_DEFINED__
 typedef interface ICC_AudioProducer ICC_AudioProducer;
+
 #endif 	/* __ICC_AudioProducer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioConsumer_FWD_DEFINED__
 #define __ICC_AudioConsumer_FWD_DEFINED__
 typedef interface ICC_AudioConsumer ICC_AudioConsumer;
+
 #endif 	/* __ICC_AudioConsumer_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioDecoder_FWD_DEFINED__
 #define __ICC_AudioDecoder_FWD_DEFINED__
 typedef interface ICC_AudioDecoder ICC_AudioDecoder;
+
 #endif 	/* __ICC_AudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioDecoder_FWD_DEFINED__
 #define __ICC_MpegAudioDecoder_FWD_DEFINED__
 typedef interface ICC_MpegAudioDecoder ICC_MpegAudioDecoder;
+
 #endif 	/* __ICC_MpegAudioDecoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_Encoder_FWD_DEFINED__
 #define __ICC_Encoder_FWD_DEFINED__
 typedef interface ICC_Encoder ICC_Encoder;
+
 #endif 	/* __ICC_Encoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioEncoder_FWD_DEFINED__
 #define __ICC_AudioEncoder_FWD_DEFINED__
 typedef interface ICC_AudioEncoder ICC_AudioEncoder;
+
 #endif 	/* __ICC_AudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioEncoder_FWD_DEFINED__
 #define __ICC_MpegAudioEncoder_FWD_DEFINED__
 typedef interface ICC_MpegAudioEncoder ICC_MpegAudioEncoder;
+
 #endif 	/* __ICC_MpegAudioEncoder_FWD_DEFINED__ */
 
 
 #ifndef __ICC_AudioEncoderSettings_FWD_DEFINED__
 #define __ICC_AudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_AudioEncoderSettings ICC_AudioEncoderSettings;
+
 #endif 	/* __ICC_AudioEncoderSettings_FWD_DEFINED__ */
 
 
 #ifndef __ICC_MpegAudioEncoderSettings_FWD_DEFINED__
 #define __ICC_MpegAudioEncoderSettings_FWD_DEFINED__
 typedef interface ICC_MpegAudioEncoderSettings ICC_MpegAudioEncoderSettings;
+
 #endif 	/* __ICC_MpegAudioEncoderSettings_FWD_DEFINED__ */
 
 
@@ -2516,6 +2818,18 @@ typedef struct CC_DanielVideoDecoder_CUDA CC_DanielVideoDecoder_CUDA;
 #endif 	/* __CC_DanielVideoDecoder_CUDA_FWD_DEFINED__ */
 
 
+#ifndef __CC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__
+#define __CC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CC_DanielVideoDecoder_CudaPlayer CC_DanielVideoDecoder_CudaPlayer;
+#else
+typedef struct CC_DanielVideoDecoder_CudaPlayer CC_DanielVideoDecoder_CudaPlayer;
+#endif /* __cplusplus */
+
+#endif 	/* __CC_DanielVideoDecoder_CudaPlayer_FWD_DEFINED__ */
+
+
 #ifndef __CC_DanielVideoEncoder_FWD_DEFINED__
 #define __CC_DanielVideoEncoder_FWD_DEFINED__
 
@@ -2719,11 +3033,11 @@ extern "C"{
 /* interface __MIDL_itf_Cinecoder_0000_0000 */
 /* [local] */ 
 
-#define	CINECODER_VERSION	( 32823 )
+#define	CINECODER_VERSION	( 33018 )
 
 #ifndef __CINECODER_DISABLE_PRINT_VERSION__
 #pragma message ("------------------------------------------------------------------")
-#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.28.23.12518" " (build date " "6-Jul-2017" "6-Jul-2017")
+#pragma message (" Cinegy(r) Cinecoder(tm) version " "3.30.18.13164" " (build date " "11-Okt-2017" "11-Okt-2017")
 #pragma message ("------------------------------------------------------------------")
 #endif
 
@@ -2820,13 +3134,14 @@ inline bool CC_TIME_IS_SET(CC_TIME t) { return t >= 0; }
 #endif
 typedef /* [v1_enum] */ 
 enum CC_PRIORITY_VALUES
-    {	CC_THREAD_PRIORITY_IDLE	= -15,
-	CC_THREAD_PRIORITY_LOWEST	= -2,
-	CC_THREAD_PRIORITY_BELOW_NORMAL	= -1,
-	CC_THREAD_PRIORITY_NORMAL	= 0,
-	CC_THREAD_PRIORITY_ABOVE_NORMAL	= 1,
-	CC_THREAD_PRIORITY_HIGHEST	= 2,
-	CC_THREAD_PRIORITY_TIME_CRITICAL	= 15
+    {
+        CC_THREAD_PRIORITY_IDLE	= -15,
+        CC_THREAD_PRIORITY_LOWEST	= -2,
+        CC_THREAD_PRIORITY_BELOW_NORMAL	= -1,
+        CC_THREAD_PRIORITY_NORMAL	= 0,
+        CC_THREAD_PRIORITY_ABOVE_NORMAL	= 1,
+        CC_THREAD_PRIORITY_HIGHEST	= 2,
+        CC_THREAD_PRIORITY_TIME_CRITICAL	= 15
     } 	CC_PRIORITY_VALUES;
 
 typedef CC_PRIORITY_VALUES CC_PRIORITY;
@@ -2849,34 +3164,37 @@ typedef struct CC_VERSION_INFO
 
 typedef /* [v1_enum] */ 
 enum CC_PERIOD_FLAGS
-    {	FRQ_ONCE	= 0,
-	FRQ_FOREVER	= 0x1,
-	FRQ_TIMEVAL_MS	= 0x80000000,
-	FRQ_VALUE_MASK	= 0xffffff,
-	FRQ_EVERY_RAP	= 0x1000000,
-	FRQ_EVERY_I_FRAME	= 0x2000000,
-	FRQ_EVERY_P_FRAME	= 0x3000000,
-	FRQ_EVERY_B_FRAME	= 0x4000000,
-	FRQ_SYNC_TO_MASTER	= 0x40000000,
-	FRQ_FRAME_TYPE_MASK	= 0xf000000,
-	FRQ_FRAME_TYPE_SHFT	= 24
+    {
+        FRQ_ONCE	= 0,
+        FRQ_FOREVER	= 0x1,
+        FRQ_TIMEVAL_MS	= 0x80000000,
+        FRQ_VALUE_MASK	= 0xffffff,
+        FRQ_EVERY_RAP	= 0x1000000,
+        FRQ_EVERY_I_FRAME	= 0x2000000,
+        FRQ_EVERY_P_FRAME	= 0x3000000,
+        FRQ_EVERY_B_FRAME	= 0x4000000,
+        FRQ_SYNC_TO_MASTER	= 0x40000000,
+        FRQ_FRAME_TYPE_MASK	= 0xf000000,
+        FRQ_FRAME_TYPE_SHFT	= 24
     } 	CC_PERIOD_FLAGS;
 
 #define CC_GET_PERIOD_VALUE(p) ((p)&FRQ_VALUE_MASK)
 typedef /* [v1_enum] */ 
 enum CC_BITRATE_MODE
-    {	CC_BITRATE_MODE_UNKNOWN	= 0,
-	CC_CBR	= ( CC_BITRATE_MODE_UNKNOWN + 1 ) ,
-	CC_VBR	= ( CC_CBR + 1 ) ,
-	CC_CQ	= 77
+    {
+        CC_BITRATE_MODE_UNKNOWN	= 0,
+        CC_CBR	= ( CC_BITRATE_MODE_UNKNOWN + 1 ) ,
+        CC_VBR	= ( CC_CBR + 1 ) ,
+        CC_CQ	= 77
     } 	CC_BITRATE_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_RECOVER_FLAGS
-    {	CC_RECOVER_NONE	= 0,
-	CC_RECOVER_BREAKS	= 1,
-	CC_RECOVER_PTS	= 2,
-	CC_RECOVER_GOP_TC	= 0x10
+    {
+        CC_RECOVER_NONE	= 0,
+        CC_RECOVER_BREAKS	= 1,
+        CC_RECOVER_PTS	= 2,
+        CC_RECOVER_GOP_TC	= 0x10
     } 	CC_RECOVER_FLAGS;
 
 typedef struct CC_TIMECODE
@@ -2979,6 +3297,7 @@ EXTERN_C const IID IID_ICC_ClassFactory;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ClassFactoryVtbl
@@ -2989,7 +3308,7 @@ EXTERN_C const IID IID_ICC_ClassFactory;
             ICC_ClassFactory * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ClassFactory * This);
@@ -3166,6 +3485,7 @@ EXTERN_C const IID IID_ICC_Schema;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SchemaVtbl
@@ -3176,7 +3496,7 @@ EXTERN_C const IID IID_ICC_Schema;
             ICC_Schema * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Schema * This);
@@ -3294,6 +3614,7 @@ EXTERN_C const IID IID_ICC_ClassCreator;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ClassCreatorVtbl
@@ -3304,7 +3625,7 @@ EXTERN_C const IID IID_ICC_ClassCreator;
             ICC_ClassCreator * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ClassCreator * This);
@@ -3377,6 +3698,7 @@ EXTERN_C const IID IID_ICC_ErrorHandler;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ErrorHandlerVtbl
@@ -3387,7 +3709,7 @@ EXTERN_C const IID IID_ICC_ErrorHandler;
             ICC_ErrorHandler * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ErrorHandler * This);
@@ -3459,6 +3781,7 @@ EXTERN_C const IID IID_ICC_ErrorHandlerGetter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ErrorHandlerGetterVtbl
@@ -3469,7 +3792,7 @@ EXTERN_C const IID IID_ICC_ErrorHandlerGetter;
             ICC_ErrorHandlerGetter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ErrorHandlerGetter * This);
@@ -3541,6 +3864,7 @@ EXTERN_C const IID IID_ICC_ErrorHandlerProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ErrorHandlerPropVtbl
@@ -3551,7 +3875,7 @@ EXTERN_C const IID IID_ICC_ErrorHandlerProp;
             ICC_ErrorHandlerProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ErrorHandlerProp * This);
@@ -3630,6 +3954,7 @@ EXTERN_C const IID IID_ICC_ClassFactoryProvider;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ClassFactoryProviderVtbl
@@ -3640,7 +3965,7 @@ EXTERN_C const IID IID_ICC_ClassFactoryProvider;
             ICC_ClassFactoryProvider * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ClassFactoryProvider * This);
@@ -3734,6 +4059,7 @@ EXTERN_C const IID IID_ICC_PluginDescr;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_PluginDescrVtbl
@@ -3744,7 +4070,7 @@ EXTERN_C const IID IID_ICC_PluginDescr;
             ICC_PluginDescr * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_PluginDescr * This);
@@ -3863,6 +4189,7 @@ EXTERN_C const IID IID_ICC_Object;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ObjectVtbl
@@ -3873,7 +4200,7 @@ EXTERN_C const IID IID_ICC_Object;
             ICC_Object * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Object * This);
@@ -3959,6 +4286,7 @@ EXTERN_C const IID IID_ICC_Settings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SettingsVtbl
@@ -3969,7 +4297,7 @@ EXTERN_C const IID IID_ICC_Settings;
             ICC_Settings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Settings * This);
@@ -4094,6 +4422,7 @@ EXTERN_C const IID IID_ICC_StreamProcessor;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamProcessorVtbl
@@ -4104,7 +4433,7 @@ EXTERN_C const IID IID_ICC_StreamProcessor;
             ICC_StreamProcessor * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamProcessor * This);
@@ -4253,6 +4582,7 @@ EXTERN_C const IID IID_ICC_ByteStreamProducer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ByteStreamProducerVtbl
@@ -4263,7 +4593,7 @@ EXTERN_C const IID IID_ICC_ByteStreamProducer;
             ICC_ByteStreamProducer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ByteStreamProducer * This);
@@ -4338,6 +4668,7 @@ EXTERN_C const IID IID_ICC_ByteStreamConsumer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ByteStreamConsumerVtbl
@@ -4348,7 +4679,7 @@ EXTERN_C const IID IID_ICC_ByteStreamConsumer;
             ICC_ByteStreamConsumer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ByteStreamConsumer * This);
@@ -4422,6 +4753,7 @@ EXTERN_C const IID IID_ICC_Breakable;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BreakableVtbl
@@ -4432,7 +4764,7 @@ EXTERN_C const IID IID_ICC_Breakable;
             ICC_Breakable * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Breakable * This);
@@ -4510,6 +4842,7 @@ EXTERN_C const IID IID_ICC_Decoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DecoderVtbl
@@ -4520,7 +4853,7 @@ EXTERN_C const IID IID_ICC_Decoder;
             ICC_Decoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Decoder * This);
@@ -4692,6 +5025,7 @@ EXTERN_C const IID IID_ICC_Encoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_EncoderVtbl
@@ -4702,7 +5036,7 @@ EXTERN_C const IID IID_ICC_Encoder;
             ICC_Encoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Encoder * This);
@@ -4871,6 +5205,7 @@ EXTERN_C const IID IID_ICC_Transcoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_TranscoderVtbl
@@ -4881,7 +5216,7 @@ EXTERN_C const IID IID_ICC_Transcoder;
             ICC_Transcoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Transcoder * This);
@@ -5062,6 +5397,7 @@ EXTERN_C const IID IID_ICC_Splitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SplitterVtbl
@@ -5072,7 +5408,7 @@ EXTERN_C const IID IID_ICC_Splitter;
             ICC_Splitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Splitter * This);
@@ -5259,6 +5595,7 @@ EXTERN_C const IID IID_ICC_Cutter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CutterVtbl
@@ -5269,7 +5606,7 @@ EXTERN_C const IID IID_ICC_Cutter;
             ICC_Cutter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Cutter * This);
@@ -5478,6 +5815,7 @@ EXTERN_C const IID IID_ICC_IndexWriter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_IndexWriterVtbl
@@ -5488,7 +5826,7 @@ EXTERN_C const IID IID_ICC_IndexWriter;
             ICC_IndexWriter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_IndexWriter * This);
@@ -5660,6 +5998,7 @@ EXTERN_C const IID IID_ICC_ByteStreamCallback;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ByteStreamCallbackVtbl
@@ -5670,7 +6009,7 @@ EXTERN_C const IID IID_ICC_ByteStreamCallback;
             ICC_ByteStreamCallback * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ByteStreamCallback * This);
@@ -5742,6 +6081,7 @@ EXTERN_C const IID IID_ICC_DataReadyCallback;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DataReadyCallbackVtbl
@@ -5752,7 +6092,7 @@ EXTERN_C const IID IID_ICC_DataReadyCallback;
             ICC_DataReadyCallback * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DataReadyCallback * This);
@@ -5824,6 +6164,7 @@ EXTERN_C const IID IID_ICC_TimeBaseProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_TimeBasePropVtbl
@@ -5834,7 +6175,7 @@ EXTERN_C const IID IID_ICC_TimeBaseProp;
             ICC_TimeBaseProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_TimeBaseProp * This);
@@ -5913,6 +6254,7 @@ EXTERN_C const IID IID_ICC_InitialTimeCodeProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_InitialTimeCodePropVtbl
@@ -5923,7 +6265,7 @@ EXTERN_C const IID IID_ICC_InitialTimeCodeProp;
             ICC_InitialTimeCodeProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_InitialTimeCodeProp * This);
@@ -6002,6 +6344,7 @@ EXTERN_C const IID IID_ICC_BitRateProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BitRatePropVtbl
@@ -6012,7 +6355,7 @@ EXTERN_C const IID IID_ICC_BitRateProp;
             ICC_BitRateProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_BitRateProp * This);
@@ -6091,6 +6434,7 @@ EXTERN_C const IID IID_ICC_FrameRateProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_FrameRatePropVtbl
@@ -6101,7 +6445,7 @@ EXTERN_C const IID IID_ICC_FrameRateProp;
             ICC_FrameRateProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_FrameRateProp * This);
@@ -6178,6 +6522,7 @@ EXTERN_C const IID IID_ICC_BufferAllocator;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BufferAllocatorVtbl
@@ -6188,7 +6533,7 @@ EXTERN_C const IID IID_ICC_BufferAllocator;
             ICC_BufferAllocator * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_BufferAllocator * This);
@@ -6267,6 +6612,7 @@ EXTERN_C const IID IID_ICC_StreamRecovery;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamRecoveryVtbl
@@ -6277,7 +6623,7 @@ EXTERN_C const IID IID_ICC_StreamRecovery;
             ICC_StreamRecovery * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamRecovery * This);
@@ -6370,6 +6716,7 @@ EXTERN_C const IID IID_ICC_ThreadsCountProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ThreadsCountPropVtbl
@@ -6380,7 +6727,7 @@ EXTERN_C const IID IID_ICC_ThreadsCountProp;
             ICC_ThreadsCountProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ThreadsCountProp * This);
@@ -6459,6 +6806,7 @@ EXTERN_C const IID IID_ICC_ThreadsAffinityProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ThreadsAffinityPropVtbl
@@ -6469,7 +6817,7 @@ EXTERN_C const IID IID_ICC_ThreadsAffinityProp;
             ICC_ThreadsAffinityProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ThreadsAffinityProp * This);
@@ -6548,6 +6896,7 @@ EXTERN_C const IID IID_ICC_ThreadsPriorityProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ThreadsPriorityPropVtbl
@@ -6558,7 +6907,7 @@ EXTERN_C const IID IID_ICC_ThreadsPriorityProp;
             ICC_ThreadsPriorityProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ThreadsPriorityProp * This);
@@ -6643,6 +6992,7 @@ EXTERN_C const IID IID_ICC_InputBufferControl;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_InputBufferControlVtbl
@@ -6653,7 +7003,7 @@ EXTERN_C const IID IID_ICC_InputBufferControl;
             ICC_InputBufferControl * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_InputBufferControl * This);
@@ -6744,6 +7094,7 @@ EXTERN_C const IID IID_ICC_ReferenceAlisProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ReferenceAlisPropVtbl
@@ -6754,7 +7105,7 @@ EXTERN_C const IID IID_ICC_ReferenceAlisProp;
             ICC_ReferenceAlisProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ReferenceAlisProp * This);
@@ -6809,8 +7160,9 @@ EXTERN_C const IID IID_ICC_ReferenceAlisProp;
 
 typedef /* [v1_enum] */ 
 enum CC_PROCESS_DATA_POLICY
-    {	CC_PDP_RAW_STREAM	= 0,
-	CC_PDP_PARSED_DATA	= 1
+    {
+        CC_PDP_RAW_STREAM	= 0,
+        CC_PDP_PARSED_DATA	= 1
     } 	CC_PROCESS_DATA_POLICY;
 
 
@@ -6841,6 +7193,7 @@ EXTERN_C const IID IID_ICC_ProcessDataPolicyProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ProcessDataPolicyPropVtbl
@@ -6851,7 +7204,7 @@ EXTERN_C const IID IID_ICC_ProcessDataPolicyProp;
             ICC_ProcessDataPolicyProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ProcessDataPolicyProp * This);
@@ -6929,6 +7282,7 @@ EXTERN_C const IID IID_ICC_AddUserDataCtrl;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AddUserDataCtrlVtbl
@@ -6939,7 +7293,7 @@ EXTERN_C const IID IID_ICC_AddUserDataCtrl;
             ICC_AddUserDataCtrl * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AddUserDataCtrl * This);
@@ -7013,6 +7367,7 @@ EXTERN_C const IID IID_ICC_ConcurrencyLevelProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ConcurrencyLevelPropVtbl
@@ -7023,7 +7378,7 @@ EXTERN_C const IID IID_ICC_ConcurrencyLevelProp;
             ICC_ConcurrencyLevelProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ConcurrencyLevelProp * This);
@@ -7100,6 +7455,7 @@ EXTERN_C const IID IID_ICC_DataWriter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DataWriterVtbl
@@ -7110,7 +7466,7 @@ EXTERN_C const IID IID_ICC_DataWriter;
             ICC_DataWriter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DataWriter * This);
@@ -7182,6 +7538,7 @@ EXTERN_C const IID IID_ICC_DataWriterEx;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DataWriterExVtbl
@@ -7192,7 +7549,7 @@ EXTERN_C const IID IID_ICC_DataWriterEx;
             ICC_DataWriterEx * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DataWriterEx * This);
@@ -7274,6 +7631,7 @@ EXTERN_C const IID IID_ICC_DataReader;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DataReaderVtbl
@@ -7284,7 +7642,7 @@ EXTERN_C const IID IID_ICC_DataReader;
             ICC_DataReader * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DataReader * This);
@@ -7358,6 +7716,7 @@ EXTERN_C const IID IID_ICC_DataReaderEx;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DataReaderExVtbl
@@ -7368,7 +7727,7 @@ EXTERN_C const IID IID_ICC_DataReaderEx;
             ICC_DataReaderEx * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DataReaderEx * This);
@@ -7453,6 +7812,7 @@ EXTERN_C const IID IID_ICC_StreamPositionProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamPositionPropVtbl
@@ -7463,7 +7823,7 @@ EXTERN_C const IID IID_ICC_StreamPositionProp;
             ICC_StreamPositionProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamPositionProp * This);
@@ -7539,6 +7899,7 @@ EXTERN_C const IID IID_ICC_StreamLengthProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamLengthPropVtbl
@@ -7549,7 +7910,7 @@ EXTERN_C const IID IID_ICC_StreamLengthProp;
             ICC_StreamLengthProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamLengthProp * This);
@@ -7632,6 +7993,7 @@ EXTERN_C const IID IID_ICC_InputStream;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_InputStreamVtbl
@@ -7642,7 +8004,7 @@ EXTERN_C const IID IID_ICC_InputStream;
             ICC_InputStream * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_InputStream * This);
@@ -7726,7 +8088,8 @@ EXTERN_C const IID IID_ICC_InputStream;
 
 typedef /* [v1_enum] */ 
 enum CC_OPEN_FLAGS
-    {	CC_FILE_OPEN_DEFAULT	= 0
+    {
+        CC_FILE_OPEN_DEFAULT	= 0
     } 	CC_OPEN_FLAGS;
 
 
@@ -7768,6 +8131,7 @@ EXTERN_C const IID IID_ICC_File;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_FileVtbl
@@ -7778,7 +8142,7 @@ EXTERN_C const IID IID_ICC_File;
             ICC_File * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_File * This);
@@ -7890,6 +8254,7 @@ EXTERN_C const IID IID_ICC_InputFile;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_InputFileVtbl
@@ -7900,7 +8265,7 @@ EXTERN_C const IID IID_ICC_InputFile;
             ICC_InputFile * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_InputFile * This);
@@ -8036,6 +8401,7 @@ EXTERN_C const IID IID_ICC_OutputFile;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_OutputFileVtbl
@@ -8046,7 +8412,7 @@ EXTERN_C const IID IID_ICC_OutputFile;
             ICC_OutputFile * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_OutputFile * This);
@@ -8158,56 +8524,58 @@ EXTERN_C const IID IID_ICC_OutputFile;
 
 typedef /* [v1_enum] */ 
 enum CC_ELEMENTARY_STREAM_TYPE
-    {	CC_ES_TYPE_UNKNOWN	= 0,
-	CC_ES_TYPE_VIDEO_MPEG1	= 0x1,
-	CC_ES_TYPE_VIDEO_MPEG2	= 0x2,
-	CC_ES_TYPE_AUDIO_MPEG1	= 0x3,
-	CC_ES_TYPE_AUDIO_MPEG2	= 0x4,
-	CC_ES_TYPE_PRIVATE_SECTION	= 0x5,
-	CC_ES_TYPE_PRIVATE_DATA	= 0x6,
-	CC_ES_TYPE_MHEG	= 0x7,
-	CC_ES_TYPE_DSM_CC	= 0x8,
-	CC_ES_TYPE_H_222_1	= 0x9,
-	CC_ES_TYPE_13818_6_A	= 0xa,
-	CC_ES_TYPE_13818_6_B	= 0xb,
-	CC_ES_TYPE_13818_6_C	= 0xc,
-	CC_ES_TYPE_13818_6_D	= 0xd,
-	CC_ES_TYPE_13818_1_AUX	= 0xe,
-	CC_ES_TYPE_AUDIO_AAC	= 0xf,
-	CC_ES_TYPE_VIDEO_MPEG4	= 0x10,
-	CC_ES_TYPE_AUDIO_LATM	= 0x11,
-	CC_ES_TYPE_FLEXMUX_1	= 0x12,
-	CC_ES_TYPE_FLEXMUX_2	= 0x13,
-	CC_ES_TYPE_SYNC_DOWNLOAD_PROTOCOL	= 0x14,
-	CC_ES_TYPE_VIDEO_H264	= 0x1b,
-	CC_ES_TYPE_VIDEO_AVC	= 0x1b,
-	CC_ES_TYPE_VIDEO_J2K	= 0x21,
-	CC_ES_TYPE_VIDEO_H265	= 0x24,
-	CC_ES_TYPE_VIDEO_HEVC	= 0x24,
-	CC_ES_TYPE_AUDIO_LPCM	= 0x80,
-	CC_ES_TYPE_AUDIO_AC3	= 0x81,
-	CC_ES_TYPE_AUDIO_AC3_ATSC	= 0x81,
-	CC_ES_TYPE_AUDIO_AC3_DVB	= 0x8106,
-	CC_ES_TYPE_SCTE_35	= 0x86,
-	CC_ES_TYPE_AUDIO_DTS	= 0x8a,
-	CC_ES_PRESENTATION_GRAPHICS	= 0x90,
-	CC_ES_INTERACTIVE_GRAPHICS	= 0x91,
-	CC_ES_TYPE_AUDIO_AES3	= 0x98,
-	CC_ES_TYPE_DATA_AES3	= 0x99,
-	CC_ES_TYPE_AUDIO_SMPTE302	= 0x9806,
-	CC_ES_TYPE_AUDIO_DOLBY_E	= 0x9906,
-	CC_ES_TYPE_HDV2_AUX_A	= 0xa0,
-	CC_ES_TYPE_HDV2_AUX_V	= 0xa1,
-	CC_ES_TYPE_VIDEO_DV	= 0x1d0,
-	CC_ES_TYPE_VIDEO_DVCPRO	= 0x1d1,
-	CC_ES_TYPE_VIDEO_DNxHD	= 0x1d2,
-	CC_ES_TYPE_VIDEO_AVC_INTRA	= 0x11b,
-	CC_ES_TYPE_VIDEO_PRORES	= 0x120,
-	CC_ES_TYPE_EBU_TELETEXT	= 0x4206,
-	CC_ES_TYPE_DVB_SUBTITLES	= 0xbf06,
-	CC_ES_TYPE_SMPTE_436	= 0x436,
-	CC_ES_TYPE_VIDEO_DANIEL	= 0xd206,
-	CC_ES_TYPE_VIDEO_Y4M	= 0xf406
+    {
+        CC_ES_TYPE_UNKNOWN	= 0,
+        CC_ES_TYPE_VIDEO_MPEG1	= 0x1,
+        CC_ES_TYPE_VIDEO_MPEG2	= 0x2,
+        CC_ES_TYPE_AUDIO_MPEG1	= 0x3,
+        CC_ES_TYPE_AUDIO_MPEG2	= 0x4,
+        CC_ES_TYPE_PRIVATE_SECTION	= 0x5,
+        CC_ES_TYPE_PRIVATE_DATA	= 0x6,
+        CC_ES_TYPE_MHEG	= 0x7,
+        CC_ES_TYPE_DSM_CC	= 0x8,
+        CC_ES_TYPE_H_222_1	= 0x9,
+        CC_ES_TYPE_13818_6_A	= 0xa,
+        CC_ES_TYPE_13818_6_B	= 0xb,
+        CC_ES_TYPE_13818_6_C	= 0xc,
+        CC_ES_TYPE_13818_6_D	= 0xd,
+        CC_ES_TYPE_13818_1_AUX	= 0xe,
+        CC_ES_TYPE_AUDIO_AAC	= 0xf,
+        CC_ES_TYPE_VIDEO_MPEG4	= 0x10,
+        CC_ES_TYPE_AUDIO_LATM	= 0x11,
+        CC_ES_TYPE_FLEXMUX_1	= 0x12,
+        CC_ES_TYPE_FLEXMUX_2	= 0x13,
+        CC_ES_TYPE_SYNC_DOWNLOAD_PROTOCOL	= 0x14,
+        CC_ES_TYPE_VIDEO_H264	= 0x1b,
+        CC_ES_TYPE_VIDEO_AVC	= 0x1b,
+        CC_ES_TYPE_VIDEO_J2K	= 0x21,
+        CC_ES_TYPE_VIDEO_H265	= 0x24,
+        CC_ES_TYPE_VIDEO_HEVC	= 0x24,
+        CC_ES_TYPE_AUDIO_LPCM	= 0x80,
+        CC_ES_TYPE_AUDIO_AC3	= 0x81,
+        CC_ES_TYPE_AUDIO_AC3_ATSC	= 0x81,
+        CC_ES_TYPE_AUDIO_AC3_DVB	= 0x8106,
+        CC_ES_TYPE_SCTE_35	= 0x86,
+        CC_ES_TYPE_AUDIO_DTS	= 0x8a,
+        CC_ES_PRESENTATION_GRAPHICS	= 0x90,
+        CC_ES_INTERACTIVE_GRAPHICS	= 0x91,
+        CC_ES_TYPE_AUDIO_AES3	= 0x98,
+        CC_ES_TYPE_DATA_AES3	= 0x99,
+        CC_ES_TYPE_AUDIO_SMPTE302	= 0x9806,
+        CC_ES_TYPE_AUDIO_DOLBY_E	= 0x9906,
+        CC_ES_TYPE_HDV2_AUX_A	= 0xa0,
+        CC_ES_TYPE_HDV2_AUX_V	= 0xa1,
+        CC_ES_TYPE_VIDEO_DV	= 0x1d0,
+        CC_ES_TYPE_VIDEO_DVCPRO	= 0x1d1,
+        CC_ES_TYPE_VIDEO_DNxHD	= 0x1d2,
+        CC_ES_TYPE_VIDEO_AVC_INTRA	= 0x11b,
+        CC_ES_TYPE_VIDEO_PRORES	= 0x120,
+        CC_ES_TYPE_EBU_TELETEXT	= 0x4206,
+        CC_ES_TYPE_DVB_SUBTITLES	= 0xbf06,
+        CC_ES_TYPE_SMPTE_436	= 0x436,
+        CC_ES_TYPE_VIDEO_DANIEL	= 0xd206,
+        CC_ES_TYPE_VIDEO_Y4M	= 0xf406,
+        CC_ES_TYPE_VIDEO_UNCOMPRESSED	= 0xff06
     } 	CC_ELEMENTARY_STREAM_TYPE;
 
 
@@ -8241,6 +8609,7 @@ EXTERN_C const IID IID_ICC_ElementaryStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ElementaryStreamInfoVtbl
@@ -8251,7 +8620,7 @@ EXTERN_C const IID IID_ICC_ElementaryStreamInfo;
             ICC_ElementaryStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ElementaryStreamInfo * This);
@@ -8379,6 +8748,7 @@ EXTERN_C const IID IID_ICC_ElementaryStreamSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ElementaryStreamSettingsVtbl
@@ -8389,7 +8759,7 @@ EXTERN_C const IID IID_ICC_ElementaryStreamSettings;
             ICC_ElementaryStreamSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ElementaryStreamSettings * This);
@@ -8526,6 +8896,7 @@ EXTERN_C const IID IID_ICC_ByteStreamDataInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ByteStreamDataInfoVtbl
@@ -8536,7 +8907,7 @@ EXTERN_C const IID IID_ICC_ByteStreamDataInfo;
             ICC_ByteStreamDataInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ByteStreamDataInfo * This);
@@ -8660,6 +9031,7 @@ EXTERN_C const IID IID_ICC_ElementaryDataInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ElementaryDataInfoVtbl
@@ -8670,7 +9042,7 @@ EXTERN_C const IID IID_ICC_ElementaryDataInfo;
             ICC_ElementaryDataInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ElementaryDataInfo * This);
@@ -8828,6 +9200,7 @@ EXTERN_C const IID IID_ICC_CodedStreamHeaderProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CodedStreamHeaderPropVtbl
@@ -8838,7 +9211,7 @@ EXTERN_C const IID IID_ICC_CodedStreamHeaderProp;
             ICC_CodedStreamHeaderProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_CodedStreamHeaderProp * This);
@@ -8894,22 +9267,23 @@ EXTERN_C const IID IID_ICC_CodedStreamHeaderProp;
 
 typedef /* [v1_enum] */ 
 enum CC_EXECUTIVE_DEVICE_TYPES
-    {	CC_DEV_TYPE_ANY	= 0,
-	CC_DEV_TYPE_CPU	= ( 1 << 0 ) ,
-	CC_DEV_TYPE_CUDA_0	= ( 1 << 1 ) ,
-	CC_DEV_TYPE_CUDA_1	= ( 1 << 2 ) ,
-	CC_DEV_TYPE_CUDA_2	= ( 1 << 3 ) ,
-	CC_DEV_TYPE_CUDA_3	= ( 1 << 4 ) ,
-	CC_DEV_TYPE_CUDA_4	= ( 1 << 5 ) ,
-	CC_DEV_TYPE_CUDA_5	= ( 1 << 6 ) ,
-	CC_DEV_TYPE_CUDA_6	= ( 1 << 7 ) ,
-	CC_DEV_TYPE_CUDA_7	= ( 1 << 8 ) ,
-	CC_DEV_TYPE_CUDA	= ( ( ( ( ( ( ( CC_DEV_TYPE_CUDA_0 | CC_DEV_TYPE_CUDA_1 )  | CC_DEV_TYPE_CUDA_2 )  | CC_DEV_TYPE_CUDA_3 )  | CC_DEV_TYPE_CUDA_4 )  | CC_DEV_TYPE_CUDA_5 )  | CC_DEV_TYPE_CUDA_6 )  | CC_DEV_TYPE_CUDA_7 ) ,
-	CC_DEV_TYPE_MSDK_0	= ( 1 << 9 ) ,
-	CC_DEV_TYPE_MSDK_1	= ( 1 << 10 ) ,
-	CC_DEV_TYPE_MSDK_2	= ( 1 << 11 ) ,
-	CC_DEV_TYPE_MSDK_3	= ( 1 << 12 ) ,
-	CC_DEV_TYPE_MSDK	= ( ( ( CC_DEV_TYPE_MSDK_0 | CC_DEV_TYPE_MSDK_1 )  | CC_DEV_TYPE_MSDK_2 )  | CC_DEV_TYPE_MSDK_3 ) 
+    {
+        CC_DEV_TYPE_ANY	= 0,
+        CC_DEV_TYPE_CPU	= ( 1 << 0 ) ,
+        CC_DEV_TYPE_CUDA_0	= ( 1 << 1 ) ,
+        CC_DEV_TYPE_CUDA_1	= ( 1 << 2 ) ,
+        CC_DEV_TYPE_CUDA_2	= ( 1 << 3 ) ,
+        CC_DEV_TYPE_CUDA_3	= ( 1 << 4 ) ,
+        CC_DEV_TYPE_CUDA_4	= ( 1 << 5 ) ,
+        CC_DEV_TYPE_CUDA_5	= ( 1 << 6 ) ,
+        CC_DEV_TYPE_CUDA_6	= ( 1 << 7 ) ,
+        CC_DEV_TYPE_CUDA_7	= ( 1 << 8 ) ,
+        CC_DEV_TYPE_CUDA	= ( ( ( ( ( ( ( CC_DEV_TYPE_CUDA_0 | CC_DEV_TYPE_CUDA_1 )  | CC_DEV_TYPE_CUDA_2 )  | CC_DEV_TYPE_CUDA_3 )  | CC_DEV_TYPE_CUDA_4 )  | CC_DEV_TYPE_CUDA_5 )  | CC_DEV_TYPE_CUDA_6 )  | CC_DEV_TYPE_CUDA_7 ) ,
+        CC_DEV_TYPE_MSDK_0	= ( 1 << 9 ) ,
+        CC_DEV_TYPE_MSDK_1	= ( 1 << 10 ) ,
+        CC_DEV_TYPE_MSDK_2	= ( 1 << 11 ) ,
+        CC_DEV_TYPE_MSDK_3	= ( 1 << 12 ) ,
+        CC_DEV_TYPE_MSDK	= ( ( ( CC_DEV_TYPE_MSDK_0 | CC_DEV_TYPE_MSDK_1 )  | CC_DEV_TYPE_MSDK_2 )  | CC_DEV_TYPE_MSDK_3 ) 
     } 	CC_EXECUTIVE_DEVICE_TYPES;
 
 
@@ -8940,6 +9314,7 @@ EXTERN_C const IID IID_ICC_ExecutiveDeviceMaskProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ExecutiveDeviceMaskPropVtbl
@@ -8950,7 +9325,7 @@ EXTERN_C const IID IID_ICC_ExecutiveDeviceMaskProp;
             ICC_ExecutiveDeviceMaskProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ExecutiveDeviceMaskProp * This);
@@ -9023,6 +9398,7 @@ EXTERN_C const IID IID_ICC_CollectionHandler;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CollectionHandlerVtbl
@@ -9033,7 +9409,7 @@ EXTERN_C const IID IID_ICC_CollectionHandler;
             ICC_CollectionHandler * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_CollectionHandler * This);
@@ -9111,6 +9487,7 @@ EXTERN_C const IID IID_ICC_ReadOnlyCollection;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ReadOnlyCollectionVtbl
@@ -9121,7 +9498,7 @@ EXTERN_C const IID IID_ICC_ReadOnlyCollection;
             ICC_ReadOnlyCollection * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ReadOnlyCollection * This);
@@ -9233,6 +9610,7 @@ EXTERN_C const IID IID_ICC_Collection;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CollectionVtbl
@@ -9243,7 +9621,7 @@ EXTERN_C const IID IID_ICC_Collection;
             ICC_Collection * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Collection * This);
@@ -9387,6 +9765,7 @@ EXTERN_C const IID IID_ICC_CollectionChanged;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CollectionChangedVtbl
@@ -9397,7 +9776,7 @@ EXTERN_C const IID IID_ICC_CollectionChanged;
             ICC_CollectionChanged * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_CollectionChanged * This);
@@ -9485,6 +9864,7 @@ EXTERN_C const IID IID_ICC_CollectionFilter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_CollectionFilterVtbl
@@ -9495,7 +9875,7 @@ EXTERN_C const IID IID_ICC_CollectionFilter;
             ICC_CollectionFilter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_CollectionFilter * This);
@@ -9552,111 +9932,116 @@ EXTERN_C const IID IID_ICC_CollectionFilter;
 
 typedef /* [v1_enum] */ 
 enum CC_AUDIO_SAMPLE_TYPE
-    {	CC_ASMPL_PCM16	= 0,
-	CC_ASMPL_PCM24	= ( CC_ASMPL_PCM16 + 1 ) ,
-	CC_ASMPL_PCM32	= ( CC_ASMPL_PCM24 + 1 ) ,
-	CC_ASMPL_FLOAT32	= ( CC_ASMPL_PCM32 + 1 ) 
+    {
+        CC_ASMPL_PCM16	= 0,
+        CC_ASMPL_PCM24	= ( CC_ASMPL_PCM16 + 1 ) ,
+        CC_ASMPL_PCM32	= ( CC_ASMPL_PCM24 + 1 ) ,
+        CC_ASMPL_FLOAT32	= ( CC_ASMPL_PCM32 + 1 ) 
     } 	CC_AUDIO_SAMPLE_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_AUDIO_FMT
-    {	CAF_UNKNOWN	= 0,
-	CAF_PCM8	= 0x20000,
-	CAF_PCM16	= 0x10000,
-	CAF_PCM24	= 0x30000,
-	CAF_PCM32	= 0x40000,
-	CAF_PCM32_24	= 0x70000,
-	CAF_FLOAT32	= 0x100000,
-	CAF_PCM8_1CH	= 0x20001,
-	CAF_PCM8_2CH	= 0x20002,
-	CAF_PCM16_1CH	= 0x10001,
-	CAF_PCM16_2CH	= 0x10002,
-	CAF_PCM16_6CH	= 0x10006,
-	CAF_PCM24_1CH	= 0x30001,
-	CAF_PCM24_2CH	= 0x30002,
-	CAF_PCM24_6CH	= 0x30006,
-	CAF_PCM32_1CH	= 0x40001,
-	CAF_PCM32_2CH	= 0x40002,
-	CAF_PCM32_6CH	= 0x40006,
-	CAF_PCM32_24_1CH	= 0x70001,
-	CAF_PCM32_24_2CH	= 0x70002,
-	CAF_PCM32_24_6CH	= 0x70006,
-	CAF_FLOAT32_1CH	= 0x100001,
-	CAF_FLOAT32_2CH	= 0x100002,
-	CAF_FMT_MASK	= 0xff0000,
-	CAF_CNL_MASK	= 0xff
+    {
+        CAF_UNKNOWN	= 0,
+        CAF_PCM8	= 0x20000,
+        CAF_PCM16	= 0x10000,
+        CAF_PCM24	= 0x30000,
+        CAF_PCM32	= 0x40000,
+        CAF_PCM32_24	= 0x70000,
+        CAF_FLOAT32	= 0x100000,
+        CAF_PCM8_1CH	= 0x20001,
+        CAF_PCM8_2CH	= 0x20002,
+        CAF_PCM16_1CH	= 0x10001,
+        CAF_PCM16_2CH	= 0x10002,
+        CAF_PCM16_6CH	= 0x10006,
+        CAF_PCM24_1CH	= 0x30001,
+        CAF_PCM24_2CH	= 0x30002,
+        CAF_PCM24_6CH	= 0x30006,
+        CAF_PCM32_1CH	= 0x40001,
+        CAF_PCM32_2CH	= 0x40002,
+        CAF_PCM32_6CH	= 0x40006,
+        CAF_PCM32_24_1CH	= 0x70001,
+        CAF_PCM32_24_2CH	= 0x70002,
+        CAF_PCM32_24_6CH	= 0x70006,
+        CAF_FLOAT32_1CH	= 0x100001,
+        CAF_FLOAT32_2CH	= 0x100002,
+        CAF_FMT_MASK	= 0xff0000,
+        CAF_CNL_MASK	= 0xff
     } 	CC_AUDIO_FMT;
 
 typedef 
 enum CC_AUDIO_CHANNEL_ID
-    {	CC_CH_NOT_SET	= 0,
-	CC_CH_FRONT_LEFT	= 1,
-	CC_CH_FRONT_RIGHT	= 2,
-	CC_CH_FRONT_CENTER	= 3,
-	CC_CH_LOW_FREQUENCY	= 4,
-	CC_CH_BACK_LEFT	= 5,
-	CC_CH_BACK_RIGHT	= 6,
-	CC_CH_FRONT_LEFT_OF_CENTER	= 7,
-	CC_CH_FRONT_RIGHT_OF_CENTER	= 8,
-	CC_CH_BACK_CENTER	= 9,
-	CC_CH_SIDE_LEFT	= 10,
-	CC_CH_SIDE_RIGHT	= 11,
-	CC_CH_TOP_CENTER	= 12,
-	CC_CH_TOP_FRONT_LEFT	= 13,
-	CC_CH_TOP_FRONT_CENTER	= 14,
-	CC_CH_TOP_FRONT_RIGHT	= 15,
-	CC_CH_TOP_BACK_LEFT	= 16,
-	CC_CH_TOP_BACK_CENTER	= 17,
-	CC_CH_TOP_BACK_RIGHT	= 18
+    {
+        CC_CH_NOT_SET	= 0,
+        CC_CH_FRONT_LEFT	= 1,
+        CC_CH_FRONT_RIGHT	= 2,
+        CC_CH_FRONT_CENTER	= 3,
+        CC_CH_LOW_FREQUENCY	= 4,
+        CC_CH_BACK_LEFT	= 5,
+        CC_CH_BACK_RIGHT	= 6,
+        CC_CH_FRONT_LEFT_OF_CENTER	= 7,
+        CC_CH_FRONT_RIGHT_OF_CENTER	= 8,
+        CC_CH_BACK_CENTER	= 9,
+        CC_CH_SIDE_LEFT	= 10,
+        CC_CH_SIDE_RIGHT	= 11,
+        CC_CH_TOP_CENTER	= 12,
+        CC_CH_TOP_FRONT_LEFT	= 13,
+        CC_CH_TOP_FRONT_CENTER	= 14,
+        CC_CH_TOP_FRONT_RIGHT	= 15,
+        CC_CH_TOP_BACK_LEFT	= 16,
+        CC_CH_TOP_BACK_CENTER	= 17,
+        CC_CH_TOP_BACK_RIGHT	= 18
     } 	CC_AUDIO_CHANNEL_ID;
 
 typedef 
 enum CC_AUDIO_CHANNEL_MASK
-    {	CC_CH_FRONT_LEFT_MASK	= ( ( 1 << CC_CH_FRONT_LEFT )  >> 1 ) ,
-	CC_CH_FRONT_RIGHT_MASK	= ( ( 1 << CC_CH_FRONT_RIGHT )  >> 1 ) ,
-	CC_CH_FRONT_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_CENTER )  >> 1 ) ,
-	CC_CH_LOW_FREQUENCY_MASK	= ( ( 1 << CC_CH_LOW_FREQUENCY )  >> 1 ) ,
-	CC_CH_BACK_LEFT_MASK	= ( ( 1 << CC_CH_BACK_LEFT )  >> 1 ) ,
-	CC_CH_BACK_RIGHT_MASK	= ( ( 1 << CC_CH_BACK_RIGHT )  >> 1 ) ,
-	CC_CH_FRONT_LEFT_OF_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_LEFT_OF_CENTER )  >> 1 ) ,
-	CC_CH_FRONT_RIGHT_OF_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_RIGHT_OF_CENTER )  >> 1 ) ,
-	CC_CH_BACK_CENTER_MASK	= ( ( 1 << CC_CH_BACK_CENTER )  >> 1 ) ,
-	CC_CH_SIDE_LEFT_MASK	= ( ( 1 << CC_CH_SIDE_LEFT )  >> 1 ) ,
-	CC_CH_SIDE_RIGHT_MASK	= ( ( 1 << CC_CH_SIDE_RIGHT )  >> 1 ) ,
-	CC_CH_TOP_CENTER_MASK	= ( ( 1 << CC_CH_TOP_CENTER )  >> 1 ) ,
-	CC_CH_TOP_FRONT_LEFT_MASK	= ( ( 1 << CC_CH_TOP_FRONT_LEFT )  >> 1 ) ,
-	CC_CH_TOP_FRONT_CENTER_MASK	= ( ( 1 << CC_CH_TOP_FRONT_CENTER )  >> 1 ) ,
-	CC_CH_TOP_FRONT_RIGHT_MASK	= ( ( 1 << CC_CH_TOP_FRONT_RIGHT )  >> 1 ) ,
-	CC_CH_TOP_BACK_LEFT_MASK	= ( ( 1 << CC_CH_TOP_BACK_LEFT )  >> 1 ) ,
-	CC_CH_TOP_BACK_CENTER_MASK	= ( ( 1 << CC_CH_TOP_BACK_CENTER )  >> 1 ) ,
-	CC_CH_TOP_BACK_RIGHT_MASK	= ( ( 1 << CC_CH_TOP_BACK_RIGHT )  >> 1 ) ,
-	CC_CH_FRONT_PAIR_MASK	= ( CC_CH_FRONT_LEFT_MASK | CC_CH_FRONT_RIGHT_MASK ) ,
-	CC_CH_BACK_PAIR_MASK	= ( CC_CH_BACK_LEFT_MASK | CC_CH_BACK_RIGHT_MASK ) ,
-	CC_CH_FRONT_OF_CENTER_PAIR_MASK	= ( CC_CH_FRONT_LEFT_OF_CENTER_MASK | CC_CH_FRONT_RIGHT_OF_CENTER_MASK ) 
+    {
+        CC_CH_FRONT_LEFT_MASK	= ( ( 1 << CC_CH_FRONT_LEFT )  >> 1 ) ,
+        CC_CH_FRONT_RIGHT_MASK	= ( ( 1 << CC_CH_FRONT_RIGHT )  >> 1 ) ,
+        CC_CH_FRONT_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_CENTER )  >> 1 ) ,
+        CC_CH_LOW_FREQUENCY_MASK	= ( ( 1 << CC_CH_LOW_FREQUENCY )  >> 1 ) ,
+        CC_CH_BACK_LEFT_MASK	= ( ( 1 << CC_CH_BACK_LEFT )  >> 1 ) ,
+        CC_CH_BACK_RIGHT_MASK	= ( ( 1 << CC_CH_BACK_RIGHT )  >> 1 ) ,
+        CC_CH_FRONT_LEFT_OF_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_LEFT_OF_CENTER )  >> 1 ) ,
+        CC_CH_FRONT_RIGHT_OF_CENTER_MASK	= ( ( 1 << CC_CH_FRONT_RIGHT_OF_CENTER )  >> 1 ) ,
+        CC_CH_BACK_CENTER_MASK	= ( ( 1 << CC_CH_BACK_CENTER )  >> 1 ) ,
+        CC_CH_SIDE_LEFT_MASK	= ( ( 1 << CC_CH_SIDE_LEFT )  >> 1 ) ,
+        CC_CH_SIDE_RIGHT_MASK	= ( ( 1 << CC_CH_SIDE_RIGHT )  >> 1 ) ,
+        CC_CH_TOP_CENTER_MASK	= ( ( 1 << CC_CH_TOP_CENTER )  >> 1 ) ,
+        CC_CH_TOP_FRONT_LEFT_MASK	= ( ( 1 << CC_CH_TOP_FRONT_LEFT )  >> 1 ) ,
+        CC_CH_TOP_FRONT_CENTER_MASK	= ( ( 1 << CC_CH_TOP_FRONT_CENTER )  >> 1 ) ,
+        CC_CH_TOP_FRONT_RIGHT_MASK	= ( ( 1 << CC_CH_TOP_FRONT_RIGHT )  >> 1 ) ,
+        CC_CH_TOP_BACK_LEFT_MASK	= ( ( 1 << CC_CH_TOP_BACK_LEFT )  >> 1 ) ,
+        CC_CH_TOP_BACK_CENTER_MASK	= ( ( 1 << CC_CH_TOP_BACK_CENTER )  >> 1 ) ,
+        CC_CH_TOP_BACK_RIGHT_MASK	= ( ( 1 << CC_CH_TOP_BACK_RIGHT )  >> 1 ) ,
+        CC_CH_FRONT_PAIR_MASK	= ( CC_CH_FRONT_LEFT_MASK | CC_CH_FRONT_RIGHT_MASK ) ,
+        CC_CH_BACK_PAIR_MASK	= ( CC_CH_BACK_LEFT_MASK | CC_CH_BACK_RIGHT_MASK ) ,
+        CC_CH_FRONT_OF_CENTER_PAIR_MASK	= ( CC_CH_FRONT_LEFT_OF_CENTER_MASK | CC_CH_FRONT_RIGHT_OF_CENTER_MASK ) 
     } 	CC_AUDIO_CHANNEL_MASK;
 
 typedef /* [v1_enum] */ 
 enum CC_AUDIO_CHANNEL_CONFIG
-    {	CC_ACFG_UNKNOWN	= 0,
-	CC_ACFG_MONO	= CC_CH_FRONT_CENTER_MASK,
-	CC_ACFG_DUAL_MONO	= ( CC_ACFG_MONO | CC_CH_BACK_CENTER_MASK ) ,
-	CC_ACFG_2F	= CC_CH_FRONT_PAIR_MASK,
-	CC_ACFG_STEREO	= CC_ACFG_2F,
-	CC_ACFG_3F	= ( CC_ACFG_2F | CC_CH_FRONT_CENTER_MASK ) ,
-	CC_ACFG_2F1R	= ( CC_ACFG_2F | CC_CH_BACK_CENTER_MASK ) ,
-	CC_ACFG_3F1R	= ( CC_ACFG_3F | CC_CH_BACK_CENTER_MASK ) ,
-	CC_ACFG_2F2R	= ( CC_ACFG_2F | CC_CH_BACK_PAIR_MASK ) ,
-	CC_ACFG_3F2R	= ( CC_ACFG_3F | CC_CH_BACK_PAIR_MASK ) ,
-	CC_ACFG_5F2R	= ( CC_ACFG_3F2R | CC_CH_FRONT_OF_CENTER_PAIR_MASK ) ,
-	CC_ACFG_2F_LFE	= ( CC_ACFG_2F | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_3F_LFE	= ( CC_ACFG_3F | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_2F1R_LFE	= ( CC_ACFG_2F1R | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_3F1R_LFE	= ( CC_ACFG_3F1R | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_2F2R_LFE	= ( CC_ACFG_2F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_3F2R_LFE	= ( CC_ACFG_3F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_5F2R_LFE	= ( CC_ACFG_5F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
-	CC_ACFG_LFE_MASK	= CC_CH_LOW_FREQUENCY_MASK,
-	CC_ACFG_MODE_MASK	= ~CC_CH_LOW_FREQUENCY_MASK
+    {
+        CC_ACFG_UNKNOWN	= 0,
+        CC_ACFG_MONO	= CC_CH_FRONT_CENTER_MASK,
+        CC_ACFG_DUAL_MONO	= ( CC_ACFG_MONO | CC_CH_BACK_CENTER_MASK ) ,
+        CC_ACFG_2F	= CC_CH_FRONT_PAIR_MASK,
+        CC_ACFG_STEREO	= CC_ACFG_2F,
+        CC_ACFG_3F	= ( CC_ACFG_2F | CC_CH_FRONT_CENTER_MASK ) ,
+        CC_ACFG_2F1R	= ( CC_ACFG_2F | CC_CH_BACK_CENTER_MASK ) ,
+        CC_ACFG_3F1R	= ( CC_ACFG_3F | CC_CH_BACK_CENTER_MASK ) ,
+        CC_ACFG_2F2R	= ( CC_ACFG_2F | CC_CH_BACK_PAIR_MASK ) ,
+        CC_ACFG_3F2R	= ( CC_ACFG_3F | CC_CH_BACK_PAIR_MASK ) ,
+        CC_ACFG_5F2R	= ( CC_ACFG_3F2R | CC_CH_FRONT_OF_CENTER_PAIR_MASK ) ,
+        CC_ACFG_2F_LFE	= ( CC_ACFG_2F | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_3F_LFE	= ( CC_ACFG_3F | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_2F1R_LFE	= ( CC_ACFG_2F1R | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_3F1R_LFE	= ( CC_ACFG_3F1R | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_2F2R_LFE	= ( CC_ACFG_2F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_3F2R_LFE	= ( CC_ACFG_3F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_5F2R_LFE	= ( CC_ACFG_5F2R | CC_CH_LOW_FREQUENCY_MASK ) ,
+        CC_ACFG_LFE_MASK	= CC_CH_LOW_FREQUENCY_MASK,
+        CC_ACFG_MODE_MASK	= ~CC_CH_LOW_FREQUENCY_MASK
     } 	CC_AUDIO_CHANNEL_CONFIG;
 
 
@@ -9693,6 +10078,7 @@ EXTERN_C const IID IID_ICC_AudioStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioStreamInfoVtbl
@@ -9703,7 +10089,7 @@ EXTERN_C const IID IID_ICC_AudioStreamInfo;
             ICC_AudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioStreamInfo * This);
@@ -9842,6 +10228,7 @@ EXTERN_C const IID IID_ICC_AudioEncoderSettings;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioEncoderSettingsVtbl
@@ -9852,7 +10239,7 @@ EXTERN_C const IID IID_ICC_AudioEncoderSettings;
             ICC_AudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioEncoderSettings * This);
@@ -9941,6 +10328,7 @@ EXTERN_C const IID IID_ICC_AudioFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioFrameInfoVtbl
@@ -9951,7 +10339,7 @@ EXTERN_C const IID IID_ICC_AudioFrameInfo;
             ICC_AudioFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioFrameInfo * This);
@@ -10125,6 +10513,7 @@ EXTERN_C const IID IID_ICC_AudioProducer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioProducerVtbl
@@ -10135,7 +10524,7 @@ EXTERN_C const IID IID_ICC_AudioProducer;
             ICC_AudioProducer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioProducer * This);
@@ -10243,6 +10632,7 @@ EXTERN_C const IID IID_ICC_AudioConsumer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioConsumerVtbl
@@ -10253,7 +10643,7 @@ EXTERN_C const IID IID_ICC_AudioConsumer;
             ICC_AudioConsumer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioConsumer * This);
@@ -10319,7 +10709,7 @@ typedef struct CC_AUDIO_FMT_EXT
     {
     CC_AUDIO_SAMPLE_TYPE sample_type;
     CC_AMOUNT num_channels;
-    CC_AUDIO_CHANNEL_ID channel_map[ 32 ];
+    /* [length_is] */ CC_AUDIO_CHANNEL_ID channel_map[ 32 ];
     } 	CC_AUDIO_FMT_EXT;
 
 
@@ -10353,6 +10743,7 @@ EXTERN_C const IID IID_ICC_AudioProducerExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioProducerExtVtbl
@@ -10363,7 +10754,7 @@ EXTERN_C const IID IID_ICC_AudioProducerExt;
             ICC_AudioProducerExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioProducerExt * This);
@@ -10489,6 +10880,7 @@ EXTERN_C const IID IID_ICC_AudioConsumerExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioConsumerExtVtbl
@@ -10499,7 +10891,7 @@ EXTERN_C const IID IID_ICC_AudioConsumerExt;
             ICC_AudioConsumerExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioConsumerExt * This);
@@ -10616,6 +11008,7 @@ EXTERN_C const IID IID_ICC_AudioDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioDecoderVtbl
@@ -10626,7 +11019,7 @@ EXTERN_C const IID IID_ICC_AudioDecoder;
             ICC_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioDecoder * This);
@@ -10850,6 +11243,7 @@ EXTERN_C const IID IID_ICC_AudioEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioEncoderVtbl
@@ -10860,7 +11254,7 @@ EXTERN_C const IID IID_ICC_AudioEncoder;
             ICC_AudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioEncoder * This);
@@ -11052,6 +11446,7 @@ EXTERN_C const IID IID_ICC_AudioSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioSplitterVtbl
@@ -11062,7 +11457,7 @@ EXTERN_C const IID IID_ICC_AudioSplitter;
             ICC_AudioSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioSplitter * This);
@@ -11282,6 +11677,7 @@ EXTERN_C const IID IID_ICC_AudioFilter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AudioFilterVtbl
@@ -11292,7 +11688,7 @@ EXTERN_C const IID IID_ICC_AudioFilter;
             ICC_AudioFilter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AudioFilter * This);
@@ -11468,18 +11864,20 @@ EXTERN_C const IID IID_ICC_AudioFilter;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_AUDIO_CHANNEL_MODE
-    {	CC_MPG_ACH_UNKNOWN	= -1,
-	CC_MPG_ACH_STEREO	= 0,
-	CC_MPG_ACH_JOINT_STEREO	= 1,
-	CC_MPG_ACH_DUAL_CHANNEL	= 2,
-	CC_MPG_ACH_MONO	= 3
+    {
+        CC_MPG_ACH_UNKNOWN	= -1,
+        CC_MPG_ACH_STEREO	= 0,
+        CC_MPG_ACH_JOINT_STEREO	= 1,
+        CC_MPG_ACH_DUAL_CHANNEL	= 2,
+        CC_MPG_ACH_MONO	= 3
     } 	CC_MPG_AUDIO_CHANNEL_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_AUDIO_EMPHASIS
-    {	CC_MPG_EMPHASIS_UNKNOWN	= 0,
-	CC_MPG_EMPHASIS_0_15	= 1,
-	CC_MPG_EMPHASIS_CCITT_J17	= 3
+    {
+        CC_MPG_EMPHASIS_UNKNOWN	= 0,
+        CC_MPG_EMPHASIS_0_15	= 1,
+        CC_MPG_EMPHASIS_CCITT_J17	= 3
     } 	CC_MPG_AUDIO_EMPHASIS;
 
 
@@ -11522,6 +11920,7 @@ EXTERN_C const IID IID_ICC_MpegAudioStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioStreamInfoVtbl
@@ -11532,7 +11931,7 @@ EXTERN_C const IID IID_ICC_MpegAudioStreamInfo;
             ICC_MpegAudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioStreamInfo * This);
@@ -11720,6 +12119,7 @@ EXTERN_C const IID IID_ICC_MpegAudioFrameInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioFrameInfoVtbl
@@ -11730,7 +12130,7 @@ EXTERN_C const IID IID_ICC_MpegAudioFrameInfo;
             ICC_MpegAudioFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioFrameInfo * This);
@@ -11947,6 +12347,7 @@ EXTERN_C const IID IID_ICC_MpegAudioEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioEncoderSettingsVtbl
@@ -11957,7 +12358,7 @@ EXTERN_C const IID IID_ICC_MpegAudioEncoderSettings;
             ICC_MpegAudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioEncoderSettings * This);
@@ -12165,6 +12566,7 @@ EXTERN_C const IID IID_ICC_MpegAudioDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioDecoderVtbl
@@ -12175,7 +12577,7 @@ EXTERN_C const IID IID_ICC_MpegAudioDecoder;
             ICC_MpegAudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioDecoder * This);
@@ -12408,6 +12810,7 @@ EXTERN_C const IID IID_ICC_MpegAudioEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioEncoderVtbl
@@ -12418,7 +12821,7 @@ EXTERN_C const IID IID_ICC_MpegAudioEncoder;
             ICC_MpegAudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioEncoder * This);
@@ -12625,6 +13028,7 @@ EXTERN_C const IID IID_ICC_MpegAudioSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegAudioSplitterVtbl
@@ -12635,7 +13039,7 @@ EXTERN_C const IID IID_ICC_MpegAudioSplitter;
             ICC_MpegAudioSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegAudioSplitter * This);
@@ -12850,6 +13254,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Aes3AudioStreamInfoVtbl
@@ -12860,7 +13265,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioStreamInfo;
             ICC_Aes3AudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Aes3AudioStreamInfo * This);
@@ -13031,6 +13436,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Aes3AudioEncoderSettingsVtbl
@@ -13041,7 +13447,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoderSettings;
             ICC_Aes3AudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Aes3AudioEncoderSettings * This);
@@ -13187,6 +13593,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Aes3AudioFrameInfoVtbl
@@ -13197,7 +13604,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioFrameInfo;
             ICC_Aes3AudioFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Aes3AudioFrameInfo * This);
@@ -13352,6 +13759,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Aes3AudioDecoderVtbl
@@ -13362,7 +13770,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioDecoder;
             ICC_Aes3AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Aes3AudioDecoder * This);
@@ -13575,6 +13983,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Aes3AudioEncoderVtbl
@@ -13585,7 +13994,7 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoder;
             ICC_Aes3AudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Aes3AudioEncoder * This);
@@ -13760,23 +14169,25 @@ EXTERN_C const IID IID_ICC_Aes3AudioEncoder;
 
 typedef /* [v1_enum] */ 
 enum CC_AAC_FORMAT
-    {	CC_AAC_FMT_ADTS	= 0,
-	CC_AAC_FMT_ADIF	= 1,
-	CC_AAC_FMT_RAW	= 2,
-	CC_AAC_FMT_LATM	= 3
+    {
+        CC_AAC_FMT_ADTS	= 0,
+        CC_AAC_FMT_ADIF	= 1,
+        CC_AAC_FMT_RAW	= 2,
+        CC_AAC_FMT_LATM	= 3
     } 	CC_AAC_FORMAT;
 
 typedef /* [v1_enum] */ 
 enum CC_AAC_PROFILE
-    {	CC_AAC_PROFILE_UNKNOWN	= 0,
-	CC_AAC_PROFILE_MAIN	= 1,
-	CC_AAC_PROFILE_LC	= 2,
-	CC_AAC_PROFILE_SSR	= 3,
-	CC_AAC_PROFILE_LTP	= 4,
-	CC_AAC_PROFILE_SBR	= 16,
-	CC_AAC_PROFILE_PS	= 32,
-	CC_AAC_PROFILE_HE	= ( CC_AAC_PROFILE_LC | CC_AAC_PROFILE_SBR ) ,
-	CC_AAC_PROFILE_HE2	= ( ( CC_AAC_PROFILE_LC | CC_AAC_PROFILE_SBR )  | CC_AAC_PROFILE_PS ) 
+    {
+        CC_AAC_PROFILE_UNKNOWN	= 0,
+        CC_AAC_PROFILE_MAIN	= 1,
+        CC_AAC_PROFILE_LC	= 2,
+        CC_AAC_PROFILE_SSR	= 3,
+        CC_AAC_PROFILE_LTP	= 4,
+        CC_AAC_PROFILE_SBR	= 16,
+        CC_AAC_PROFILE_PS	= 32,
+        CC_AAC_PROFILE_HE	= ( CC_AAC_PROFILE_LC | CC_AAC_PROFILE_SBR ) ,
+        CC_AAC_PROFILE_HE2	= ( ( CC_AAC_PROFILE_LC | CC_AAC_PROFILE_SBR )  | CC_AAC_PROFILE_PS ) 
     } 	CC_AAC_PROFILE;
 
 
@@ -13807,6 +14218,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioStreamInfoVtbl
@@ -13817,7 +14229,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioStreamInfo;
             ICC_AAC_AudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioStreamInfo * This);
@@ -13971,6 +14383,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioFrameInfoVtbl
@@ -13981,7 +14394,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioFrameInfo;
             ICC_AAC_AudioFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioFrameInfo * This);
@@ -14166,6 +14579,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioStreamSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioStreamSettingsVtbl
@@ -14176,7 +14590,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioStreamSettings;
             ICC_AAC_AudioStreamSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioStreamSettings * This);
@@ -14335,6 +14749,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioEncoderSettings;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioEncoderSettingsVtbl
@@ -14345,7 +14760,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioEncoderSettings;
             ICC_AAC_AudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioEncoderSettings * This);
@@ -14505,6 +14920,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioDecoderVtbl
@@ -14515,7 +14931,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioDecoder;
             ICC_AAC_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioDecoder * This);
@@ -14728,6 +15144,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioEncoderVtbl
@@ -14738,7 +15155,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioEncoder;
             ICC_AAC_AudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioEncoder * This);
@@ -14925,6 +15342,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioSplitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AAC_AudioSplitterVtbl
@@ -14935,7 +15353,7 @@ EXTERN_C const IID IID_ICC_AAC_AudioSplitter;
             ICC_AAC_AudioSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AAC_AudioSplitter * This);
@@ -15133,6 +15551,7 @@ EXTERN_C const IID IID_ICC_LATM_AAC_AudioDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_LATM_AAC_AudioDecoderVtbl
@@ -15143,7 +15562,7 @@ EXTERN_C const IID IID_ICC_LATM_AAC_AudioDecoder;
             ICC_LATM_AAC_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_LATM_AAC_AudioDecoder * This);
@@ -15356,6 +15775,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_LPCM_AudioStreamInfoVtbl
@@ -15366,7 +15786,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioStreamInfo;
             ICC_LPCM_AudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_LPCM_AudioStreamInfo * This);
@@ -15524,6 +15944,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_LPCM_AudioEncoderSettingsVtbl
@@ -15534,7 +15955,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioEncoderSettings;
             ICC_LPCM_AudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_LPCM_AudioEncoderSettings * This);
@@ -15666,6 +16087,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_LPCM_AudioDecoderVtbl
@@ -15676,7 +16098,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioDecoder;
             ICC_LPCM_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_LPCM_AudioDecoder * This);
@@ -15889,6 +16311,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_LPCM_AudioEncoderVtbl
@@ -15899,7 +16322,7 @@ EXTERN_C const IID IID_ICC_LPCM_AudioEncoder;
             ICC_LPCM_AudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_LPCM_AudioEncoder * This);
@@ -16086,6 +16509,7 @@ EXTERN_C const IID IID_ICC_BluRay_PCM_AudioDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BluRay_PCM_AudioDecoderVtbl
@@ -16096,7 +16520,7 @@ EXTERN_C const IID IID_ICC_BluRay_PCM_AudioDecoder;
             ICC_BluRay_PCM_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_BluRay_PCM_AudioDecoder * This);
@@ -16297,75 +16721,82 @@ EXTERN_C const IID IID_ICC_BluRay_PCM_AudioDecoder;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_ENCODER_MODE
-    {	CC_AC3_ENC_MODE_DDP	= 0,
-	CC_AC3_ENC_MODE_DD	= ( CC_AC3_ENC_MODE_DDP + 1 ) ,
-	CC_AC3_ENC_MODE_RESERVED_1	= ( CC_AC3_ENC_MODE_DD + 1 ) ,
-	CC_AC3_ENC_MODE_BLURAY_PRIMARY	= ( CC_AC3_ENC_MODE_RESERVED_1 + 1 ) ,
-	CC_AC3_ENC_MODE_BLURAY_SECONDARY	= ( CC_AC3_ENC_MODE_BLURAY_PRIMARY + 1 ) ,
-	CC_AC3_ENC_MODE_RESERVED_2	= ( CC_AC3_ENC_MODE_BLURAY_SECONDARY + 1 ) ,
-	CC_AC3_ENC_MODE_RESERVED_3	= ( CC_AC3_ENC_MODE_RESERVED_2 + 1 ) ,
-	CC_AC3_ENC_MODE_DD_LEGACY	= ( CC_AC3_ENC_MODE_RESERVED_3 + 1 ) 
+    {
+        CC_AC3_ENC_MODE_DDP	= 0,
+        CC_AC3_ENC_MODE_DD	= ( CC_AC3_ENC_MODE_DDP + 1 ) ,
+        CC_AC3_ENC_MODE_RESERVED_1	= ( CC_AC3_ENC_MODE_DD + 1 ) ,
+        CC_AC3_ENC_MODE_BLURAY_PRIMARY	= ( CC_AC3_ENC_MODE_RESERVED_1 + 1 ) ,
+        CC_AC3_ENC_MODE_BLURAY_SECONDARY	= ( CC_AC3_ENC_MODE_BLURAY_PRIMARY + 1 ) ,
+        CC_AC3_ENC_MODE_RESERVED_2	= ( CC_AC3_ENC_MODE_BLURAY_SECONDARY + 1 ) ,
+        CC_AC3_ENC_MODE_RESERVED_3	= ( CC_AC3_ENC_MODE_RESERVED_2 + 1 ) ,
+        CC_AC3_ENC_MODE_DD_LEGACY	= ( CC_AC3_ENC_MODE_RESERVED_3 + 1 ) 
     } 	CC_AC3_ENCODER_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_BITSTREAM_MODE
-    {	CC_AC3_BSMOD_UNKNOWN	= -1,
-	CC_AC3_BSMOD_CM	= 0,
-	CC_AC3_BSMOD_ME	= 1,
-	CC_AC3_BSMOD_VI	= 2,
-	CC_AC3_BSMOD_HI	= 3,
-	CC_AC3_BSMOD_D	= 4,
-	CC_AC3_BSMOD_C	= 5,
-	CC_AC3_BSMOD_E	= 6,
-	CC_AC3_BSMOD_VO	= 7,
-	CC_AC3_BSMOD_KAR	= 8
+    {
+        CC_AC3_BSMOD_UNKNOWN	= -1,
+        CC_AC3_BSMOD_CM	= 0,
+        CC_AC3_BSMOD_ME	= 1,
+        CC_AC3_BSMOD_VI	= 2,
+        CC_AC3_BSMOD_HI	= 3,
+        CC_AC3_BSMOD_D	= 4,
+        CC_AC3_BSMOD_C	= 5,
+        CC_AC3_BSMOD_E	= 6,
+        CC_AC3_BSMOD_VO	= 7,
+        CC_AC3_BSMOD_KAR	= 8
     } 	CC_AC3_BITSTREAM_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_ACMOD
-    {	CC_AC3_ACMOD_UNKNOWN	= -1,
-	CC_AC3_ACMOD_DUALMONO	= 0,
-	CC_AC3_ACMOD_MONO	= 1,
-	CC_AC3_ACMOD_STEREO	= 2,
-	CC_AC3_ACMOD_3F	= 3,
-	CC_AC3_ACMOD_2F1R	= 4,
-	CC_AC3_ACMOD_3F1R	= 5,
-	CC_AC3_ACMOD_2F2R	= 6,
-	CC_AC3_ACMOD_3F2R	= 7
+    {
+        CC_AC3_ACMOD_UNKNOWN	= -1,
+        CC_AC3_ACMOD_DUALMONO	= 0,
+        CC_AC3_ACMOD_MONO	= 1,
+        CC_AC3_ACMOD_STEREO	= 2,
+        CC_AC3_ACMOD_3F	= 3,
+        CC_AC3_ACMOD_2F1R	= 4,
+        CC_AC3_ACMOD_3F1R	= 5,
+        CC_AC3_ACMOD_2F2R	= 6,
+        CC_AC3_ACMOD_3F2R	= 7
     } 	CC_AC3_ACMOD;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_CMIXLEV
-    {	CC_AC3_CMIXLEV_UNKNOWN	= -1,
-	CC_AC3_CMIXLEV_0	= 0,
-	CC_AC3_CMIXLEV_1	= 1,
-	CC_AC3_CMIXLEV_2	= 2,
-	CC_AC3_CMIXLEV_RESERVED	= ( CC_AC3_CMIXLEV_2 + 1 ) 
+    {
+        CC_AC3_CMIXLEV_UNKNOWN	= -1,
+        CC_AC3_CMIXLEV_0	= 0,
+        CC_AC3_CMIXLEV_1	= 1,
+        CC_AC3_CMIXLEV_2	= 2,
+        CC_AC3_CMIXLEV_RESERVED	= ( CC_AC3_CMIXLEV_2 + 1 ) 
     } 	CC_AC3_CMIXLEV;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_SURMIXLEV
-    {	CC_AC3_SURMIXLEV_UNKNOWN	= -1,
-	CC_AC3_SURMIXLEV_0	= 0,
-	CC_AC3_SURMIXLEV_1	= 1,
-	CC_AC3_SURMIXLEV_2	= 2,
-	CC_AC3_SURMIXLEV_RESERVED	= ( CC_AC3_SURMIXLEV_2 + 1 ) 
+    {
+        CC_AC3_SURMIXLEV_UNKNOWN	= -1,
+        CC_AC3_SURMIXLEV_0	= 0,
+        CC_AC3_SURMIXLEV_1	= 1,
+        CC_AC3_SURMIXLEV_2	= 2,
+        CC_AC3_SURMIXLEV_RESERVED	= ( CC_AC3_SURMIXLEV_2 + 1 ) 
     } 	CC_AC3_SURMIXLEV;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_DSURMOD
-    {	CC_AC3_DSURMOD_UNKNOWN	= 0,
-	CC_AC3_DSURMOD_NOT_DOLBY	= 1,
-	CC_AC3_DSURMOD_DOLBY	= 2,
-	CC_AC3_DSURMOD_RESERVED	= ( CC_AC3_DSURMOD_DOLBY + 1 ) 
+    {
+        CC_AC3_DSURMOD_UNKNOWN	= 0,
+        CC_AC3_DSURMOD_NOT_DOLBY	= 1,
+        CC_AC3_DSURMOD_DOLBY	= 2,
+        CC_AC3_DSURMOD_RESERVED	= ( CC_AC3_DSURMOD_DOLBY + 1 ) 
     } 	CC_AC3_DSURMOD;
 
 typedef /* [v1_enum] */ 
 enum CC_AC3_ROOMTYP
-    {	CC_AC3_ROOMTYP_UNKNOWN	= 0,
-	CC_AC3_ROOMTYP_LARGE_ROOM	= 1,
-	CC_AC3_ROOMTYP_SMALL_ROOM	= 2,
-	CC_AC3_ROOMTYP_RESERVED	= ( CC_AC3_ROOMTYP_SMALL_ROOM + 1 ) 
+    {
+        CC_AC3_ROOMTYP_UNKNOWN	= 0,
+        CC_AC3_ROOMTYP_LARGE_ROOM	= 1,
+        CC_AC3_ROOMTYP_SMALL_ROOM	= 2,
+        CC_AC3_ROOMTYP_RESERVED	= ( CC_AC3_ROOMTYP_SMALL_ROOM + 1 ) 
     } 	CC_AC3_ROOMTYP;
 
 
@@ -16426,6 +16857,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioStreamInfoVtbl
@@ -16436,7 +16868,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioStreamInfo;
             ICC_AC3_AudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioStreamInfo * This);
@@ -16660,6 +17092,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioFrameInfoVtbl
@@ -16670,7 +17103,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioFrameInfo;
             ICC_AC3_AudioFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioFrameInfo * This);
@@ -16915,6 +17348,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioEncoderSettingsVtbl
@@ -16925,7 +17359,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioEncoderSettings;
             ICC_AC3_AudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioEncoderSettings * This);
@@ -17231,6 +17665,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioEncoderVtbl
@@ -17241,7 +17676,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioEncoder;
             ICC_AC3_AudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioEncoder * This);
@@ -17448,6 +17883,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioDecoderVtbl
@@ -17458,7 +17894,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioDecoder;
             ICC_AC3_AudioDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioDecoder * This);
@@ -17691,6 +18127,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AC3_AudioSplitterVtbl
@@ -17701,7 +18138,7 @@ EXTERN_C const IID IID_ICC_AC3_AudioSplitter;
             ICC_AC3_AudioSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AC3_AudioSplitter * This);
@@ -17913,6 +18350,7 @@ EXTERN_C const IID IID_ICC_WavAudioStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_WavAudioStreamInfoVtbl
@@ -17923,7 +18361,7 @@ EXTERN_C const IID IID_ICC_WavAudioStreamInfo;
             ICC_WavAudioStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_WavAudioStreamInfo * This);
@@ -18063,6 +18501,7 @@ EXTERN_C const IID IID_ICC_WavAudioEncoderSettings;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_WavAudioEncoderSettingsVtbl
@@ -18073,7 +18512,7 @@ EXTERN_C const IID IID_ICC_WavAudioEncoderSettings;
             ICC_WavAudioEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_WavAudioEncoderSettings * This);
@@ -18206,6 +18645,7 @@ EXTERN_C const IID IID_ICC_WavAudioEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_WavAudioEncoderVtbl
@@ -18216,7 +18656,7 @@ EXTERN_C const IID IID_ICC_WavAudioEncoder;
             ICC_WavAudioEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_WavAudioEncoder * This);
@@ -18391,113 +18831,122 @@ EXTERN_C const IID IID_ICC_WavAudioEncoder;
 
 typedef /* [v1_enum] */ 
 enum CC_COLOR_FMT
-    {	CCF_UNKNOWN	= 0,
-	CCF_RGB32	= 0x1,
-	CCF_RGB24	= 0x2,
-	CCF_BGR32	= 0x11,
-	CCF_BGR24	= 0x12,
-	CCF_RGBA	= CCF_RGB32,
-	CCF_RGB	= CCF_RGB24,
-	CCF_BGRA	= CCF_BGR32,
-	CCF_BGR	= CCF_BGR24,
-	CCF_RGB64	= 0x801,
-	CCF_RGB48	= 0x802,
-	CCF_BGR64	= 0x811,
-	CCF_BGR48	= 0x812,
-	CCF_ADOBE_RGBA_16u	= 0x901,
-	CCF_ADOBE_BGRA_16u	= 0x911,
-	CCF_ADOBE_RGBA_32f	= 0xa01,
-	CCF_ADOBE_BGRA_32f	= 0xa11,
-	CCF_RGBA_16BIT	= CCF_RGB64,
-	CCF_RGB_16BIT	= CCF_RGB48,
-	CCF_BGRA_16BIT	= CCF_BGR64,
-	CCF_BGR_16BIT	= CCF_BGR48,
-	CCF_UYVY	= 0x31,
-	CCF_YUY2	= 0x32,
-	CCF_YUV400	= 0x40,
-	CCF_YUV420	= 0x41,
-	CCF_YUV422	= 0x42,
-	CCF_YUV444	= 0x43,
-	CCF_YUV400_10BIT	= 0x240,
-	CCF_YUV420_10BIT	= 0x241,
-	CCF_YUV422_10BIT	= 0x242,
-	CCF_YUV444_10BIT	= 0x243,
-	CCF_YUV400_12BIT	= 0x440,
-	CCF_YUV420_12BIT	= 0x441,
-	CCF_YUV422_12BIT	= 0x442,
-	CCF_YUV444_12BIT	= 0x443,
-	CCF_YUV400_14BIT	= 0x640,
-	CCF_YUV420_14BIT	= 0x641,
-	CCF_YUV422_14BIT	= 0x642,
-	CCF_YUV444_14BIT	= 0x643,
-	CCF_YUV400_16BIT	= 0x840,
-	CCF_YUV420_16BIT	= 0x841,
-	CCF_YUV422_16BIT	= 0x842,
-	CCF_YUV444_16BIT	= 0x843,
-	CCF_UYVY_10BIT	= 0x231,
-	CCF_YUY2_10BIT	= 0x232,
-	CCF_UYVY_12BIT	= 0x431,
-	CCF_YUY2_12BIT	= 0x432,
-	CCF_UYVY_14BIT	= 0x631,
-	CCF_YUY2_14BIT	= 0x632,
-	CCF_UYVY_16BIT	= 0x831,
-	CCF_YUY2_16BIT	= 0x832,
-	CCF_YV12	= CCF_YUV420,
-	CCF_YV16	= CCF_YUV422,
-	CCF_NV12	= 0x112,
-	CCF_V210	= 0x210,
-	CCF_SC10	= 0x211,
-	CCF_Y216	= CCF_YUY2_16BIT,
-	CCF_Y8	= 0x8
+    {
+        CCF_UNKNOWN	= 0,
+        CCF_RGB32	= 0x1,
+        CCF_RGB24	= 0x2,
+        CCF_BGR32	= 0x11,
+        CCF_BGR24	= 0x12,
+        CCF_RGBA	= CCF_RGB32,
+        CCF_RGB	= CCF_RGB24,
+        CCF_BGRA	= CCF_BGR32,
+        CCF_BGR	= CCF_BGR24,
+        CCF_RGB64	= 0x801,
+        CCF_RGB48	= 0x802,
+        CCF_BGR64	= 0x811,
+        CCF_BGR48	= 0x812,
+        CCF_ADOBE_RGBA_16u	= 0x901,
+        CCF_ADOBE_BGRA_16u	= 0x911,
+        CCF_RGBA_32F	= 0xa01,
+        CCF_BGRA_32F	= 0xa11,
+        CCF_RGBA_16BIT	= CCF_RGB64,
+        CCF_RGB_16BIT	= CCF_RGB48,
+        CCF_BGRA_16BIT	= CCF_BGR64,
+        CCF_BGR_16BIT	= CCF_BGR48,
+        CCF_UYVY	= 0x31,
+        CCF_YUY2	= 0x32,
+        CCF_YUV400	= 0x40,
+        CCF_YUV420	= 0x41,
+        CCF_YUV422	= 0x42,
+        CCF_YUV444	= 0x43,
+        CCF_YUV400_10BIT	= 0x240,
+        CCF_YUV420_10BIT	= 0x241,
+        CCF_YUV422_10BIT	= 0x242,
+        CCF_YUV444_10BIT	= 0x243,
+        CCF_YUV400_12BIT	= 0x440,
+        CCF_YUV420_12BIT	= 0x441,
+        CCF_YUV422_12BIT	= 0x442,
+        CCF_YUV444_12BIT	= 0x443,
+        CCF_YUV400_14BIT	= 0x640,
+        CCF_YUV420_14BIT	= 0x641,
+        CCF_YUV422_14BIT	= 0x642,
+        CCF_YUV444_14BIT	= 0x643,
+        CCF_YUV400_16BIT	= 0x840,
+        CCF_YUV420_16BIT	= 0x841,
+        CCF_YUV422_16BIT	= 0x842,
+        CCF_YUV444_16BIT	= 0x843,
+        CCF_UYVY_10BIT	= 0x231,
+        CCF_YUY2_10BIT	= 0x232,
+        CCF_UYVY_12BIT	= 0x431,
+        CCF_YUY2_12BIT	= 0x432,
+        CCF_UYVY_14BIT	= 0x631,
+        CCF_YUY2_14BIT	= 0x632,
+        CCF_UYVY_16BIT	= 0x831,
+        CCF_YUY2_16BIT	= 0x832,
+        CCF_UYVY_32F	= 0xa31,
+        CCF_YUY2_32F	= 0xa32,
+        CCF_YV12	= CCF_YUV420,
+        CCF_YV16	= CCF_YUV422,
+        CCF_NV12	= 0x112,
+        CCF_V210	= 0x210,
+        CCF_SC10	= 0x211,
+        CCF_Y216	= CCF_YUY2_16BIT,
+        CCF_Y8	= 0x8
     } 	CC_COLOR_FMT;
 
 typedef /* [v1_enum] */ 
 enum CC_FRAME_TYPE
-    {	CC_FRAME_TYPE_UNKNOWN	= 0,
-	CC_I_FRAME	= ( CC_FRAME_TYPE_UNKNOWN + 1 ) ,
-	CC_P_FRAME	= ( CC_I_FRAME + 1 ) ,
-	CC_B_FRAME	= ( CC_P_FRAME + 1 ) 
+    {
+        CC_FRAME_TYPE_UNKNOWN	= 0,
+        CC_I_FRAME	= ( CC_FRAME_TYPE_UNKNOWN + 1 ) ,
+        CC_P_FRAME	= ( CC_I_FRAME + 1 ) ,
+        CC_B_FRAME	= ( CC_P_FRAME + 1 ) 
     } 	CC_FRAME_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_INTERLACE_TYPE
-    {	CC_UNKNOWN_INTERLACE_TYPE	= -1,
-	CC_NO_INTERLACE	= 0,
-	CC_PROGRESSIVE	= 0,
-	CC_TOP_FIELD_FIRST	= 1,
-	CC_TFF	= 1,
-	CC_BOTTOM_FIELD_FIRST	= 2,
-	CC_BFF	= 2,
-	CC_TELECINE	= 23
+    {
+        CC_UNKNOWN_INTERLACE_TYPE	= -1,
+        CC_NO_INTERLACE	= 0,
+        CC_PROGRESSIVE	= 0,
+        CC_TOP_FIELD_FIRST	= 1,
+        CC_TFF	= 1,
+        CC_BOTTOM_FIELD_FIRST	= 2,
+        CC_BFF	= 2,
+        CC_TELECINE	= 23
     } 	CC_INTERLACE_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_DEINTERLACE_METHOD
-    {	CC_DEINTERLACE_NONE	= 0,
-	CC_DEINTERLACE_BOB	= 1,
-	CC_DEINTERLACE_CAVT	= 2
+    {
+        CC_DEINTERLACE_NONE	= 0,
+        CC_DEINTERLACE_BOB	= 1,
+        CC_DEINTERLACE_CAVT	= 2
     } 	CC_DEINTERLACE_METHOD;
 
 typedef /* [v1_enum] */ 
 enum CC_AFF_TYPE
-    {	CC_AFF_FRAME	= 0,
-	CC_AFF_FIELD	= ( CC_AFF_FRAME + 1 ) ,
-	CC_AFF_ADAPTIVE	= ( CC_AFF_FIELD + 1 ) 
+    {
+        CC_AFF_FRAME	= 0,
+        CC_AFF_FIELD	= ( CC_AFF_FRAME + 1 ) ,
+        CC_AFF_ADAPTIVE	= ( CC_AFF_FIELD + 1 ) 
     } 	CC_AFF_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_PICTURE_STRUCTURE
-    {	CC_PICTURE_STRUCTURE_UNKNOWN	= -1,
-	CC_WHOLE_FRAME	= 0,
-	CC_PAIR_OF_FIELDS	= ( CC_WHOLE_FRAME + 1 ) ,
-	CC_PAFF	= ( CC_PAIR_OF_FIELDS + 1 ) 
+    {
+        CC_PICTURE_STRUCTURE_UNKNOWN	= -1,
+        CC_WHOLE_FRAME	= 0,
+        CC_PAIR_OF_FIELDS	= ( CC_WHOLE_FRAME + 1 ) ,
+        CC_PAFF	= ( CC_PAIR_OF_FIELDS + 1 ) 
     } 	CC_PICTURE_STRUCTURE;
 
 typedef /* [v1_enum] */ 
 enum CC_MB_STRUCTURE
-    {	CC_MBAFF	= 0,
-	CC_MB_PROGRESSIVE	= ( CC_MBAFF + 1 ) ,
-	CC_MB_INTERLACED	= ( CC_MB_PROGRESSIVE + 1 ) 
+    {
+        CC_MBAFF	= 0,
+        CC_MB_PROGRESSIVE	= ( CC_MBAFF + 1 ) ,
+        CC_MB_INTERLACED	= ( CC_MB_PROGRESSIVE + 1 ) 
     } 	CC_MB_STRUCTURE;
 
 typedef struct CC_GOP_DESCR
@@ -18513,12 +18962,13 @@ inline const CC_GOP_DESCR MK_GOP_DESCR(CC_PERIOD N, CC_UINT M) { CC_GOP_DESCR go
 #endif
 typedef /* [v1_enum] */ 
 enum CC_GOP_PATTERN
-    {	CC_GOP_I	= 0,
-	CC_GOP_IP	= 1,
-	CC_GOP_IBP	= 2,
-	CC_GOP_IBBP	= 3,
-	CC_GOP_IBBBP	= 4,
-	CC_GOP_IBBBBP	= 5
+    {
+        CC_GOP_I	= 0,
+        CC_GOP_IP	= 1,
+        CC_GOP_IBP	= 2,
+        CC_GOP_IBBP	= 3,
+        CC_GOP_IBBBP	= 4,
+        CC_GOP_IBBBBP	= 5
     } 	CC_GOP_PATTERN;
 
 typedef struct CC_QUANT_DESCR
@@ -18536,63 +18986,66 @@ extern "C++" inline const CC_QUANT_DESCR MK_QUANT_DESCR(CC_BYTE qi, CC_BYTE qp, 
 #endif
 typedef /* [v1_enum] */ 
 enum CC_COLOUR_PRIMARIES
-    {	CC_CPRIMS_UNKNOWN	= 0,
-	CC_CPRIMS_ITUR_BT_709	= ( CC_CPRIMS_UNKNOWN + 1 ) ,
-	CC_CPRIMS_UNSPECIFIED	= ( CC_CPRIMS_ITUR_BT_709 + 1 ) ,
-	CC_CPRIMS_RESERVED	= ( CC_CPRIMS_UNSPECIFIED + 1 ) ,
-	CC_CPRIMS_ITUR_BT_470_M	= ( CC_CPRIMS_RESERVED + 1 ) ,
-	CC_CPRIMS_ITUR_BT_470_BG	= ( CC_CPRIMS_ITUR_BT_470_M + 1 ) ,
-	CC_CPRIMS_SMPTE_170M	= ( CC_CPRIMS_ITUR_BT_470_BG + 1 ) ,
-	CC_CPRIMS_SMPTE_240M	= ( CC_CPRIMS_SMPTE_170M + 1 ) ,
-	CC_CPRIMS_GENERIC_FILM	= ( CC_CPRIMS_SMPTE_240M + 1 ) ,
-	CC_CPRIMS_ITUR_BT_2020	= ( CC_CPRIMS_GENERIC_FILM + 1 ) ,
-	CC_CPRIMS_SMPTE_ST_428_1	= ( CC_CPRIMS_ITUR_BT_2020 + 1 ) ,
-	CC_CPRIMS_SMPTE_ST_431_2	= ( CC_CPRIMS_SMPTE_ST_428_1 + 1 ) ,
-	CC_CPRIMS_SMPTE_ST_432_1	= ( CC_CPRIMS_SMPTE_ST_431_2 + 1 ) ,
-	CC_CPRIMS_DCI_P3	= CC_CPRIMS_SMPTE_ST_431_2,
-	CC_CPRIMS_P3_D65	= CC_CPRIMS_SMPTE_ST_432_1,
-	CC_CPRIMS_TOTAL	= ( CC_CPRIMS_P3_D65 + 1 ) 
+    {
+        CC_CPRIMS_UNKNOWN	= 0,
+        CC_CPRIMS_ITUR_BT_709	= ( CC_CPRIMS_UNKNOWN + 1 ) ,
+        CC_CPRIMS_UNSPECIFIED	= ( CC_CPRIMS_ITUR_BT_709 + 1 ) ,
+        CC_CPRIMS_RESERVED	= ( CC_CPRIMS_UNSPECIFIED + 1 ) ,
+        CC_CPRIMS_ITUR_BT_470_M	= ( CC_CPRIMS_RESERVED + 1 ) ,
+        CC_CPRIMS_ITUR_BT_470_BG	= ( CC_CPRIMS_ITUR_BT_470_M + 1 ) ,
+        CC_CPRIMS_SMPTE_170M	= ( CC_CPRIMS_ITUR_BT_470_BG + 1 ) ,
+        CC_CPRIMS_SMPTE_240M	= ( CC_CPRIMS_SMPTE_170M + 1 ) ,
+        CC_CPRIMS_GENERIC_FILM	= ( CC_CPRIMS_SMPTE_240M + 1 ) ,
+        CC_CPRIMS_ITUR_BT_2020	= ( CC_CPRIMS_GENERIC_FILM + 1 ) ,
+        CC_CPRIMS_SMPTE_ST_428_1	= ( CC_CPRIMS_ITUR_BT_2020 + 1 ) ,
+        CC_CPRIMS_SMPTE_ST_431_2	= ( CC_CPRIMS_SMPTE_ST_428_1 + 1 ) ,
+        CC_CPRIMS_SMPTE_ST_432_1	= ( CC_CPRIMS_SMPTE_ST_431_2 + 1 ) ,
+        CC_CPRIMS_DCI_P3	= CC_CPRIMS_SMPTE_ST_431_2,
+        CC_CPRIMS_P3_D65	= CC_CPRIMS_SMPTE_ST_432_1,
+        CC_CPRIMS_TOTAL	= ( CC_CPRIMS_P3_D65 + 1 ) 
     } 	CC_COLOUR_PRIMARIES;
 
 typedef /* [v1_enum] */ 
 enum CC_TRANSFER_CHARACTERISTICS
-    {	CC_TXCHRS_UNKNOWN	= 0,
-	CC_TXCHRS_ITUR_BT_709	= ( CC_TXCHRS_UNKNOWN + 1 ) ,
-	CC_TXCHRS_UNSPECIFIED	= ( CC_TXCHRS_ITUR_BT_709 + 1 ) ,
-	CC_TXCHRS_RESERVED	= ( CC_TXCHRS_UNSPECIFIED + 1 ) ,
-	CC_TXCHRS_ITUR_BT_470_M	= ( CC_TXCHRS_RESERVED + 1 ) ,
-	CC_TXCHRS_ITUR_BT_470_BG	= ( CC_TXCHRS_ITUR_BT_470_M + 1 ) ,
-	CC_TXCHRS_SMPTE_170M	= ( CC_TXCHRS_ITUR_BT_470_BG + 1 ) ,
-	CC_TXCHRS_SMPTE_240M	= ( CC_TXCHRS_SMPTE_170M + 1 ) ,
-	CC_TXCHRS_LINEAR	= ( CC_TXCHRS_SMPTE_240M + 1 ) ,
-	CC_TXCHRS_LOG_100	= ( CC_TXCHRS_LINEAR + 1 ) ,
-	CC_TXCHRS_LOG_316	= ( CC_TXCHRS_LOG_100 + 1 ) ,
-	CC_TXCHRS_IEC_61966_2_4	= ( CC_TXCHRS_LOG_316 + 1 ) ,
-	CC_TXCHRS_ITUR_BT_1361	= ( CC_TXCHRS_IEC_61966_2_4 + 1 ) ,
-	CC_TXCHRS_IEC_61966_2_1	= ( CC_TXCHRS_ITUR_BT_1361 + 1 ) ,
-	CC_TXCHRS_ITUR_BT_2020_10BIT	= ( CC_TXCHRS_IEC_61966_2_1 + 1 ) ,
-	CC_TXCHRS_ITUR_BT_2020_12BIT	= ( CC_TXCHRS_ITUR_BT_2020_10BIT + 1 ) ,
-	CC_TXCHRS_SMPTE_ST_2084	= ( CC_TXCHRS_ITUR_BT_2020_12BIT + 1 ) ,
-	CC_TXCHRS_SMPTE_ST_428_1	= ( CC_TXCHRS_SMPTE_ST_2084 + 1 ) ,
-	CC_TXCHRS_HLG	= ( CC_TXCHRS_SMPTE_ST_428_1 + 1 ) ,
-	CC_TXCHRS_TOTAL	= ( CC_TXCHRS_HLG + 1 ) 
+    {
+        CC_TXCHRS_UNKNOWN	= 0,
+        CC_TXCHRS_ITUR_BT_709	= ( CC_TXCHRS_UNKNOWN + 1 ) ,
+        CC_TXCHRS_UNSPECIFIED	= ( CC_TXCHRS_ITUR_BT_709 + 1 ) ,
+        CC_TXCHRS_RESERVED	= ( CC_TXCHRS_UNSPECIFIED + 1 ) ,
+        CC_TXCHRS_ITUR_BT_470_M	= ( CC_TXCHRS_RESERVED + 1 ) ,
+        CC_TXCHRS_ITUR_BT_470_BG	= ( CC_TXCHRS_ITUR_BT_470_M + 1 ) ,
+        CC_TXCHRS_SMPTE_170M	= ( CC_TXCHRS_ITUR_BT_470_BG + 1 ) ,
+        CC_TXCHRS_SMPTE_240M	= ( CC_TXCHRS_SMPTE_170M + 1 ) ,
+        CC_TXCHRS_LINEAR	= ( CC_TXCHRS_SMPTE_240M + 1 ) ,
+        CC_TXCHRS_LOG_100	= ( CC_TXCHRS_LINEAR + 1 ) ,
+        CC_TXCHRS_LOG_316	= ( CC_TXCHRS_LOG_100 + 1 ) ,
+        CC_TXCHRS_IEC_61966_2_4	= ( CC_TXCHRS_LOG_316 + 1 ) ,
+        CC_TXCHRS_ITUR_BT_1361	= ( CC_TXCHRS_IEC_61966_2_4 + 1 ) ,
+        CC_TXCHRS_IEC_61966_2_1	= ( CC_TXCHRS_ITUR_BT_1361 + 1 ) ,
+        CC_TXCHRS_ITUR_BT_2020_10BIT	= ( CC_TXCHRS_IEC_61966_2_1 + 1 ) ,
+        CC_TXCHRS_ITUR_BT_2020_12BIT	= ( CC_TXCHRS_ITUR_BT_2020_10BIT + 1 ) ,
+        CC_TXCHRS_SMPTE_ST_2084	= ( CC_TXCHRS_ITUR_BT_2020_12BIT + 1 ) ,
+        CC_TXCHRS_SMPTE_ST_428_1	= ( CC_TXCHRS_SMPTE_ST_2084 + 1 ) ,
+        CC_TXCHRS_HLG	= ( CC_TXCHRS_SMPTE_ST_428_1 + 1 ) ,
+        CC_TXCHRS_TOTAL	= ( CC_TXCHRS_HLG + 1 ) 
     } 	CC_TRANSFER_CHARACTERISTICS;
 
 typedef /* [v1_enum] */ 
 enum CC_MATRIX_COEFFICIENTS
-    {	CC_MCOEFS_UNKNOWN	= 0,
-	CC_MCOEFS_ITUR_BT_709	= ( CC_MCOEFS_UNKNOWN + 1 ) ,
-	CC_MCOEFS_UNSPECIFIED	= ( CC_MCOEFS_ITUR_BT_709 + 1 ) ,
-	CC_MCOEFS_RESERVED	= ( CC_MCOEFS_UNSPECIFIED + 1 ) ,
-	CC_MCOEFS_FCC	= ( CC_MCOEFS_RESERVED + 1 ) ,
-	CC_MCOEFS_ITUR_BT_470_BG	= ( CC_MCOEFS_FCC + 1 ) ,
-	CC_MCOEFS_SMPTE_170M	= ( CC_MCOEFS_ITUR_BT_470_BG + 1 ) ,
-	CC_MCOEFS_SMPTE_240M	= ( CC_MCOEFS_SMPTE_170M + 1 ) ,
-	CC_MCOEFS_YCGCO	= ( CC_MCOEFS_SMPTE_240M + 1 ) ,
-	CC_MCOEFS_ITUR_BT_2020_NON_CONST	= ( CC_MCOEFS_YCGCO + 1 ) ,
-	CC_MCOEFS_ITUR_BT_2020_CONST	= ( CC_MCOEFS_ITUR_BT_2020_NON_CONST + 1 ) ,
-	CC_MCOEFS_SMPTE_2085	= ( CC_MCOEFS_ITUR_BT_2020_CONST + 1 ) ,
-	CC_MCOEFS_TOTAL	= ( CC_MCOEFS_SMPTE_2085 + 1 ) 
+    {
+        CC_MCOEFS_UNKNOWN	= 0,
+        CC_MCOEFS_ITUR_BT_709	= ( CC_MCOEFS_UNKNOWN + 1 ) ,
+        CC_MCOEFS_UNSPECIFIED	= ( CC_MCOEFS_ITUR_BT_709 + 1 ) ,
+        CC_MCOEFS_RESERVED	= ( CC_MCOEFS_UNSPECIFIED + 1 ) ,
+        CC_MCOEFS_FCC	= ( CC_MCOEFS_RESERVED + 1 ) ,
+        CC_MCOEFS_ITUR_BT_470_BG	= ( CC_MCOEFS_FCC + 1 ) ,
+        CC_MCOEFS_SMPTE_170M	= ( CC_MCOEFS_ITUR_BT_470_BG + 1 ) ,
+        CC_MCOEFS_SMPTE_240M	= ( CC_MCOEFS_SMPTE_170M + 1 ) ,
+        CC_MCOEFS_YCGCO	= ( CC_MCOEFS_SMPTE_240M + 1 ) ,
+        CC_MCOEFS_ITUR_BT_2020_NON_CONST	= ( CC_MCOEFS_YCGCO + 1 ) ,
+        CC_MCOEFS_ITUR_BT_2020_CONST	= ( CC_MCOEFS_ITUR_BT_2020_NON_CONST + 1 ) ,
+        CC_MCOEFS_SMPTE_2085	= ( CC_MCOEFS_ITUR_BT_2020_CONST + 1 ) ,
+        CC_MCOEFS_TOTAL	= ( CC_MCOEFS_SMPTE_2085 + 1 ) 
     } 	CC_MATRIX_COEFFICIENTS;
 
 typedef struct CC_COLOUR_DESCRIPTION
@@ -18609,44 +19062,47 @@ inline const CC_COLOUR_DESCRIPTION MK_COLOR_TX_DESCR(CC_COLOUR_PRIMARIES CP, CC_
 #endif
 typedef /* [v1_enum] */ 
 enum CC_CHROMA_FORMAT
-    {	CC_CHROMA_FORMAT_UNKNOWN	= -1,
-	CC_CHROMA_400	= ( CC_CHROMA_FORMAT_UNKNOWN + 1 ) ,
-	CC_CHROMA_420	= ( CC_CHROMA_400 + 1 ) ,
-	CC_CHROMA_422	= ( CC_CHROMA_420 + 1 ) ,
-	CC_CHROMA_444	= ( CC_CHROMA_422 + 1 ) ,
-	CC_CHROMA_RGB	= ( CC_CHROMA_444 + 1 ) ,
-	CC_CHROMA_ALPHA	= 8,
-	CC_CHROMA_4000	= CC_CHROMA_400,
-	CC_CHROMA_4004	= ( CC_CHROMA_400 | CC_CHROMA_ALPHA ) ,
-	CC_CHROMA_4200	= CC_CHROMA_420,
-	CC_CHROMA_4204	= ( CC_CHROMA_420 | CC_CHROMA_ALPHA ) ,
-	CC_CHROMA_4220	= CC_CHROMA_422,
-	CC_CHROMA_4224	= ( CC_CHROMA_422 | CC_CHROMA_ALPHA ) ,
-	CC_CHROMA_4440	= CC_CHROMA_444,
-	CC_CHROMA_4444	= ( CC_CHROMA_444 | CC_CHROMA_ALPHA ) ,
-	CC_CHROMA_RGBA	= ( CC_CHROMA_RGB | CC_CHROMA_ALPHA ) 
+    {
+        CC_CHROMA_FORMAT_UNKNOWN	= -1,
+        CC_CHROMA_400	= ( CC_CHROMA_FORMAT_UNKNOWN + 1 ) ,
+        CC_CHROMA_420	= ( CC_CHROMA_400 + 1 ) ,
+        CC_CHROMA_422	= ( CC_CHROMA_420 + 1 ) ,
+        CC_CHROMA_444	= ( CC_CHROMA_422 + 1 ) ,
+        CC_CHROMA_RGB	= ( CC_CHROMA_444 + 1 ) ,
+        CC_CHROMA_ALPHA	= 8,
+        CC_CHROMA_4000	= CC_CHROMA_400,
+        CC_CHROMA_4004	= ( CC_CHROMA_400 | CC_CHROMA_ALPHA ) ,
+        CC_CHROMA_4200	= CC_CHROMA_420,
+        CC_CHROMA_4204	= ( CC_CHROMA_420 | CC_CHROMA_ALPHA ) ,
+        CC_CHROMA_4220	= CC_CHROMA_422,
+        CC_CHROMA_4224	= ( CC_CHROMA_422 | CC_CHROMA_ALPHA ) ,
+        CC_CHROMA_4440	= CC_CHROMA_444,
+        CC_CHROMA_4444	= ( CC_CHROMA_444 | CC_CHROMA_ALPHA ) ,
+        CC_CHROMA_RGBA	= ( CC_CHROMA_RGB | CC_CHROMA_ALPHA ) 
     } 	CC_CHROMA_FORMAT;
 
 typedef /* [v1_enum] */ 
 enum CC_VIDEO_FORMAT
-    {	CC_VIDEO_FORMAT_COMPONENT	= 0,
-	CC_VIDEO_FORMAT_PAL	= ( CC_VIDEO_FORMAT_COMPONENT + 1 ) ,
-	CC_VIDEO_FORMAT_NTSC	= ( CC_VIDEO_FORMAT_PAL + 1 ) ,
-	CC_VIDEO_FORMAT_SECAM	= ( CC_VIDEO_FORMAT_NTSC + 1 ) ,
-	CC_VIDEO_FORMAT_MAC	= ( CC_VIDEO_FORMAT_SECAM + 1 ) ,
-	CC_VIDEO_FORMAT_UNSPECIFIED	= ( CC_VIDEO_FORMAT_MAC + 1 ) ,
-	CC_VIDEO_FORMAT_TOTAL	= ( CC_VIDEO_FORMAT_UNSPECIFIED + 1 ) 
+    {
+        CC_VIDEO_FORMAT_COMPONENT	= 0,
+        CC_VIDEO_FORMAT_PAL	= ( CC_VIDEO_FORMAT_COMPONENT + 1 ) ,
+        CC_VIDEO_FORMAT_NTSC	= ( CC_VIDEO_FORMAT_PAL + 1 ) ,
+        CC_VIDEO_FORMAT_SECAM	= ( CC_VIDEO_FORMAT_NTSC + 1 ) ,
+        CC_VIDEO_FORMAT_MAC	= ( CC_VIDEO_FORMAT_SECAM + 1 ) ,
+        CC_VIDEO_FORMAT_UNSPECIFIED	= ( CC_VIDEO_FORMAT_MAC + 1 ) ,
+        CC_VIDEO_FORMAT_TOTAL	= ( CC_VIDEO_FORMAT_UNSPECIFIED + 1 ) 
     } 	CC_VIDEO_FORMAT;
 
 typedef /* [v1_enum] */ 
 enum CC_PICTURE_ORIENTATION
-    {	CC_PO_DEFAULT	= 0,
-	CC_PO_FLIP_VERTICAL	= 1,
-	CC_PO_FLIP_HORIZONTAL	= 2,
-	CC_PO_ROTATED_180DEG	= 3,
-	CC_PO_ROTATED_90DEG	= 4,
-	CC_PO_ROTATED_270DEG	= 5,
-	CC_PO_TOTAL	= ( CC_PO_ROTATED_270DEG + 1 ) 
+    {
+        CC_PO_DEFAULT	= 0,
+        CC_PO_FLIP_VERTICAL	= 1,
+        CC_PO_FLIP_HORIZONTAL	= 2,
+        CC_PO_ROTATED_180DEG	= 3,
+        CC_PO_ROTATED_90DEG	= 4,
+        CC_PO_ROTATED_270DEG	= 5,
+        CC_PO_TOTAL	= ( CC_PO_ROTATED_270DEG + 1 ) 
     } 	CC_PICTURE_ORIENTATION;
 
 typedef struct CC_VIDEO_FRAME_DESCR
@@ -18710,6 +19166,7 @@ EXTERN_C const IID IID_ICC_VideoStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoStreamInfoVtbl
@@ -18720,7 +19177,7 @@ EXTERN_C const IID IID_ICC_VideoStreamInfo;
             ICC_VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoStreamInfo * This);
@@ -18867,6 +19324,7 @@ EXTERN_C const IID IID_ICC_VideoStreamInfoExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoStreamInfoExtVtbl
@@ -18877,7 +19335,7 @@ EXTERN_C const IID IID_ICC_VideoStreamInfoExt;
             ICC_VideoStreamInfoExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoStreamInfoExt * This);
@@ -18992,6 +19450,7 @@ EXTERN_C const IID IID_ICC_VideoFrameInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoFrameInfoVtbl
@@ -19002,7 +19461,7 @@ EXTERN_C const IID IID_ICC_VideoFrameInfo;
             ICC_VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoFrameInfo * This);
@@ -19208,6 +19667,7 @@ EXTERN_C const IID IID_ICC_VideoFrameSecondFieldProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoFrameSecondFieldPropVtbl
@@ -19218,7 +19678,7 @@ EXTERN_C const IID IID_ICC_VideoFrameSecondFieldProp;
             ICC_VideoFrameSecondFieldProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoFrameSecondFieldProp * This);
@@ -19272,9 +19732,10 @@ EXTERN_C const IID IID_ICC_VideoFrameSecondFieldProp;
 
 typedef /* [v1_enum] */ 
 enum CC_USER_DATA_TYPE
-    {	CC_UDT_UNSPEC	= 0,
-	CC_UDT_GUIDED	= ( CC_UDT_UNSPEC + 1 ) ,
-	CC_UDT_TOTAL	= ( CC_UDT_GUIDED + 1 ) 
+    {
+        CC_UDT_UNSPEC	= 0,
+        CC_UDT_GUIDED	= ( CC_UDT_UNSPEC + 1 ) ,
+        CC_UDT_TOTAL	= ( CC_UDT_GUIDED + 1 ) 
     } 	CC_USER_DATA_TYPE;
 
 
@@ -19312,6 +19773,7 @@ EXTERN_C const IID IID_ICC_VideoFrameUserDataProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoFrameUserDataPropVtbl
@@ -19322,7 +19784,7 @@ EXTERN_C const IID IID_ICC_VideoFrameUserDataProp;
             ICC_VideoFrameUserDataProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoFrameUserDataProp * This);
@@ -19432,6 +19894,7 @@ EXTERN_C const IID IID_ICC_VideoFrameQualityInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoFrameQualityInfoVtbl
@@ -19442,7 +19905,7 @@ EXTERN_C const IID IID_ICC_VideoFrameQualityInfo;
             ICC_VideoFrameQualityInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoFrameQualityInfo * This);
@@ -19521,6 +19984,7 @@ EXTERN_C const IID IID_ICC_PsnrCalculationProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_PsnrCalculationPropVtbl
@@ -19531,7 +19995,7 @@ EXTERN_C const IID IID_ICC_PsnrCalculationProp;
             ICC_PsnrCalculationProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_PsnrCalculationProp * This);
@@ -19638,6 +20102,7 @@ EXTERN_C const IID IID_ICC_VideoProducer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoProducerVtbl
@@ -19648,7 +20113,7 @@ EXTERN_C const IID IID_ICC_VideoProducer;
             ICC_VideoProducer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoProducer * This);
@@ -19776,6 +20241,7 @@ EXTERN_C const IID IID_ICC_VideoConsumer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoConsumerVtbl
@@ -19786,7 +20252,7 @@ EXTERN_C const IID IID_ICC_VideoConsumer;
             ICC_VideoConsumer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoConsumer * This);
@@ -19896,6 +20362,7 @@ EXTERN_C const IID IID_ICC_VideoConsumerExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoConsumerExtVtbl
@@ -19906,7 +20373,7 @@ EXTERN_C const IID IID_ICC_VideoConsumerExt;
             ICC_VideoConsumerExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoConsumerExt * This);
@@ -20008,6 +20475,155 @@ EXTERN_C const IID IID_ICC_VideoConsumerExt;
 #endif 	/* __ICC_VideoConsumerExt_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICC_VideoConsumerExtAsync_INTERFACE_DEFINED__
+#define __ICC_VideoConsumerExtAsync_INTERFACE_DEFINED__
+
+/* interface ICC_VideoConsumerExtAsync */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_VideoConsumerExtAsync;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("a54e5863-382b-4a9c-bf2d-287d5fbdb0a8")
+    ICC_VideoConsumerExtAsync : public ICC_VideoConsumerExt
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE AddScaleFrameAsync( 
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_VIDEO_FRAME_DESCR *pParams,
+            /* [defaultvalue][in] */ IUnknown *pLockObj = 0,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult = 0) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_VideoConsumerExtAsyncVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_VideoConsumerExtAsync * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_VideoConsumerExtAsync * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddFrame )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ CC_INT stride,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrame )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_VIDEO_FRAME_DESCR *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsScaleAvailable )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [in] */ CC_VIDEO_FRAME_DESCR *pParams,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *AddScaleFrameAsync )( 
+            ICC_VideoConsumerExtAsync * This,
+            /* [size_is][in] */ const BYTE *pData,
+            /* [in] */ DWORD cbSize,
+            /* [in] */ CC_VIDEO_FRAME_DESCR *pParams,
+            /* [defaultvalue][in] */ IUnknown *pLockObj,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        END_INTERFACE
+    } ICC_VideoConsumerExtAsyncVtbl;
+
+    interface ICC_VideoConsumerExtAsync
+    {
+        CONST_VTBL struct ICC_VideoConsumerExtAsyncVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_VideoConsumerExtAsync_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_VideoConsumerExtAsync_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_VideoConsumerExtAsync_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_VideoConsumerExtAsync_AddFrame(This,Format,pData,cbSize,stride,pResult)	\
+    ( (This)->lpVtbl -> AddFrame(This,Format,pData,cbSize,stride,pResult) ) 
+
+#define ICC_VideoConsumerExtAsync_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_VideoConsumerExtAsync_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_VideoConsumerExtAsync_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_VideoConsumerExtAsync_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+#define ICC_VideoConsumerExtAsync_AddScaleFrame(This,pData,cbSize,pParams,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrame(This,pData,cbSize,pParams,pResult) ) 
+
+#define ICC_VideoConsumerExtAsync_IsScaleAvailable(This,pParams,pResult)	\
+    ( (This)->lpVtbl -> IsScaleAvailable(This,pParams,pResult) ) 
+
+
+#define ICC_VideoConsumerExtAsync_AddScaleFrameAsync(This,pData,cbSize,pParams,pLockObj,pResult)	\
+    ( (This)->lpVtbl -> AddScaleFrameAsync(This,pData,cbSize,pParams,pLockObj,pResult) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_VideoConsumerExtAsync_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICC_VideoProducerExt_INTERFACE_DEFINED__
 #define __ICC_VideoProducerExt_INTERFACE_DEFINED__
 
@@ -20035,6 +20651,7 @@ EXTERN_C const IID IID_ICC_VideoProducerExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoProducerExtVtbl
@@ -20045,7 +20662,7 @@ EXTERN_C const IID IID_ICC_VideoProducerExt;
             ICC_VideoProducerExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoProducerExt * This);
@@ -20192,6 +20809,7 @@ EXTERN_C const IID IID_ICC_VideoDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoDecoderVtbl
@@ -20202,7 +20820,7 @@ EXTERN_C const IID IID_ICC_VideoDecoder;
             ICC_VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoDecoder * This);
@@ -20439,6 +21057,7 @@ EXTERN_C const IID IID_ICC_VideoEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoEncoderVtbl
@@ -20449,7 +21068,7 @@ EXTERN_C const IID IID_ICC_VideoEncoder;
             ICC_VideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoEncoder * This);
@@ -20676,6 +21295,7 @@ EXTERN_C const IID IID_ICC_VideoSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VideoSplitterVtbl
@@ -20686,7 +21306,7 @@ EXTERN_C const IID IID_ICC_VideoSplitter;
             ICC_VideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VideoSplitter * This);
@@ -20866,19 +21486,20 @@ EXTERN_C const IID IID_ICC_VideoSplitter;
 #endif 	/* __ICC_VideoSplitter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0115 */
+/* interface __MIDL_itf_Cinecoder_0000_0116 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_VDEC_FRAME_OUTPUT_ORDER
-    {	CC_DISPLAY_ORDER	= 0,
-	CC_CODING_ORDER	= 1
+    {
+        CC_DISPLAY_ORDER	= 0,
+        CC_CODING_ORDER	= 1
     } 	CC_VDEC_FRAME_OUTPUT_ORDER;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0115_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_s_ifspec;
 
 #ifndef __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__
 #define __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__
@@ -20903,6 +21524,7 @@ EXTERN_C const IID IID_ICC_VDecFrameOutputOrderProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_VDecFrameOutputOrderPropVtbl
@@ -20913,7 +21535,7 @@ EXTERN_C const IID IID_ICC_VDecFrameOutputOrderProp;
             ICC_VDecFrameOutputOrderProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_VDecFrameOutputOrderProp * This);
@@ -20969,179 +21591,188 @@ EXTERN_C const IID IID_ICC_VDecFrameOutputOrderProp;
 #endif 	/* __ICC_VDecFrameOutputOrderProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0116 */
+/* interface __MIDL_itf_Cinecoder_0000_0117 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_PROFILE_LEVEL
-    {	CC_MPG_PROFILE_LEVEL_UNKNOWN	= 0,
-	CC_MPEG1_CONSTRAINED	= 0x1,
-	CC_MPEG1_ESCAPE	= 0x81,
-	CC_MPEG2_SP_ML	= 0x58,
-	CC_MPEG2_MP_LL	= 0x4a,
-	CC_MPEG2_MP_ML	= 0x48,
-	CC_MPEG2_MP_H14	= 0x46,
-	CC_MPEG2_MP_HL	= 0x44,
-	CC_MPEG2_422_ML	= 0x85,
-	CC_MPEG2_422_HL	= 0x82,
-	CC_MPEG2_SNR_LL	= 0x3a,
-	CC_MPEG2_SNR_ML	= 0x38,
-	CC_MPEG2_SPAT_H14	= 0x26,
-	CC_MPEG2_HP_ML	= 0x18,
-	CC_MPEG2_HP_H14	= 0x16,
-	CC_MPEG2_HP_HL	= 0x14,
-	CC_MPEG2_MVP_LL	= 0x8e,
-	CC_MPEG2_MVP_ML	= 0x8d,
-	CC_MPEG2_MVP_H14	= 0x8b,
-	CC_MPEG2_MVP_HL	= 0x8a,
-	CC_MPEG2_ESCAPE	= 0x80,
-	CC_MPG_SP_ML	= CC_MPEG2_SP_ML,
-	CC_MPG_MP_LL	= CC_MPEG2_MP_LL,
-	CC_MPG_MP_ML	= CC_MPEG2_MP_ML,
-	CC_MPG_MP_H14	= CC_MPEG2_MP_H14,
-	CC_MPG_MP_HL	= CC_MPEG2_MP_HL,
-	CC_MPG_HP_ML	= CC_MPEG2_HP_ML,
-	CC_MPG_HP_H14	= CC_MPEG2_HP_H14,
-	CC_MPG_HP_HL	= CC_MPEG2_HP_HL,
-	CC_MPG_ESCAPE	= CC_MPEG2_ESCAPE,
-	CC_MPG_422_ML	= CC_MPEG2_422_ML,
-	CC_MPG_422_HL	= CC_MPEG2_422_HL
+    {
+        CC_MPG_PROFILE_LEVEL_UNKNOWN	= 0,
+        CC_MPEG1_CONSTRAINED	= 0x1,
+        CC_MPEG1_ESCAPE	= 0x81,
+        CC_MPEG2_SP_ML	= 0x58,
+        CC_MPEG2_MP_LL	= 0x4a,
+        CC_MPEG2_MP_ML	= 0x48,
+        CC_MPEG2_MP_H14	= 0x46,
+        CC_MPEG2_MP_HL	= 0x44,
+        CC_MPEG2_422_ML	= 0x85,
+        CC_MPEG2_422_HL	= 0x82,
+        CC_MPEG2_SNR_LL	= 0x3a,
+        CC_MPEG2_SNR_ML	= 0x38,
+        CC_MPEG2_SPAT_H14	= 0x26,
+        CC_MPEG2_HP_ML	= 0x18,
+        CC_MPEG2_HP_H14	= 0x16,
+        CC_MPEG2_HP_HL	= 0x14,
+        CC_MPEG2_MVP_LL	= 0x8e,
+        CC_MPEG2_MVP_ML	= 0x8d,
+        CC_MPEG2_MVP_H14	= 0x8b,
+        CC_MPEG2_MVP_HL	= 0x8a,
+        CC_MPEG2_ESCAPE	= 0x80,
+        CC_MPG_SP_ML	= CC_MPEG2_SP_ML,
+        CC_MPG_MP_LL	= CC_MPEG2_MP_LL,
+        CC_MPG_MP_ML	= CC_MPEG2_MP_ML,
+        CC_MPG_MP_H14	= CC_MPEG2_MP_H14,
+        CC_MPG_MP_HL	= CC_MPEG2_MP_HL,
+        CC_MPG_HP_ML	= CC_MPEG2_HP_ML,
+        CC_MPG_HP_H14	= CC_MPEG2_HP_H14,
+        CC_MPG_HP_HL	= CC_MPEG2_HP_HL,
+        CC_MPG_ESCAPE	= CC_MPEG2_ESCAPE,
+        CC_MPG_422_ML	= CC_MPEG2_422_ML,
+        CC_MPG_422_HL	= CC_MPEG2_422_HL
     } 	CC_MPG_PROFILE_LEVEL;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_ASPECT_RATIO_CODE
-    {	CC_ASPECT_RATIO_UNKNOWN	= 0,
-	CC_ASPECT_RATIO_VGA	= 1,
-	CC_ASPECT_RATIO_1_1	= 1,
-	CC_ASPECT_RATIO_4_3	= 2,
-	CC_ASPECT_RATIO_16_9	= 3
+    {
+        CC_ASPECT_RATIO_UNKNOWN	= 0,
+        CC_ASPECT_RATIO_VGA	= 1,
+        CC_ASPECT_RATIO_1_1	= 1,
+        CC_ASPECT_RATIO_4_3	= 2,
+        CC_ASPECT_RATIO_16_9	= 3
     } 	CC_MPG_ASPECT_RATIO_CODE;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_MB_SCAN_PATTERN
-    {	CC_MPG_MB_SCAN_AUTO	= 0,
-	CC_MPG_MB_SCAN_ZIGZAG	= ( CC_MPG_MB_SCAN_AUTO + 1 ) ,
-	CC_MPG_MB_SCAN_ALTERNATE	= ( CC_MPG_MB_SCAN_ZIGZAG + 1 ) ,
-	CC_MPG_MB_SCAN_COUNT	= ( CC_MPG_MB_SCAN_ALTERNATE + 1 ) 
+    {
+        CC_MPG_MB_SCAN_AUTO	= 0,
+        CC_MPG_MB_SCAN_ZIGZAG	= ( CC_MPG_MB_SCAN_AUTO + 1 ) ,
+        CC_MPG_MB_SCAN_ALTERNATE	= ( CC_MPG_MB_SCAN_ZIGZAG + 1 ) ,
+        CC_MPG_MB_SCAN_COUNT	= ( CC_MPG_MB_SCAN_ALTERNATE + 1 ) 
     } 	CC_MPG_MB_SCAN_PATTERN;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_QUANT_SCALE_TYPE
-    {	CC_MPG_QSCALE_AUTO	= 0,
-	CC_MPG_QSCALE_LINEAR	= ( CC_MPG_QSCALE_AUTO + 1 ) ,
-	CC_MPG_QSCALE_NON_LINEAR	= ( CC_MPG_QSCALE_LINEAR + 1 ) ,
-	CC_MPG_QSCALE_COUNT	= ( CC_MPG_QSCALE_NON_LINEAR + 1 ) 
+    {
+        CC_MPG_QSCALE_AUTO	= 0,
+        CC_MPG_QSCALE_LINEAR	= ( CC_MPG_QSCALE_AUTO + 1 ) ,
+        CC_MPG_QSCALE_NON_LINEAR	= ( CC_MPG_QSCALE_LINEAR + 1 ) ,
+        CC_MPG_QSCALE_COUNT	= ( CC_MPG_QSCALE_NON_LINEAR + 1 ) 
     } 	CC_MPG_QUANT_SCALE_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_INTRA_VLC_TABLE
-    {	CC_MPG_INTRA_VLC_TABLE_AUTO	= 0,
-	CC_MPG_INTRA_VLC_TABLE_B14	= ( CC_MPG_INTRA_VLC_TABLE_AUTO + 1 ) ,
-	CC_MPG_INTRA_VLC_TABLE_B15	= ( CC_MPG_INTRA_VLC_TABLE_B14 + 1 ) ,
-	CC_MPG_INTRA_VLC_TABLE_COUNT	= ( CC_MPG_INTRA_VLC_TABLE_B15 + 1 ) 
+    {
+        CC_MPG_INTRA_VLC_TABLE_AUTO	= 0,
+        CC_MPG_INTRA_VLC_TABLE_B14	= ( CC_MPG_INTRA_VLC_TABLE_AUTO + 1 ) ,
+        CC_MPG_INTRA_VLC_TABLE_B15	= ( CC_MPG_INTRA_VLC_TABLE_B14 + 1 ) ,
+        CC_MPG_INTRA_VLC_TABLE_COUNT	= ( CC_MPG_INTRA_VLC_TABLE_B15 + 1 ) 
     } 	CC_MPG_INTRA_VLC_TABLE;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_FRAME_FLAGS
-    {	CC_MPG_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
-	CC_MPG_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
-	CC_MPG_FRAME_FLG_REPEAT_FIRST_FIELD	= 0x4,
-	CC_MPG_FRAME_FLG_ALTERNATE_SCAN	= 0x8,
-	CC_MPG_FRAME_FLG_Q_SCALE_TYPE	= 0x10,
-	CC_MPG_FRAME_FLG_FRAME_PRED_DCT	= 0x20,
-	CC_MPG_FRAME_FLG_INTRA_VLC_FORMAT	= 0x40,
-	CC_MPG_FRAME_FLG_CONCEALMENT_VEC	= 0x80,
-	CC_MPG_FRAME_FLG_FULL_PEL_FORW_VEC	= 0x100,
-	CC_MPG_FRAME_FLG_FULL_PEL_BACK_VEC	= 0x200,
-	CC_MPG_FRAME_FLG_CHROMA_420_TYPE	= 0x400,
-	CC_MPG_FRAME_FLG_COMPOSITE_DISPLAY	= 0x800,
-	CC_GOP_CLOSED	= 0x10000,
-	CC_GOP_BROKEN_LINK	= 0x20000,
-	CC_GOP_DROP_FRAME	= 0x40000,
-	CC_MPG_HDR_SEQUENCE	= 0x1000000,
-	CC_MPG_HDR_GOP	= 0x2000000,
-	CC_MPG_HDR_SEQUENCE_EXT	= 0x4000000,
-	CC_MPG_HDR_SEQUENCE_DISP_EXT	= 0x8000000,
-	CC_MPG_HDR_QUANT_MATRIX	= 0x10000000,
-	CC_MPG_HDR_PICTURE_DISP_EXT	= 0x20000000,
-	CC_MPG_HDR_PICTURE_CODING_EXT	= 0x40000000
+    {
+        CC_MPG_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
+        CC_MPG_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
+        CC_MPG_FRAME_FLG_REPEAT_FIRST_FIELD	= 0x4,
+        CC_MPG_FRAME_FLG_ALTERNATE_SCAN	= 0x8,
+        CC_MPG_FRAME_FLG_Q_SCALE_TYPE	= 0x10,
+        CC_MPG_FRAME_FLG_FRAME_PRED_DCT	= 0x20,
+        CC_MPG_FRAME_FLG_INTRA_VLC_FORMAT	= 0x40,
+        CC_MPG_FRAME_FLG_CONCEALMENT_VEC	= 0x80,
+        CC_MPG_FRAME_FLG_FULL_PEL_FORW_VEC	= 0x100,
+        CC_MPG_FRAME_FLG_FULL_PEL_BACK_VEC	= 0x200,
+        CC_MPG_FRAME_FLG_CHROMA_420_TYPE	= 0x400,
+        CC_MPG_FRAME_FLG_COMPOSITE_DISPLAY	= 0x800,
+        CC_GOP_CLOSED	= 0x10000,
+        CC_GOP_BROKEN_LINK	= 0x20000,
+        CC_GOP_DROP_FRAME	= 0x40000,
+        CC_MPG_HDR_SEQUENCE	= 0x1000000,
+        CC_MPG_HDR_GOP	= 0x2000000,
+        CC_MPG_HDR_SEQUENCE_EXT	= 0x4000000,
+        CC_MPG_HDR_SEQUENCE_DISP_EXT	= 0x8000000,
+        CC_MPG_HDR_QUANT_MATRIX	= 0x10000000,
+        CC_MPG_HDR_PICTURE_DISP_EXT	= 0x20000000,
+        CC_MPG_HDR_PICTURE_CODING_EXT	= 0x40000000
     } 	CC_MPG_FRAME_FLAGS;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_MOTION_PARAMS
-    {	CC_MPG_ME_SWX_16	= 0x1,
-	CC_MPG_ME_SWX_32	= 0,
-	CC_MPG_ME_SWX_48	= 0x2,
-	CC_MPG_ME_SWX_64	= 0x3,
-	CC_MPG_ME_SWX_96	= 0x4,
-	CC_MPG_ME_SWX_128	= 0x5,
-	CC_MPG_ME_SWX_192	= 0x6,
-	CC_MPG_ME_SWX_256	= 0x7,
-	CC_MPG_ME_SWX_MASK	= 0xf,
-	CC_MPG_ME_SWY_16	= 0x10,
-	CC_MPG_ME_SWY_32	= 0,
-	CC_MPG_ME_SWY_48	= 0x20,
-	CC_MPG_ME_SWY_64	= 0x30,
-	CC_MPG_ME_SWY_96	= 0x40,
-	CC_MPG_ME_SWY_128	= 0x50,
-	CC_MPG_ME_SWY_192	= 0x60,
-	CC_MPG_ME_SWY_256	= 0x70,
-	CC_MPG_ME_SWY_MASK	= 0xf0,
-	CC_MPG_ME_WND_16	= ( CC_MPG_ME_SWX_16 | CC_MPG_ME_SWY_16 ) ,
-	CC_MPG_ME_WND_32	= ( CC_MPG_ME_SWX_32 | CC_MPG_ME_SWY_32 ) ,
-	CC_MPG_ME_WND_64	= ( CC_MPG_ME_SWX_64 | CC_MPG_ME_SWY_64 ) ,
-	CC_MPG_ME_WND_96	= ( CC_MPG_ME_SWX_96 | CC_MPG_ME_SWY_96 ) ,
-	CC_MPG_ME_WND_128	= ( CC_MPG_ME_SWX_128 | CC_MPG_ME_SWY_128 ) ,
-	CC_MPG_ME_CELL1	= 0x100,
-	CC_MPG_ME_CELL2	= 0,
-	CC_MPG_ME_CELL4	= 0x200,
-	CC_MPG_ME_CELL8	= 0x300,
-	CC_MPG_ME_FUNC_MASK	= 0xf00,
-	CC_MPG_ME_SPC_1	= 0x1000,
-	CC_MPG_ME_SPC_2	= 0,
-	CC_MPG_ME_SPC_4	= 0x2000,
-	CC_MPG_ME_SPC_MASK	= 0x3000,
-	CC_MPG_ME_INCR_0	= 0x4000,
-	CC_MPG_ME_INCR_1	= 0,
-	CC_MPG_ME_INCR_2	= 0x8000,
-	CC_MPG_ME_INCR_MASK	= 0xc000,
-	CC_MPG_ME_HALFPEL	= 0,
-	CC_MPG_ME_NO_HALFPEL	= 0x10000,
-	CC_MPG_ME_QUICK_SAD	= 0,
-	CC_MPG_ME_NORMAL_SAD	= 0x20000,
-	CC_MPG_ME_OPPOSITE_FLD	= 0x40000,
-	CC_MPG_ME_ALIGN_VEC	= 0x80000,
-	CC_MPG_ME_NO_INTERLACED_SEARCH	= 0x100000,
-	CC_MPG_ME_NO_ADAPTIVE_SEARCH_WINDOW	= 0x200000,
-	CC_MPG_ME_NO_PREDICTIVE_SEARCH	= 0x400000,
-	CC_MPG_ME_NO_RECALC_MISPREDICTED_VECTORS	= 0x800000,
-	CC_MPG_ME_FASTEST	= ( ( ( ( CC_MPG_ME_WND_16 | CC_MPG_ME_CELL4 )  | CC_MPG_ME_SPC_4 )  | CC_MPG_ME_INCR_0 )  | CC_MPG_ME_NO_HALFPEL ) ,
-	CC_MPG_ME_NORMAL	= ( ( ( ( ( CC_MPG_ME_WND_64 | CC_MPG_ME_CELL2 )  | CC_MPG_ME_SPC_2 )  | CC_MPG_ME_INCR_1 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC ) ,
-	CC_MPG_ME_BEST	= ( ( ( ( ( ( ( CC_MPG_ME_WND_128 | CC_MPG_ME_CELL1 )  | CC_MPG_ME_SPC_1 )  | CC_MPG_ME_INCR_2 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC )  | CC_MPG_ME_NORMAL_SAD )  | CC_MPG_ME_OPPOSITE_FLD ) 
+    {
+        CC_MPG_ME_SWX_16	= 0x1,
+        CC_MPG_ME_SWX_32	= 0,
+        CC_MPG_ME_SWX_48	= 0x2,
+        CC_MPG_ME_SWX_64	= 0x3,
+        CC_MPG_ME_SWX_96	= 0x4,
+        CC_MPG_ME_SWX_128	= 0x5,
+        CC_MPG_ME_SWX_192	= 0x6,
+        CC_MPG_ME_SWX_256	= 0x7,
+        CC_MPG_ME_SWX_MASK	= 0xf,
+        CC_MPG_ME_SWY_16	= 0x10,
+        CC_MPG_ME_SWY_32	= 0,
+        CC_MPG_ME_SWY_48	= 0x20,
+        CC_MPG_ME_SWY_64	= 0x30,
+        CC_MPG_ME_SWY_96	= 0x40,
+        CC_MPG_ME_SWY_128	= 0x50,
+        CC_MPG_ME_SWY_192	= 0x60,
+        CC_MPG_ME_SWY_256	= 0x70,
+        CC_MPG_ME_SWY_MASK	= 0xf0,
+        CC_MPG_ME_WND_16	= ( CC_MPG_ME_SWX_16 | CC_MPG_ME_SWY_16 ) ,
+        CC_MPG_ME_WND_32	= ( CC_MPG_ME_SWX_32 | CC_MPG_ME_SWY_32 ) ,
+        CC_MPG_ME_WND_64	= ( CC_MPG_ME_SWX_64 | CC_MPG_ME_SWY_64 ) ,
+        CC_MPG_ME_WND_96	= ( CC_MPG_ME_SWX_96 | CC_MPG_ME_SWY_96 ) ,
+        CC_MPG_ME_WND_128	= ( CC_MPG_ME_SWX_128 | CC_MPG_ME_SWY_128 ) ,
+        CC_MPG_ME_CELL1	= 0x100,
+        CC_MPG_ME_CELL2	= 0,
+        CC_MPG_ME_CELL4	= 0x200,
+        CC_MPG_ME_CELL8	= 0x300,
+        CC_MPG_ME_FUNC_MASK	= 0xf00,
+        CC_MPG_ME_SPC_1	= 0x1000,
+        CC_MPG_ME_SPC_2	= 0,
+        CC_MPG_ME_SPC_4	= 0x2000,
+        CC_MPG_ME_SPC_MASK	= 0x3000,
+        CC_MPG_ME_INCR_0	= 0x4000,
+        CC_MPG_ME_INCR_1	= 0,
+        CC_MPG_ME_INCR_2	= 0x8000,
+        CC_MPG_ME_INCR_MASK	= 0xc000,
+        CC_MPG_ME_HALFPEL	= 0,
+        CC_MPG_ME_NO_HALFPEL	= 0x10000,
+        CC_MPG_ME_QUICK_SAD	= 0,
+        CC_MPG_ME_NORMAL_SAD	= 0x20000,
+        CC_MPG_ME_OPPOSITE_FLD	= 0x40000,
+        CC_MPG_ME_ALIGN_VEC	= 0x80000,
+        CC_MPG_ME_NO_INTERLACED_SEARCH	= 0x100000,
+        CC_MPG_ME_NO_ADAPTIVE_SEARCH_WINDOW	= 0x200000,
+        CC_MPG_ME_NO_PREDICTIVE_SEARCH	= 0x400000,
+        CC_MPG_ME_NO_RECALC_MISPREDICTED_VECTORS	= 0x800000,
+        CC_MPG_ME_FASTEST	= ( ( ( ( CC_MPG_ME_WND_16 | CC_MPG_ME_CELL4 )  | CC_MPG_ME_SPC_4 )  | CC_MPG_ME_INCR_0 )  | CC_MPG_ME_NO_HALFPEL ) ,
+        CC_MPG_ME_NORMAL	= ( ( ( ( ( CC_MPG_ME_WND_64 | CC_MPG_ME_CELL2 )  | CC_MPG_ME_SPC_2 )  | CC_MPG_ME_INCR_1 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC ) ,
+        CC_MPG_ME_BEST	= ( ( ( ( ( ( ( CC_MPG_ME_WND_128 | CC_MPG_ME_CELL1 )  | CC_MPG_ME_SPC_1 )  | CC_MPG_ME_INCR_2 )  | CC_MPG_ME_HALFPEL )  | CC_MPG_ME_ALIGN_VEC )  | CC_MPG_ME_NORMAL_SAD )  | CC_MPG_ME_OPPOSITE_FLD ) 
     } 	CC_MPG_MOTION_PARAMS;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_QUANT_FUNC
-    {	CC_MPG_QUANTF_AUTO	= 0,
-	CC_MPG_QUANTF_REF_SSE2	= ( CC_MPG_QUANTF_AUTO + 1 ) ,
-	CC_MPG_QUANTF_IDEAL	= ( CC_MPG_QUANTF_REF_SSE2 + 1 ) ,
-	CC_MPG_QUANTF_COMBINED	= ( CC_MPG_QUANTF_IDEAL + 1 ) ,
-	CC_MPG_QUANTF_IPP	= ( CC_MPG_QUANTF_COMBINED + 1 ) 
+    {
+        CC_MPG_QUANTF_AUTO	= 0,
+        CC_MPG_QUANTF_REF_SSE2	= ( CC_MPG_QUANTF_AUTO + 1 ) ,
+        CC_MPG_QUANTF_IDEAL	= ( CC_MPG_QUANTF_REF_SSE2 + 1 ) ,
+        CC_MPG_QUANTF_COMBINED	= ( CC_MPG_QUANTF_IDEAL + 1 ) ,
+        CC_MPG_QUANTF_IPP	= ( CC_MPG_QUANTF_COMBINED + 1 ) 
     } 	CC_MPG_QUANT_FUNC;
 
 typedef /* [v1_enum] */ 
 enum CC_MPG_QUANT_MATRIX
-    {	CC_MPG_QMATR_INTRA	= 0,
-	CC_MPG_QMATR_INTER	= 1,
-	CC_MPG_QMATR_CHROMA_INTRA	= 2,
-	CC_MPG_QMATR_CHROMA_INTER	= 3,
-	CC_MPG_QMATR_COUNT	= ( CC_MPG_QMATR_CHROMA_INTER + 1 ) 
+    {
+        CC_MPG_QMATR_INTRA	= 0,
+        CC_MPG_QMATR_INTER	= 1,
+        CC_MPG_QMATR_CHROMA_INTRA	= 2,
+        CC_MPG_QMATR_CHROMA_INTER	= 3,
+        CC_MPG_QMATR_COUNT	= ( CC_MPG_QMATR_CHROMA_INTER + 1 ) 
     } 	CC_MPG_QUANT_MATRIX;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0116_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0117_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0117_v0_0_s_ifspec;
 
 #ifndef __ICC_MpegVideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_MpegVideoStreamInfo_INTERFACE_DEFINED__
@@ -21202,6 +21833,7 @@ EXTERN_C const IID IID_ICC_MpegVideoStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoStreamInfoVtbl
@@ -21212,7 +21844,7 @@ EXTERN_C const IID IID_ICC_MpegVideoStreamInfo;
             ICC_MpegVideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoStreamInfo * This);
@@ -21460,6 +22092,7 @@ EXTERN_C const IID IID_ICC_MpegVideoFrameInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoFrameInfoVtbl
@@ -21470,7 +22103,7 @@ EXTERN_C const IID IID_ICC_MpegVideoFrameInfo;
             ICC_MpegVideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoFrameInfo * This);
@@ -21753,6 +22386,7 @@ EXTERN_C const IID IID_ICC_MpegVideoDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoDecoderVtbl
@@ -21763,7 +22397,7 @@ EXTERN_C const IID IID_ICC_MpegVideoDecoder;
             ICC_MpegVideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoDecoder * This);
@@ -22078,6 +22712,7 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoEncoderVtbl
@@ -22088,7 +22723,7 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoder;
             ICC_MpegVideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoEncoder * This);
@@ -22631,6 +23266,7 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoEncoderSettingsVtbl
@@ -22641,7 +23277,7 @@ EXTERN_C const IID IID_ICC_MpegVideoEncoderSettings;
             ICC_MpegVideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoEncoderSettings * This);
@@ -23323,6 +23959,7 @@ EXTERN_C const IID IID_ICC_MpegVideoSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MpegVideoSplitterVtbl
@@ -23333,7 +23970,7 @@ EXTERN_C const IID IID_ICC_MpegVideoSplitter;
             ICC_MpegVideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MpegVideoSplitter * This);
@@ -23594,6 +24231,7 @@ EXTERN_C const IID IID_ICC_D10VideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_D10VideoEncoderSettingsVtbl
@@ -23604,7 +24242,7 @@ EXTERN_C const IID IID_ICC_D10VideoEncoderSettings;
             ICC_D10VideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_D10VideoEncoderSettings * This);
@@ -23802,6 +24440,7 @@ EXTERN_C const IID IID_ICC_D10VideoEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_D10VideoEncoderVtbl
@@ -23812,7 +24451,7 @@ EXTERN_C const IID IID_ICC_D10VideoEncoder;
             ICC_D10VideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_D10VideoEncoder * This);
@@ -24084,84 +24723,90 @@ EXTERN_C const IID IID_ICC_D10VideoEncoder;
 #endif 	/* __ICC_D10VideoEncoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0124 */
+/* interface __MIDL_itf_Cinecoder_0000_0125 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_XDCAM_MODE
-    {	CC_XDCAM_MODE_UNKNOWN	= 0,
-	CC_XDCAM_EX_720P_2997	= 0x201,
-	CC_XDCAM_HD_1080I_2997	= 0x202,
-	CC_XDCAM_HD_1080I_25	= 0x203,
-	CC_XDCAM_EX_720P_2398	= 0x204,
-	CC_XDCAM_EX_720P_25	= 0x205,
-	CC_XDCAM_HD_1080P_2398	= 0x206,
-	CC_XDCAM_HD_1080P_25	= 0x207,
-	CC_XDCAM_HD_1080P_2997	= 0x208,
-	CC_XDCAM_EX_720P_5994	= 0x209,
-	CC_XDCAM_EX_720P_50	= 0x20a,
-	CC_XDCAM_EX_1080I_2997	= 0x20b,
-	CC_XDCAM_EX_1080I_25	= 0x20c,
-	CC_XDCAM_EX_1080P_2398	= 0x20d,
-	CC_XDCAM_EX_1080P_25	= 0x20e,
-	CC_XDCAM_EX_1080P_2997	= 0x20f,
-	CC_XDCAM_HD422_720P_2997	= 0x251,
-	CC_XDCAM_HD422_720P_2398	= 0x254,
-	CC_XDCAM_HD422_720P_25	= 0x255,
-	CC_XDCAM_HD422_720P_5994	= 0x259,
-	CC_XDCAM_HD422_720P_50	= 0x25a,
-	CC_XDCAM_HD422_1080I_2997	= 0x25b,
-	CC_XDCAM_HD422_1080I_25	= 0x25c,
-	CC_XDCAM_HD422_1080P_2398	= 0x25d,
-	CC_XDCAM_HD422_1080P_25	= 0x25e,
-	CC_XDCAM_HD422_1080P_2997	= 0x25f
+    {
+        CC_XDCAM_MODE_UNKNOWN	= 0,
+        CC_XDCAM_EX_720P_2997	= 0x201,
+        CC_XDCAM_HD_1080I_2997	= 0x202,
+        CC_XDCAM_HD_1080I_25	= 0x203,
+        CC_XDCAM_EX_720P_2398	= 0x204,
+        CC_XDCAM_EX_720P_25	= 0x205,
+        CC_XDCAM_HD_1080P_2398	= 0x206,
+        CC_XDCAM_HD_1080P_25	= 0x207,
+        CC_XDCAM_HD_1080P_2997	= 0x208,
+        CC_XDCAM_EX_720P_5994	= 0x209,
+        CC_XDCAM_EX_720P_50	= 0x20a,
+        CC_XDCAM_EX_1080I_2997	= 0x20b,
+        CC_XDCAM_EX_1080I_25	= 0x20c,
+        CC_XDCAM_EX_1080P_2398	= 0x20d,
+        CC_XDCAM_EX_1080P_25	= 0x20e,
+        CC_XDCAM_EX_1080P_2997	= 0x20f,
+        CC_XDCAM_HD422_720P_2997	= 0x251,
+        CC_XDCAM_HD422_720P_2398	= 0x254,
+        CC_XDCAM_HD422_720P_25	= 0x255,
+        CC_XDCAM_HD422_720P_5994	= 0x259,
+        CC_XDCAM_HD422_720P_50	= 0x25a,
+        CC_XDCAM_HD422_1080I_2997	= 0x25b,
+        CC_XDCAM_HD422_1080I_25	= 0x25c,
+        CC_XDCAM_HD422_1080P_2398	= 0x25d,
+        CC_XDCAM_HD422_1080P_25	= 0x25e,
+        CC_XDCAM_HD422_1080P_2997	= 0x25f
     } 	CC_XDCAM_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_PROFILE
-    {	CC_H264_PROFILE_UNKNOWN	= 0,
-	CC_H264_BASELINE_PROFILE	= 66,
-	CC_H264_MAIN_PROFILE	= 77,
-	CC_H264_EXTENDED_PROFILE	= 88,
-	CC_H264_HIGH_PROFILE	= 100,
-	CC_H264_HIGH_10_PROFILE	= 110,
-	CC_H264_HIGH_422_PROFILE	= 122,
-	CC_H264_HIGH_444_PROFILE	= 144
+    {
+        CC_H264_PROFILE_UNKNOWN	= 0,
+        CC_H264_BASELINE_PROFILE	= 66,
+        CC_H264_MAIN_PROFILE	= 77,
+        CC_H264_EXTENDED_PROFILE	= 88,
+        CC_H264_HIGH_PROFILE	= 100,
+        CC_H264_HIGH_10_PROFILE	= 110,
+        CC_H264_HIGH_422_PROFILE	= 122,
+        CC_H264_HIGH_444_PROFILE	= 144
     } 	CC_H264_PROFILE;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_MOTION_FUNC
-    {	CC_H264_ME_AUTO	= -1,
-	CC_H264_ME_FULL_SEARCH	= 0,
-	CC_H264_ME_CLASSIC_LOG	= 1,
-	CC_H264_ME_LOG	= 2,
-	CC_H264_ME_EPZS	= 3,
-	CC_H264_ME_FULL_ORTHOGONAL	= 4,
-	CC_H264_ME_LOG_ORTHOGONAL	= 5,
-	CC_H264_ME_TTS	= 6
+    {
+        CC_H264_ME_AUTO	= -1,
+        CC_H264_ME_FULL_SEARCH	= 0,
+        CC_H264_ME_CLASSIC_LOG	= 1,
+        CC_H264_ME_LOG	= 2,
+        CC_H264_ME_EPZS	= 3,
+        CC_H264_ME_FULL_ORTHOGONAL	= 4,
+        CC_H264_ME_LOG_ORTHOGONAL	= 5,
+        CC_H264_ME_TTS	= 6
     } 	CC_H264_MOTION_FUNC;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_ENTROPY_CODING_MODE
-    {	CC_H264_CAVLC	= 0,
-	CC_H264_CABAC	= 1,
-	CC_H264_CABAC_0	= 1,
-	CC_H264_CABAC_1	= 2,
-	CC_H264_CABAC_2	= 3
+    {
+        CC_H264_CAVLC	= 0,
+        CC_H264_CABAC	= 1,
+        CC_H264_CABAC_0	= 1,
+        CC_H264_CABAC_1	= 2,
+        CC_H264_CABAC_2	= 3
     } 	CC_H264_ENTROPY_CODING_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_SUBBLOCK_SPLIT_MODE
-    {	CC_H264_SUBBLK_NO_SPLIT	= 0,
-	CC_H264_SUBBLK_SPLIT_8x8	= ( CC_H264_SUBBLK_NO_SPLIT + 1 ) ,
-	CC_H264_SUBBLK_SPLIT_4x4	= ( CC_H264_SUBBLK_SPLIT_8x8 + 1 ) 
+    {
+        CC_H264_SUBBLK_NO_SPLIT	= 0,
+        CC_H264_SUBBLK_SPLIT_8x8	= ( CC_H264_SUBBLK_NO_SPLIT + 1 ) ,
+        CC_H264_SUBBLK_SPLIT_4x4	= ( CC_H264_SUBBLK_SPLIT_8x8 + 1 ) 
     } 	CC_H264_SUBBLOCK_SPLIT_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_DEBLOCKING_FILTER_MODE
-    {	CC_H264_DEBLOCKING_ON	= 0,
-	CC_H264_DEBLOCKING_OFF	= ( CC_H264_DEBLOCKING_ON + 1 ) ,
-	CC_H264_DEBLOCKING_WITHIN_SLICE	= ( CC_H264_DEBLOCKING_OFF + 1 ) 
+    {
+        CC_H264_DEBLOCKING_ON	= 0,
+        CC_H264_DEBLOCKING_OFF	= ( CC_H264_DEBLOCKING_ON + 1 ) ,
+        CC_H264_DEBLOCKING_WITHIN_SLICE	= ( CC_H264_DEBLOCKING_OFF + 1 ) 
     } 	CC_H264_DEBLOCKING_FILTER_MODE;
 
 typedef struct CC_H264_DEBLOCKING_FILTER_DESCR
@@ -24178,31 +24823,34 @@ inline const CC_H264_DEBLOCKING_FILTER_DESCR MK_DEBLOCKING_FILTER_DESCR(CC_H264_
 #endif
 typedef /* [v1_enum] */ 
 enum CC_H264_SCALING_MATRIX
-    {	CC_H264_STANDARD_SCALING_MATRIX	= 0,
-	CC_H264_DEFAULT_SCALING_MATRIX	= ( CC_H264_STANDARD_SCALING_MATRIX + 1 ) 
+    {
+        CC_H264_STANDARD_SCALING_MATRIX	= 0,
+        CC_H264_DEFAULT_SCALING_MATRIX	= ( CC_H264_STANDARD_SCALING_MATRIX + 1 ) 
     } 	CC_H264_SCALING_MATRIX;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_DIRECT_PRED_MODE
-    {	CC_H264_DIRECT_PRED_NONE	= 0,
-	CC_H264_DIRECT_PRED_TEMPORAL	= ( CC_H264_DIRECT_PRED_NONE + 1 ) ,
-	CC_H264_DIRECT_PRED_SPATIAL	= ( CC_H264_DIRECT_PRED_TEMPORAL + 1 ) 
+    {
+        CC_H264_DIRECT_PRED_NONE	= 0,
+        CC_H264_DIRECT_PRED_TEMPORAL	= ( CC_H264_DIRECT_PRED_NONE + 1 ) ,
+        CC_H264_DIRECT_PRED_SPATIAL	= ( CC_H264_DIRECT_PRED_TEMPORAL + 1 ) 
     } 	CC_H264_DIRECT_PRED_MODE;
 
 typedef /* [v1_enum] */ 
 enum CC_H264_FRAME_FLAGS
-    {	CC_H264_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
-	CC_H264_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
-	CC_H264_FRAME_IDR	= 0x1000,
-	CC_H264_HDR_SEQ_PARAM_SET	= 0x1000000,
-	CC_H264_HDR_PIC_PARAM_SET	= 0x2000000,
-	CC_H264_HDR_AU_DELIMITER	= 0x8000000
+    {
+        CC_H264_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
+        CC_H264_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
+        CC_H264_FRAME_IDR	= 0x1000,
+        CC_H264_HDR_SEQ_PARAM_SET	= 0x1000000,
+        CC_H264_HDR_PIC_PARAM_SET	= 0x2000000,
+        CC_H264_HDR_AU_DELIMITER	= 0x8000000
     } 	CC_H264_FRAME_FLAGS;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0124_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0124_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0125_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0125_v0_0_s_ifspec;
 
 #ifndef __ICC_H264VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_H264VideoStreamInfo_INTERFACE_DEFINED__
@@ -24245,6 +24893,7 @@ EXTERN_C const IID IID_ICC_H264VideoStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoStreamInfoVtbl
@@ -24255,7 +24904,7 @@ EXTERN_C const IID IID_ICC_H264VideoStreamInfo;
             ICC_H264VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoStreamInfo * This);
@@ -24696,6 +25345,7 @@ EXTERN_C const IID IID_ICC_H264VideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoEncoderSettingsVtbl
@@ -24706,7 +25356,7 @@ EXTERN_C const IID IID_ICC_H264VideoEncoderSettings;
             ICC_H264VideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoEncoderSettings * This);
@@ -25392,6 +26042,7 @@ EXTERN_C const IID IID_ICC_H264VideoFrameInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoFrameInfoVtbl
@@ -25402,7 +26053,7 @@ EXTERN_C const IID IID_ICC_H264VideoFrameInfo;
             ICC_H264VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoFrameInfo * This);
@@ -25650,6 +26301,7 @@ EXTERN_C const IID IID_ICC_H264VideoEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoEncoderVtbl
@@ -25660,7 +26312,7 @@ EXTERN_C const IID IID_ICC_H264VideoEncoder;
             ICC_H264VideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoEncoder * This);
@@ -25941,6 +26593,7 @@ EXTERN_C const IID IID_ICC_H264VideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoDecoderVtbl
@@ -25951,7 +26604,7 @@ EXTERN_C const IID IID_ICC_H264VideoDecoder;
             ICC_H264VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoDecoder * This);
@@ -26158,6 +26811,7 @@ EXTERN_C const IID IID_ICC_AVC1VideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AVC1VideoDecoderVtbl
@@ -26168,7 +26822,7 @@ EXTERN_C const IID IID_ICC_AVC1VideoDecoder;
             ICC_AVC1VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AVC1VideoDecoder * This);
@@ -26381,6 +27035,7 @@ EXTERN_C const IID IID_ICC_H264VideoSplitter;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_H264VideoSplitterVtbl
@@ -26391,7 +27046,7 @@ EXTERN_C const IID IID_ICC_H264VideoSplitter;
             ICC_H264VideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_H264VideoSplitter * This);
@@ -26586,31 +27241,33 @@ EXTERN_C const IID IID_ICC_H264VideoSplitter;
 #endif 	/* __ICC_H264VideoSplitter_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0131 */
+/* interface __MIDL_itf_Cinecoder_0000_0132 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_HEVC_PROFILE
-    {	CC_HEVC_PROFILE_UNKNOWN	= 0,
-	CC_HEVC_MAIN_PROFILE	= 1,
-	CC_HEVC_MAIN_10_PROFILE	= 2,
-	CC_HEVC_MAIN_STILL_PROFILE	= 3
+    {
+        CC_HEVC_PROFILE_UNKNOWN	= 0,
+        CC_HEVC_MAIN_PROFILE	= 1,
+        CC_HEVC_MAIN_10_PROFILE	= 2,
+        CC_HEVC_MAIN_STILL_PROFILE	= 3
     } 	CC_HEVC_PROFILE;
 
 typedef /* [v1_enum] */ 
 enum CC_HEVC_FRAME_FLAGS
-    {	CC_HEVC_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
-	CC_HEVC_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
-	CC_HEVC_FRAME_IDR	= 0x1000,
-	CC_HEVC_HDR_SEQ_PARAM_SET	= 0x1000000,
-	CC_HEVC_HDR_PIC_PARAM_SET	= 0x2000000,
-	CC_HEVC_HDR_AU_DELIMITER	= 0x8000000
+    {
+        CC_HEVC_FRAME_FLG_PROGRESSIVE_FRAME	= 0x1,
+        CC_HEVC_FRAME_FLG_TOP_FIELD_FIRST	= 0x2,
+        CC_HEVC_FRAME_IDR	= 0x1000,
+        CC_HEVC_HDR_SEQ_PARAM_SET	= 0x1000000,
+        CC_HEVC_HDR_PIC_PARAM_SET	= 0x2000000,
+        CC_HEVC_HDR_AU_DELIMITER	= 0x8000000
     } 	CC_HEVC_FRAME_FLAGS;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0131_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0131_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0132_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0132_v0_0_s_ifspec;
 
 #ifndef __ICC_HEVCVideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_HEVCVideoStreamInfo_INTERFACE_DEFINED__
@@ -26629,6 +27286,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoStreamInfoVtbl
@@ -26639,7 +27297,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoStreamInfo;
             ICC_HEVCVideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoStreamInfo * This);
@@ -26772,6 +27430,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoFrameInfoVtbl
@@ -26782,7 +27441,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoFrameInfo;
             ICC_HEVCVideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoFrameInfo * This);
@@ -26986,6 +27645,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoDecoderVtbl
@@ -26996,7 +27656,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoDecoder;
             ICC_HEVCVideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoDecoder * This);
@@ -27203,6 +27863,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoSplitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoSplitterVtbl
@@ -27213,7 +27874,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoSplitter;
             ICC_HEVCVideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoSplitter * This);
@@ -27411,6 +28072,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoEncoderVtbl
@@ -27421,7 +28083,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoEncoder;
             ICC_HEVCVideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoEncoder * This);
@@ -27811,6 +28473,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HEVCVideoEncoderSettingsVtbl
@@ -27821,7 +28484,7 @@ EXTERN_C const IID IID_ICC_HEVCVideoEncoderSettings;
             ICC_HEVCVideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HEVCVideoEncoderSettings * This);
@@ -28285,43 +28948,44 @@ EXTERN_C const IID IID_ICC_HEVCVideoEncoderSettings;
 #endif 	/* __ICC_HEVCVideoEncoderSettings_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0137 */
+/* interface __MIDL_itf_Cinecoder_0000_0138 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_AVCI_MODE
-    {	CC_AVCI_MODE_UNKNOWN	= 0,
-	CC_AVCI_50_720P_2398	= 0x100,
-	CC_AVCI_50_720P_25	= 0x101,
-	CC_AVCI_50_720P_2997	= 0x102,
-	CC_AVCI_50_720P_50	= 0x9,
-	CC_AVCI_50_720P_5994	= 0x8,
-	CC_AVCI_50_1080P_2398	= 0x104,
-	CC_AVCI_50_1080P_25	= 0x4,
-	CC_AVCI_50_1080P_2997	= 0x3,
-	CC_AVCI_50_1080I_50	= 0x2,
-	CC_AVCI_50_1080I_5994	= 0x1,
-	CC_AVCI_100_720P_2398	= 0x105,
-	CC_AVCI_100_720P_25	= 0x106,
-	CC_AVCI_100_720P_2997	= 0x107,
-	CC_AVCI_100_720P_50	= 0x29,
-	CC_AVCI_100_720P_5994	= 0x28,
-	CC_AVCI_100_1080P_2398	= 0x108,
-	CC_AVCI_100_1080P_25	= 0x24,
-	CC_AVCI_100_1080P_2997	= 0x23,
-	CC_AVCI_100_1080I_50	= 0x22,
-	CC_AVCI_100_1080I_5994	= 0x21,
-	CC_AVCI_4K_422_2398	= 0x400,
-	CC_AVCI_4K_422_25	= 0x401,
-	CC_AVCI_4K_422_2997	= 0x402,
-	CC_AVCI_4K_422_50	= 0x403,
-	CC_AVCI_4K_422_5994	= 0x404
+    {
+        CC_AVCI_MODE_UNKNOWN	= 0,
+        CC_AVCI_50_720P_2398	= 0x100,
+        CC_AVCI_50_720P_25	= 0x101,
+        CC_AVCI_50_720P_2997	= 0x102,
+        CC_AVCI_50_720P_50	= 0x9,
+        CC_AVCI_50_720P_5994	= 0x8,
+        CC_AVCI_50_1080P_2398	= 0x104,
+        CC_AVCI_50_1080P_25	= 0x4,
+        CC_AVCI_50_1080P_2997	= 0x3,
+        CC_AVCI_50_1080I_50	= 0x2,
+        CC_AVCI_50_1080I_5994	= 0x1,
+        CC_AVCI_100_720P_2398	= 0x105,
+        CC_AVCI_100_720P_25	= 0x106,
+        CC_AVCI_100_720P_2997	= 0x107,
+        CC_AVCI_100_720P_50	= 0x29,
+        CC_AVCI_100_720P_5994	= 0x28,
+        CC_AVCI_100_1080P_2398	= 0x108,
+        CC_AVCI_100_1080P_25	= 0x24,
+        CC_AVCI_100_1080P_2997	= 0x23,
+        CC_AVCI_100_1080I_50	= 0x22,
+        CC_AVCI_100_1080I_5994	= 0x21,
+        CC_AVCI_4K_422_2398	= 0x400,
+        CC_AVCI_4K_422_25	= 0x401,
+        CC_AVCI_4K_422_2997	= 0x402,
+        CC_AVCI_4K_422_50	= 0x403,
+        CC_AVCI_4K_422_5994	= 0x404
     } 	CC_AVCI_MODE;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0137_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0137_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0138_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0138_v0_0_s_ifspec;
 
 #ifndef __ICC_AVCIntraEncoderSettings_INTERFACE_DEFINED__
 #define __ICC_AVCIntraEncoderSettings_INTERFACE_DEFINED__
@@ -28356,7 +29020,14 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoderSettings;
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_SequenceHeaderPeriod( 
             /* [in] */ CC_PERIOD x) = 0;
         
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ColorCoefs( 
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ColorCoefs( 
+            /* [in] */ CC_COLOUR_DESCRIPTION x) = 0;
+        
     };
+    
     
 #else 	/* C style interface */
 
@@ -28368,7 +29039,7 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoderSettings;
             ICC_AVCIntraEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AVCIntraEncoderSettings * This);
@@ -28416,6 +29087,14 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoderSettings;
         /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_SequenceHeaderPeriod )( 
             ICC_AVCIntraEncoderSettings * This,
             /* [in] */ CC_PERIOD x);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ColorCoefs )( 
+            ICC_AVCIntraEncoderSettings * This,
+            /* [retval][out] */ CC_COLOUR_DESCRIPTION *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ColorCoefs )( 
+            ICC_AVCIntraEncoderSettings * This,
+            /* [in] */ CC_COLOUR_DESCRIPTION x);
         
         END_INTERFACE
     } ICC_AVCIntraEncoderSettingsVtbl;
@@ -28471,6 +29150,12 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoderSettings;
 #define ICC_AVCIntraEncoderSettings_put_SequenceHeaderPeriod(This,x)	\
     ( (This)->lpVtbl -> put_SequenceHeaderPeriod(This,x) ) 
 
+#define ICC_AVCIntraEncoderSettings_get_ColorCoefs(This,x)	\
+    ( (This)->lpVtbl -> get_ColorCoefs(This,x) ) 
+
+#define ICC_AVCIntraEncoderSettings_put_ColorCoefs(This,x)	\
+    ( (This)->lpVtbl -> put_ColorCoefs(This,x) ) 
+
 #endif /* COBJMACROS */
 
 
@@ -28502,6 +29187,7 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AVCIntraEncoderVtbl
@@ -28512,7 +29198,7 @@ EXTERN_C const IID IID_ICC_AVCIntraEncoder;
             ICC_AVCIntraEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AVCIntraEncoder * This);
@@ -28801,6 +29487,7 @@ EXTERN_C const IID IID_ICC_AVCIntraDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AVCIntraDecoderVtbl
@@ -28811,7 +29498,7 @@ EXTERN_C const IID IID_ICC_AVCIntraDecoder;
             ICC_AVCIntraDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AVCIntraDecoder * This);
@@ -29025,6 +29712,7 @@ EXTERN_C const IID IID_ICC_AVCIntraDecoder2;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_AVCIntraDecoder2Vtbl
@@ -29035,7 +29723,7 @@ EXTERN_C const IID IID_ICC_AVCIntraDecoder2;
             ICC_AVCIntraDecoder2 * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_AVCIntraDecoder2 * This);
@@ -29257,6 +29945,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Mpeg4VideoStreamInfoVtbl
@@ -29267,7 +29956,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoStreamInfo;
             ICC_Mpeg4VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Mpeg4VideoStreamInfo * This);
@@ -29400,6 +30089,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Mpeg4VideoFrameInfoVtbl
@@ -29410,7 +30100,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoFrameInfo;
             ICC_Mpeg4VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Mpeg4VideoFrameInfo * This);
@@ -29614,6 +30304,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Mpeg4VideoDecoderVtbl
@@ -29624,7 +30315,7 @@ EXTERN_C const IID IID_ICC_Mpeg4VideoDecoder;
             ICC_Mpeg4VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Mpeg4VideoDecoder * This);
@@ -29831,6 +30522,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_J2K_VideoStreamInfoVtbl
@@ -29841,7 +30533,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoStreamInfo;
             ICC_J2K_VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_J2K_VideoStreamInfo * This);
@@ -29974,6 +30666,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_J2K_VideoFrameInfoVtbl
@@ -29984,7 +30677,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoFrameInfo;
             ICC_J2K_VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_J2K_VideoFrameInfo * This);
@@ -30188,6 +30881,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoSplitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_J2K_VideoSplitterVtbl
@@ -30198,7 +30892,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoSplitter;
             ICC_J2K_VideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_J2K_VideoSplitter * This);
@@ -30402,6 +31096,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_J2K_VideoDecoderVtbl
@@ -30412,7 +31107,7 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
             ICC_J2K_VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_J2K_VideoDecoder * This);
@@ -30616,24 +31311,25 @@ EXTERN_C const IID IID_ICC_J2K_VideoDecoder;
 #endif 	/* __ICC_J2K_VideoDecoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0148 */
+/* interface __MIDL_itf_Cinecoder_0000_0149 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_SONY_RAW_BITSTREAM_TYPE
-    {	CC_SONY_BITSTREAM_TYPE_UNKNOWN	= -1,
-	CC_SONY_F65RAW_BITSTREAM	= 0,
-	CC_SONY_F65RAW_BITSTREAM_HFR	= 0x1,
-	CC_SONY_F55RAW_BITSTREAM	= 0x10,
-	CC_SONY_F5RAW_BITSTREAM	= 0x20,
-	CC_SONY_FS700RAW_BITSTREAM	= 0x30,
-	CC_SONY_FS700RAW_BITSTREAM_2K	= 0x31
+    {
+        CC_SONY_BITSTREAM_TYPE_UNKNOWN	= -1,
+        CC_SONY_F65RAW_BITSTREAM	= 0,
+        CC_SONY_F65RAW_BITSTREAM_HFR	= 0x1,
+        CC_SONY_F55RAW_BITSTREAM	= 0x10,
+        CC_SONY_F5RAW_BITSTREAM	= 0x20,
+        CC_SONY_FS700RAW_BITSTREAM	= 0x30,
+        CC_SONY_FS700RAW_BITSTREAM_2K	= 0x31
     } 	CC_SONY_RAW_BITSTREAM_TYPE;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0148_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0148_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0149_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0149_v0_0_s_ifspec;
 
 #ifndef __ICC_SonyRaw_VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_SonyRaw_VideoStreamInfo_INTERFACE_DEFINED__
@@ -30655,6 +31351,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SonyRaw_VideoStreamInfoVtbl
@@ -30665,7 +31362,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoStreamInfo;
             ICC_SonyRaw_VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SonyRaw_VideoStreamInfo * This);
@@ -30805,6 +31502,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SonyRaw_VideoFrameInfoVtbl
@@ -30815,7 +31513,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoFrameInfo;
             ICC_SonyRaw_VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SonyRaw_VideoFrameInfo * This);
@@ -31025,6 +31723,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoDecoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SonyRaw_VideoDecoderVtbl
@@ -31035,7 +31734,7 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoDecoder;
             ICC_SonyRaw_VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SonyRaw_VideoDecoder * This);
@@ -31239,33 +31938,35 @@ EXTERN_C const IID IID_ICC_SonyRaw_VideoDecoder;
 #endif 	/* __ICC_SonyRaw_VideoDecoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0151 */
+/* interface __MIDL_itf_Cinecoder_0000_0152 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_PRORES_TYPE
-    {	CC_PRORES_TYPE_UNKNOWN	= 0,
-	CC_PRORES_422_HQ	= ( CC_PRORES_TYPE_UNKNOWN + 1 ) ,
-	CC_PRORES_422	= ( CC_PRORES_422_HQ + 1 ) ,
-	CC_PRORES_422_LT	= ( CC_PRORES_422 + 1 ) ,
-	CC_PRORES_422_PROXY	= ( CC_PRORES_422_LT + 1 ) ,
-	CC_PRORES_4444	= ( CC_PRORES_422_PROXY + 1 ) ,
-	CC_PRORES_4444_XQ	= ( CC_PRORES_4444 + 1 ) 
+    {
+        CC_PRORES_TYPE_UNKNOWN	= 0,
+        CC_PRORES_422_HQ	= ( CC_PRORES_TYPE_UNKNOWN + 1 ) ,
+        CC_PRORES_422	= ( CC_PRORES_422_HQ + 1 ) ,
+        CC_PRORES_422_LT	= ( CC_PRORES_422 + 1 ) ,
+        CC_PRORES_422_PROXY	= ( CC_PRORES_422_LT + 1 ) ,
+        CC_PRORES_4444	= ( CC_PRORES_422_PROXY + 1 ) ,
+        CC_PRORES_4444_XQ	= ( CC_PRORES_4444 + 1 ) 
     } 	CC_PRORES_TYPE;
 
 typedef /* [v1_enum] */ 
 enum CC_DANIEL2_CODING_METHOD
-    {	CC_D2_METHOD_DEFAULT	= -1,
-	CC_D2_METHOD_CUDA	= 0,
-	CC_D2_METHOD_VLC	= 1,
-	CC_D2_METHOD_CUDA_RLE	= 2,
-	CC_D2_METHOD_TOTAL	= ( CC_D2_METHOD_CUDA_RLE + 1 ) 
+    {
+        CC_D2_METHOD_DEFAULT	= -1,
+        CC_D2_METHOD_CUDA	= 0,
+        CC_D2_METHOD_VLC	= 1,
+        CC_D2_METHOD_CUDA_RLE	= 2,
+        CC_D2_METHOD_TOTAL	= ( CC_D2_METHOD_CUDA_RLE + 1 ) 
     } 	CC_DANIEL2_CODING_METHOD;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0151_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0152_v0_0_s_ifspec;
 
 #ifndef __ICC_DanielVideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_DanielVideoStreamInfo_INTERFACE_DEFINED__
@@ -31311,6 +32012,7 @@ EXTERN_C const IID IID_ICC_DanielVideoStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoStreamInfoVtbl
@@ -31321,7 +32023,7 @@ EXTERN_C const IID IID_ICC_DanielVideoStreamInfo;
             ICC_DanielVideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoStreamInfo * This);
@@ -31535,6 +32237,7 @@ EXTERN_C const IID IID_ICC_DanielVideoFrameInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoFrameInfoVtbl
@@ -31545,7 +32248,7 @@ EXTERN_C const IID IID_ICC_DanielVideoFrameInfo;
             ICC_DanielVideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoFrameInfo * This);
@@ -31787,6 +32490,7 @@ EXTERN_C const IID IID_ICC_DanielVideoSplitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoSplitterVtbl
@@ -31797,7 +32501,7 @@ EXTERN_C const IID IID_ICC_DanielVideoSplitter;
             ICC_DanielVideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoSplitter * This);
@@ -31995,6 +32699,7 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoDecoderVtbl
@@ -32005,7 +32710,7 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder;
             ICC_DanielVideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoDecoder * This);
@@ -32339,6 +33044,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoEncoderSettingsVtbl
@@ -32349,7 +33055,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings;
             ICC_DanielVideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoEncoderSettings * This);
@@ -32735,6 +33441,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings_CUDA;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoEncoderSettings_CUDAVtbl
@@ -32745,7 +33452,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoderSettings_CUDA;
             ICC_DanielVideoEncoderSettings_CUDA * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoEncoderSettings_CUDA * This);
@@ -33148,6 +33855,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoder;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoEncoderVtbl
@@ -33158,7 +33866,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoder;
             ICC_DanielVideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoEncoder * This);
@@ -33399,6 +34107,7 @@ EXTERN_C const IID IID_ICC_D2D_GetUpdateVideoBufferPtrProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_D2D_GetUpdateVideoBufferPtrPropVtbl
@@ -33409,7 +34118,7 @@ EXTERN_C const IID IID_ICC_D2D_GetUpdateVideoBufferPtrProp;
             ICC_D2D_GetUpdateVideoBufferPtrProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_D2D_GetUpdateVideoBufferPtrProp * This);
@@ -33473,7 +34182,14 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder_CUDA;
     ICC_DanielVideoDecoder_CUDA : public ICC_DanielVideoDecoder
     {
     public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_TargetColorFormat( 
+            /* [retval][out] */ CC_COLOR_FMT *x) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_TargetColorFormat( 
+            /* [in] */ CC_COLOR_FMT x) = 0;
+        
     };
+    
     
 #else 	/* C style interface */
 
@@ -33485,7 +34201,7 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder_CUDA;
             ICC_DanielVideoDecoder_CUDA * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoDecoder_CUDA * This);
@@ -33581,6 +34297,14 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder_CUDA;
             ICC_DanielVideoDecoder_CUDA * This,
             /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
         
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TargetColorFormat )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [retval][out] */ CC_COLOR_FMT *x);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TargetColorFormat )( 
+            ICC_DanielVideoDecoder_CUDA * This,
+            /* [in] */ CC_COLOR_FMT x);
+        
         END_INTERFACE
     } ICC_DanielVideoDecoder_CUDAVtbl;
 
@@ -33665,6 +34389,12 @@ EXTERN_C const IID IID_ICC_DanielVideoDecoder_CUDA;
 
 
 
+#define ICC_DanielVideoDecoder_CUDA_get_TargetColorFormat(This,x)	\
+    ( (This)->lpVtbl -> get_TargetColorFormat(This,x) ) 
+
+#define ICC_DanielVideoDecoder_CUDA_put_TargetColorFormat(This,x)	\
+    ( (This)->lpVtbl -> put_TargetColorFormat(This,x) ) 
+
 #endif /* COBJMACROS */
 
 
@@ -33693,6 +34423,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoder_CUDA;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DanielVideoEncoder_CUDAVtbl
@@ -33703,7 +34434,7 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoder_CUDA;
             ICC_DanielVideoEncoder_CUDA * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DanielVideoEncoder_CUDA * This);
@@ -33925,6 +34656,370 @@ EXTERN_C const IID IID_ICC_DanielVideoEncoder_CUDA;
 #endif 	/* __ICC_DanielVideoEncoder_CUDA_INTERFACE_DEFINED__ */
 
 
+/* interface __MIDL_itf_Cinecoder_0000_0162 */
+/* [local] */ 
+
+typedef /* [v1_enum] */ 
+enum CC_D2DEC_SCALE
+    {
+        D2DEC_SCALE_1	= 0,
+        D2DEC_SCALE_2	= 1,
+        D2DEC_SCALE_4	= 2
+    } 	CC_D2DEC_SCALE;
+
+typedef struct CC_D2_DECODER_PARAMS
+    {
+    void *gDecodedBuffer;
+    CC_INT DecodedPitch;
+    CC_INT DecodedHeight;
+    CC_D2DEC_SCALE decScale;
+    RECT decROI;
+    } 	CC_D2_DECODER_PARAMS;
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0162_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0162_v0_0_s_ifspec;
+
+#ifndef __ICC_DanielVideoDecoder_CudaPlayer_INTERFACE_DEFINED__
+#define __ICC_DanielVideoDecoder_CudaPlayer_INTERFACE_DEFINED__
+
+/* interface ICC_DanielVideoDecoder_CudaPlayer */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_DanielVideoDecoder_CudaPlayer;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("0add9766-f751-4a15-b891-1495605eef3b")
+    ICC_DanielVideoDecoder_CudaPlayer : public ICC_DanielVideoDecoder
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE InitDecoder( 
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetOutputBufferDimensions( 
+            /* [in] */ CC_SIZE src_size,
+            /* [retval][out] */ CC_SIZE *ptarget_size) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE DecodeFrame( 
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [in] */ CC_TIME pts,
+            /* [in] */ CC_D2_DECODER_PARAMS *pDecPar) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_DanielVideoDecoder_CudaPlayerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *Init )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [defaultvalue][in] */ ICC_Settings *pSettings);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitByXml )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_STRING strXML);
+        
+        HRESULT ( STDMETHODCALLTYPE *Done )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsActive )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *__MIDL__ICC_StreamProcessor0000);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TimeBase )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ CC_TIMEBASE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TimeBase )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_TIMEBASE p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BitRate )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ CC_BITRATE *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StreamInfo )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ ICC_Settings **p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDataReady )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [defaultvalue][retval][out] */ CC_BOOL *p);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DataInfo )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ ICC_Settings **s);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OutputCallback )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ IUnknown **p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_OutputCallback )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ IUnknown *p);
+        
+        HRESULT ( STDMETHODCALLTYPE *ProcessData )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [defaultvalue][in] */ CC_UINT cbOffset,
+            /* [defaultvalue][in] */ CC_TIME pts,
+            /* [defaultvalue][retval][out] */ CC_UINT *pcbProcessed);
+        
+        HRESULT ( STDMETHODCALLTYPE *Break )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_BOOL bFlush,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pbDone);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetFrame )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_COLOR_FMT Format,
+            /* [size_is][out] */ BYTE *pbVideoData,
+            /* [in] */ DWORD cbSize,
+            /* [defaultvalue][in] */ INT stride,
+            /* [defaultvalue][retval][out] */ DWORD *pcbRetSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetStride )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [retval][out] */ DWORD *pNumBytes);
+        
+        HRESULT ( STDMETHODCALLTYPE *IsFormatSupported )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_COLOR_FMT fmt,
+            /* [defaultvalue][retval][out] */ CC_BOOL *pResult);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoStreamInfo )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ ICC_VideoStreamInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetVideoFrameInfo )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [retval][out] */ ICC_VideoFrameInfo **pDescr);
+        
+        HRESULT ( STDMETHODCALLTYPE *InitDecoder )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetOutputBufferDimensions )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [in] */ CC_SIZE src_size,
+            /* [retval][out] */ CC_SIZE *ptarget_size);
+        
+        HRESULT ( STDMETHODCALLTYPE *DecodeFrame )( 
+            ICC_DanielVideoDecoder_CudaPlayer * This,
+            /* [size_is][in] */ CC_PCBYTE pbData,
+            /* [in] */ CC_UINT cbSize,
+            /* [in] */ CC_TIME pts,
+            /* [in] */ CC_D2_DECODER_PARAMS *pDecPar);
+        
+        END_INTERFACE
+    } ICC_DanielVideoDecoder_CudaPlayerVtbl;
+
+    interface ICC_DanielVideoDecoder_CudaPlayer
+    {
+        CONST_VTBL struct ICC_DanielVideoDecoder_CudaPlayerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_DanielVideoDecoder_CudaPlayer_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_DanielVideoDecoder_CudaPlayer_Init(This,pSettings)	\
+    ( (This)->lpVtbl -> Init(This,pSettings) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_InitByXml(This,strXML)	\
+    ( (This)->lpVtbl -> InitByXml(This,strXML) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_Done(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Done(This,bFlush,pbDone) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_IsActive(This,__MIDL__ICC_StreamProcessor0000)	\
+    ( (This)->lpVtbl -> get_IsActive(This,__MIDL__ICC_StreamProcessor0000) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> get_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_put_TimeBase(This,p)	\
+    ( (This)->lpVtbl -> put_TimeBase(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_BitRate(This,p)	\
+    ( (This)->lpVtbl -> get_BitRate(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_StreamInfo(This,p)	\
+    ( (This)->lpVtbl -> get_StreamInfo(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_IsDataReady(This,p)	\
+    ( (This)->lpVtbl -> get_IsDataReady(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_DataInfo(This,s)	\
+    ( (This)->lpVtbl -> get_DataInfo(This,s) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_get_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> get_OutputCallback(This,p) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_put_OutputCallback(This,p)	\
+    ( (This)->lpVtbl -> put_OutputCallback(This,p) ) 
+
+
+#define ICC_DanielVideoDecoder_CudaPlayer_ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed)	\
+    ( (This)->lpVtbl -> ProcessData(This,pbData,cbSize,cbOffset,pts,pcbProcessed) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_Break(This,bFlush,pbDone)	\
+    ( (This)->lpVtbl -> Break(This,bFlush,pbDone) ) 
+
+
+#define ICC_DanielVideoDecoder_CudaPlayer_GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize)	\
+    ( (This)->lpVtbl -> GetFrame(This,Format,pbVideoData,cbSize,stride,pcbRetSize) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_GetStride(This,fmt,pNumBytes)	\
+    ( (This)->lpVtbl -> GetStride(This,fmt,pNumBytes) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_IsFormatSupported(This,fmt,pResult)	\
+    ( (This)->lpVtbl -> IsFormatSupported(This,fmt,pResult) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_GetVideoStreamInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoStreamInfo(This,pDescr) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_GetVideoFrameInfo(This,pDescr)	\
+    ( (This)->lpVtbl -> GetVideoFrameInfo(This,pDescr) ) 
+
+
+
+#define ICC_DanielVideoDecoder_CudaPlayer_InitDecoder(This,pbData,cbSize)	\
+    ( (This)->lpVtbl -> InitDecoder(This,pbData,cbSize) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_GetOutputBufferDimensions(This,src_size,ptarget_size)	\
+    ( (This)->lpVtbl -> GetOutputBufferDimensions(This,src_size,ptarget_size) ) 
+
+#define ICC_DanielVideoDecoder_CudaPlayer_DecodeFrame(This,pbData,cbSize,pts,pDecPar)	\
+    ( (This)->lpVtbl -> DecodeFrame(This,pbData,cbSize,pts,pDecPar) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_DanielVideoDecoder_CudaPlayer_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICC_D2D_GetFrameDecodingParamsProp_INTERFACE_DEFINED__
+#define __ICC_D2D_GetFrameDecodingParamsProp_INTERFACE_DEFINED__
+
+/* interface ICC_D2D_GetFrameDecodingParamsProp */
+/* [local][unique][uuid][object] */ 
+
+
+EXTERN_C const IID IID_ICC_D2D_GetFrameDecodingParamsProp;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("d45d4f96-a218-4c54-96fc-230f2c1537a7")
+    ICC_D2D_GetFrameDecodingParamsProp : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameDecodingParams( 
+            /* [retval][out] */ CC_D2_DECODER_PARAMS *p) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICC_D2D_GetFrameDecodingParamsPropVtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICC_D2D_GetFrameDecodingParamsProp * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICC_D2D_GetFrameDecodingParamsProp * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICC_D2D_GetFrameDecodingParamsProp * This);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameDecodingParams )( 
+            ICC_D2D_GetFrameDecodingParamsProp * This,
+            /* [retval][out] */ CC_D2_DECODER_PARAMS *p);
+        
+        END_INTERFACE
+    } ICC_D2D_GetFrameDecodingParamsPropVtbl;
+
+    interface ICC_D2D_GetFrameDecodingParamsProp
+    {
+        CONST_VTBL struct ICC_D2D_GetFrameDecodingParamsPropVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICC_D2D_GetFrameDecodingParamsProp_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICC_D2D_GetFrameDecodingParamsProp_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICC_D2D_GetFrameDecodingParamsProp_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICC_D2D_GetFrameDecodingParamsProp_get_FrameDecodingParams(This,p)	\
+    ( (This)->lpVtbl -> get_FrameDecodingParams(This,p) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICC_D2D_GetFrameDecodingParamsProp_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICC_Y4M_VideoStreamInfo_INTERFACE_DEFINED__
 #define __ICC_Y4M_VideoStreamInfo_INTERFACE_DEFINED__
 
@@ -33942,6 +35037,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoStreamInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoStreamInfoVtbl
@@ -33952,7 +35048,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoStreamInfo;
             ICC_Y4M_VideoStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoStreamInfo * This);
@@ -34085,6 +35181,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoFrameInfo;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoFrameInfoVtbl
@@ -34095,7 +35192,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoFrameInfo;
             ICC_Y4M_VideoFrameInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoFrameInfo * This);
@@ -34299,6 +35396,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoSplitter;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoSplitterVtbl
@@ -34309,7 +35407,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoSplitter;
             ICC_Y4M_VideoSplitter * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoSplitter * This);
@@ -34507,6 +35605,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoDecoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoDecoderVtbl
@@ -34517,7 +35616,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoDecoder;
             ICC_Y4M_VideoDecoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoDecoder * This);
@@ -34760,6 +35859,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoEncoderSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoEncoderSettingsVtbl
@@ -34770,7 +35870,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoEncoderSettings;
             ICC_Y4M_VideoEncoderSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoEncoderSettings * This);
@@ -34943,6 +36043,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoEncoder;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_Y4M_VideoEncoderVtbl
@@ -34953,7 +36054,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoEncoder;
             ICC_Y4M_VideoEncoder * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Y4M_VideoEncoder * This);
@@ -35158,7 +36259,7 @@ EXTERN_C const IID IID_ICC_Y4M_VideoEncoder;
 #endif 	/* __ICC_Y4M_VideoEncoder_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0167 */
+/* interface __MIDL_itf_Cinecoder_0000_0170 */
 /* [local] */ 
 
 typedef WORD CC_PID;
@@ -35167,53 +36268,56 @@ typedef LONGLONG CC_SCR;
 
 typedef /* [v1_enum] */ 
 enum CC_MULTIPLEXED_STREAM_TYPE
-    {	CC_MUX_UNKNOWN_STREAM	= 0,
-	CC_MUX_ELEMENTARY_STREAM	= 1,
-	CC_MUX_PES_STREAM	= 2,
-	CC_MUX_SYSTEM_STREAM	= 3,
-	CC_MUX_PROGRAM_STREAM	= 4,
-	CC_MUX_TRANSPORT_STREAM	= 5,
-	CC_MUX_MP4_STREAM	= 6
+    {
+        CC_MUX_UNKNOWN_STREAM	= 0,
+        CC_MUX_ELEMENTARY_STREAM	= 1,
+        CC_MUX_PES_STREAM	= 2,
+        CC_MUX_SYSTEM_STREAM	= 3,
+        CC_MUX_PROGRAM_STREAM	= 4,
+        CC_MUX_TRANSPORT_STREAM	= 5,
+        CC_MUX_MP4_STREAM	= 6
     } 	CC_MULTIPLEXED_STREAM_TYPE;
 
 typedef 
 enum CC_PES_ID
-    {	CC_PESID_UNKNOWN	= 0,
-	CC_PESID_MIN	= 0xbc,
-	CC_PESID_PROGRAM_STREAM_MAP	= 0xbc,
-	CC_PESID_PRIVATE_1	= 0xbd,
-	CC_PESID_PADDING	= 0xbe,
-	CC_PESID_PRIVATE_2	= 0xbf,
-	CC_PESID_AUDIO	= 0xc0,
-	CC_PESID_VIDEO	= 0xe0,
-	CC_PESID_MPEG1_DATA	= 0xf0,
-	CC_PESID_ECM	= 0xf0,
-	CC_PESID_EMM	= 0xf1,
-	CC_PESID_DSMCC	= 0xf2,
-	CC_PESID_ISO_IEC_13522	= 0xf3,
-	CC_PESID_H222_1_TYPE_A	= 0xf4,
-	CC_PESID_H222_1_TYPE_B	= 0xf5,
-	CC_PESID_H222_1_TYPE_C	= 0xf6,
-	CC_PESID_H222_1_TYPE_D	= 0xf7,
-	CC_PESID_H222_1_TYPE_E	= 0xf8,
-	CC_PESID_ANCILLARY	= 0xf9,
-	CC_PESID_MPEG4_SL_PACKETIZED	= 0xfa,
-	CC_PESID_MPEG4_FLEX_MUX	= 0xfb,
-	CC_PESID_METADATA	= 0xfc,
-	CC_PESID_EXTENDED	= 0xfd,
-	CC_PESID_RESERVED	= 0xfe,
-	CC_PESID_PROGRAM_STREAM_DIRECTORY	= 0xff,
-	CC_PESID_MAX	= 0xff
+    {
+        CC_PESID_UNKNOWN	= 0,
+        CC_PESID_MIN	= 0xbc,
+        CC_PESID_PROGRAM_STREAM_MAP	= 0xbc,
+        CC_PESID_PRIVATE_1	= 0xbd,
+        CC_PESID_PADDING	= 0xbe,
+        CC_PESID_PRIVATE_2	= 0xbf,
+        CC_PESID_AUDIO	= 0xc0,
+        CC_PESID_VIDEO	= 0xe0,
+        CC_PESID_MPEG1_DATA	= 0xf0,
+        CC_PESID_ECM	= 0xf0,
+        CC_PESID_EMM	= 0xf1,
+        CC_PESID_DSMCC	= 0xf2,
+        CC_PESID_ISO_IEC_13522	= 0xf3,
+        CC_PESID_H222_1_TYPE_A	= 0xf4,
+        CC_PESID_H222_1_TYPE_B	= 0xf5,
+        CC_PESID_H222_1_TYPE_C	= 0xf6,
+        CC_PESID_H222_1_TYPE_D	= 0xf7,
+        CC_PESID_H222_1_TYPE_E	= 0xf8,
+        CC_PESID_ANCILLARY	= 0xf9,
+        CC_PESID_MPEG4_SL_PACKETIZED	= 0xfa,
+        CC_PESID_MPEG4_FLEX_MUX	= 0xfb,
+        CC_PESID_METADATA	= 0xfc,
+        CC_PESID_EXTENDED	= 0xfd,
+        CC_PESID_RESERVED	= 0xfe,
+        CC_PESID_PROGRAM_STREAM_DIRECTORY	= 0xff,
+        CC_PESID_MAX	= 0xff
     } 	CC_PES_ID;
 
 typedef 
 enum CC_PSI_TABLE_ID
-    {	CC_PSITBL_PROGRAM_ASSOCIATION_SECTION	= 0,
-	CC_PSITBL_CONDITIONAL_ACCESS_SECTION	= 0x1,
-	CC_PSITBL_PROGRAM_MAP_SECTION	= 0x2,
-	CC_PSITBL_DESCRIPTION_SECTION	= 0x3,
-	CC_PSITBL_SCENE_DESCRIPTION_SECTION	= 0x4,
-	CC_PSITBL_OBJECT_DESCRIPTOR_SECTION	= 0x5
+    {
+        CC_PSITBL_PROGRAM_ASSOCIATION_SECTION	= 0,
+        CC_PSITBL_CONDITIONAL_ACCESS_SECTION	= 0x1,
+        CC_PSITBL_PROGRAM_MAP_SECTION	= 0x2,
+        CC_PSITBL_DESCRIPTION_SECTION	= 0x3,
+        CC_PSITBL_SCENE_DESCRIPTION_SECTION	= 0x4,
+        CC_PSITBL_OBJECT_DESCRIPTOR_SECTION	= 0x5
     } 	CC_PSI_TABLE_ID;
 
 typedef struct CC_ACCESS_UNIT_DESCR
@@ -35236,8 +36340,8 @@ typedef struct CC_PACKET_DESCR
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0167_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0167_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0170_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0170_v0_0_s_ifspec;
 
 #ifndef __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
 #define __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__
@@ -35270,6 +36374,7 @@ EXTERN_C const IID IID_ICC_MultiplexedDataDescr;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MultiplexedDataDescrVtbl
@@ -35280,7 +36385,7 @@ EXTERN_C const IID IID_ICC_MultiplexedDataDescr;
             ICC_MultiplexedDataDescr * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MultiplexedDataDescr * This);
@@ -35382,142 +36487,144 @@ EXTERN_C const IID IID_ICC_MultiplexedDataDescr;
 #endif 	/* __ICC_MultiplexedDataDescr_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0168 */
+/* interface __MIDL_itf_Cinecoder_0000_0171 */
 /* [local] */ 
 
 typedef 
 enum CC_MUX_OUTPUT_POLICY
-    {	CC_FLUSH_EACH_PACKET	= 0,
-	CC_FLUSH_AT_ACCESS_UNIT_START	= 1,
-	CC_FLUSH_AT_BUFFER_FULL	= 2,
-	CC_MUX_OUTPUT_POLICIES_COUNT	= ( CC_FLUSH_AT_BUFFER_FULL + 1 ) 
+    {
+        CC_FLUSH_EACH_PACKET	= 0,
+        CC_FLUSH_AT_ACCESS_UNIT_START	= 1,
+        CC_FLUSH_AT_BUFFER_FULL	= 2,
+        CC_MUX_OUTPUT_POLICIES_COUNT	= ( CC_FLUSH_AT_BUFFER_FULL + 1 ) 
     } 	CC_MUX_OUTPUT_POLICY;
 
 typedef 
 enum MPEG_SYSTEM_DESCRIPTOR_TAG
-    {	CC_DESCR_UNKNOWN	= 0,
-	CC_DESCR_VIDEO_STREAM	= 0x2,
-	CC_DESCR_AUDIO_STREAM	= 0x3,
-	CC_DESCR_HIERARCHY	= 0x4,
-	CC_DESCR_REGISTRATION	= 0x5,
-	CC_DESCR_DATA_STREAM_ALIGNMENT	= 0x6,
-	CC_DESCR_TARGET_BACKGROUND_GRID	= 0x7,
-	CC_DESCR_VIDEO_WINDOW	= 0x8,
-	CC_DESCR_CA	= 0x9,
-	CC_DESCR_ISO_639_LANGUAGE	= 0xa,
-	CC_DESCR_SYSTEM_CLOCK	= 0xb,
-	CC_DESCR_MULTIPLEX_BUFFER_UTILIZATION	= 0xc,
-	CC_DESCR_COPYRIGHT	= 0xd,
-	CC_DESCR_MAXIMUM_BITRATE	= 0xe,
-	CC_DESCR_PRIVATE_DATA_INDICATOR	= 0xf,
-	CC_DESCR_SMOOTHING_BUFFER	= 0x10,
-	CC_DESCR_STD	= 0x11,
-	CC_DESCR_IBP	= 0x12,
-	CC_DESCR_MPEG4_VIDEO	= 0x1b,
-	CC_DESCR_MPEG4_AUDIO	= 0x1c,
-	CC_DESCR_IOD	= 0x1d,
-	CC_DESCR_SL	= 0x1e,
-	CC_DESCR_FMC	= 0x1f,
-	CC_DESCR_EXTERNAL_ES_ID	= 0x20,
-	CC_DESCR_MUX_CODE	= 0x21,
-	CC_DESCR_FMX_BUFFER_SIZE	= 0x22,
-	CC_DESCR_MULTIPLEX_BUFFER	= 0x23,
-	CC_DESCR_CONTENT_LABELING	= 0x24,
-	CC_DESCR_METADATA_POINTER	= 0x25,
-	CC_DESCR_METADATA	= 0x26,
-	CC_DESCR_METADATA_STD	= 0x27,
-	CC_DESCR_AVC_VIDEO	= 0x28,
-	CC_DESCR_IPMP	= 0x29,
-	CC_DESCR_AVC_TIMING_AND_HDR	= 0x30,
-	CC_DESCR_NETWORK_NAME	= 0x40,
-	CC_DESCR_SERVICE_LIST	= 0x41,
-	CC_DESCR_STUFFING	= 0x42,
-	CC_DESCR_SATELLITE_DELIVERY_SYSTEM	= 0x43,
-	CC_DESCR_CABLE_DELIVERY_SYSTEM	= 0x44,
-	CC_DESCR_VBI_DATA	= 0x45,
-	CC_DESCR_VBI_TELETEXT	= 0x46,
-	CC_DESCR_BOUQUET_NAME	= 0x47,
-	CC_DESCR_SERVICE	= 0x48,
-	CC_DESCR_COUNTRY_AVAILABILITY	= 0x49,
-	CC_DESCR_LINKAGE	= 0x4a,
-	CC_DESCR_NVOD_REFERENCE	= 0x4b,
-	CC_DESCR_TIME_SHIFTED_SERVICE	= 0x4c,
-	CC_DESCR_SHORT_EVENT	= 0x4d,
-	CC_DESCR_EXTENDED_EVENT	= 0x4e,
-	CC_DESCR_TIME_SHIFTED_EVENT	= 0x4f,
-	CC_DESCR_COMPONENT	= 0x50,
-	CC_DESCR_MOSAIC	= 0x51,
-	CC_DESCR_STREAM_IDENTIFIER	= 0x52,
-	CC_DESCR_CA_IDENTIFIER	= 0x53,
-	CC_DESCR_CONTENT	= 0x54,
-	CC_DESCR_PARENTAL_RATING	= 0x55,
-	CC_DESCR_TELETEXT	= 0x56,
-	CC_DESCR_TELEPHONE	= 0x57,
-	CC_DESCR_LOCAL_TIME_OFFSET	= 0x58,
-	CC_DESCR_SUBTITLING	= 0x59,
-	CC_DESCR_TERRESTRIAL_DELIVERY_SYSTEM	= 0x5a,
-	CC_DESCR_MULTILINGUAL_NETWORK_NAME	= 0x5b,
-	CC_DESCR_MULTILINGUAL_BOUQUET_NAME	= 0x5c,
-	CC_DESCR_MULTILINGUAL_SERVICE_NAME	= 0x5d,
-	CC_DESCR_MULTILINGUAL_COMPONENT	= 0x5e,
-	CC_DESCR_PRIVATE_DATA_SPECIFIER	= 0x5f,
-	CC_DESCR_SERVICE_MOVE	= 0x60,
-	CC_DESCR_SHORT_SMOOTHING_BUFFER	= 0x61,
-	CC_DESCR_FREQUENCY_LIST	= 0x62,
-	CC_DESCR_PARTIAL_TRANSPORT_STREAM	= 0x63,
-	CC_DESCR_DATA_BROADCAST	= 0x64,
-	CC_DESCR_SCRAMBLING	= 0x65,
-	CC_DESCR_DATA_BROADCAST_ID	= 0x66,
-	CC_DESCR_TRANSPORT_STREAM	= 0x67,
-	CC_DESCR_DSNG	= 0x68,
-	CC_DESCR_PDC	= 0x69,
-	CC_DESCR_AC3_SYSTEM_B_DVB	= 0x6a,
-	CC_DESCR_ANCILLARY_DATA	= 0x6b,
-	CC_DESCR_CELL_LIST	= 0x6c,
-	CC_DESCR_CELL_FREQUENCY_LINK	= 0x6d,
-	CC_DESCR_ANNOUNCEMENT_SUPPORT	= 0x6e,
-	CC_DESCR_APPLICATION_SIGNALLING	= 0x6f,
-	CC_DESCR_ADAPTATION_FIELD_DATA	= 0x70,
-	CC_DESCR_SERVICE_IDENTIFIER	= 0x71,
-	CC_DESCR_SERVICE_AVAILABILITY	= 0x72,
-	CC_DESCR_DEFAULT_AUTHORITY	= 0x73,
-	CC_DESCR_RELATED_CONTENT	= 0x74,
-	CC_DESCR_TVA_ID	= 0x75,
-	CC_DESCR_CONTENT_IDENTIFIER	= 0x76,
-	CC_DESCR_TIME_SLICE_FEC_IDENTIFIER	= 0x77,
-	CC_DESCR_ECM_REPETITION_RATE	= 0x78,
-	CC_DESCR_S2_SATELLITE_DELIVERY_SYSTEM	= 0x79,
-	CC_DESCR_ENHANCED_AC3	= 0x7a,
-	CC_DESCR_DTS	= 0x7b,
-	CC_DESCR_AAC	= 0x7c,
-	CC_DESCR_XAIT_LOCATION	= 0x7d,
-	CC_DESCR_FTA_CONTENT_MANAGEMENT	= 0x7e,
-	CC_DESCR_EXTENSION	= 0x7f,
-	CC_DESCR_AC3_SYSTEM_A_ATSC	= 0x81,
-	CC_DESCR_BROADCAST_ID	= 0x85,
-	CC_DESCR_DTCP	= 0x88,
-	CC_DESCR_CUE_IDENTIFIER	= 0x8a,
-	CC_DESCR_HIERARCHICAL_TRANSMISSION	= 0xc0,
-	CC_DESCR_DIGITAL_COPY_CONTROL	= 0xc1,
-	CC_DESCR_NETWORK_IDENTIFICATION	= 0xc2,
-	CC_DESCR_PARTIAL_TS_TIME	= 0xc3,
-	CC_DESCR_AUDIO_COMPONENT	= 0xc4,
-	CC_DESCR_HYPERLINK	= 0xc5,
-	CC_DESCR_TARGET_REGION	= 0xc6,
-	CC_DESCR_DATA_CONTENT	= 0xc7,
-	CC_DESCR_VIDEO_DECODE_CONTROL	= 0xc8,
-	CC_DESCR_TS_INFORMATION	= 0xcd,
-	CC_DESCR_EXTENDED_BROADCASTER	= 0xce,
-	CC_DESCR_SERIES	= 0xd5,
-	CC_DESCR_EVENT_GROUP	= 0xd6,
-	CC_DESCR_BROADCASTER_NAME	= 0xd8,
-	CC_DESCR_COMPONENT_GROUP	= 0xd9,
-	CC_DESCR_CONTENT_AVAILABILITY	= 0xde,
-	CC_DESCR_EMERGENCY_INFORMATION	= 0xfc,
-	CC_DESCR_DATA_COMPONENT	= 0xfd
+    {
+        CC_DESCR_UNKNOWN	= 0,
+        CC_DESCR_VIDEO_STREAM	= 0x2,
+        CC_DESCR_AUDIO_STREAM	= 0x3,
+        CC_DESCR_HIERARCHY	= 0x4,
+        CC_DESCR_REGISTRATION	= 0x5,
+        CC_DESCR_DATA_STREAM_ALIGNMENT	= 0x6,
+        CC_DESCR_TARGET_BACKGROUND_GRID	= 0x7,
+        CC_DESCR_VIDEO_WINDOW	= 0x8,
+        CC_DESCR_CA	= 0x9,
+        CC_DESCR_ISO_639_LANGUAGE	= 0xa,
+        CC_DESCR_SYSTEM_CLOCK	= 0xb,
+        CC_DESCR_MULTIPLEX_BUFFER_UTILIZATION	= 0xc,
+        CC_DESCR_COPYRIGHT	= 0xd,
+        CC_DESCR_MAXIMUM_BITRATE	= 0xe,
+        CC_DESCR_PRIVATE_DATA_INDICATOR	= 0xf,
+        CC_DESCR_SMOOTHING_BUFFER	= 0x10,
+        CC_DESCR_STD	= 0x11,
+        CC_DESCR_IBP	= 0x12,
+        CC_DESCR_MPEG4_VIDEO	= 0x1b,
+        CC_DESCR_MPEG4_AUDIO	= 0x1c,
+        CC_DESCR_IOD	= 0x1d,
+        CC_DESCR_SL	= 0x1e,
+        CC_DESCR_FMC	= 0x1f,
+        CC_DESCR_EXTERNAL_ES_ID	= 0x20,
+        CC_DESCR_MUX_CODE	= 0x21,
+        CC_DESCR_FMX_BUFFER_SIZE	= 0x22,
+        CC_DESCR_MULTIPLEX_BUFFER	= 0x23,
+        CC_DESCR_CONTENT_LABELING	= 0x24,
+        CC_DESCR_METADATA_POINTER	= 0x25,
+        CC_DESCR_METADATA	= 0x26,
+        CC_DESCR_METADATA_STD	= 0x27,
+        CC_DESCR_AVC_VIDEO	= 0x28,
+        CC_DESCR_IPMP	= 0x29,
+        CC_DESCR_AVC_TIMING_AND_HDR	= 0x30,
+        CC_DESCR_NETWORK_NAME	= 0x40,
+        CC_DESCR_SERVICE_LIST	= 0x41,
+        CC_DESCR_STUFFING	= 0x42,
+        CC_DESCR_SATELLITE_DELIVERY_SYSTEM	= 0x43,
+        CC_DESCR_CABLE_DELIVERY_SYSTEM	= 0x44,
+        CC_DESCR_VBI_DATA	= 0x45,
+        CC_DESCR_VBI_TELETEXT	= 0x46,
+        CC_DESCR_BOUQUET_NAME	= 0x47,
+        CC_DESCR_SERVICE	= 0x48,
+        CC_DESCR_COUNTRY_AVAILABILITY	= 0x49,
+        CC_DESCR_LINKAGE	= 0x4a,
+        CC_DESCR_NVOD_REFERENCE	= 0x4b,
+        CC_DESCR_TIME_SHIFTED_SERVICE	= 0x4c,
+        CC_DESCR_SHORT_EVENT	= 0x4d,
+        CC_DESCR_EXTENDED_EVENT	= 0x4e,
+        CC_DESCR_TIME_SHIFTED_EVENT	= 0x4f,
+        CC_DESCR_COMPONENT	= 0x50,
+        CC_DESCR_MOSAIC	= 0x51,
+        CC_DESCR_STREAM_IDENTIFIER	= 0x52,
+        CC_DESCR_CA_IDENTIFIER	= 0x53,
+        CC_DESCR_CONTENT	= 0x54,
+        CC_DESCR_PARENTAL_RATING	= 0x55,
+        CC_DESCR_TELETEXT	= 0x56,
+        CC_DESCR_TELEPHONE	= 0x57,
+        CC_DESCR_LOCAL_TIME_OFFSET	= 0x58,
+        CC_DESCR_SUBTITLING	= 0x59,
+        CC_DESCR_TERRESTRIAL_DELIVERY_SYSTEM	= 0x5a,
+        CC_DESCR_MULTILINGUAL_NETWORK_NAME	= 0x5b,
+        CC_DESCR_MULTILINGUAL_BOUQUET_NAME	= 0x5c,
+        CC_DESCR_MULTILINGUAL_SERVICE_NAME	= 0x5d,
+        CC_DESCR_MULTILINGUAL_COMPONENT	= 0x5e,
+        CC_DESCR_PRIVATE_DATA_SPECIFIER	= 0x5f,
+        CC_DESCR_SERVICE_MOVE	= 0x60,
+        CC_DESCR_SHORT_SMOOTHING_BUFFER	= 0x61,
+        CC_DESCR_FREQUENCY_LIST	= 0x62,
+        CC_DESCR_PARTIAL_TRANSPORT_STREAM	= 0x63,
+        CC_DESCR_DATA_BROADCAST	= 0x64,
+        CC_DESCR_SCRAMBLING	= 0x65,
+        CC_DESCR_DATA_BROADCAST_ID	= 0x66,
+        CC_DESCR_TRANSPORT_STREAM	= 0x67,
+        CC_DESCR_DSNG	= 0x68,
+        CC_DESCR_PDC	= 0x69,
+        CC_DESCR_AC3_SYSTEM_B_DVB	= 0x6a,
+        CC_DESCR_ANCILLARY_DATA	= 0x6b,
+        CC_DESCR_CELL_LIST	= 0x6c,
+        CC_DESCR_CELL_FREQUENCY_LINK	= 0x6d,
+        CC_DESCR_ANNOUNCEMENT_SUPPORT	= 0x6e,
+        CC_DESCR_APPLICATION_SIGNALLING	= 0x6f,
+        CC_DESCR_ADAPTATION_FIELD_DATA	= 0x70,
+        CC_DESCR_SERVICE_IDENTIFIER	= 0x71,
+        CC_DESCR_SERVICE_AVAILABILITY	= 0x72,
+        CC_DESCR_DEFAULT_AUTHORITY	= 0x73,
+        CC_DESCR_RELATED_CONTENT	= 0x74,
+        CC_DESCR_TVA_ID	= 0x75,
+        CC_DESCR_CONTENT_IDENTIFIER	= 0x76,
+        CC_DESCR_TIME_SLICE_FEC_IDENTIFIER	= 0x77,
+        CC_DESCR_ECM_REPETITION_RATE	= 0x78,
+        CC_DESCR_S2_SATELLITE_DELIVERY_SYSTEM	= 0x79,
+        CC_DESCR_ENHANCED_AC3	= 0x7a,
+        CC_DESCR_DTS	= 0x7b,
+        CC_DESCR_AAC	= 0x7c,
+        CC_DESCR_XAIT_LOCATION	= 0x7d,
+        CC_DESCR_FTA_CONTENT_MANAGEMENT	= 0x7e,
+        CC_DESCR_EXTENSION	= 0x7f,
+        CC_DESCR_AC3_SYSTEM_A_ATSC	= 0x81,
+        CC_DESCR_BROADCAST_ID	= 0x85,
+        CC_DESCR_DTCP	= 0x88,
+        CC_DESCR_CUE_IDENTIFIER	= 0x8a,
+        CC_DESCR_HIERARCHICAL_TRANSMISSION	= 0xc0,
+        CC_DESCR_DIGITAL_COPY_CONTROL	= 0xc1,
+        CC_DESCR_NETWORK_IDENTIFICATION	= 0xc2,
+        CC_DESCR_PARTIAL_TS_TIME	= 0xc3,
+        CC_DESCR_AUDIO_COMPONENT	= 0xc4,
+        CC_DESCR_HYPERLINK	= 0xc5,
+        CC_DESCR_TARGET_REGION	= 0xc6,
+        CC_DESCR_DATA_CONTENT	= 0xc7,
+        CC_DESCR_VIDEO_DECODE_CONTROL	= 0xc8,
+        CC_DESCR_TS_INFORMATION	= 0xcd,
+        CC_DESCR_EXTENDED_BROADCASTER	= 0xce,
+        CC_DESCR_SERIES	= 0xd5,
+        CC_DESCR_EVENT_GROUP	= 0xd6,
+        CC_DESCR_BROADCASTER_NAME	= 0xd8,
+        CC_DESCR_COMPONENT_GROUP	= 0xd9,
+        CC_DESCR_CONTENT_AVAILABILITY	= 0xde,
+        CC_DESCR_EMERGENCY_INFORMATION	= 0xfc,
+        CC_DESCR_DATA_COMPONENT	= 0xfd
     } 	MPEG_SYSTEM_DESCRIPTOR_TAG;
 
-typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0168_0001
+typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0171_0001
     {
     MPEG_SYSTEM_DESCRIPTOR_TAG code;
     DWORD length;
@@ -35526,8 +36633,8 @@ typedef /* [public][public] */ struct __MIDL___MIDL_itf_Cinecoder_0000_0168_0001
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0168_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0168_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0171_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0171_v0_0_s_ifspec;
 
 #ifndef __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
 #define __ICC_SystemDescriptorsReader_INTERFACE_DEFINED__
@@ -35566,6 +36673,7 @@ EXTERN_C const IID IID_ICC_SystemDescriptorsReader;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SystemDescriptorsReaderVtbl
@@ -35576,7 +36684,7 @@ EXTERN_C const IID IID_ICC_SystemDescriptorsReader;
             ICC_SystemDescriptorsReader * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SystemDescriptorsReader * This);
@@ -35692,6 +36800,7 @@ EXTERN_C const IID IID_ICC_SystemDescriptorsManager;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SystemDescriptorsManagerVtbl
@@ -35702,7 +36811,7 @@ EXTERN_C const IID IID_ICC_SystemDescriptorsManager;
             ICC_SystemDescriptorsManager * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SystemDescriptorsManager * This);
@@ -35875,6 +36984,7 @@ EXTERN_C const IID IID_ICC_PES_Info;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_PES_InfoVtbl
@@ -35885,7 +36995,7 @@ EXTERN_C const IID IID_ICC_PES_Info;
             ICC_PES_Info * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_PES_Info * This);
@@ -36077,6 +37187,7 @@ EXTERN_C const IID IID_ICC_ProgramInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ProgramInfoVtbl
@@ -36087,7 +37198,7 @@ EXTERN_C const IID IID_ICC_ProgramInfo;
             ICC_ProgramInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ProgramInfo * This);
@@ -36235,6 +37346,7 @@ EXTERN_C const IID IID_ICC_MultiplexedStreamInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MultiplexedStreamInfoVtbl
@@ -36245,7 +37357,7 @@ EXTERN_C const IID IID_ICC_MultiplexedStreamInfo;
             ICC_MultiplexedStreamInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MultiplexedStreamInfo * This);
@@ -36418,6 +37530,7 @@ EXTERN_C const IID IID_ICC_BaseMultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BaseMultiplexerSettingsVtbl
@@ -36428,7 +37541,7 @@ EXTERN_C const IID IID_ICC_BaseMultiplexerSettings;
             ICC_BaseMultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_BaseMultiplexerSettings * This);
@@ -36671,6 +37784,7 @@ EXTERN_C const IID IID_ICC_BaseMultiplexerPinSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_BaseMultiplexerPinSettingsVtbl
@@ -36681,7 +37795,7 @@ EXTERN_C const IID IID_ICC_BaseMultiplexerPinSettings;
             ICC_BaseMultiplexerPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_BaseMultiplexerPinSettings * This);
@@ -36892,6 +38006,7 @@ EXTERN_C const IID IID_ICC_SystemMuxerPinSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SystemMuxerPinSettingsVtbl
@@ -36902,7 +38017,7 @@ EXTERN_C const IID IID_ICC_SystemMuxerPinSettings;
             ICC_SystemMuxerPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SystemMuxerPinSettings * This);
@@ -37212,6 +38327,7 @@ EXTERN_C const IID IID_ICC_SystemMuxerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_SystemMuxerSettingsVtbl
@@ -37222,7 +38338,7 @@ EXTERN_C const IID IID_ICC_SystemMuxerSettings;
             ICC_SystemMuxerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_SystemMuxerSettings * This);
@@ -37528,6 +38644,7 @@ EXTERN_C const IID IID_ICC_ProgramMuxerPinSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ProgramMuxerPinSettingsVtbl
@@ -37538,7 +38655,7 @@ EXTERN_C const IID IID_ICC_ProgramMuxerPinSettings;
             ICC_ProgramMuxerPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ProgramMuxerPinSettings * This);
@@ -37964,6 +39081,7 @@ EXTERN_C const IID IID_ICC_ProgramMultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ProgramMultiplexerSettingsVtbl
@@ -37974,7 +39092,7 @@ EXTERN_C const IID IID_ICC_ProgramMultiplexerSettings;
             ICC_ProgramMultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ProgramMultiplexerSettings * This);
@@ -38319,6 +39437,7 @@ EXTERN_C const IID IID_ICC_TransportMuxerPinSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_TransportMuxerPinSettingsVtbl
@@ -38329,7 +39448,7 @@ EXTERN_C const IID IID_ICC_TransportMuxerPinSettings;
             ICC_TransportMuxerPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_TransportMuxerPinSettings * This);
@@ -38691,6 +39810,7 @@ EXTERN_C const IID IID_ICC_TransportMultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_TransportMultiplexerSettingsVtbl
@@ -38701,7 +39821,7 @@ EXTERN_C const IID IID_ICC_TransportMultiplexerSettings;
             ICC_TransportMultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_TransportMultiplexerSettings * This);
@@ -39002,6 +40122,7 @@ EXTERN_C const IID IID_ICC_TS_ProgramDescr;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_TS_ProgramDescrVtbl
@@ -39012,7 +40133,7 @@ EXTERN_C const IID IID_ICC_TS_ProgramDescr;
             ICC_TS_ProgramDescr * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_TS_ProgramDescr * This);
@@ -39284,6 +40405,7 @@ EXTERN_C const IID IID_ICC_M2TSMP_MultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_M2TSMP_MultiplexerSettingsVtbl
@@ -39294,7 +40416,7 @@ EXTERN_C const IID IID_ICC_M2TSMP_MultiplexerSettings;
             ICC_M2TSMP_MultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_M2TSMP_MultiplexerSettings * This);
@@ -39543,6 +40665,7 @@ EXTERN_C const IID IID_ICC_HDV1MuxerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HDV1MuxerSettingsVtbl
@@ -39553,7 +40676,7 @@ EXTERN_C const IID IID_ICC_HDV1MuxerSettings;
             ICC_HDV1MuxerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HDV1MuxerSettings * This);
@@ -39682,6 +40805,7 @@ EXTERN_C const IID IID_ICC_HDV2MuxerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HDV2MuxerSettingsVtbl
@@ -39692,7 +40816,7 @@ EXTERN_C const IID IID_ICC_HDV2MuxerSettings;
             ICC_HDV2MuxerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HDV2MuxerSettings * This);
@@ -39824,6 +40948,7 @@ EXTERN_C const IID IID_ICC_Multiplexer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MultiplexerVtbl
@@ -39834,7 +40959,7 @@ EXTERN_C const IID IID_ICC_Multiplexer;
             ICC_Multiplexer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Multiplexer * This);
@@ -40034,6 +41159,7 @@ EXTERN_C const IID IID_ICC_DemultiplexedDataCallback;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DemultiplexedDataCallbackVtbl
@@ -40044,7 +41170,7 @@ EXTERN_C const IID IID_ICC_DemultiplexedDataCallback;
             ICC_DemultiplexedDataCallback * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DemultiplexedDataCallback * This);
@@ -40123,6 +41249,7 @@ EXTERN_C const IID IID_ICC_DemultiplexedDataCallbackExt;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DemultiplexedDataCallbackExtVtbl
@@ -40133,7 +41260,7 @@ EXTERN_C const IID IID_ICC_DemultiplexedDataCallbackExt;
             ICC_DemultiplexedDataCallbackExt * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DemultiplexedDataCallbackExt * This);
@@ -40208,6 +41335,7 @@ EXTERN_C const IID IID_ICC_StreamClockReferenceProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamClockReferencePropVtbl
@@ -40218,7 +41346,7 @@ EXTERN_C const IID IID_ICC_StreamClockReferenceProp;
             ICC_StreamClockReferenceProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamClockReferenceProp * This);
@@ -40290,6 +41418,7 @@ EXTERN_C const IID IID_ICC_ProgramClockReferencePidProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ProgramClockReferencePidPropVtbl
@@ -40300,7 +41429,7 @@ EXTERN_C const IID IID_ICC_ProgramClockReferencePidProp;
             ICC_ProgramClockReferencePidProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ProgramClockReferencePidProp * This);
@@ -40356,22 +41485,23 @@ EXTERN_C const IID IID_ICC_ProgramClockReferencePidProp;
 #endif 	/* __ICC_ProgramClockReferencePidProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0190 */
+/* interface __MIDL_itf_Cinecoder_0000_0193 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_CATCH_STREAM_MODE
-    {	CC_CATCH_MODE_DEFAULT	= 0,
-	CC_CATCH_MODE_RAW_STREAM	= 1,
-	CC_CATCH_MODE_PES_STREAM	= 2,
-	CC_CATCH_MODE_SI_STREAM	= 3,
-	CC_CATCH_MODES_TOTAL	= ( CC_CATCH_MODE_SI_STREAM + 1 ) 
+    {
+        CC_CATCH_MODE_DEFAULT	= 0,
+        CC_CATCH_MODE_RAW_STREAM	= 1,
+        CC_CATCH_MODE_PES_STREAM	= 2,
+        CC_CATCH_MODE_SI_STREAM	= 3,
+        CC_CATCH_MODES_TOTAL	= ( CC_CATCH_MODE_SI_STREAM + 1 ) 
     } 	CC_CATCH_STREAM_MODE;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0190_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0190_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0193_v0_0_s_ifspec;
 
 #ifndef __ICC_Demultiplexer_INTERFACE_DEFINED__
 #define __ICC_Demultiplexer_INTERFACE_DEFINED__
@@ -40419,6 +41549,7 @@ EXTERN_C const IID IID_ICC_Demultiplexer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DemultiplexerVtbl
@@ -40429,7 +41560,7 @@ EXTERN_C const IID IID_ICC_Demultiplexer;
             ICC_Demultiplexer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_Demultiplexer * This);
@@ -40661,6 +41792,7 @@ EXTERN_C const IID IID_ICC_HDV2_Multiplexer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HDV2_MultiplexerVtbl
@@ -40671,7 +41803,7 @@ EXTERN_C const IID IID_ICC_HDV2_Multiplexer;
             ICC_HDV2_Multiplexer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HDV2_Multiplexer * This);
@@ -40882,6 +42014,7 @@ EXTERN_C const IID IID_ICC_StreamRecognizer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_StreamRecognizerVtbl
@@ -40892,7 +42025,7 @@ EXTERN_C const IID IID_ICC_StreamRecognizer;
             ICC_StreamRecognizer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_StreamRecognizer * This);
@@ -41047,6 +42180,7 @@ EXTERN_C const IID IID_ICC_DebugDumpIncomingDataToFile;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_DebugDumpIncomingDataToFileVtbl
@@ -41057,7 +42191,7 @@ EXTERN_C const IID IID_ICC_DebugDumpIncomingDataToFile;
             ICC_DebugDumpIncomingDataToFile * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_DebugDumpIncomingDataToFile * This);
@@ -41126,6 +42260,7 @@ EXTERN_C const IID IID_ICC_PCR_Callback;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_PCR_CallbackVtbl
@@ -41136,7 +42271,7 @@ EXTERN_C const IID IID_ICC_PCR_Callback;
             ICC_PCR_Callback * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_PCR_Callback * This);
@@ -41208,6 +42343,7 @@ EXTERN_C const IID IID_ICC_PCR_CallbackProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_PCR_CallbackPropVtbl
@@ -41218,7 +42354,7 @@ EXTERN_C const IID IID_ICC_PCR_CallbackProp;
             ICC_PCR_CallbackProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_PCR_CallbackProp * This);
@@ -41274,20 +42410,21 @@ EXTERN_C const IID IID_ICC_PCR_CallbackProp;
 #endif 	/* __ICC_PCR_CallbackProp_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0196 */
+/* interface __MIDL_itf_Cinecoder_0000_0199 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum CC_MP4_CHUNK_FRAGMENT_POSITION
-    {	CC_MP4_INTERMEDIATE_POSITION	= 0,
-	CC_MP4_START_POSITION	= 0x1,
-	CC_MP4_END_POSITION	= 0x2
+    {
+        CC_MP4_INTERMEDIATE_POSITION	= 0,
+        CC_MP4_START_POSITION	= 0x1,
+        CC_MP4_END_POSITION	= 0x2
     } 	CC_MP4_CHUNK_FRAGMENT_POSITION;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0196_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0196_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0199_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0199_v0_0_s_ifspec;
 
 #ifndef __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
 #define __ICC_MP4_Multiplexer_INTERFACE_DEFINED__
@@ -41312,6 +42449,7 @@ EXTERN_C const IID IID_ICC_MP4_Multiplexer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_MultiplexerVtbl
@@ -41322,7 +42460,7 @@ EXTERN_C const IID IID_ICC_MP4_Multiplexer;
             ICC_MP4_Multiplexer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_Multiplexer * This);
@@ -41566,6 +42704,7 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_MultiplexerSettingsVtbl
@@ -41576,7 +42715,7 @@ EXTERN_C const IID IID_ICC_MP4_MultiplexerSettings;
             ICC_MP4_MultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_MultiplexerSettings * This);
@@ -41779,6 +42918,7 @@ EXTERN_C const IID IID_ICC_MP4_MuxerPinSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_MuxerPinSettingsVtbl
@@ -41789,7 +42929,7 @@ EXTERN_C const IID IID_ICC_MP4_MuxerPinSettings;
             ICC_MP4_MuxerPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_MuxerPinSettings * This);
@@ -42001,7 +43141,20 @@ EXTERN_C const IID IID_ICC_MP4_MuxerVideoPinSettings;
         virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AspectRatio( 
             /* [in] */ CC_RATIONAL v) = 0;
         
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameSize( 
+            /* [retval][out] */ CC_SIZE *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_FrameSize( 
+            /* [in] */ CC_SIZE v) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InterlaceType( 
+            /* [retval][out] */ CC_INTERLACE_TYPE *p) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_InterlaceType( 
+            /* [in] */ CC_INTERLACE_TYPE v) = 0;
+        
     };
+    
     
 #else 	/* C style interface */
 
@@ -42013,7 +43166,7 @@ EXTERN_C const IID IID_ICC_MP4_MuxerVideoPinSettings;
             ICC_MP4_MuxerVideoPinSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_MuxerVideoPinSettings * This);
@@ -42118,6 +43271,22 @@ EXTERN_C const IID IID_ICC_MP4_MuxerVideoPinSettings;
             ICC_MP4_MuxerVideoPinSettings * This,
             /* [in] */ CC_RATIONAL v);
         
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameSize )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_SIZE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_FrameSize )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_SIZE v);
+        
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InterlaceType )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [retval][out] */ CC_INTERLACE_TYPE *p);
+        
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_InterlaceType )( 
+            ICC_MP4_MuxerVideoPinSettings * This,
+            /* [in] */ CC_INTERLACE_TYPE v);
+        
         END_INTERFACE
     } ICC_MP4_MuxerVideoPinSettingsVtbl;
 
@@ -42216,6 +43385,18 @@ EXTERN_C const IID IID_ICC_MP4_MuxerVideoPinSettings;
 #define ICC_MP4_MuxerVideoPinSettings_put_AspectRatio(This,v)	\
     ( (This)->lpVtbl -> put_AspectRatio(This,v) ) 
 
+#define ICC_MP4_MuxerVideoPinSettings_get_FrameSize(This,p)	\
+    ( (This)->lpVtbl -> get_FrameSize(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_FrameSize(This,v)	\
+    ( (This)->lpVtbl -> put_FrameSize(This,v) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_get_InterlaceType(This,p)	\
+    ( (This)->lpVtbl -> get_InterlaceType(This,p) ) 
+
+#define ICC_MP4_MuxerVideoPinSettings_put_InterlaceType(This,v)	\
+    ( (This)->lpVtbl -> put_InterlaceType(This,v) ) 
+
 #endif /* COBJMACROS */
 
 
@@ -42251,6 +43432,7 @@ EXTERN_C const IID IID_ICC_ReferenceDataConsumer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_ReferenceDataConsumerVtbl
@@ -42261,7 +43443,7 @@ EXTERN_C const IID IID_ICC_ReferenceDataConsumer;
             ICC_ReferenceDataConsumer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_ReferenceDataConsumer * This);
@@ -42338,6 +43520,7 @@ EXTERN_C const IID IID_ICC_MP4_FragmentedPin;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_FragmentedPinVtbl
@@ -42348,7 +43531,7 @@ EXTERN_C const IID IID_ICC_MP4_FragmentedPin;
             ICC_MP4_FragmentedPin * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_FragmentedPin * This);
@@ -42428,6 +43611,7 @@ EXTERN_C const IID IID_ICC_MP4_InitialTimeCodeProp;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_InitialTimeCodePropVtbl
@@ -42438,7 +43622,7 @@ EXTERN_C const IID IID_ICC_MP4_InitialTimeCodeProp;
             ICC_MP4_InitialTimeCodeProp * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_InitialTimeCodeProp * This);
@@ -42532,6 +43716,7 @@ EXTERN_C const IID IID_ICC_MP4_MpegDashSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4_MpegDashSettingsVtbl
@@ -42542,7 +43727,7 @@ EXTERN_C const IID IID_ICC_MP4_MpegDashSettings;
             ICC_MP4_MpegDashSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4_MpegDashSettings * This);
@@ -42648,6 +43833,7 @@ EXTERN_C const IID IID_ICC_MP4ChunkInfo;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4ChunkInfoVtbl
@@ -42658,7 +43844,7 @@ EXTERN_C const IID IID_ICC_MP4ChunkInfo;
             ICC_MP4ChunkInfo * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4ChunkInfo * This);
@@ -42727,6 +43913,7 @@ EXTERN_C const IID IID_ICC_MP4Fragment;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4FragmentVtbl
@@ -42737,7 +43924,7 @@ EXTERN_C const IID IID_ICC_MP4Fragment;
             ICC_MP4Fragment * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4Fragment * This);
@@ -42806,6 +43993,7 @@ EXTERN_C const IID IID_ICC_MP4InitFragment;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4InitFragmentVtbl
@@ -42816,7 +44004,7 @@ EXTERN_C const IID IID_ICC_MP4InitFragment;
             ICC_MP4InitFragment * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4InitFragment * This);
@@ -42882,6 +44070,7 @@ EXTERN_C const IID IID_ICC_MP4RandomAccessFragment;
     public:
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4RandomAccessFragmentVtbl
@@ -42892,7 +44081,7 @@ EXTERN_C const IID IID_ICC_MP4RandomAccessFragment;
             ICC_MP4RandomAccessFragment * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4RandomAccessFragment * This);
@@ -42969,6 +44158,7 @@ EXTERN_C const IID IID_ICC_MP4Producer;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MP4ProducerVtbl
@@ -42979,7 +44169,7 @@ EXTERN_C const IID IID_ICC_MP4Producer;
             ICC_MP4Producer * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MP4Producer * This);
@@ -43092,6 +44282,7 @@ EXTERN_C const IID IID_ICC_HLS_MultiplexerSettings;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_HLS_MultiplexerSettingsVtbl
@@ -43102,7 +44293,7 @@ EXTERN_C const IID IID_ICC_HLS_MultiplexerSettings;
             ICC_HLS_MultiplexerSettings * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_HLS_MultiplexerSettings * This);
@@ -43202,16 +44393,17 @@ EXTERN_C const IID IID_ICC_HLS_MultiplexerSettings;
 #endif 	/* __ICC_HLS_MultiplexerSettings_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_Cinecoder_0000_0210 */
+/* interface __MIDL_itf_Cinecoder_0000_0213 */
 /* [local] */ 
 
 typedef /* [v1_enum] */ 
 enum SCTE35_SPLICE_COMMAND_TYPE
-    {	SCTE35_CMD_SPLICE_NULL	= 0,
-	SCTE35_CMD_SPLICE_SCHEDULE	= 4,
-	SCTE35_CMD_SPLICE_INSERT	= 5,
-	SCTE35_CMD_TIME_SIGNAL	= 6,
-	SCTE35_CMD_BANDWIDTH_RESERVATION	= 7
+    {
+        SCTE35_CMD_SPLICE_NULL	= 0,
+        SCTE35_CMD_SPLICE_SCHEDULE	= 4,
+        SCTE35_CMD_SPLICE_INSERT	= 5,
+        SCTE35_CMD_TIME_SIGNAL	= 6,
+        SCTE35_CMD_BANDWIDTH_RESERVATION	= 7
     } 	SCTE35_SPLICE_COMMAND_TYPE;
 
 typedef struct SCTE35_SPLICE_NULL_COMMAND_DESCR
@@ -43242,13 +44434,14 @@ typedef struct SCTE35_SPLICE_INSERT_COMMAND_DESCR
 
 typedef /* [v1_enum] */ 
 enum CC_READER_OPEN_FLAGS
-    {	CC_OF_NONE	= 0
+    {
+        CC_OF_NONE	= 0
     } 	CC_READER_OPEN_FLAGS;
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0210_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0210_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0213_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0213_v0_0_s_ifspec;
 
 #ifndef __ICC_MediaReader_INTERFACE_DEFINED__
 #define __ICC_MediaReader_INTERFACE_DEFINED__
@@ -43369,6 +44562,7 @@ EXTERN_C const IID IID_ICC_MediaReader;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MediaReaderVtbl
@@ -43379,7 +44573,7 @@ EXTERN_C const IID IID_ICC_MediaReader;
             ICC_MediaReader * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MediaReader * This);
@@ -43664,6 +44858,7 @@ EXTERN_C const IID IID_ICC_MediaReader2;
         
     };
     
+    
 #else 	/* C style interface */
 
     typedef struct ICC_MediaReader2Vtbl
@@ -43674,7 +44869,7 @@ EXTERN_C const IID IID_ICC_MediaReader2;
             ICC_MediaReader2 * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
-            __RPC__deref_out  void **ppvObject);
+            _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
             ICC_MediaReader2 * This);
@@ -43953,6 +45148,8 @@ EXTERN_C const IID IID_ICC_MediaReader2;
 
 /* library Cinecoder */
 /* [version][helpstring][uuid] */ 
+
+
 
 
 
@@ -44588,6 +45785,14 @@ class DECLSPEC_UUID("00a25ffa-f7bf-4876-a592-73f944936a6f")
 CC_DanielVideoDecoder_CUDA;
 #endif
 
+EXTERN_C const CLSID CLSID_CC_DanielVideoDecoder_CudaPlayer;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("942d0694-04ec-4995-b4af-85869f5c605e")
+CC_DanielVideoDecoder_CudaPlayer;
+#endif
+
 EXTERN_C const CLSID CLSID_CC_DanielVideoEncoder;
 
 #ifdef __cplusplus
@@ -44717,7 +45922,7 @@ CC_Y4M_VideoEncoderSettings;
 #endif
 #endif /* __Cinecoder_LIBRARY_DEFINED__ */
 
-/* interface __MIDL_itf_Cinecoder_0000_0212 */
+/* interface __MIDL_itf_Cinecoder_0000_0216 */
 /* [local] */ 
 
 #ifdef __cplusplus
@@ -44725,8 +45930,8 @@ using namespace cinecoder;
 #endif
 
 
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0212_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0212_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0216_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_Cinecoder_0000_0216_v0_0_s_ifspec;
 
 /* Additional Prototypes for ALL interfaces */
 

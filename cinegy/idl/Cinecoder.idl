@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 import "Unknwn.idl";
@@ -140,6 +140,8 @@ library Cinecoder
   interface ICC_VideoDataHandler;
   interface ICC_VideoProducer;
   interface ICC_VideoConsumer;
+  interface ICC_VideoConsumerExt;
+  interface ICC_VideoConsumerExtAsync;
   interface ICC_VideoRescaleConsumer;
 
   // The ICC_Collection interfaces
@@ -960,6 +962,16 @@ library Cinecoder
     interface ICC_TimeBaseProp;
     interface ICC_InputBufferControl;
     interface ICC_D2D_GetUpdateVideoBufferPtrProp;
+  };
+
+  [uuid(942d0694-04ec-4995-b4af-85869f5c605e)]
+  coclass CC_DanielVideoDecoder_CudaPlayer
+  {
+    [default]
+	interface ICC_DanielVideoDecoder_CudaPlayer;
+    interface ICC_StreamProcessor;
+	interface ICC_ByteStreamConsumer;
+    interface ICC_TimeBaseProp;
   };
 
   [uuid(5fd43ca9-0f0f-40e0-a20a-74c9a5edbec8)]

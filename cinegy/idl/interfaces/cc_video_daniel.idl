@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  The version of Cinecoder for these headers should be: 3.28.23.12518
+  The version of Cinecoder for these headers should be: 3.30.18.13164
 */
 
 typedef [v1_enum] enum CC_DANIEL2_CODING_METHOD
@@ -189,17 +189,69 @@ interface ICC_DanielVideoEncoder : ICC_VideoEncoder
 [object, uuid(f14dab53-5dc0-4edd-88e6-63d058f278b8), pointer_default(unique), local]
 interface ICC_D2D_GetUpdateVideoBufferPtrProp : IUnknown
 {
+  //
   HRESULT   GetUpdateVideoBufferPtr([in,out] void **p);
 };
-
 
 [object, uuid(60966b59-a6fb-4742-a562-223f7e4c45e3), pointer_default(unique), local]
 interface ICC_DanielVideoDecoder_CUDA: ICC_DanielVideoDecoder
 {
+  // 
+  [propget] HRESULT  TargetColorFormat([out,retval] CC_COLOR_FMT*x);
+  [propput] HRESULT  TargetColorFormat([in]         CC_COLOR_FMT x);
 };
 
 [object, uuid(9a156bd1-f05f-4d3c-9b55-c49f65200342), pointer_default(unique), local]
 interface ICC_DanielVideoEncoder_CUDA : ICC_DanielVideoEncoder
 {
+};
+
+typedef [v1_enum] enum CC_D2DEC_SCALE
+{									// as arithm. shifts
+	D2DEC_SCALE_1 = 0,
+	D2DEC_SCALE_2 = 1,
+	D2DEC_SCALE_4 = 2
+}
+CC_D2DEC_SCALE;
+
+typedef struct CC_D2_DECODER_PARAMS
+{
+	void*			gDecodedBuffer;
+	CC_INT			DecodedPitch;
+	CC_INT			DecodedHeight;	
+	CC_D2DEC_SCALE	decScale;
+	RECT			decROI;			
+}
+CC_D2_DECODER_PARAMS;							
+
+[object, uuid(0add9766-f751-4a15-b891-1495605eef3b), pointer_default(unique), local]
+interface ICC_DanielVideoDecoder_CudaPlayer: ICC_DanielVideoDecoder
+{
+  //
+  HRESULT	InitDecoder(
+    [in, size_is(cbSize)] CC_PCBYTE pbData,   /// Pointer to the buffer containing the D2 coded data (i.e. first frame, or just header)
+    [in]                  CC_UINT   cbSize    /// The data size in bytes.
+  );
+
+  //
+  HRESULT	GetOutputBufferDimensions(
+    [in]          CC_SIZE src_size, 
+    [out, retval] CC_SIZE *ptarget_size
+  );
+
+  //
+  HRESULT	DecodeFrame(
+    [in, size_is(cbSize)] CC_PCBYTE pbData,		/// Pointer to the buffer containing the D2 coded frame 
+    [in] CC_UINT                    cbSize,		/// The D2 coded frame size in bytes.
+    [in] CC_TIME					pts,		/// (Optional) presentation time of the first access unit commencing in the data.              
+    [in] CC_D2_DECODER_PARAMS      *pDecPar 	/// The parameters for the decoded data
+  );
+};
+
+[object, uuid(d45d4f96-a218-4c54-96fc-230f2c1537a7), pointer_default(unique), local]
+interface ICC_D2D_GetFrameDecodingParamsProp : IUnknown
+{
+  // Returns the current frame decoding parameters
+  [propget] HRESULT   FrameDecodingParams([out, retval] CC_D2_DECODER_PARAMS *p);
 };
 
