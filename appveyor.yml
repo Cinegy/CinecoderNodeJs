@@ -4,7 +4,7 @@ init:
 install:
 - cmd: npm config set msvs_version 2015
 build_script:
-- cmd: restore-nuget.packages.bat
+- cmd: restore-nuget-packages.bat
 - cmd: npm install
 test_script:
 - cmd: npm test
