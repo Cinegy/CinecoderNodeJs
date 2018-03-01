@@ -50,7 +50,10 @@
           ] 
         }],
         ['OS=="win"', {
-          "sources" : [ "cinegy/include/cinecoder_i.c" ],
+          "variables": {
+            "CinecoderRoot": "cinegy/Cinecoder.3.30.33.14182"
+          },
+          "sources" : [ "<(CinecoderRoot)/sources/Cinecoder_i.c" ],
           "configurations": {
             "Release": {
               "msvs_settings": {
@@ -62,17 +65,16 @@
             }
           },
           "libraries": [ 
-            "-l../cinegy/lib/win64/cinecoder.lib",
-            "-l../cinegy/lib/win64/D2_CUDA_lib.lib"
+            "-l../<(CinecoderRoot)/libs/native/x64/cinecoder.lib",
+            "-l../<(CinecoderRoot)/libs/native/x64/D2_CUDA_lib.lib"
           ],
           "copies": [
             { 
               "destination": "build/Release/",
               "files": [
-                "cinegy/lib/win64/Cinecoder.dll",
-                "cinegy/lib/win64/Cinecoder.Interop.dll",
-                "cinegy/lib/win64/cudart64_80.dll",
-                "cinegy/lib/win64/D2_CUDA_lib.dll"
+                "<(CinecoderRoot)/libs/native/x64/Cinecoder.dll",
+                "<(CinecoderRoot)/libs/native/x64/cudart64_80.dll",
+                "<(CinecoderRoot)/libs/native/x64/D2_CUDA_lib.dll"
               ]
             }
           ]
