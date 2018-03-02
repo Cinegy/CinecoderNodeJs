@@ -1,6 +1,6 @@
 {
   "name": "cinecodernodejs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Async processing addon",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "Cinegy GmbH",
   "license": "Apache-2.0",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Cinegy/CinecoderNodeJs/issues"
   },
   "homepage": "https://home.cinegy.com"
 }
