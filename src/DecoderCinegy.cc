@@ -22,7 +22,7 @@
 #include <mutex>
 #include <condition_variable>
 
-#include "../cinegy/include/cinecoder_h.h"
+#include <cinecoder_h.h>
 
 namespace streampunk {
 
