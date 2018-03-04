@@ -51,7 +51,7 @@
         }],
         ['OS=="win"', {
           "variables": {
-            "CinecoderRoot": "packages/Cinecoder.3.30.33.14182"
+            "CinecoderRoot": "packages/Cinecoder.3.30.33.14214"
           },          
           "include_dirs": ["<(CinecoderRoot)/sources/"],
           "sources" : [ "<(CinecoderRoot)/sources/Cinecoder_i.c" ],
