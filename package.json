@@ -12,12 +12,12 @@
     "url": "https://github.com/Cinegy/CinecoderNodeJs.git"
   },
   "dependencies": {
-    "bindings": "^1.3.0",
-    "nan": "^2.7.0"
+    "bindings": "^1.5.0",
+    "nan": "^2.14.2"
   },
   "gypfile": true,
   "devDependencies": {
-    "tape": "^4.8.0"
+    "tape": "^4.13.3"
   },
   "author": "Cinegy GmbH",
   "license": "Apache-2.0",
