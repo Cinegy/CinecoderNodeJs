@@ -1,6 +1,9 @@
 version: 1.0.{build}
+environment:
+    nodejs_version: "12"
+
 init:
-- ps: Install-Product node 6.11.1 x64
+- ps: Install-Product node $env:nodejs_version x64
 install:
 - cmd: npm config set msvs_version 2015
 build_script:

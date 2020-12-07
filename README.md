@@ -4,9 +4,9 @@ CinecoderNodeJs is a [Node.js](http://nodejs.org/) [addon](http://nodejs.org/api
 
 ## Installation
 
-Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) 6.11.x release.
+Install [Node.js](http://nodejs.org/) for your platform. This software has been developed against the long term stable (LTS) 12 release.
 
-This module has native C++ files that are compiled with node-gyp. To use the module, you many need to install a C++ compiler and python v2.x on your system. On Windows, compilation has been tested using the community edition of Microsoft Visual Studio 2015. On Windows, node may need to be configured with:
+This module has native C++ files that are compiled with node-gyp. To use the module, you many need to install a C++ compiler and python v2.x on your system. On Windows, node may need to be configured with:
 
     npm config set msvs_version 2015 --global
 
@@ -59,4 +59,4 @@ See the project on AppVeyor here: https://ci.appveyor.com/project/cinegy/cinecod
 This software is released under the Apache 2.0 license.
 
 Copyright 2016 Streampunk Media Ltd.
-Copyright 2017 Cinegy GmbH.
+Copyright 2017,2020 Cinegy GmbH.

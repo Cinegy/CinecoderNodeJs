@@ -36,3 +36,6 @@ node_modules
 # nuget exe and packages
 packages/
 nuget.exe
+
+#files generated during unit tests
+avci*.raw

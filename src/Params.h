@@ -26,7 +26,7 @@ class Params {
 protected:
   Params() {}
   virtual ~Params() {}
-
+  
   Local<Value> getKey(Local<Object> tags, const std::string& key) {
     Local<Value> val = Nan::Null();
     Local<String> keyStr = Nan::New<String>(key).ToLocalChecked();
@@ -37,25 +37,37 @@ protected:
 
   std::string unpackValue(Local<Value> val) {
     Local<Array> valueArray = Local<Array>::Cast(val);
-    return *String::Utf8Value(valueArray->Get(0));
+    Local<Value> value = Local<Value>::Cast(valueArray->Get(0));
+    Nan::Utf8String utf8_value(value);
+    int len = utf8_value.length();
+
+    //todo: fix the exception that is supposed to happen here
+  	//if (len <= 0) {
+   //     return Nan::ThrowTypeError("arg must be a non-empty string");
+   // }
+  	
+    std::string string_copy(*utf8_value, len);
+    return string_copy;
   }
 
+
   bool unpackBool(Local<Object> tags, const std::string& key, bool dflt) {
-    bool result = dflt;
-    Local<Value> val = getKey(tags, key);
-    if (Nan::Null() != val) {
-      if (val->IsArray()) {
-        std::string valStr = unpackValue(val);
-        if (!valStr.empty()) {
-          if ((0==valStr.compare("1")) || (0==valStr.compare("true")))
-            result = true;
-          else if ((0==valStr.compare("0")) || (0==valStr.compare("false")))
-            result = false;
-        }
-      } else
-        result = Nan::To<bool>(val).FromJust();
-    }
-    return result;
+      bool result = dflt;
+      Local<Value> val = getKey(tags, key);
+      if (Nan::Null() != val) {
+          if (val->IsArray()) {
+              auto valStr = unpackValue(val);
+              if (!valStr.empty()) {
+                  if ((0 == valStr.compare("1")) || (0 == valStr.compare("true")))
+                      result = true;
+                  else if ((0 == valStr.compare("0")) || (0 == valStr.compare("false")))
+                      result = false;
+              }
+          }
+          else
+              result = Nan::To<bool>(val).FromJust();
+      }
+      return result;
   }
 
   uint32_t unpackNum(Local<Object> tags, const std::string& key, uint32_t dflt) {
@@ -72,17 +84,28 @@ protected:
   } 
 
   std::string unpackStr(Local<Object> tags, const std::string& key, std::string dflt) {
-    std::string result = dflt;
-    Local<Value> val = getKey(tags, key);
-    if (Nan::Null() != val) {
-      if (val->IsArray()) {
-        std::string valStr = unpackValue(val);
-        result = valStr.empty()?dflt:valStr;
-      } else
-        result = *String::Utf8Value(val);
-    }
-    return result;
-  } 
+      std::string result = dflt;
+      Local<Value> val = getKey(tags, key);
+      if (Nan::Null() != val) {
+          if (val->IsArray()) {
+              auto valStr = unpackValue(val);
+              result = valStr.empty() ? dflt : valStr;
+          }
+          else
+          {
+              Nan::Utf8String utf8_value(val);
+              int len = utf8_value.length();
+
+              //todo: fix the exception that is supposed to happen here
+             /* if (len <= 0) {
+                  return Nan::ThrowTypeError("arg must be a non-empty string");
+              }*/
+              std::string result(*utf8_value, len);
+              return result;
+          }
+      }
+      return result;
+  }
 
 private:
   Params(const Params &);
