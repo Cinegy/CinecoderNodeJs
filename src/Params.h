@@ -35,54 +35,57 @@ protected:
     return val;
   }
 
-  std::string unpackValue(Local<Value> val) {
-    Local<Array> valueArray = Local<Array>::Cast(val);
-    return *String::Utf8Value(valueArray->Get(0));
-  }
+  //std::string unpackValue(Local<Value> val) {
+  //  Local<Array> valueArray = Local<Array>::Cast(val);
+  //  //return *v8::Local::<v8::Value>(valueArray->Get(0));
+  //  // from v8 to cpp
+  //  char* charFileName = new char[8192];
+  //  return *String::Utf8Value(valueArray->Get(0));
+  //}
 
-  bool unpackBool(Local<Object> tags, const std::string& key, bool dflt) {
-    bool result = dflt;
-    Local<Value> val = getKey(tags, key);
-    if (Nan::Null() != val) {
-      if (val->IsArray()) {
-        std::string valStr = unpackValue(val);
-        if (!valStr.empty()) {
-          if ((0==valStr.compare("1")) || (0==valStr.compare("true")))
-            result = true;
-          else if ((0==valStr.compare("0")) || (0==valStr.compare("false")))
-            result = false;
-        }
-      } else
-        result = Nan::To<bool>(val).FromJust();
-    }
-    return result;
-  }
+  //bool unpackBool(Local<Object> tags, const std::string& key, bool dflt) {
+  //  bool result = dflt;
+  //  Local<Value> val = getKey(tags, key);
+  //  if (Nan::Null() != val) {
+  //    if (val->IsArray()) {
+  //      std::string valStr = unpackValue(val);
+  //      if (!valStr.empty()) {
+  //        if ((0==valStr.compare("1")) || (0==valStr.compare("true")))
+  //          result = true;
+  //        else if ((0==valStr.compare("0")) || (0==valStr.compare("false")))
+  //          result = false;
+  //      }
+  //    } else
+  //      result = Nan::To<bool>(val).FromJust();
+  //  }
+  //  return result;
+  //}
 
-  uint32_t unpackNum(Local<Object> tags, const std::string& key, uint32_t dflt) {
-    uint32_t result = dflt;
-    Local<Value> val = getKey(tags, key);
-    if (Nan::Null() != val) {
-      if (val->IsArray()) {
-        std::string valStr = unpackValue(val);
-        result = valStr.empty()?dflt:std::stoi(valStr);
-      } else
-        result = Nan::To<uint32_t>(val).FromJust();
-    }
-    return result;
-  } 
+  //uint32_t unpackNum(Local<Object> tags, const std::string& key, uint32_t dflt) {
+  //  uint32_t result = dflt;
+  //  Local<Value> val = getKey(tags, key);
+  //  if (Nan::Null() != val) {
+  //    if (val->IsArray()) {
+  //      std::string valStr = unpackValue(val);
+  //      result = valStr.empty()?dflt:std::stoi(valStr);
+  //    } else
+  //      result = Nan::To<uint32_t>(val).FromJust();
+  //  }
+  //  return result;
+  //} 
 
-  std::string unpackStr(Local<Object> tags, const std::string& key, std::string dflt) {
-    std::string result = dflt;
-    Local<Value> val = getKey(tags, key);
-    if (Nan::Null() != val) {
-      if (val->IsArray()) {
-        std::string valStr = unpackValue(val);
-        result = valStr.empty()?dflt:valStr;
-      } else
-        result = *String::Utf8Value(val);
-    }
-    return result;
-  } 
+  //std::string unpackStr(Local<Object> tags, const std::string& key, std::string dflt) {
+  //  std::string result = dflt;
+  //  Local<Value> val = getKey(tags, key);
+  //  if (Nan::Null() != val) {
+  //    if (val->IsArray()) {
+  //      std::string valStr = unpackValue(val);
+  //      result = valStr.empty()?dflt:valStr;
+  //    } else
+  //      result = *String::Utf8Value(val);
+  //  }
+  //  return result;
+  //} 
 
 private:
   Params(const Params &);
