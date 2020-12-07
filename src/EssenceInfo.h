@@ -44,7 +44,7 @@ private:
 class EssenceInfo : public Params {
 public:
   EssenceInfo(Local<Object> tags)
-    : /*mIsVideo(0==unpackStr(tags, "format", "video").compare("video")),
+    : mIsVideo(0==unpackStr(tags, "format", "video").compare("video")),
       mFormat(unpackStr(tags, "format", "video")),
       mEncodingName(unpackStr(tags, "encodingName", mIsVideo?"raw":"L16")), 
       mClockRate(unpackNum(tags, "clockRate", mIsVideo?90000:48000)),
@@ -56,20 +56,7 @@ public:
       mInterlace(mIsVideo?unpackBool(tags, "interlace", true)?"tff":"prog":""),
       mPacking(mIsVideo?unpackStr(tags, "packing", "pgroup"):""),
       mHasAlpha(mIsVideo?unpackBool(tags, "hasAlpha", false):false),
-      mChannels(mIsVideo?0:unpackNum(tags, "channels", 2))*/
-      mIsVideo(true),
-      mFormat("video"),
-      mEncodingName("raw"),
-      mClockRate(90000),
-      mWidth(1920),
-      mHeight(1080),
-      mSampling("YCbCr-4:2:2"),
-      mDepth(8),
-      mColorimetry("BT709-2"),
-      mInterlace("tff"),
-      mPacking("pgroup"),
-      mHasAlpha(false),
-      mChannels(2)
+      mChannels(mIsVideo?0:unpackNum(tags, "channels", 2))
   {}
   ~EssenceInfo() {}
 
