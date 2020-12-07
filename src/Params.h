@@ -36,15 +36,16 @@ protected:
   }
 
   std::string unpackValue(Local<Value> val) {
-    Local<Array> valueArray = Local<Array>::Cast(val);
-    Local<Value> value = Local<Value>::Cast(valueArray->Get(0));
-    Nan::Utf8String utf8_value(value);
+
+  	Local<Array> valueArray = Local<Array>::Cast(val);
+    MaybeLocal<Value> value = Nan::Get(valueArray, 0);
+    Nan::Utf8String utf8_value(value.ToLocalChecked());
     int len = utf8_value.length();
 
-    //todo: fix the exception that is supposed to happen here
-  	//if (len <= 0) {
-   //     return Nan::ThrowTypeError("arg must be a non-empty string");
-   // }
+  	if (len <= 0) {
+      std::string err = std::string("arg must be a non-empty string");
+      throw std::runtime_error(err.c_str());
+    }
   	
     std::string string_copy(*utf8_value, len);
     return string_copy;
@@ -96,10 +97,11 @@ protected:
               Nan::Utf8String utf8_value(val);
               int len = utf8_value.length();
 
-              //todo: fix the exception that is supposed to happen here
-             /* if (len <= 0) {
-                  return Nan::ThrowTypeError("arg must be a non-empty string");
-              }*/
+              if (len <= 0) {
+                std::string err = std::string("arg must be a non-empty string");
+                throw std::runtime_error(err.c_str());
+              }
+              
               std::string result(*utf8_value, len);
               return result;
           }
