@@ -1,7 +1,7 @@
 #Directory to start scan from
 $rootPath = "."
 
-$cinecoderVersion = "3.30.18.13164"
+$cinecoderVersion = "3.33.41.230"
 
 $currentYear = (Get-Date).year
 
