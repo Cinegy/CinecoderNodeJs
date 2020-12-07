@@ -17,6 +17,7 @@
   },
   "gypfile": true,
   "devDependencies": {
+    "electron-rebuild": "^2.3.4",
     "tape": "^4.13.3"
   },
   "author": "Cinegy GmbH",

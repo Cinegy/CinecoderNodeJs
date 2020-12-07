@@ -51,7 +51,7 @@
         }],
         ['OS=="win"', {
           "variables": {
-            "CinecoderRoot": "packages/Cinecoder.3.30.33.14214"
+            "CinecoderRoot": "packages/Cinecoder.3.33.41.230"
           },          
           "include_dirs": ["<(CinecoderRoot)/sources/"],
           "sources" : [ "<(CinecoderRoot)/sources/Cinecoder_i.c" ],
@@ -66,16 +66,16 @@
             }
           },
           "libraries": [ 
-            "-l../<(CinecoderRoot)/libs/native/x64/cinecoder.lib",
-            "-l../<(CinecoderRoot)/libs/native/x64/D2_CUDA_lib.lib"
+            "-l../<(CinecoderRoot)/runtimes/win-x64/native/release/cinecoder.lib",
+            "-l../<(CinecoderRoot)/runtimes/win-x64/native/release/D2_CUDA_lib.lib"
           ],
           "copies": [
             { 
               "destination": "build/Release/",
               "files": [
-                "<(CinecoderRoot)/libs/native/x64/Cinecoder.dll",
-                "<(CinecoderRoot)/libs/native/x64/cudart64_80.dll",
-                "<(CinecoderRoot)/libs/native/x64/D2_CUDA_lib.dll"
+                "<(CinecoderRoot)/runtimes/win-x64/native/release/Cinecoder.dll",
+                "<(CinecoderRoot)/runtimes/win-x64/native/release/cudart64_80.dll",
+                "<(CinecoderRoot)/runtimes/win-x64/native/release/D2_CUDA_lib.dll"
               ]
             }
           ]
