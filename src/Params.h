@@ -101,6 +101,7 @@ protected:
                   return Nan::ThrowTypeError("arg must be a non-empty string");
               }*/
               std::string result(*utf8_value, len);
+              return result;
           }
       }
       return result;
